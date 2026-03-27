@@ -29,6 +29,7 @@ namespace bluetoothmain
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LT));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.lythuyet = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
@@ -176,9 +177,10 @@ namespace bluetoothmain
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(307, 72);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(206, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(421, 242);
+            this.pictureBox1.Size = new System.Drawing.Size(610, 360);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
