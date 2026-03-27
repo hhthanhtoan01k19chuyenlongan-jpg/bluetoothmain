@@ -16,5 +16,10 @@ namespace bluetoothmain
         {
             InitializeComponent();
         }
+
+        private void LT_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
