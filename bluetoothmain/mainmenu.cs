@@ -12,7 +12,7 @@ using System.Net;
 using System.IO;
 using System.Management;
 using System.Text.RegularExpressions;
-
+//okee
 
 namespace bluetoothmain
 {
