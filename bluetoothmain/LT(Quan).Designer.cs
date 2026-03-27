@@ -34,12 +34,13 @@ namespace bluetoothmain
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(526, 89);
+            this.button1.Location = new System.Drawing.Point(143, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(411, 149);
+            this.button1.Size = new System.Drawing.Size(216, 98);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LT
             // 
