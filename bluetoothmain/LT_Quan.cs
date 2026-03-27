@@ -27,5 +27,18 @@ namespace bluetoothmain
             lythuyet.Hide();
             sensor.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            lythuyet.Hide();
+            sensor.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            sensor.Hide();
+            nhietdo.Show();
+        }
+
     }
 }
