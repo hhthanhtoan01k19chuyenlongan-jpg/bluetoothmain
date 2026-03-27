@@ -633,6 +633,16 @@ namespace bluetoothmain
             settings_panel.Visible = false;
         }
 
+        private void debug_Click(object sender, EventArgs e)
+        {
+            tabPage12.Controls.Clear();
+
+            LT_Quan uc = new LT_Quan();          // đúng tên class
+            uc.Dock = DockStyle.Fill;
+
+            tabPage12.Controls.Add(uc);
+        }
+
         private void tk_TextChanged(object sender, EventArgs e)
         {
 
