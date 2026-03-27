@@ -38,6 +38,7 @@ namespace bluetoothmain
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,10 +127,20 @@ namespace bluetoothmain
             this.button6.Text = "CẢM BIẾN NỒNG ĐỘ";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(728, 320);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(223, 82);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "CẢM BIẾN LƯU LƯỢNG";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // LT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -137,7 +148,7 @@ namespace bluetoothmain
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LT";
             this.Size = new System.Drawing.Size(1696, 854);
             this.Load += new System.EventHandler(this.LT_Load);
@@ -156,5 +167,6 @@ namespace bluetoothmain
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
