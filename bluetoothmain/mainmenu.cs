@@ -643,6 +643,16 @@ namespace bluetoothmain
             tabPage5.Controls.Add(uc);
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            tabPage5.Controls.Clear();
+
+            LT uc = new LT();          // đúng tên class
+            uc.Dock = DockStyle.Fill;
+
+            tabPage5.Controls.Add(uc);
+        }
+
         private void tk_TextChanged(object sender, EventArgs e)
         {
 

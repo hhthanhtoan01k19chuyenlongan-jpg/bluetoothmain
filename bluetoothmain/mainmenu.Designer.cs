@@ -41,7 +41,6 @@ namespace bluetoothmain
             this.bluetooth = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.debug = new System.Windows.Forms.Button();
             this.settings = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -113,6 +112,7 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -256,7 +256,7 @@ namespace bluetoothmain
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.debug);
+            this.tabPage5.Controls.Add(this.button1);
             this.tabPage5.Controls.Add(this.settings);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
@@ -265,16 +265,6 @@ namespace bluetoothmain
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // debug
-            // 
-            this.debug.Location = new System.Drawing.Point(514, 187);
-            this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(161, 47);
-            this.debug.TabIndex = 1;
-            this.debug.Text = "debug";
-            this.debug.UseVisualStyleBackColor = true;
-            this.debug.Click += new System.EventHandler(this.debug_Click);
             // 
             // settings
             // 
@@ -1107,6 +1097,16 @@ namespace bluetoothmain
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(629, 131);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 78);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1228,6 +1228,6 @@ namespace bluetoothmain
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.Button debug;
+        private System.Windows.Forms.Button button1;
     }
 }
