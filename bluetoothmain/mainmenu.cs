@@ -623,6 +623,16 @@ namespace bluetoothmain
             statelbl.Text = "USB CONNECTED";
         }
 
+        private void settings_Click(object sender, EventArgs e)
+        {
+            settings_panel.Visible = true;
+        }
+
+        private void close_settings_Click(object sender, EventArgs e)
+        {
+            settings_panel.Visible = false;
+        }
+
         private void tk_TextChanged(object sender, EventArgs e)
         {
 
