@@ -40,5 +40,9 @@ namespace bluetoothmain
             nhietdo.Show();
         }
 
+        private void lythuyet_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

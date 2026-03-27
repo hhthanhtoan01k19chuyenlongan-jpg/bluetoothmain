@@ -40,9 +40,9 @@ namespace bluetoothmain
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.nhietdo = new System.Windows.Forms.TabPage();
-            this.tocdo = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.tocdo = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.lythuyet.SuspendLayout();
             this.sensor.SuspendLayout();
@@ -55,28 +55,32 @@ namespace bluetoothmain
             this.tabControl1.Controls.Add(this.sensor);
             this.tabControl1.Controls.Add(this.nhietdo);
             this.tabControl1.Controls.Add(this.tocdo);
-            this.tabControl1.Location = new System.Drawing.Point(3, 0);
+            this.tabControl1.Location = new System.Drawing.Point(2, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1332, 452);
+            this.tabControl1.Size = new System.Drawing.Size(999, 367);
             this.tabControl1.TabIndex = 1;
             // 
             // lythuyet
             // 
             this.lythuyet.Controls.Add(this.button1);
-            this.lythuyet.Location = new System.Drawing.Point(4, 25);
+            this.lythuyet.Location = new System.Drawing.Point(4, 22);
+            this.lythuyet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lythuyet.Name = "lythuyet";
-            this.lythuyet.Padding = new System.Windows.Forms.Padding(3);
-            this.lythuyet.Size = new System.Drawing.Size(1324, 423);
+            this.lythuyet.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lythuyet.Size = new System.Drawing.Size(991, 341);
             this.lythuyet.TabIndex = 0;
             this.lythuyet.Text = "Lythuyet";
             this.lythuyet.UseVisualStyleBackColor = true;
+            this.lythuyet.Click += new System.EventHandler(this.lythuyet_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(190, 35);
+            this.button1.Location = new System.Drawing.Point(142, 28);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 98);
+            this.button1.Size = new System.Drawing.Size(162, 80);
             this.button1.TabIndex = 8;
             this.button1.Text = "HỖ TRỢ CHUẨN ĐOÁN";
             this.button1.UseVisualStyleBackColor = true;
@@ -90,64 +94,71 @@ namespace bluetoothmain
             this.sensor.Controls.Add(this.button4);
             this.sensor.Controls.Add(this.button3);
             this.sensor.Controls.Add(this.button2);
-            this.sensor.Location = new System.Drawing.Point(4, 25);
+            this.sensor.Location = new System.Drawing.Point(4, 22);
+            this.sensor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sensor.Name = "sensor";
-            this.sensor.Padding = new System.Windows.Forms.Padding(3);
-            this.sensor.Size = new System.Drawing.Size(1324, 423);
+            this.sensor.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sensor.Size = new System.Drawing.Size(991, 341);
             this.sensor.TabIndex = 1;
             this.sensor.Text = "sensor";
             this.sensor.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(693, 282);
+            this.button7.Location = new System.Drawing.Point(520, 229);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(223, 82);
+            this.button7.Size = new System.Drawing.Size(167, 67);
             this.button7.TabIndex = 20;
             this.button7.Text = "CẢM BIẾN LƯU LƯỢNG";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(693, 165);
+            this.button6.Location = new System.Drawing.Point(520, 134);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(223, 82);
+            this.button6.Size = new System.Drawing.Size(167, 67);
             this.button6.TabIndex = 19;
             this.button6.Text = "CẢM BIẾN NỒNG ĐỘ";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(693, 58);
+            this.button5.Location = new System.Drawing.Point(520, 47);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(223, 82);
+            this.button5.Size = new System.Drawing.Size(167, 67);
             this.button5.TabIndex = 18;
             this.button5.Text = "CẢM BIẾN ÁP SUẤT";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(399, 282);
+            this.button4.Location = new System.Drawing.Point(299, 229);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(223, 82);
+            this.button4.Size = new System.Drawing.Size(167, 67);
             this.button4.TabIndex = 17;
             this.button4.Text = "CẢM BIẾN TỐC ĐỘ";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(399, 165);
+            this.button3.Location = new System.Drawing.Point(299, 134);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(223, 82);
+            this.button3.Size = new System.Drawing.Size(167, 67);
             this.button3.TabIndex = 16;
             this.button3.Text = "CẢM BIẾN VỊ TRÍ";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(399, 58);
+            this.button2.Location = new System.Drawing.Point(299, 47);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(223, 82);
+            this.button2.Size = new System.Drawing.Size(167, 67);
             this.button2.TabIndex = 15;
             this.button2.Text = "CẢM BIẾN NHIỆT ĐỘ";
             this.button2.UseVisualStyleBackColor = true;
@@ -157,50 +168,53 @@ namespace bluetoothmain
             // 
             this.nhietdo.Controls.Add(this.button9);
             this.nhietdo.Controls.Add(this.button8);
-            this.nhietdo.Location = new System.Drawing.Point(4, 25);
+            this.nhietdo.Location = new System.Drawing.Point(4, 22);
+            this.nhietdo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nhietdo.Name = "nhietdo";
-            this.nhietdo.Padding = new System.Windows.Forms.Padding(3);
-            this.nhietdo.Size = new System.Drawing.Size(1324, 423);
+            this.nhietdo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nhietdo.Size = new System.Drawing.Size(991, 341);
             this.nhietdo.TabIndex = 2;
             this.nhietdo.Text = "nhietdo";
             this.nhietdo.UseVisualStyleBackColor = true;
             // 
-            // tocdo
-            // 
-            this.tocdo.Location = new System.Drawing.Point(4, 25);
-            this.tocdo.Name = "tocdo";
-            this.tocdo.Padding = new System.Windows.Forms.Padding(3);
-            this.tocdo.Size = new System.Drawing.Size(1324, 423);
-            this.tocdo.TabIndex = 3;
-            this.tocdo.Text = "tocdo";
-            this.tocdo.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(193, 66);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(240, 67);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "CẢM BIẾN NHIỆT ĐỘ KHÍ NẠP";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(481, 66);
+            this.button9.Location = new System.Drawing.Point(361, 54);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(315, 67);
+            this.button9.Size = new System.Drawing.Size(236, 54);
             this.button9.TabIndex = 1;
             this.button9.Text = "CẢM BIẾN NHIỆT ĐỘ NƯỚC LÀM MÁT";
             this.button9.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(145, 54);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(180, 54);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "CẢM BIẾN NHIỆT ĐỘ KHÍ NẠP";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // tocdo
+            // 
+            this.tocdo.Location = new System.Drawing.Point(4, 22);
+            this.tocdo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tocdo.Name = "tocdo";
+            this.tocdo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tocdo.Size = new System.Drawing.Size(991, 341);
+            this.tocdo.TabIndex = 3;
+            this.tocdo.Text = "tocdo";
+            this.tocdo.UseVisualStyleBackColor = true;
+            // 
             // LT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LT";
-            this.Size = new System.Drawing.Size(1696, 854);
+            this.Size = new System.Drawing.Size(1272, 694);
             this.Load += new System.EventHandler(this.LT_Load);
             this.tabControl1.ResumeLayout(false);
             this.lythuyet.ResumeLayout(false);
