@@ -183,6 +183,7 @@ namespace bluetoothmain
             this.button8.TabIndex = 0;
             this.button8.Text = "CẢM BIẾN NHIỆT ĐỘ KHÍ NẠP";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
