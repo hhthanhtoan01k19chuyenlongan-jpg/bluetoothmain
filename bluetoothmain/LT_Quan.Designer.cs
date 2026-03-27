@@ -29,7 +29,6 @@ namespace bluetoothmain
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LT));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.lythuyet = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,12 +41,12 @@ namespace bluetoothmain
             this.button2 = new System.Windows.Forms.Button();
             this.nhietdo = new System.Windows.Forms.TabPage();
             this.tocdo = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.lythuyet.SuspendLayout();
             this.sensor.SuspendLayout();
             this.nhietdo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -156,7 +155,8 @@ namespace bluetoothmain
             // 
             // nhietdo
             // 
-            this.nhietdo.Controls.Add(this.pictureBox1);
+            this.nhietdo.Controls.Add(this.button9);
+            this.nhietdo.Controls.Add(this.button8);
             this.nhietdo.Location = new System.Drawing.Point(4, 25);
             this.nhietdo.Name = "nhietdo";
             this.nhietdo.Padding = new System.Windows.Forms.Padding(3);
@@ -175,14 +175,23 @@ namespace bluetoothmain
             this.tocdo.Text = "tocdo";
             this.tocdo.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // button8
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(206, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(610, 360);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.button8.Location = new System.Drawing.Point(193, 66);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(240, 67);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "CẢM BIẾN NHIỆT ĐỘ KHÍ NẠP";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(481, 66);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(315, 67);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "CẢM BIẾN NHIỆT ĐỘ NƯỚC LÀM MÁT";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // LT
             // 
@@ -197,7 +206,6 @@ namespace bluetoothmain
             this.lythuyet.ResumeLayout(false);
             this.sensor.ResumeLayout(false);
             this.nhietdo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,6 +223,7 @@ namespace bluetoothmain
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage nhietdo;
         private System.Windows.Forms.TabPage tocdo;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }
