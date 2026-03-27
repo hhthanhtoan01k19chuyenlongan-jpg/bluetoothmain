@@ -635,12 +635,12 @@ namespace bluetoothmain
 
         private void debug_Click(object sender, EventArgs e)
         {
-            tabPage12.Controls.Clear();
+            tabPage5.Controls.Clear();
 
-            LT_Quan uc = new LT_Quan();          // đúng tên class
+            LT uc = new LT();          // đúng tên class
             uc.Dock = DockStyle.Fill;
 
-            tabPage12.Controls.Add(uc);
+            tabPage5.Controls.Add(uc);
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
