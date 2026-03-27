@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LT%28Quan%29.cs">
+    <Compile Include="LT_Quan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LT%28Quan%29.Designer.cs">
-      <DependentUpon>LT%28Quan%29.cs</DependentUpon>
+    <Compile Include="LT_Quan.Designer.cs">
+      <DependentUpon>LT_Quan.cs</DependentUpon>
     </Compile>
     <Compile Include="mainmenu.cs">
       <SubType>Form</SubType>
@@ -61,8 +61,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LT%28Quan%29.resx">
-      <DependentUpon>LT%28Quan%29.cs</DependentUpon>
+    <EmbeddedResource Include="LT_Quan.resx">
+      <DependentUpon>LT_Quan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainmenu.resx">
       <DependentUpon>mainmenu.cs</DependentUpon>

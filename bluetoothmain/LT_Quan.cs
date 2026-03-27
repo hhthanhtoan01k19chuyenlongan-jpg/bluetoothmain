@@ -24,7 +24,8 @@ namespace bluetoothmain
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            lythuyet.Hide();
+            sensor.Show();
         }
     }
 }
