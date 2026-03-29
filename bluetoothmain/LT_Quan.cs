@@ -19,7 +19,9 @@ namespace bluetoothmain
 
         private void LT_Load(object sender, EventArgs e)
         {
-
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.ItemSize = new Size(0, 1);
+            tabControl1.SizeMode = TabSizeMode.Fixed;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace bluetoothmain
             nhietdo.Show();
         }
 
-        private void lythuyet_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }
