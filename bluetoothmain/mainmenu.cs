@@ -37,6 +37,10 @@ namespace bluetoothmain
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.SizeMode = TabSizeMode.Fixed;
+
+            tabControl2.Appearance = TabAppearance.FlatButtons;
+            tabControl2.ItemSize = new Size(0, 1);
+            tabControl2.SizeMode = TabSizeMode.Fixed;
             statelbl.Hide();
             disconnect.Enabled = false;
             disconnect.Hide();
@@ -60,8 +64,8 @@ namespace bluetoothmain
             {
                 if (mk.Text == mkdung)
                 {
-                    tabPage2.Hide();
-                    tabPage5.Show();
+                    dangnhapgv.Hide();
+                    gv1.Show();
                     
 
                 }
@@ -131,7 +135,7 @@ namespace bluetoothmain
             statelbl.Text = "BLUETOOTH DISCONNECTED";
             statelbl.ForeColor = Color.Red;
             tabPage4.Hide();
-            tabPage3.Show();
+            btmode.Show();
 
 
         }
@@ -201,7 +205,7 @@ namespace bluetoothmain
                 ping_timer.Start();
 
                 SetConnectedBT();
-                tabPage3.Hide();
+                btmode.Hide();
                 tabPage4.Show();
             }
         }
@@ -318,14 +322,18 @@ namespace bluetoothmain
 
         private void bluetooth_usb_Click(object sender, EventArgs e)
         {
-            tabPage3.Show();
-            tabPage5.Hide();
+            btmode.Show();
+            wfmode.Hide();
+            usbmode.Hide();
+
         }
 
         private void wifi_Click(object sender, EventArgs e)
         {
-            tabPage5.Hide();
-            tabPage6.Show();
+            
+            wfmode.Show();
+            btmode.Hide();
+            usbmode.Hide();
         }
 
         private void bt_CheckedChanged(object sender, EventArgs e)
@@ -347,9 +355,11 @@ namespace bluetoothmain
             pan15 = pan15cb.Checked ? "1" : "0";
             pan16 = pan16cb.Checked ? "1" : "0";
              cmd = "CB" + pan1 + pan2 + pan3 + pan4 + pan5 + pan6 + pan7 + pan8 + pan9 + pan10 + pan11 + pan12 + pan13 + pan14 + pan15 + pan16;
-            
-            serCOM.WriteLine(cmd);
-
+            try
+            {
+                serCOM.WriteLine(cmd);
+            }
+            catch (Exception) { MessageBox.Show("Mất kết nối Bluetooth"); }
             
 
         }
@@ -410,7 +420,7 @@ namespace bluetoothmain
         private void connectwifi_Click(object sender, EventArgs e)
         {
             wifi_ping_timer.Start();
-            tabPage6.Hide();
+            wfmode.Hide();
             tabPage7.Show();
             if (statelbl.Text != "WIFI CONNECTED")
             {
@@ -441,14 +451,14 @@ namespace bluetoothmain
 
         private void backpg3_Click(object sender, EventArgs e)
         {
-            tabPage3.Hide();
-            tabPage5.Show();
+            btmode.Hide();
+            debug.Show();
         }
 
         private void backpg6_Click(object sender, EventArgs e)
         {
-            tabPage6.Hide();
-            tabPage5.Show();
+            wfmode.Hide();
+            debug.Show();
 
         }
 
@@ -471,13 +481,13 @@ namespace bluetoothmain
         private void gv_Click_1(object sender, EventArgs e)
         {
 
-            tabPage1.Hide();
-            tabPage2.Show();
+            gvsv.Hide();
+            dangnhapgv.Show();
         }
 
         private void hs_Click_1(object sender, EventArgs e)
         {
-            tabPage1.Hide();
+            gvsv.Hide();
             tabPage8.Show();
         }
 
@@ -509,7 +519,7 @@ namespace bluetoothmain
         private void backpg7_Click(object sender, EventArgs e)
         {
             tabPage7.Hide();
-            tabPage6.Show();
+            wfmode.Show();
         }
 
         
@@ -518,15 +528,17 @@ namespace bluetoothmain
 
         private void backpg9_Click(object sender, EventArgs e)
         {
-            tabPage9.Hide();
-            tabPage5.Show();
+            usbmode.Hide();
+            debug.Show();
            
         }
 
         private void usb_Click(object sender, EventArgs e)
         {
-            tabPage9.Show();
-            tabPage5.Hide();
+            usbmode.Show();
+            wfmode.Hide();
+            btmode.Hide();
+               
             usb_ping_timer.Start();
             
         }
@@ -574,7 +586,7 @@ namespace bluetoothmain
                     serCOM.Open();
                     statelbl.Show();
                     statelbl.Text = "USB CONNECTED";
-                    tabPage9.Hide();
+                    usbmode.Hide();
                     tabPage4.Show();
                     disconnect.Enabled = true;
                     disconnect.Show();
@@ -612,7 +624,7 @@ namespace bluetoothmain
             statelbl.Text = "USB DISCONNECTED";
             statelbl.ForeColor = Color.Red;
             tabPage4.Hide();
-            tabPage5.Show();
+            debug.Show();
 
 
 
@@ -635,23 +647,52 @@ namespace bluetoothmain
 
         private void debug_Click(object sender, EventArgs e)
         {
-            tabPage5.Controls.Clear();
+            debug.Controls.Clear();
 
             LT uc = new LT();          // đúng tên class
             uc.Dock = DockStyle.Fill;
 
-            tabPage5.Controls.Add(uc);
+            debug.Controls.Add(uc);
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            tabPage5.Controls.Clear();
+            debug.Controls.Clear();
 
             LT uc = new LT();          // đúng tên class
             uc.Dock = DockStyle.Fill;
 
-            tabPage5.Controls.Add(uc);
+            debug.Controls.Add(uc);
         }
+
+        private void cbpan_CheckedChanged(object sender, EventArgs e)
+        {
+            pan1 = cbpan1.Checked ? "1" : "0";
+            pan2 = cbpan2.Checked ? "1" : "0";
+            pan3 = cbpan3.Checked ? "1" : "0";
+            pan4 = cbpan4.Checked ? "1" : "0";
+            pan5 = cbpan5.Checked ? "1" : "0";
+            pan6 = cbpan6.Checked ? "1" : "0";
+            pan7 = cbpan7.Checked ? "1" : "0";
+            pan8 = cbpan8.Checked ? "1" : "0";
+            pan9 = cbpan9.Checked ? "1" : "0";
+            pan10 = cbpan10.Checked ? "1" : "0";
+            pan11 = cbpan11.Checked ? "1" : "0";
+            pan12 = cbpan12.Checked ? "1" : "0";
+            pan13 = cbpan13.Checked ? "1" : "0";
+            pan14 = cbpan14.Checked ? "1" : "0";
+            pan15 = cbpan15.Checked ? "1" : "0";
+            pan16 = cbpan16.Checked ? "1" : "0";
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            gvsv.Show();
+            debug.Hide();
+        }
+
+       
 
         private void tk_TextChanged(object sender, EventArgs e)
         {
@@ -708,7 +749,7 @@ namespace bluetoothmain
         private void menu_Click_1(object sender, EventArgs e)
         {
             tabPage4.Hide();
-            tabPage1.Show();
+            gvsv.Show();
         }
 
        
@@ -716,7 +757,7 @@ namespace bluetoothmain
         private void back_Click_1(object sender, EventArgs e)
         {
             tabPage4.Hide();
-            tabPage3.Show();
+            btmode.Show();
         }
 
 
@@ -790,7 +831,7 @@ namespace bluetoothmain
         }
             wifi_ping_timer.Stop();
             tabPage7.Hide();
-            tabPage6.Show();
+            wfmode.Show();
             disconnect.Hide();
             
         }
@@ -800,7 +841,7 @@ namespace bluetoothmain
             statelbl.Text = "WIFI CONNECTED";
             statelbl.ForeColor = Color.Green;
             tabPage7.Show();
-            tabPage6.Hide();
+            wfmode.Hide();
             disconnect.Enabled = true;
             disconnect.Show();
 
