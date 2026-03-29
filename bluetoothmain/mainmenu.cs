@@ -355,9 +355,11 @@ namespace bluetoothmain
             pan15 = pan15cb.Checked ? "1" : "0";
             pan16 = pan16cb.Checked ? "1" : "0";
              cmd = "CB" + pan1 + pan2 + pan3 + pan4 + pan5 + pan6 + pan7 + pan8 + pan9 + pan10 + pan11 + pan12 + pan13 + pan14 + pan15 + pan16;
-            
-            serCOM.WriteLine(cmd);
-
+            try
+            {
+                serCOM.WriteLine(cmd);
+            }
+            catch (Exception) { MessageBox.Show("Mất kết nối Bluetooth"); }
             
 
         }
@@ -661,6 +663,27 @@ namespace bluetoothmain
             uc.Dock = DockStyle.Fill;
 
             tabPage5.Controls.Add(uc);
+        }
+
+        private void cbpan_CheckedChanged(object sender, EventArgs e)
+        {
+            pan1 = cbpan1.Checked ? "1" : "0";
+            pan2 = cbpan2.Checked ? "1" : "0";
+            pan3 = cbpan3.Checked ? "1" : "0";
+            pan4 = cbpan4.Checked ? "1" : "0";
+            pan5 = cbpan5.Checked ? "1" : "0";
+            pan6 = cbpan6.Checked ? "1" : "0";
+            pan7 = cbpan7.Checked ? "1" : "0";
+            pan8 = cbpan8.Checked ? "1" : "0";
+            pan9 = cbpan9.Checked ? "1" : "0";
+            pan10 = cbpan10.Checked ? "1" : "0";
+            pan11 = cbpan11.Checked ? "1" : "0";
+            pan12 = cbpan12.Checked ? "1" : "0";
+            pan13 = cbpan13.Checked ? "1" : "0";
+            pan14 = cbpan14.Checked ? "1" : "0";
+            pan15 = cbpan15.Checked ? "1" : "0";
+            pan16 = cbpan16.Checked ? "1" : "0";
+
         }
 
         private void tk_TextChanged(object sender, EventArgs e)

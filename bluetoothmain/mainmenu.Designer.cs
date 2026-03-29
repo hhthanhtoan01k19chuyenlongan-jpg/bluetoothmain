@@ -108,6 +108,23 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
+            this.danhpan = new System.Windows.Forms.TabPage();
+            this.cbpan16 = new System.Windows.Forms.CheckBox();
+            this.cbpan15 = new System.Windows.Forms.CheckBox();
+            this.cbpan14 = new System.Windows.Forms.CheckBox();
+            this.cbpan13 = new System.Windows.Forms.CheckBox();
+            this.cbpan12 = new System.Windows.Forms.CheckBox();
+            this.cbpan11 = new System.Windows.Forms.CheckBox();
+            this.cbpan10 = new System.Windows.Forms.CheckBox();
+            this.cbpan9 = new System.Windows.Forms.CheckBox();
+            this.cbpan8 = new System.Windows.Forms.CheckBox();
+            this.cbpan7 = new System.Windows.Forms.CheckBox();
+            this.cbpan6 = new System.Windows.Forms.CheckBox();
+            this.cbpan5 = new System.Windows.Forms.CheckBox();
+            this.cbpan4 = new System.Windows.Forms.CheckBox();
+            this.cbpan3 = new System.Windows.Forms.CheckBox();
+            this.cbpan2 = new System.Windows.Forms.CheckBox();
+            this.cbpan1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -122,10 +139,12 @@ namespace bluetoothmain
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.usbmode.SuspendLayout();
+            this.danhpan.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.settings_panel);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Location = new System.Drawing.Point(0, -3);
             this.panel1.Name = "panel1";
@@ -215,6 +234,7 @@ namespace bluetoothmain
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.danhpan);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.MaximumSize = new System.Drawing.Size(1280, 720);
@@ -226,7 +246,6 @@ namespace bluetoothmain
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.settings_panel);
             this.tabPage5.Controls.Add(this.button1);
             this.tabPage5.Controls.Add(this.settings);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -461,7 +480,7 @@ namespace bluetoothmain
             // 
             this.statelbl.AutoSize = true;
             this.statelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statelbl.Location = new System.Drawing.Point(1060, 626);
+            this.statelbl.Location = new System.Drawing.Point(1017, 613);
             this.statelbl.Name = "statelbl";
             this.statelbl.Size = new System.Drawing.Size(72, 24);
             this.statelbl.TabIndex = 11;
@@ -1039,6 +1058,224 @@ namespace bluetoothmain
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
+            // danhpan
+            // 
+            this.danhpan.Controls.Add(this.cbpan16);
+            this.danhpan.Controls.Add(this.cbpan15);
+            this.danhpan.Controls.Add(this.cbpan14);
+            this.danhpan.Controls.Add(this.cbpan13);
+            this.danhpan.Controls.Add(this.cbpan12);
+            this.danhpan.Controls.Add(this.cbpan11);
+            this.danhpan.Controls.Add(this.cbpan10);
+            this.danhpan.Controls.Add(this.cbpan9);
+            this.danhpan.Controls.Add(this.cbpan8);
+            this.danhpan.Controls.Add(this.cbpan7);
+            this.danhpan.Controls.Add(this.cbpan6);
+            this.danhpan.Controls.Add(this.cbpan5);
+            this.danhpan.Controls.Add(this.cbpan4);
+            this.danhpan.Controls.Add(this.cbpan3);
+            this.danhpan.Controls.Add(this.cbpan2);
+            this.danhpan.Controls.Add(this.cbpan1);
+            this.danhpan.Location = new System.Drawing.Point(4, 22);
+            this.danhpan.Name = "danhpan";
+            this.danhpan.Padding = new System.Windows.Forms.Padding(3);
+            this.danhpan.Size = new System.Drawing.Size(1272, 694);
+            this.danhpan.TabIndex = 8;
+            this.danhpan.Text = "danhpan";
+            this.danhpan.UseVisualStyleBackColor = true;
+            // 
+            // cbpan16
+            // 
+            this.cbpan16.AutoSize = true;
+            this.cbpan16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan16.Location = new System.Drawing.Point(645, 452);
+            this.cbpan16.Name = "cbpan16";
+            this.cbpan16.Size = new System.Drawing.Size(132, 35);
+            this.cbpan16.TabIndex = 83;
+            this.cbpan16.Text = "PAN 16";
+            this.cbpan16.UseVisualStyleBackColor = true;
+            this.cbpan16.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan15
+            // 
+            this.cbpan15.AutoSize = true;
+            this.cbpan15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan15.Location = new System.Drawing.Point(645, 417);
+            this.cbpan15.Name = "cbpan15";
+            this.cbpan15.Size = new System.Drawing.Size(132, 35);
+            this.cbpan15.TabIndex = 82;
+            this.cbpan15.Text = "PAN 15";
+            this.cbpan15.UseVisualStyleBackColor = true;
+            this.cbpan15.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan14
+            // 
+            this.cbpan14.AutoSize = true;
+            this.cbpan14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan14.Location = new System.Drawing.Point(645, 382);
+            this.cbpan14.Name = "cbpan14";
+            this.cbpan14.Size = new System.Drawing.Size(132, 35);
+            this.cbpan14.TabIndex = 81;
+            this.cbpan14.Text = "PAN 14";
+            this.cbpan14.UseVisualStyleBackColor = true;
+            this.cbpan14.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan13
+            // 
+            this.cbpan13.AutoSize = true;
+            this.cbpan13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan13.Location = new System.Drawing.Point(645, 347);
+            this.cbpan13.Name = "cbpan13";
+            this.cbpan13.Size = new System.Drawing.Size(132, 35);
+            this.cbpan13.TabIndex = 80;
+            this.cbpan13.Text = "PAN 13";
+            this.cbpan13.UseVisualStyleBackColor = true;
+            this.cbpan13.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan12
+            // 
+            this.cbpan12.AutoSize = true;
+            this.cbpan12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan12.Location = new System.Drawing.Point(645, 312);
+            this.cbpan12.Name = "cbpan12";
+            this.cbpan12.Size = new System.Drawing.Size(132, 35);
+            this.cbpan12.TabIndex = 79;
+            this.cbpan12.Text = "PAN 12";
+            this.cbpan12.UseVisualStyleBackColor = true;
+            this.cbpan12.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan11
+            // 
+            this.cbpan11.AutoSize = true;
+            this.cbpan11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan11.Location = new System.Drawing.Point(645, 277);
+            this.cbpan11.Name = "cbpan11";
+            this.cbpan11.Size = new System.Drawing.Size(132, 35);
+            this.cbpan11.TabIndex = 78;
+            this.cbpan11.Text = "PAN 11";
+            this.cbpan11.UseVisualStyleBackColor = true;
+            this.cbpan11.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan10
+            // 
+            this.cbpan10.AutoSize = true;
+            this.cbpan10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan10.Location = new System.Drawing.Point(645, 242);
+            this.cbpan10.Name = "cbpan10";
+            this.cbpan10.Size = new System.Drawing.Size(132, 35);
+            this.cbpan10.TabIndex = 77;
+            this.cbpan10.Text = "PAN 10";
+            this.cbpan10.UseVisualStyleBackColor = true;
+            this.cbpan10.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan9
+            // 
+            this.cbpan9.AutoSize = true;
+            this.cbpan9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan9.Location = new System.Drawing.Point(645, 207);
+            this.cbpan9.Name = "cbpan9";
+            this.cbpan9.Size = new System.Drawing.Size(116, 35);
+            this.cbpan9.TabIndex = 76;
+            this.cbpan9.Text = "PAN 9";
+            this.cbpan9.UseVisualStyleBackColor = true;
+            this.cbpan9.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan8
+            // 
+            this.cbpan8.AutoSize = true;
+            this.cbpan8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan8.Location = new System.Drawing.Point(496, 452);
+            this.cbpan8.Name = "cbpan8";
+            this.cbpan8.Size = new System.Drawing.Size(116, 35);
+            this.cbpan8.TabIndex = 75;
+            this.cbpan8.Text = "PAN 8";
+            this.cbpan8.UseVisualStyleBackColor = true;
+            this.cbpan8.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan7
+            // 
+            this.cbpan7.AutoSize = true;
+            this.cbpan7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan7.Location = new System.Drawing.Point(496, 417);
+            this.cbpan7.Name = "cbpan7";
+            this.cbpan7.Size = new System.Drawing.Size(116, 35);
+            this.cbpan7.TabIndex = 74;
+            this.cbpan7.Text = "PAN 7";
+            this.cbpan7.UseVisualStyleBackColor = true;
+            this.cbpan7.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan6
+            // 
+            this.cbpan6.AutoSize = true;
+            this.cbpan6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan6.Location = new System.Drawing.Point(496, 382);
+            this.cbpan6.Name = "cbpan6";
+            this.cbpan6.Size = new System.Drawing.Size(116, 35);
+            this.cbpan6.TabIndex = 73;
+            this.cbpan6.Text = "PAN 6";
+            this.cbpan6.UseVisualStyleBackColor = true;
+            this.cbpan6.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan5
+            // 
+            this.cbpan5.AutoSize = true;
+            this.cbpan5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan5.Location = new System.Drawing.Point(496, 347);
+            this.cbpan5.Name = "cbpan5";
+            this.cbpan5.Size = new System.Drawing.Size(116, 35);
+            this.cbpan5.TabIndex = 72;
+            this.cbpan5.Text = "PAN 5";
+            this.cbpan5.UseVisualStyleBackColor = true;
+            this.cbpan5.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan4
+            // 
+            this.cbpan4.AutoSize = true;
+            this.cbpan4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan4.Location = new System.Drawing.Point(496, 312);
+            this.cbpan4.Name = "cbpan4";
+            this.cbpan4.Size = new System.Drawing.Size(116, 35);
+            this.cbpan4.TabIndex = 71;
+            this.cbpan4.Text = "PAN 4";
+            this.cbpan4.UseVisualStyleBackColor = true;
+            this.cbpan4.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan3
+            // 
+            this.cbpan3.AutoSize = true;
+            this.cbpan3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan3.Location = new System.Drawing.Point(496, 277);
+            this.cbpan3.Name = "cbpan3";
+            this.cbpan3.Size = new System.Drawing.Size(116, 35);
+            this.cbpan3.TabIndex = 70;
+            this.cbpan3.Text = "PAN 3";
+            this.cbpan3.UseVisualStyleBackColor = true;
+            this.cbpan3.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan2
+            // 
+            this.cbpan2.AutoSize = true;
+            this.cbpan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan2.Location = new System.Drawing.Point(496, 242);
+            this.cbpan2.Name = "cbpan2";
+            this.cbpan2.Size = new System.Drawing.Size(116, 35);
+            this.cbpan2.TabIndex = 69;
+            this.cbpan2.Text = "PAN 2";
+            this.cbpan2.UseVisualStyleBackColor = true;
+            this.cbpan2.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
+            // cbpan1
+            // 
+            this.cbpan1.AutoSize = true;
+            this.cbpan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpan1.Location = new System.Drawing.Point(496, 207);
+            this.cbpan1.Name = "cbpan1";
+            this.cbpan1.Size = new System.Drawing.Size(116, 35);
+            this.cbpan1.TabIndex = 68;
+            this.cbpan1.Text = "PAN 1";
+            this.cbpan1.UseVisualStyleBackColor = true;
+            this.cbpan1.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
+            // 
             // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1073,6 +1310,8 @@ namespace bluetoothmain
             this.tabPage8.ResumeLayout(false);
             this.usbmode.ResumeLayout(false);
             this.usbmode.PerformLayout();
+            this.danhpan.ResumeLayout(false);
+            this.danhpan.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1156,5 +1395,22 @@ namespace bluetoothmain
         private System.Windows.Forms.Button close_settings;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage danhpan;
+        private System.Windows.Forms.CheckBox cbpan16;
+        private System.Windows.Forms.CheckBox cbpan15;
+        private System.Windows.Forms.CheckBox cbpan14;
+        private System.Windows.Forms.CheckBox cbpan13;
+        private System.Windows.Forms.CheckBox cbpan12;
+        private System.Windows.Forms.CheckBox cbpan11;
+        private System.Windows.Forms.CheckBox cbpan10;
+        private System.Windows.Forms.CheckBox cbpan9;
+        private System.Windows.Forms.CheckBox cbpan8;
+        private System.Windows.Forms.CheckBox cbpan7;
+        private System.Windows.Forms.CheckBox cbpan6;
+        private System.Windows.Forms.CheckBox cbpan5;
+        private System.Windows.Forms.CheckBox cbpan4;
+        private System.Windows.Forms.CheckBox cbpan3;
+        private System.Windows.Forms.CheckBox cbpan2;
+        private System.Windows.Forms.CheckBox cbpan1;
     }
 }
