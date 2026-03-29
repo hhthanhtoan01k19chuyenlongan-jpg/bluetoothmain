@@ -57,7 +57,6 @@ namespace bluetoothmain
             this.mk = new System.Windows.Forms.TextBox();
             this.tk = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.backpg3 = new System.Windows.Forms.Button();
             this.buttona = new System.Windows.Forms.Button();
             this.COMcbo = new System.Windows.Forms.ComboBox();
             this.refresh = new System.Windows.Forms.Button();
@@ -436,7 +435,6 @@ namespace bluetoothmain
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.backpg3);
             this.tabPage3.Controls.Add(this.buttona);
             this.tabPage3.Controls.Add(this.COMcbo);
             this.tabPage3.Controls.Add(this.refresh);
@@ -447,20 +445,6 @@ namespace bluetoothmain
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
-            // 
-            // backpg3
-            // 
-            this.backpg3.BackColor = System.Drawing.SystemColors.ControlText;
-            this.backpg3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.backpg3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backpg3.Image = global::bluetoothmain.Properties.Resources.back;
-            this.backpg3.Location = new System.Drawing.Point(6, 470);
-            this.backpg3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.backpg3.Name = "backpg3";
-            this.backpg3.Size = new System.Drawing.Size(92, 58);
-            this.backpg3.TabIndex = 39;
-            this.backpg3.UseVisualStyleBackColor = false;
-            this.backpg3.Click += new System.EventHandler(this.backpg3_Click);
             // 
             // buttona
             // 
@@ -1228,7 +1212,6 @@ namespace bluetoothmain
         private System.Windows.Forms.CheckBox wfpan2cb;
         private System.Windows.Forms.CheckBox wfpan1cb;
         private System.Windows.Forms.Timer wifi_ping_timer;
-        private System.Windows.Forms.Button backpg3;
         private System.Windows.Forms.Button backpg6;
         private System.Windows.Forms.Button disconnect;
         private System.Windows.Forms.Panel panel2;
