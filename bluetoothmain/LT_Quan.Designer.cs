@@ -29,6 +29,7 @@ namespace bluetoothmain
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LT));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.lythuyet = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,13 +41,32 @@ namespace bluetoothmain
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.nhietdo = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.ltnd = new System.Windows.Forms.TabPage();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.thda = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cdnd = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tocdo = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.lythuyet.SuspendLayout();
             this.sensor.SuspendLayout();
             this.nhietdo.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.ltnd.SuspendLayout();
+            this.thda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cdnd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -58,7 +78,7 @@ namespace bluetoothmain
             this.tabControl1.Location = new System.Drawing.Point(3, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1332, 452);
+            this.tabControl1.Size = new System.Drawing.Size(1438, 760);
             this.tabControl1.TabIndex = 1;
             // 
             // lythuyet
@@ -67,7 +87,7 @@ namespace bluetoothmain
             this.lythuyet.Location = new System.Drawing.Point(4, 25);
             this.lythuyet.Name = "lythuyet";
             this.lythuyet.Padding = new System.Windows.Forms.Padding(3);
-            this.lythuyet.Size = new System.Drawing.Size(1324, 423);
+            this.lythuyet.Size = new System.Drawing.Size(1430, 731);
             this.lythuyet.TabIndex = 0;
             this.lythuyet.Text = "Lythuyet";
             this.lythuyet.UseVisualStyleBackColor = true;
@@ -93,7 +113,7 @@ namespace bluetoothmain
             this.sensor.Location = new System.Drawing.Point(4, 25);
             this.sensor.Name = "sensor";
             this.sensor.Padding = new System.Windows.Forms.Padding(3);
-            this.sensor.Size = new System.Drawing.Size(1324, 423);
+            this.sensor.Size = new System.Drawing.Size(1430, 731);
             this.sensor.TabIndex = 1;
             this.sensor.Text = "sensor";
             this.sensor.UseVisualStyleBackColor = true;
@@ -155,44 +175,166 @@ namespace bluetoothmain
             // 
             // nhietdo
             // 
-            this.nhietdo.Controls.Add(this.button9);
-            this.nhietdo.Controls.Add(this.button8);
+            this.nhietdo.Controls.Add(this.tabControl2);
             this.nhietdo.Location = new System.Drawing.Point(4, 25);
             this.nhietdo.Name = "nhietdo";
             this.nhietdo.Padding = new System.Windows.Forms.Padding(3);
-            this.nhietdo.Size = new System.Drawing.Size(1324, 423);
+            this.nhietdo.Size = new System.Drawing.Size(1430, 731);
             this.nhietdo.TabIndex = 2;
             this.nhietdo.Text = "nhietdo";
             this.nhietdo.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.ltnd);
+            this.tabControl2.Controls.Add(this.thda);
+            this.tabControl2.Controls.Add(this.cdnd);
+            this.tabControl2.Location = new System.Drawing.Point(-4, 6);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1428, 719);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // ltnd
+            // 
+            this.ltnd.BackColor = System.Drawing.Color.White;
+            this.ltnd.Controls.Add(this.richTextBox2);
+            this.ltnd.Controls.Add(this.label3);
+            this.ltnd.Location = new System.Drawing.Point(4, 25);
+            this.ltnd.Name = "ltnd";
+            this.ltnd.Padding = new System.Windows.Forms.Padding(3);
+            this.ltnd.Size = new System.Drawing.Size(1420, 690);
+            this.ltnd.TabIndex = 0;
+            this.ltnd.Text = "ltnd";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(16, 17);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(508, 426);
+            this.richTextBox2.TabIndex = 4;
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(75, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.TabIndex = 3;
+            // 
+            // thda
+            // 
+            this.thda.Controls.Add(this.pictureBox2);
+            this.thda.Controls.Add(this.pictureBox1);
+            this.thda.Controls.Add(this.label4);
+            this.thda.Location = new System.Drawing.Point(4, 25);
+            this.thda.Name = "thda";
+            this.thda.Padding = new System.Windows.Forms.Padding(3);
+            this.thda.Size = new System.Drawing.Size(1420, 690);
+            this.thda.TabIndex = 2;
+            this.thda.Text = "thda";
+            this.thda.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(726, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(494, 349);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(82, 114);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(526, 291);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(79, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(651, 51);
+            this.label4.TabIndex = 0;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // cdnd
+            // 
+            this.cdnd.Controls.Add(this.label6);
+            this.cdnd.Controls.Add(this.pictureBox3);
+            this.cdnd.Controls.Add(this.label5);
+            this.cdnd.Controls.Add(this.label2);
+            this.cdnd.Controls.Add(this.label1);
+            this.cdnd.Location = new System.Drawing.Point(4, 25);
+            this.cdnd.Name = "cdnd";
+            this.cdnd.Padding = new System.Windows.Forms.Padding(3);
+            this.cdnd.Size = new System.Drawing.Size(1420, 690);
+            this.cdnd.TabIndex = 3;
+            this.cdnd.Text = "cdnd";
+            this.cdnd.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(50, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(474, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Sử dụng dây nối tắt hoặc máy chuẩn đoán để xác định vị trí lỗi trong mạch";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(50, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "HỞ MẠCH";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // tocdo
             // 
             this.tocdo.Location = new System.Drawing.Point(4, 25);
             this.tocdo.Name = "tocdo";
             this.tocdo.Padding = new System.Windows.Forms.Padding(3);
-            this.tocdo.Size = new System.Drawing.Size(1324, 423);
+            this.tocdo.Size = new System.Drawing.Size(1430, 731);
             this.tocdo.TabIndex = 3;
             this.tocdo.Text = "tocdo";
             this.tocdo.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // label5
             // 
-            this.button8.Location = new System.Drawing.Point(193, 66);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(240, 67);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "CẢM BIẾN NHIỆT ĐỘ KHÍ NẠP";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(50, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(233, 17);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "KIỂM TRA HỞ MẠCH TẠI CẢM BIẾN";
             // 
-            // button9
+            // pictureBox3
             // 
-            this.button9.Location = new System.Drawing.Point(481, 66);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(315, 67);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "CẢM BIẾN NHIỆT ĐỘ NƯỚC LÀM MÁT";
-            this.button9.UseVisualStyleBackColor = true;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(53, 99);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(798, 362);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(50, 519);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(233, 17);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "KIỂM TRA HỞ MẠCH TẠI CẢM BIẾN";
             // 
             // LT
             // 
@@ -207,6 +349,16 @@ namespace bluetoothmain
             this.lythuyet.ResumeLayout(false);
             this.sensor.ResumeLayout(false);
             this.nhietdo.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.ltnd.ResumeLayout(false);
+            this.ltnd.PerformLayout();
+            this.thda.ResumeLayout(false);
+            this.thda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.cdnd.ResumeLayout(false);
+            this.cdnd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,7 +376,19 @@ namespace bluetoothmain
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage nhietdo;
         private System.Windows.Forms.TabPage tocdo;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage ltnd;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TabPage thda;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabPage cdnd;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label5;
     }
 }
