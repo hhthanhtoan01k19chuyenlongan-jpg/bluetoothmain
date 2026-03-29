@@ -64,8 +64,8 @@ namespace bluetoothmain
             {
                 if (mk.Text == mkdung)
                 {
-                    tabPage2.Hide();
-                    tabPage5.Show();
+                    dangnhapgv.Hide();
+                    gv1.Show();
                     
 
                 }
@@ -452,13 +452,13 @@ namespace bluetoothmain
         private void backpg3_Click(object sender, EventArgs e)
         {
             btmode.Hide();
-            tabPage5.Show();
+            debug.Show();
         }
 
         private void backpg6_Click(object sender, EventArgs e)
         {
             wfmode.Hide();
-            tabPage5.Show();
+            debug.Show();
 
         }
 
@@ -481,13 +481,13 @@ namespace bluetoothmain
         private void gv_Click_1(object sender, EventArgs e)
         {
 
-            tabPage1.Hide();
-            tabPage2.Show();
+            gvsv.Hide();
+            dangnhapgv.Show();
         }
 
         private void hs_Click_1(object sender, EventArgs e)
         {
-            tabPage1.Hide();
+            gvsv.Hide();
             tabPage8.Show();
         }
 
@@ -529,7 +529,7 @@ namespace bluetoothmain
         private void backpg9_Click(object sender, EventArgs e)
         {
             usbmode.Hide();
-            tabPage5.Show();
+            debug.Show();
            
         }
 
@@ -624,7 +624,7 @@ namespace bluetoothmain
             statelbl.Text = "USB DISCONNECTED";
             statelbl.ForeColor = Color.Red;
             tabPage4.Hide();
-            tabPage5.Show();
+            debug.Show();
 
 
 
@@ -647,22 +647,22 @@ namespace bluetoothmain
 
         private void debug_Click(object sender, EventArgs e)
         {
-            tabPage5.Controls.Clear();
+            debug.Controls.Clear();
 
             LT uc = new LT();          // đúng tên class
             uc.Dock = DockStyle.Fill;
 
-            tabPage5.Controls.Add(uc);
+            debug.Controls.Add(uc);
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            tabPage5.Controls.Clear();
+            debug.Controls.Clear();
 
             LT uc = new LT();          // đúng tên class
             uc.Dock = DockStyle.Fill;
 
-            tabPage5.Controls.Add(uc);
+            debug.Controls.Add(uc);
         }
 
         private void cbpan_CheckedChanged(object sender, EventArgs e)
@@ -685,6 +685,14 @@ namespace bluetoothmain
             pan16 = cbpan16.Checked ? "1" : "0";
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            gvsv.Show();
+            debug.Hide();
+        }
+
+       
 
         private void tk_TextChanged(object sender, EventArgs e)
         {
@@ -741,7 +749,7 @@ namespace bluetoothmain
         private void menu_Click_1(object sender, EventArgs e)
         {
             tabPage4.Hide();
-            tabPage1.Show();
+            gvsv.Show();
         }
 
        
