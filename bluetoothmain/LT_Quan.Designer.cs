@@ -43,37 +43,38 @@ namespace bluetoothmain
             this.nhietdo = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.ltnd = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.thda = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cdnd = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tocdo = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.cdnd1 = new System.Windows.Forms.TabPage();
-            this.cdnd2 = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.cdnd2 = new System.Windows.Forms.TabPage();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.cdnd3 = new System.Windows.Forms.TabPage();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.tocdo = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.lythuyet.SuspendLayout();
             this.sensor.SuspendLayout();
@@ -86,11 +87,11 @@ namespace bluetoothmain
             this.cdnd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.cdnd1.SuspendLayout();
-            this.cdnd2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.cdnd2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.cdnd3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
@@ -227,6 +228,7 @@ namespace bluetoothmain
             // ltnd
             // 
             this.ltnd.BackColor = System.Drawing.Color.White;
+            this.ltnd.Controls.Add(this.button8);
             this.ltnd.Controls.Add(this.label7);
             this.ltnd.Controls.Add(this.label3);
             this.ltnd.Location = new System.Drawing.Point(4, 25);
@@ -235,6 +237,15 @@ namespace bluetoothmain
             this.ltnd.Size = new System.Drawing.Size(1420, 690);
             this.ltnd.TabIndex = 0;
             this.ltnd.Text = "ltnd";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(54, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(462, 340);
+            this.label7.TabIndex = 5;
+            this.label7.Text = resources.GetString("label7.Text");
             // 
             // label3
             // 
@@ -300,6 +311,15 @@ namespace bluetoothmain
             this.cdnd.Text = "cdnd";
             this.cdnd.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(238, 515);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(820, 85);
+            this.label9.TabIndex = 6;
+            this.label9.Text = resources.GetString("label9.Text");
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -347,34 +367,6 @@ namespace bluetoothmain
             this.label1.Text = "HỞ MẠCH";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // tocdo
-            // 
-            this.tocdo.Location = new System.Drawing.Point(4, 25);
-            this.tocdo.Name = "tocdo";
-            this.tocdo.Padding = new System.Windows.Forms.Padding(3);
-            this.tocdo.Size = new System.Drawing.Size(1430, 731);
-            this.tocdo.TabIndex = 3;
-            this.tocdo.Text = "tocdo";
-            this.tocdo.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(462, 340);
-            this.label7.TabIndex = 5;
-            this.label7.Text = resources.GetString("label7.Text");
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(238, 515);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(820, 85);
-            this.label9.TabIndex = 6;
-            this.label9.Text = resources.GetString("label9.Text");
-            // 
             // cdnd1
             // 
             this.cdnd1.Controls.Add(this.pictureBox5);
@@ -389,21 +381,14 @@ namespace bluetoothmain
             this.cdnd1.Text = "cdnd1";
             this.cdnd1.UseVisualStyleBackColor = true;
             // 
-            // cdnd2
+            // pictureBox5
             // 
-            this.cdnd2.Controls.Add(this.pictureBox7);
-            this.cdnd2.Controls.Add(this.label11);
-            this.cdnd2.Controls.Add(this.pictureBox6);
-            this.cdnd2.Controls.Add(this.label13);
-            this.cdnd2.Controls.Add(this.label14);
-            this.cdnd2.Controls.Add(this.label15);
-            this.cdnd2.Location = new System.Drawing.Point(4, 25);
-            this.cdnd2.Name = "cdnd2";
-            this.cdnd2.Padding = new System.Windows.Forms.Padding(3);
-            this.cdnd2.Size = new System.Drawing.Size(1420, 690);
-            this.cdnd2.TabIndex = 5;
-            this.cdnd2.Text = "cdnd2";
-            this.cdnd2.UseVisualStyleBackColor = true;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(733, 119);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(529, 241);
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
             // 
             // label8
             // 
@@ -433,14 +418,31 @@ namespace bluetoothmain
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox5
+            // cdnd2
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(733, 119);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(529, 241);
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
+            this.cdnd2.Controls.Add(this.pictureBox7);
+            this.cdnd2.Controls.Add(this.label11);
+            this.cdnd2.Controls.Add(this.pictureBox6);
+            this.cdnd2.Controls.Add(this.label13);
+            this.cdnd2.Controls.Add(this.label14);
+            this.cdnd2.Controls.Add(this.label15);
+            this.cdnd2.Location = new System.Drawing.Point(4, 25);
+            this.cdnd2.Name = "cdnd2";
+            this.cdnd2.Padding = new System.Windows.Forms.Padding(3);
+            this.cdnd2.Size = new System.Drawing.Size(1420, 690);
+            this.cdnd2.TabIndex = 5;
+            this.cdnd2.Text = "cdnd2";
+            this.cdnd2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(768, 167);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(516, 258);
+            this.pictureBox7.TabIndex = 13;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label11
             // 
@@ -488,16 +490,6 @@ namespace bluetoothmain
             this.label15.Size = new System.Drawing.Size(91, 17);
             this.label15.TabIndex = 7;
             this.label15.Text = "NGẮN MẠCH";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(768, 167);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(516, 258);
-            this.pictureBox7.TabIndex = 13;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // cdnd3
             // 
@@ -549,6 +541,25 @@ namespace bluetoothmain
             this.label19.TabIndex = 7;
             this.label19.Text = "KIỂM TRA CẢM BIẾN NHIỆT ĐỘ";
             // 
+            // tocdo
+            // 
+            this.tocdo.Location = new System.Drawing.Point(4, 25);
+            this.tocdo.Name = "tocdo";
+            this.tocdo.Padding = new System.Windows.Forms.Padding(3);
+            this.tocdo.Size = new System.Drawing.Size(1430, 731);
+            this.tocdo.TabIndex = 3;
+            this.tocdo.Text = "tocdo";
+            this.tocdo.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(582, 364);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(567, 162);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // LT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -574,12 +585,12 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.cdnd1.ResumeLayout(false);
             this.cdnd1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.cdnd2.ResumeLayout(false);
             this.cdnd2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.cdnd3.ResumeLayout(false);
             this.cdnd3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -632,5 +643,6 @@ namespace bluetoothmain
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button8;
     }
 }
