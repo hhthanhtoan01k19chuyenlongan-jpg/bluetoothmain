@@ -37,10 +37,6 @@ namespace bluetoothmain
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.SizeMode = TabSizeMode.Fixed;
-
-            tabControl2.Appearance = TabAppearance.FlatButtons;
-            tabControl2.ItemSize = new Size(0, 1);
-            tabControl2.SizeMode = TabSizeMode.Fixed;
             statelbl.Hide();
             disconnect.Enabled = false;
             disconnect.Hide();
@@ -135,7 +131,7 @@ namespace bluetoothmain
             statelbl.Text = "BLUETOOTH DISCONNECTED";
             statelbl.ForeColor = Color.Red;
             tabPage4.Hide();
-            btmode.Show();
+            tabPage3.Show();
 
 
         }
@@ -205,7 +201,7 @@ namespace bluetoothmain
                 ping_timer.Start();
 
                 SetConnectedBT();
-                btmode.Hide();
+                tabPage3.Hide();
                 tabPage4.Show();
             }
         }
@@ -322,18 +318,14 @@ namespace bluetoothmain
 
         private void bluetooth_usb_Click(object sender, EventArgs e)
         {
-            btmode.Show();
-            wfmode.Hide();
-            usbmode.Hide();
-           
+            tabPage3.Show();
+            tabPage5.Hide();
         }
 
         private void wifi_Click(object sender, EventArgs e)
         {
-            
-            wfmode.Show();
-            usbmode.Hide();
-            btmode.Hide();
+            tabPage5.Hide();
+            tabPage6.Show();
         }
 
         private void bt_CheckedChanged(object sender, EventArgs e)
@@ -418,7 +410,7 @@ namespace bluetoothmain
         private void connectwifi_Click(object sender, EventArgs e)
         {
             wifi_ping_timer.Start();
-            wfmode.Hide();
+            tabPage6.Hide();
             tabPage7.Show();
             if (statelbl.Text != "WIFI CONNECTED")
             {
@@ -449,14 +441,14 @@ namespace bluetoothmain
 
         private void backpg3_Click(object sender, EventArgs e)
         {
-            btmode.Hide();
-            
+            tabPage3.Hide();
+            tabPage5.Show();
         }
 
         private void backpg6_Click(object sender, EventArgs e)
         {
-            wfmode.Hide();
-            
+            tabPage6.Hide();
+            tabPage5.Show();
 
         }
 
@@ -517,7 +509,7 @@ namespace bluetoothmain
         private void backpg7_Click(object sender, EventArgs e)
         {
             tabPage7.Hide();
-            wfmode.Show();
+            tabPage6.Show();
         }
 
         
@@ -526,16 +518,15 @@ namespace bluetoothmain
 
         private void backpg9_Click(object sender, EventArgs e)
         {
-            usbmode.Hide();
+            tabPage9.Hide();
             tabPage5.Show();
            
         }
 
         private void usb_Click(object sender, EventArgs e)
         {
-            usbmode.Show();
-            btmode.Hide();
-            wfmode.Hide();
+            tabPage9.Show();
+            tabPage5.Hide();
             usb_ping_timer.Start();
             
         }
@@ -583,7 +574,7 @@ namespace bluetoothmain
                     serCOM.Open();
                     statelbl.Show();
                     statelbl.Text = "USB CONNECTED";
-                    usbmode.Hide();
+                    tabPage9.Hide();
                     tabPage4.Show();
                     disconnect.Enabled = true;
                     disconnect.Show();
@@ -725,7 +716,7 @@ namespace bluetoothmain
         private void back_Click_1(object sender, EventArgs e)
         {
             tabPage4.Hide();
-            btmode.Show();
+            tabPage3.Show();
         }
 
 
@@ -799,7 +790,7 @@ namespace bluetoothmain
         }
             wifi_ping_timer.Stop();
             tabPage7.Hide();
-            wfmode.Show();
+            tabPage6.Show();
             disconnect.Hide();
             
         }
@@ -809,7 +800,7 @@ namespace bluetoothmain
             statelbl.Text = "WIFI CONNECTED";
             statelbl.ForeColor = Color.Green;
             tabPage7.Show();
-            wfmode.Hide();
+            tabPage6.Hide();
             disconnect.Enabled = true;
             disconnect.Show();
 
