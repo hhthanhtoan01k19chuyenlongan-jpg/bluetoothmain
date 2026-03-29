@@ -38,15 +38,11 @@ namespace bluetoothmain
             this.usb = new System.Windows.Forms.Button();
             this.bluetooth = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.settings = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.gvsv = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.kt = new System.Windows.Forms.Button();
             this.hs = new System.Windows.Forms.Button();
             this.gv = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dangnhapgv = new System.Windows.Forms.TabPage();
             this.log = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -125,14 +121,20 @@ namespace bluetoothmain
             this.cbpan3 = new System.Windows.Forms.CheckBox();
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
+            this.settings = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.debug = new System.Windows.Forms.TabPage();
+            this.gv1 = new System.Windows.Forms.TabPage();
+            this.qlsv = new System.Windows.Forms.Button();
+            this.gd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.gvsv.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.dangnhapgv.SuspendLayout();
             this.btmode.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.wfmode.SuspendLayout();
@@ -140,6 +142,8 @@ namespace bluetoothmain
             this.tabPage8.SuspendLayout();
             this.usbmode.SuspendLayout();
             this.danhpan.SuspendLayout();
+            this.debug.SuspendLayout();
+            this.gv1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -163,7 +167,7 @@ namespace bluetoothmain
             this.settings_panel.Location = new System.Drawing.Point(82, 44);
             this.settings_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(1042, 532);
+            this.settings_panel.Size = new System.Drawing.Size(202, 197);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -228,9 +232,10 @@ namespace bluetoothmain
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.debug);
+            this.tabControl1.Controls.Add(this.gvsv);
+            this.tabControl1.Controls.Add(this.dangnhapgv);
+            this.tabControl1.Controls.Add(this.gv1);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
@@ -244,53 +249,19 @@ namespace bluetoothmain
             this.tabControl1.TabIndex = 20;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
-            // tabPage5
+            // gvsv
             // 
-            this.tabPage5.Controls.Add(this.button1);
-            this.tabPage5.Controls.Add(this.settings);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1272, 694);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(133, 595);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // settings
-            // 
-            this.settings.Location = new System.Drawing.Point(2, 595);
-            this.settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(113, 31);
-            this.settings.TabIndex = 0;
-            this.settings.Text = "settings";
-            this.settings.UseVisualStyleBackColor = true;
-            this.settings.Click += new System.EventHandler(this.settings_Click);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(1272, 694);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.gvsv.Controls.Add(this.panel2);
+            this.gvsv.Location = new System.Drawing.Point(4, 22);
+            this.gvsv.Name = "gvsv";
+            this.gvsv.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.gvsv.Size = new System.Drawing.Size(1272, 694);
+            this.gvsv.TabIndex = 0;
+            this.gvsv.Text = "gvsv";
+            this.gvsv.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.kt);
             this.panel2.Controls.Add(this.hs);
             this.panel2.Controls.Add(this.gv);
             this.panel2.Location = new System.Drawing.Point(-4, 6);
@@ -298,17 +269,6 @@ namespace bluetoothmain
             this.panel2.Size = new System.Drawing.Size(1280, 720);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // kt
-            // 
-            this.kt.AutoSize = true;
-            this.kt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kt.Location = new System.Drawing.Point(532, 386);
-            this.kt.Name = "kt";
-            this.kt.Size = new System.Drawing.Size(217, 93);
-            this.kt.TabIndex = 5;
-            this.kt.Text = "Kiểm tra";
-            this.kt.UseVisualStyleBackColor = true;
             // 
             // hs
             // 
@@ -335,20 +295,20 @@ namespace bluetoothmain
             this.gv.UseVisualStyleBackColor = true;
             this.gv.Click += new System.EventHandler(this.gv_Click_1);
             // 
-            // tabPage2
+            // dangnhapgv
             // 
-            this.tabPage2.Controls.Add(this.log);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.mk);
-            this.tabPage2.Controls.Add(this.tk);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(1272, 694);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            this.dangnhapgv.Controls.Add(this.log);
+            this.dangnhapgv.Controls.Add(this.label2);
+            this.dangnhapgv.Controls.Add(this.label1);
+            this.dangnhapgv.Controls.Add(this.mk);
+            this.dangnhapgv.Controls.Add(this.tk);
+            this.dangnhapgv.Location = new System.Drawing.Point(4, 22);
+            this.dangnhapgv.Name = "dangnhapgv";
+            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.dangnhapgv.Size = new System.Drawing.Size(1272, 694);
+            this.dangnhapgv.TabIndex = 1;
+            this.dangnhapgv.Text = "dangnhapgv";
+            this.dangnhapgv.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // log
             // 
@@ -480,7 +440,7 @@ namespace bluetoothmain
             // 
             this.statelbl.AutoSize = true;
             this.statelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statelbl.Location = new System.Drawing.Point(1017, 613);
+            this.statelbl.Location = new System.Drawing.Point(968, 613);
             this.statelbl.Name = "statelbl";
             this.statelbl.Size = new System.Drawing.Size(72, 24);
             this.statelbl.TabIndex = 11;
@@ -1276,6 +1236,83 @@ namespace bluetoothmain
             this.cbpan1.UseVisualStyleBackColor = true;
             this.cbpan1.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
             // 
+            // settings
+            // 
+            this.settings.Location = new System.Drawing.Point(-2, 595);
+            this.settings.Margin = new System.Windows.Forms.Padding(2);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(113, 31);
+            this.settings.TabIndex = 0;
+            this.settings.Text = "settings";
+            this.settings.UseVisualStyleBackColor = true;
+            this.settings.Click += new System.EventHandler(this.settings_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(116, 595);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 31);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(367, 115);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(272, 103);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Main flow";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // debug
+            // 
+            this.debug.Controls.Add(this.settings);
+            this.debug.Controls.Add(this.button2);
+            this.debug.Controls.Add(this.button1);
+            this.debug.Location = new System.Drawing.Point(4, 22);
+            this.debug.Margin = new System.Windows.Forms.Padding(2);
+            this.debug.Name = "debug";
+            this.debug.Size = new System.Drawing.Size(1272, 694);
+            this.debug.TabIndex = 4;
+            this.debug.Text = "debug";
+            this.debug.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // gv1
+            // 
+            this.gv1.Controls.Add(this.gd);
+            this.gv1.Controls.Add(this.qlsv);
+            this.gv1.Location = new System.Drawing.Point(4, 22);
+            this.gv1.Name = "gv1";
+            this.gv1.Padding = new System.Windows.Forms.Padding(3);
+            this.gv1.Size = new System.Drawing.Size(1272, 694);
+            this.gv1.TabIndex = 9;
+            this.gv1.Text = "gv1";
+            this.gv1.UseVisualStyleBackColor = true;
+            // 
+            // qlsv
+            // 
+            this.qlsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qlsv.Location = new System.Drawing.Point(371, 162);
+            this.qlsv.Name = "qlsv";
+            this.qlsv.Size = new System.Drawing.Size(239, 90);
+            this.qlsv.TabIndex = 0;
+            this.qlsv.Text = "QLSV và Kiểm tra";
+            this.qlsv.UseVisualStyleBackColor = true;
+            // 
+            // gd
+            // 
+            this.gd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gd.Location = new System.Drawing.Point(372, 265);
+            this.gd.Name = "gd";
+            this.gd.Size = new System.Drawing.Size(239, 90);
+            this.gd.TabIndex = 1;
+            this.gd.Text = "Giảng dạy";
+            this.gd.UseVisualStyleBackColor = true;
+            // 
             // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1294,12 +1331,11 @@ namespace bluetoothmain
             this.settings_panel.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.gvsv.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.dangnhapgv.ResumeLayout(false);
+            this.dangnhapgv.PerformLayout();
             this.btmode.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
@@ -1312,6 +1348,8 @@ namespace bluetoothmain
             this.usbmode.PerformLayout();
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
+            this.debug.ResumeLayout(false);
+            this.gv1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1319,8 +1357,8 @@ namespace bluetoothmain
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage gvsv;
+        private System.Windows.Forms.TabPage dangnhapgv;
         private System.Windows.Forms.TabPage btmode;
         private System.Windows.Forms.Button log;
         private System.Windows.Forms.Label label2;
@@ -1328,7 +1366,6 @@ namespace bluetoothmain
         private System.Windows.Forms.TextBox mk;
         private System.Windows.Forms.TextBox tk;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
         public System.Windows.Forms.Label statelbl;
         private System.Windows.Forms.Button buttona;
         private System.Windows.Forms.ComboBox COMcbo;
@@ -1389,12 +1426,9 @@ namespace bluetoothmain
         private System.Windows.Forms.TabPage usbmode;
         private System.Windows.Forms.Label comusb;
         public System.Windows.Forms.Timer usb_ping_timer;
-        private System.Windows.Forms.Button kt;
         private System.Windows.Forms.Panel settings_panel;
-        private System.Windows.Forms.Button settings;
         private System.Windows.Forms.Button close_settings;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage danhpan;
         private System.Windows.Forms.CheckBox cbpan16;
         private System.Windows.Forms.CheckBox cbpan15;
@@ -1412,5 +1446,12 @@ namespace bluetoothmain
         private System.Windows.Forms.CheckBox cbpan3;
         private System.Windows.Forms.CheckBox cbpan2;
         private System.Windows.Forms.CheckBox cbpan1;
+        private System.Windows.Forms.TabPage debug;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button settings;
+        private System.Windows.Forms.TabPage gv1;
+        private System.Windows.Forms.Button qlsv;
+        private System.Windows.Forms.Button gd;
     }
 }
