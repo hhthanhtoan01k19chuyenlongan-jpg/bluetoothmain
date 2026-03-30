@@ -33,11 +33,24 @@ namespace bluetoothmain
             this.panel1 = new System.Windows.Forms.Panel();
             this.settings_panel = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.btmode = new System.Windows.Forms.TabPage();
+            this.buttona = new System.Windows.Forms.Button();
+            this.COMcbo = new System.Windows.Forms.ComboBox();
+            this.refresh = new System.Windows.Forms.Button();
+            this.wfmode = new System.Windows.Forms.TabPage();
+            this.connectwifi = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.usbmode = new System.Windows.Forms.TabPage();
+            this.comusb = new System.Windows.Forms.Label();
             this.close_settings = new System.Windows.Forms.Button();
             this.wifi = new System.Windows.Forms.Button();
             this.usb = new System.Windows.Forms.Button();
             this.bluetooth = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.debug = new System.Windows.Forms.TabPage();
+            this.settings = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.gvsv = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.hs = new System.Windows.Forms.Button();
@@ -48,10 +61,9 @@ namespace bluetoothmain
             this.label1 = new System.Windows.Forms.Label();
             this.mk = new System.Windows.Forms.TextBox();
             this.tk = new System.Windows.Forms.TextBox();
-            this.btmode = new System.Windows.Forms.TabPage();
-            this.buttona = new System.Windows.Forms.Button();
-            this.COMcbo = new System.Windows.Forms.ComboBox();
-            this.refresh = new System.Windows.Forms.Button();
+            this.gv1 = new System.Windows.Forms.TabPage();
+            this.gd = new System.Windows.Forms.Button();
+            this.qlsv = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.statelbl = new System.Windows.Forms.Label();
             this.disconnect = new System.Windows.Forms.Button();
@@ -73,9 +85,6 @@ namespace bluetoothmain
             this.pan3cb = new System.Windows.Forms.CheckBox();
             this.pan2cb = new System.Windows.Forms.CheckBox();
             this.pan1cb = new System.Windows.Forms.CheckBox();
-            this.wfmode = new System.Windows.Forms.TabPage();
-            this.connectwifi = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.backpg7 = new System.Windows.Forms.Button();
             this.disconnectWF = new System.Windows.Forms.Button();
@@ -98,12 +107,6 @@ namespace bluetoothmain
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.svLT = new System.Windows.Forms.Button();
             this.svTH = new System.Windows.Forms.Button();
-            this.usbmode = new System.Windows.Forms.TabPage();
-            this.comusb = new System.Windows.Forms.Label();
-            this.serCOM = new System.IO.Ports.SerialPort(this.components);
-            this.ping_timer = new System.Windows.Forms.Timer(this.components);
-            this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
-            this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.danhpan = new System.Windows.Forms.TabPage();
             this.cbpan16 = new System.Windows.Forms.CheckBox();
             this.cbpan15 = new System.Windows.Forms.CheckBox();
@@ -121,29 +124,26 @@ namespace bluetoothmain
             this.cbpan3 = new System.Windows.Forms.CheckBox();
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
-            this.settings = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.debug = new System.Windows.Forms.TabPage();
-            this.gv1 = new System.Windows.Forms.TabPage();
-            this.qlsv = new System.Windows.Forms.Button();
-            this.gd = new System.Windows.Forms.Button();
+            this.serCOM = new System.IO.Ports.SerialPort(this.components);
+            this.ping_timer = new System.Windows.Forms.Timer(this.components);
+            this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
+            this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.btmode.SuspendLayout();
+            this.wfmode.SuspendLayout();
+            this.usbmode.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.debug.SuspendLayout();
             this.gvsv.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dangnhapgv.SuspendLayout();
-            this.btmode.SuspendLayout();
+            this.gv1.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.wfmode.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
-            this.usbmode.SuspendLayout();
             this.danhpan.SuspendLayout();
-            this.debug.SuspendLayout();
-            this.gv1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -165,9 +165,9 @@ namespace bluetoothmain
             this.settings_panel.Controls.Add(this.usb);
             this.settings_panel.Controls.Add(this.bluetooth);
             this.settings_panel.Location = new System.Drawing.Point(82, 44);
-            this.settings_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(202, 197);
+            this.settings_panel.Size = new System.Drawing.Size(224, 171);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -177,16 +177,116 @@ namespace bluetoothmain
             this.tabControl2.Controls.Add(this.wfmode);
             this.tabControl2.Controls.Add(this.usbmode);
             this.tabControl2.Location = new System.Drawing.Point(190, 33);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(817, 468);
             this.tabControl2.TabIndex = 1;
             // 
+            // btmode
+            // 
+            this.btmode.Controls.Add(this.buttona);
+            this.btmode.Controls.Add(this.COMcbo);
+            this.btmode.Controls.Add(this.refresh);
+            this.btmode.Location = new System.Drawing.Point(4, 22);
+            this.btmode.Name = "btmode";
+            this.btmode.Padding = new System.Windows.Forms.Padding(3);
+            this.btmode.Size = new System.Drawing.Size(809, 442);
+            this.btmode.TabIndex = 2;
+            this.btmode.Text = "btmode";
+            this.btmode.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // buttona
+            // 
+            this.buttona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttona.Location = new System.Drawing.Point(550, 208);
+            this.buttona.Name = "buttona";
+            this.buttona.Size = new System.Drawing.Size(157, 53);
+            this.buttona.TabIndex = 10;
+            this.buttona.Text = "CONNECT";
+            this.buttona.UseVisualStyleBackColor = true;
+            this.buttona.Click += new System.EventHandler(this.buttona_Click);
+            // 
+            // COMcbo
+            // 
+            this.COMcbo.FormattingEnabled = true;
+            this.COMcbo.Location = new System.Drawing.Point(190, 226);
+            this.COMcbo.Name = "COMcbo";
+            this.COMcbo.Size = new System.Drawing.Size(148, 21);
+            this.COMcbo.TabIndex = 9;
+            this.COMcbo.SelectedIndexChanged += new System.EventHandler(this.COMcbo_SelectedIndexChanged);
+            this.COMcbo.Click += new System.EventHandler(this.COMcbo_Click_1);
+            // 
+            // refresh
+            // 
+            this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.Location = new System.Drawing.Point(363, 208);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(157, 53);
+            this.refresh.TabIndex = 17;
+            this.refresh.Text = "REFRESH COMs";
+            this.refresh.UseVisualStyleBackColor = true;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click_1);
+            // 
+            // wfmode
+            // 
+            this.wfmode.Controls.Add(this.connectwifi);
+            this.wfmode.Controls.Add(this.label3);
+            this.wfmode.Location = new System.Drawing.Point(4, 22);
+            this.wfmode.Name = "wfmode";
+            this.wfmode.Padding = new System.Windows.Forms.Padding(3);
+            this.wfmode.Size = new System.Drawing.Size(809, 442);
+            this.wfmode.TabIndex = 5;
+            this.wfmode.Text = "wfmode";
+            this.wfmode.UseVisualStyleBackColor = true;
+            this.wfmode.Click += new System.EventHandler(this.tabPage6_Click);
+            // 
+            // connectwifi
+            // 
+            this.connectwifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connectwifi.Location = new System.Drawing.Point(368, 174);
+            this.connectwifi.Name = "connectwifi";
+            this.connectwifi.Size = new System.Drawing.Size(178, 76);
+            this.connectwifi.TabIndex = 1;
+            this.connectwifi.Text = "CONNECT";
+            this.connectwifi.UseVisualStyleBackColor = true;
+            this.connectwifi.Click += new System.EventHandler(this.connectwifi_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(163, 138);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(588, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Đảm bảo Laptop đang sử dụng cùng Wifi với thiết bị đánh Pan";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
+            // 
+            // usbmode
+            // 
+            this.usbmode.Controls.Add(this.comusb);
+            this.usbmode.Location = new System.Drawing.Point(4, 22);
+            this.usbmode.Name = "usbmode";
+            this.usbmode.Padding = new System.Windows.Forms.Padding(3);
+            this.usbmode.Size = new System.Drawing.Size(809, 442);
+            this.usbmode.TabIndex = 8;
+            this.usbmode.Text = "usbmode";
+            this.usbmode.UseVisualStyleBackColor = true;
+            // 
+            // comusb
+            // 
+            this.comusb.AutoSize = true;
+            this.comusb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comusb.Location = new System.Drawing.Point(162, 71);
+            this.comusb.Name = "comusb";
+            this.comusb.Size = new System.Drawing.Size(0, 24);
+            this.comusb.TabIndex = 6;
+            // 
             // close_settings
             // 
             this.close_settings.Location = new System.Drawing.Point(1014, 2);
-            this.close_settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.close_settings.Margin = new System.Windows.Forms.Padding(2);
             this.close_settings.Name = "close_settings";
             this.close_settings.Size = new System.Drawing.Size(24, 27);
             this.close_settings.TabIndex = 3;
@@ -198,7 +298,7 @@ namespace bluetoothmain
             // 
             this.wifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wifi.Location = new System.Drawing.Point(2, 234);
-            this.wifi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wifi.Margin = new System.Windows.Forms.Padding(2);
             this.wifi.Name = "wifi";
             this.wifi.Size = new System.Drawing.Size(181, 67);
             this.wifi.TabIndex = 0;
@@ -210,7 +310,7 @@ namespace bluetoothmain
             // 
             this.usb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usb.Location = new System.Drawing.Point(2, 163);
-            this.usb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usb.Margin = new System.Windows.Forms.Padding(2);
             this.usb.Name = "usb";
             this.usb.Size = new System.Drawing.Size(181, 67);
             this.usb.TabIndex = 2;
@@ -222,7 +322,7 @@ namespace bluetoothmain
             // 
             this.bluetooth.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bluetooth.Location = new System.Drawing.Point(2, 92);
-            this.bluetooth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bluetooth.Margin = new System.Windows.Forms.Padding(2);
             this.bluetooth.Name = "bluetooth";
             this.bluetooth.Size = new System.Drawing.Size(181, 67);
             this.bluetooth.TabIndex = 1;
@@ -249,12 +349,57 @@ namespace bluetoothmain
             this.tabControl1.TabIndex = 20;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
+            // debug
+            // 
+            this.debug.Controls.Add(this.settings);
+            this.debug.Controls.Add(this.button2);
+            this.debug.Controls.Add(this.button1);
+            this.debug.Location = new System.Drawing.Point(4, 22);
+            this.debug.Margin = new System.Windows.Forms.Padding(2);
+            this.debug.Name = "debug";
+            this.debug.Size = new System.Drawing.Size(1272, 694);
+            this.debug.TabIndex = 4;
+            this.debug.Text = "debug";
+            this.debug.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // settings
+            // 
+            this.settings.Location = new System.Drawing.Point(-2, 595);
+            this.settings.Margin = new System.Windows.Forms.Padding(2);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(113, 31);
+            this.settings.TabIndex = 0;
+            this.settings.Text = "settings";
+            this.settings.UseVisualStyleBackColor = true;
+            this.settings.Click += new System.EventHandler(this.settings_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(367, 115);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(272, 103);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Main flow";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(367, 257);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(272, 93);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Debug";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // gvsv
             // 
             this.gvsv.Controls.Add(this.panel2);
             this.gvsv.Location = new System.Drawing.Point(4, 22);
             this.gvsv.Name = "gvsv";
-            this.gvsv.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.gvsv.Padding = new System.Windows.Forms.Padding(3);
             this.gvsv.Size = new System.Drawing.Size(1272, 694);
             this.gvsv.TabIndex = 0;
             this.gvsv.Text = "gvsv";
@@ -304,7 +449,7 @@ namespace bluetoothmain
             this.dangnhapgv.Controls.Add(this.tk);
             this.dangnhapgv.Location = new System.Drawing.Point(4, 22);
             this.dangnhapgv.Name = "dangnhapgv";
-            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(3);
             this.dangnhapgv.Size = new System.Drawing.Size(1272, 694);
             this.dangnhapgv.TabIndex = 1;
             this.dangnhapgv.Text = "dangnhapgv";
@@ -362,50 +507,38 @@ namespace bluetoothmain
             this.tk.TabIndex = 5;
             this.tk.TextChanged += new System.EventHandler(this.tk_TextChanged);
             // 
-            // btmode
+            // gv1
             // 
-            this.btmode.Controls.Add(this.buttona);
-            this.btmode.Controls.Add(this.COMcbo);
-            this.btmode.Controls.Add(this.refresh);
-            this.btmode.Location = new System.Drawing.Point(4, 22);
-            this.btmode.Name = "btmode";
-            this.btmode.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.btmode.Size = new System.Drawing.Size(809, 442);
-            this.btmode.TabIndex = 2;
-            this.btmode.Text = "btmode";
-            this.btmode.Click += new System.EventHandler(this.tabPage3_Click);
+            this.gv1.Controls.Add(this.gd);
+            this.gv1.Controls.Add(this.qlsv);
+            this.gv1.Location = new System.Drawing.Point(4, 22);
+            this.gv1.Name = "gv1";
+            this.gv1.Padding = new System.Windows.Forms.Padding(3);
+            this.gv1.Size = new System.Drawing.Size(1272, 694);
+            this.gv1.TabIndex = 9;
+            this.gv1.Text = "gv1";
+            this.gv1.UseVisualStyleBackColor = true;
             // 
-            // buttona
+            // gd
             // 
-            this.buttona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttona.Location = new System.Drawing.Point(550, 208);
-            this.buttona.Name = "buttona";
-            this.buttona.Size = new System.Drawing.Size(157, 53);
-            this.buttona.TabIndex = 10;
-            this.buttona.Text = "CONNECT";
-            this.buttona.UseVisualStyleBackColor = true;
-            this.buttona.Click += new System.EventHandler(this.buttona_Click);
+            this.gd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gd.Location = new System.Drawing.Point(372, 265);
+            this.gd.Name = "gd";
+            this.gd.Size = new System.Drawing.Size(239, 90);
+            this.gd.TabIndex = 1;
+            this.gd.Text = "Giảng dạy";
+            this.gd.UseVisualStyleBackColor = true;
+            this.gd.Click += new System.EventHandler(this.gd_Click);
             // 
-            // COMcbo
+            // qlsv
             // 
-            this.COMcbo.FormattingEnabled = true;
-            this.COMcbo.Location = new System.Drawing.Point(190, 226);
-            this.COMcbo.Name = "COMcbo";
-            this.COMcbo.Size = new System.Drawing.Size(148, 21);
-            this.COMcbo.TabIndex = 9;
-            this.COMcbo.SelectedIndexChanged += new System.EventHandler(this.COMcbo_SelectedIndexChanged);
-            this.COMcbo.Click += new System.EventHandler(this.COMcbo_Click_1);
-            // 
-            // refresh
-            // 
-            this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refresh.Location = new System.Drawing.Point(363, 208);
-            this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(157, 53);
-            this.refresh.TabIndex = 17;
-            this.refresh.Text = "REFRESH COMs";
-            this.refresh.UseVisualStyleBackColor = true;
-            this.refresh.Click += new System.EventHandler(this.refresh_Click_1);
+            this.qlsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qlsv.Location = new System.Drawing.Point(371, 162);
+            this.qlsv.Name = "qlsv";
+            this.qlsv.Size = new System.Drawing.Size(239, 90);
+            this.qlsv.TabIndex = 0;
+            this.qlsv.Text = "QLSV và Kiểm tra";
+            this.qlsv.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
@@ -673,41 +806,6 @@ namespace bluetoothmain
             this.pan1cb.UseVisualStyleBackColor = true;
             this.pan1cb.CheckedChanged += new System.EventHandler(this.bt_CheckedChanged);
             // 
-            // wfmode
-            // 
-            this.wfmode.Controls.Add(this.connectwifi);
-            this.wfmode.Controls.Add(this.label3);
-            this.wfmode.Location = new System.Drawing.Point(4, 22);
-            this.wfmode.Name = "wfmode";
-            this.wfmode.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.wfmode.Size = new System.Drawing.Size(809, 442);
-            this.wfmode.TabIndex = 5;
-            this.wfmode.Text = "wfmode";
-            this.wfmode.UseVisualStyleBackColor = true;
-            this.wfmode.Click += new System.EventHandler(this.tabPage6_Click);
-            // 
-            // connectwifi
-            // 
-            this.connectwifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connectwifi.Location = new System.Drawing.Point(368, 174);
-            this.connectwifi.Name = "connectwifi";
-            this.connectwifi.Size = new System.Drawing.Size(178, 76);
-            this.connectwifi.TabIndex = 1;
-            this.connectwifi.Text = "CONNECT";
-            this.connectwifi.UseVisualStyleBackColor = true;
-            this.connectwifi.Click += new System.EventHandler(this.connectwifi_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(163, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(588, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Đảm bảo Laptop đang sử dụng cùng Wifi với thiết bị đánh Pan";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.backpg7);
@@ -730,7 +828,7 @@ namespace bluetoothmain
             this.tabPage7.Controls.Add(this.wfpan1cb);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(1272, 694);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
@@ -957,7 +1055,7 @@ namespace bluetoothmain
             this.tabPage8.Controls.Add(this.svTH);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(1272, 694);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "tabPage8";
@@ -982,41 +1080,6 @@ namespace bluetoothmain
             this.svTH.TabIndex = 0;
             this.svTH.Text = "Thực Hành";
             this.svTH.UseVisualStyleBackColor = true;
-            // 
-            // usbmode
-            // 
-            this.usbmode.Controls.Add(this.comusb);
-            this.usbmode.Location = new System.Drawing.Point(4, 22);
-            this.usbmode.Name = "usbmode";
-            this.usbmode.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.usbmode.Size = new System.Drawing.Size(809, 442);
-            this.usbmode.TabIndex = 8;
-            this.usbmode.Text = "usbmode";
-            this.usbmode.UseVisualStyleBackColor = true;
-            // 
-            // comusb
-            // 
-            this.comusb.AutoSize = true;
-            this.comusb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comusb.Location = new System.Drawing.Point(162, 71);
-            this.comusb.Name = "comusb";
-            this.comusb.Size = new System.Drawing.Size(0, 24);
-            this.comusb.TabIndex = 6;
-            // 
-            // ping_timer
-            // 
-            this.ping_timer.Interval = 1000;
-            this.ping_timer.Tick += new System.EventHandler(this.ping_timer_Tick);
-            // 
-            // wifi_ping_timer
-            // 
-            this.wifi_ping_timer.Interval = 1000;
-            this.wifi_ping_timer.Tick += new System.EventHandler(this.wifi_ping_timer_Tick);
-            // 
-            // usb_ping_timer
-            // 
-            this.usb_ping_timer.Interval = 1000;
-            this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
             // danhpan
             // 
@@ -1236,82 +1299,20 @@ namespace bluetoothmain
             this.cbpan1.UseVisualStyleBackColor = true;
             this.cbpan1.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
             // 
-            // settings
+            // ping_timer
             // 
-            this.settings.Location = new System.Drawing.Point(-2, 595);
-            this.settings.Margin = new System.Windows.Forms.Padding(2);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(113, 31);
-            this.settings.TabIndex = 0;
-            this.settings.Text = "settings";
-            this.settings.UseVisualStyleBackColor = true;
-            this.settings.Click += new System.EventHandler(this.settings_Click);
+            this.ping_timer.Interval = 1000;
+            this.ping_timer.Tick += new System.EventHandler(this.ping_timer_Tick);
             // 
-            // button1
+            // wifi_ping_timer
             // 
-            this.button1.Location = new System.Drawing.Point(367, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 93);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Debug";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.wifi_ping_timer.Interval = 1000;
+            this.wifi_ping_timer.Tick += new System.EventHandler(this.wifi_ping_timer_Tick);
             // 
-            // button2
+            // usb_ping_timer
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(367, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 103);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Main flow";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // debug
-            // 
-            this.debug.Controls.Add(this.settings);
-            this.debug.Controls.Add(this.button2);
-            this.debug.Controls.Add(this.button1);
-            this.debug.Location = new System.Drawing.Point(4, 22);
-            this.debug.Margin = new System.Windows.Forms.Padding(2);
-            this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(1272, 694);
-            this.debug.TabIndex = 4;
-            this.debug.Text = "debug";
-            this.debug.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // gv1
-            // 
-            this.gv1.Controls.Add(this.gd);
-            this.gv1.Controls.Add(this.qlsv);
-            this.gv1.Location = new System.Drawing.Point(4, 22);
-            this.gv1.Name = "gv1";
-            this.gv1.Padding = new System.Windows.Forms.Padding(3);
-            this.gv1.Size = new System.Drawing.Size(1272, 694);
-            this.gv1.TabIndex = 9;
-            this.gv1.Text = "gv1";
-            this.gv1.UseVisualStyleBackColor = true;
-            // 
-            // qlsv
-            // 
-            this.qlsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qlsv.Location = new System.Drawing.Point(371, 162);
-            this.qlsv.Name = "qlsv";
-            this.qlsv.Size = new System.Drawing.Size(239, 90);
-            this.qlsv.TabIndex = 0;
-            this.qlsv.Text = "QLSV và Kiểm tra";
-            this.qlsv.UseVisualStyleBackColor = true;
-            // 
-            // gd
-            // 
-            this.gd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gd.Location = new System.Drawing.Point(372, 265);
-            this.gd.Name = "gd";
-            this.gd.Size = new System.Drawing.Size(239, 90);
-            this.gd.TabIndex = 1;
-            this.gd.Text = "Giảng dạy";
-            this.gd.UseVisualStyleBackColor = true;
+            this.usb_ping_timer.Interval = 1000;
+            this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
             // mainmenu
             // 
@@ -1330,26 +1331,26 @@ namespace bluetoothmain
             this.panel1.ResumeLayout(false);
             this.settings_panel.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.btmode.ResumeLayout(false);
+            this.wfmode.ResumeLayout(false);
+            this.wfmode.PerformLayout();
+            this.usbmode.ResumeLayout(false);
+            this.usbmode.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.debug.ResumeLayout(false);
             this.gvsv.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.dangnhapgv.ResumeLayout(false);
             this.dangnhapgv.PerformLayout();
-            this.btmode.ResumeLayout(false);
+            this.gv1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.wfmode.ResumeLayout(false);
-            this.wfmode.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.tabPage8.ResumeLayout(false);
-            this.usbmode.ResumeLayout(false);
-            this.usbmode.PerformLayout();
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
-            this.debug.ResumeLayout(false);
-            this.gv1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

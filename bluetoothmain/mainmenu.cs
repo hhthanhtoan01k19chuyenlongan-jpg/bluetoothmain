@@ -64,8 +64,7 @@ namespace bluetoothmain
             {
                 if (mk.Text == mkdung)
                 {
-                    dangnhapgv.Hide();
-                    gv1.Show();
+                    tabControl1.SelectedTab = gv1;
                     
 
                 }
@@ -107,6 +106,7 @@ namespace bluetoothmain
             statelbl.ForeColor = Color.Green;
             disconnect.Enabled = true;
             disconnect.Show();
+            gd.Enabled = true;
         }
         private void SetDisconnectedBT()
         {
@@ -136,6 +136,8 @@ namespace bluetoothmain
             statelbl.ForeColor = Color.Red;
             tabPage4.Hide();
             btmode.Show();
+            gd.Enabled = false;
+            if (tabControl1.SelectedTab == gv1) { }
 
 
         }
@@ -322,18 +324,14 @@ namespace bluetoothmain
 
         private void bluetooth_usb_Click(object sender, EventArgs e)
         {
-            btmode.Show();
-            wfmode.Hide();
-            usbmode.Hide();
+            tabControl2.SelectedTab = btmode;
 
         }
 
         private void wifi_Click(object sender, EventArgs e)
         {
-            
-            wfmode.Show();
-            btmode.Hide();
-            usbmode.Hide();
+
+            tabControl2.SelectedTab = wfmode;
         }
 
         private void bt_CheckedChanged(object sender, EventArgs e)
@@ -421,7 +419,7 @@ namespace bluetoothmain
         {
             wifi_ping_timer.Start();
             wfmode.Hide();
-            tabPage7.Show();
+            tabControl1.SelectedTab = tabPage7;
             if (statelbl.Text != "WIFI CONNECTED")
             {
                 wfpan1cb.Enabled = false;
@@ -481,14 +479,12 @@ namespace bluetoothmain
         private void gv_Click_1(object sender, EventArgs e)
         {
 
-            gvsv.Hide();
-            dangnhapgv.Show();
+            tabControl1.SelectedTab = dangnhapgv;
         }
 
         private void hs_Click_1(object sender, EventArgs e)
         {
-            gvsv.Hide();
-            tabPage8.Show();
+            tabControl1.SelectedTab = tabPage8;
         }
 
         private void statelbl_Click_1(object sender, EventArgs e)
@@ -535,10 +531,9 @@ namespace bluetoothmain
 
         private void usb_Click(object sender, EventArgs e)
         {
-            usbmode.Show();
-            wfmode.Hide();
-            btmode.Hide();
-               
+            tabControl2.SelectedTab = usbmode;
+
+
             usb_ping_timer.Start();
             
         }
@@ -688,11 +683,15 @@ namespace bluetoothmain
 
         private void button2_Click(object sender, EventArgs e)
         {
-            gvsv.Show();
-            debug.Hide();
+            tabControl1.SelectedTab = gvsv;
         }
 
-       
+        private void gd_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = danhpan;
+            
+
+        }
 
         private void tk_TextChanged(object sender, EventArgs e)
         {
