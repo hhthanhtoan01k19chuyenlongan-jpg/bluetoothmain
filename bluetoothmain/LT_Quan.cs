@@ -76,5 +76,53 @@ namespace bluetoothmain
         {
 
         }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            sensor.Hide();
+            loi.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            loi.Hide();
+            open.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            loi.Hide();
+            chmass.Show();
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
