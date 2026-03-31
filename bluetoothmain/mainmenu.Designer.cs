@@ -64,7 +64,7 @@ namespace bluetoothmain
             this.gv1 = new System.Windows.Forms.TabPage();
             this.gd = new System.Windows.Forms.Button();
             this.qlsv = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.danhpanbtusb = new System.Windows.Forms.TabPage();
             this.statelbl = new System.Windows.Forms.Label();
             this.disconnect = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.Button();
@@ -85,7 +85,7 @@ namespace bluetoothmain
             this.pan3cb = new System.Windows.Forms.CheckBox();
             this.pan2cb = new System.Windows.Forms.CheckBox();
             this.pan1cb = new System.Windows.Forms.CheckBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.danhpanwf = new System.Windows.Forms.TabPage();
             this.backpg7 = new System.Windows.Forms.Button();
             this.disconnectWF = new System.Windows.Forms.Button();
             this.wfpan16cb = new System.Windows.Forms.CheckBox();
@@ -145,8 +145,8 @@ namespace bluetoothmain
             this.panel2.SuspendLayout();
             this.dangnhapgv.SuspendLayout();
             this.gv1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage7.SuspendLayout();
+            this.danhpanbtusb.SuspendLayout();
+            this.danhpanwf.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.danhpan.SuspendLayout();
             this.btctd.SuspendLayout();
@@ -173,7 +173,7 @@ namespace bluetoothmain
             this.settings_panel.Location = new System.Drawing.Point(82, 44);
             this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(839, 471);
+            this.settings_panel.Size = new System.Drawing.Size(958, 366);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -344,8 +344,8 @@ namespace bluetoothmain
             this.tabControl1.Controls.Add(this.gvsv);
             this.tabControl1.Controls.Add(this.dangnhapgv);
             this.tabControl1.Controls.Add(this.gv1);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.danhpanbtusb);
+            this.tabControl1.Controls.Add(this.danhpanwf);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.danhpan);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -551,32 +551,32 @@ namespace bluetoothmain
             this.qlsv.Text = "QLSV và Kiểm tra";
             this.qlsv.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // danhpanbtusb
             // 
-            this.tabPage4.Controls.Add(this.menu);
-            this.tabPage4.Controls.Add(this.backpg4);
-            this.tabPage4.Controls.Add(this.pan16cb);
-            this.tabPage4.Controls.Add(this.pan15cb);
-            this.tabPage4.Controls.Add(this.pan14cb);
-            this.tabPage4.Controls.Add(this.pan13cb);
-            this.tabPage4.Controls.Add(this.pan12cb);
-            this.tabPage4.Controls.Add(this.pan11cb);
-            this.tabPage4.Controls.Add(this.pan10cb);
-            this.tabPage4.Controls.Add(this.pan9cb);
-            this.tabPage4.Controls.Add(this.pan8cb);
-            this.tabPage4.Controls.Add(this.pan7cb);
-            this.tabPage4.Controls.Add(this.pan6cb);
-            this.tabPage4.Controls.Add(this.pan5cb);
-            this.tabPage4.Controls.Add(this.pan4cb);
-            this.tabPage4.Controls.Add(this.pan3cb);
-            this.tabPage4.Controls.Add(this.pan2cb);
-            this.tabPage4.Controls.Add(this.pan1cb);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1272, 694);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            this.danhpanbtusb.Controls.Add(this.menu);
+            this.danhpanbtusb.Controls.Add(this.backpg4);
+            this.danhpanbtusb.Controls.Add(this.pan16cb);
+            this.danhpanbtusb.Controls.Add(this.pan15cb);
+            this.danhpanbtusb.Controls.Add(this.pan14cb);
+            this.danhpanbtusb.Controls.Add(this.pan13cb);
+            this.danhpanbtusb.Controls.Add(this.pan12cb);
+            this.danhpanbtusb.Controls.Add(this.pan11cb);
+            this.danhpanbtusb.Controls.Add(this.pan10cb);
+            this.danhpanbtusb.Controls.Add(this.pan9cb);
+            this.danhpanbtusb.Controls.Add(this.pan8cb);
+            this.danhpanbtusb.Controls.Add(this.pan7cb);
+            this.danhpanbtusb.Controls.Add(this.pan6cb);
+            this.danhpanbtusb.Controls.Add(this.pan5cb);
+            this.danhpanbtusb.Controls.Add(this.pan4cb);
+            this.danhpanbtusb.Controls.Add(this.pan3cb);
+            this.danhpanbtusb.Controls.Add(this.pan2cb);
+            this.danhpanbtusb.Controls.Add(this.pan1cb);
+            this.danhpanbtusb.Location = new System.Drawing.Point(4, 22);
+            this.danhpanbtusb.Name = "danhpanbtusb";
+            this.danhpanbtusb.Size = new System.Drawing.Size(1272, 694);
+            this.danhpanbtusb.TabIndex = 3;
+            this.danhpanbtusb.Text = "danhpanbtusb";
+            this.danhpanbtusb.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // statelbl
             // 
@@ -815,33 +815,33 @@ namespace bluetoothmain
             this.pan1cb.UseVisualStyleBackColor = true;
             this.pan1cb.CheckedChanged += new System.EventHandler(this.bt_CheckedChanged);
             // 
-            // tabPage7
+            // danhpanwf
             // 
-            this.tabPage7.Controls.Add(this.backpg7);
-            this.tabPage7.Controls.Add(this.wfpan16cb);
-            this.tabPage7.Controls.Add(this.wfpan15cb);
-            this.tabPage7.Controls.Add(this.wfpan14cb);
-            this.tabPage7.Controls.Add(this.wfpan13cb);
-            this.tabPage7.Controls.Add(this.wfpan12cb);
-            this.tabPage7.Controls.Add(this.wfpan11cb);
-            this.tabPage7.Controls.Add(this.wfpan10cb);
-            this.tabPage7.Controls.Add(this.wfpan9cb);
-            this.tabPage7.Controls.Add(this.wfpan8cb);
-            this.tabPage7.Controls.Add(this.wfpan7cb);
-            this.tabPage7.Controls.Add(this.wfpan6cb);
-            this.tabPage7.Controls.Add(this.wfpan5cb);
-            this.tabPage7.Controls.Add(this.wfpan4cb);
-            this.tabPage7.Controls.Add(this.wfpan3cb);
-            this.tabPage7.Controls.Add(this.wfpan2cb);
-            this.tabPage7.Controls.Add(this.wfpan1cb);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1272, 694);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
+            this.danhpanwf.Controls.Add(this.backpg7);
+            this.danhpanwf.Controls.Add(this.wfpan16cb);
+            this.danhpanwf.Controls.Add(this.wfpan15cb);
+            this.danhpanwf.Controls.Add(this.wfpan14cb);
+            this.danhpanwf.Controls.Add(this.wfpan13cb);
+            this.danhpanwf.Controls.Add(this.wfpan12cb);
+            this.danhpanwf.Controls.Add(this.wfpan11cb);
+            this.danhpanwf.Controls.Add(this.wfpan10cb);
+            this.danhpanwf.Controls.Add(this.wfpan9cb);
+            this.danhpanwf.Controls.Add(this.wfpan8cb);
+            this.danhpanwf.Controls.Add(this.wfpan7cb);
+            this.danhpanwf.Controls.Add(this.wfpan6cb);
+            this.danhpanwf.Controls.Add(this.wfpan5cb);
+            this.danhpanwf.Controls.Add(this.wfpan4cb);
+            this.danhpanwf.Controls.Add(this.wfpan3cb);
+            this.danhpanwf.Controls.Add(this.wfpan2cb);
+            this.danhpanwf.Controls.Add(this.wfpan1cb);
+            this.danhpanwf.Location = new System.Drawing.Point(4, 22);
+            this.danhpanwf.Name = "danhpanwf";
+            this.danhpanwf.Padding = new System.Windows.Forms.Padding(3);
+            this.danhpanwf.Size = new System.Drawing.Size(1272, 694);
+            this.danhpanwf.TabIndex = 6;
+            this.danhpanwf.Text = "danhpanwf";
+            this.danhpanwf.UseVisualStyleBackColor = true;
+            this.danhpanwf.Click += new System.EventHandler(this.tabPage7_Click);
             // 
             // backpg7
             // 
@@ -1406,10 +1406,10 @@ namespace bluetoothmain
             this.dangnhapgv.PerformLayout();
             this.gv1.ResumeLayout(false);
             this.gv1.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
+            this.danhpanbtusb.ResumeLayout(false);
+            this.danhpanbtusb.PerformLayout();
+            this.danhpanwf.ResumeLayout(false);
+            this.danhpanwf.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
@@ -1433,7 +1433,7 @@ namespace bluetoothmain
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox mk;
         private System.Windows.Forms.TextBox tk;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage danhpanbtusb;
         public System.Windows.Forms.Label statelbl;
         private System.Windows.Forms.Button buttona;
         private System.Windows.Forms.ComboBox COMcbo;
@@ -1462,7 +1462,7 @@ namespace bluetoothmain
         private System.Windows.Forms.TabPage wfmode;
         private System.Windows.Forms.Button connectwifi;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage danhpanwf;
         private System.Windows.Forms.CheckBox wfpan16cb;
         private System.Windows.Forms.CheckBox wfpan15cb;
         private System.Windows.Forms.CheckBox wfpan14cb;
