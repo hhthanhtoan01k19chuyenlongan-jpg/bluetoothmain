@@ -94,6 +94,7 @@ namespace bluetoothmain
             statelbl.Text = "DISCONNECTED";
             statelbl.ForeColor = Color.Red;
 
+            if (gd.Enabled == false) { tipgd.Text = "Yêu cầu kết nối với thiết bị để sử dụng chức năng này"; }
         }
         int selected;
         bool gotOk = false;
@@ -161,7 +162,7 @@ namespace bluetoothmain
 
         private void buttona_Click(object sender, EventArgs e)
         {
-
+            if(statelbl.Text=="WIFI CONNECTED") { setDisconnectedWF(); }
             try
             {
                 if (!serCOM.IsOpen)
@@ -324,7 +325,21 @@ namespace bluetoothmain
 
         private void bluetooth_usb_Click(object sender, EventArgs e)
         {
-            tabControl2.SelectedTab = btmode;
+
+            if (statelbl.Text != "BLUETOOTH CONNECTED")
+            { tabControl2.SelectedTab = btmode;
+                
+            }
+            else if(statelbl.Text=="BLUETOOTH CONNECTED")
+            { tabControl2.SelectedTab = btctd;
+                label4.Text = "Đã kết nối Bluetooth";
+            }
+            else if(statelbl.Text=="USB CONNECTED")
+            { tabControl2.SelectedTab = btctd;
+                label4.Text = "Đã kết nối USB "+comdung;
+            }
+                
+            
 
         }
 
@@ -581,11 +596,12 @@ namespace bluetoothmain
                     serCOM.Open();
                     statelbl.Show();
                     statelbl.Text = "USB CONNECTED";
-                    usbmode.Hide();
-                    tabPage4.Show();
+                    
                     disconnect.Enabled = true;
                     disconnect.Show();
+                    gd.Enabled = true;
                     serCOM.WriteLine("USBconnected");
+                    gd.Enabled = true;
                 }
                 catch (Exception) { MessageBox.Show("Không thể kết nối USB"); }
             }
@@ -618,8 +634,7 @@ namespace bluetoothmain
             statelbl.Show();
             statelbl.Text = "USB DISCONNECTED";
             statelbl.ForeColor = Color.Red;
-            tabPage4.Hide();
-            debug.Show();
+            
 
 
 
@@ -691,6 +706,21 @@ namespace bluetoothmain
             tabControl1.SelectedTab = danhpan;
             
 
+        }
+
+        private void gv1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gd_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tip_gd_Popup(object sender, PopupEventArgs e)
+        {
+            
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
@@ -843,6 +873,7 @@ namespace bluetoothmain
             wfmode.Hide();
             disconnect.Enabled = true;
             disconnect.Show();
+            gd.Enabled=true;
 
             if (statelbl.Text == "WIFI CONNECTED")
             {
