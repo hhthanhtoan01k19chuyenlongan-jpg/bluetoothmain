@@ -823,6 +823,8 @@ namespace bluetoothmain
             traloi = "0000000000000000".ToCharArray();
         }
 
+        
+
         private void tk_TextChanged(object sender, EventArgs e)
         {
 
