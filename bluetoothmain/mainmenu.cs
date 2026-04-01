@@ -54,6 +54,8 @@ namespace bluetoothmain
         string comdung;
         string cmd;
         string dapan;
+        string[] pool = { "ECT Open","IGT1 Short to GND"};
+        char[] traloi = "0000000000000000".ToCharArray();
         private void login_Load(object sender, EventArgs e)
         {
 
@@ -762,7 +764,7 @@ namespace bluetoothmain
                 donewf.Visible = true;
 
             }
-
+            traloi = "0000000000000000".ToCharArray();
         }
 
         private void qlsv_Click(object sender, EventArgs e)
@@ -773,7 +775,7 @@ namespace bluetoothmain
         private void donewf_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = kiemtra1;
-            dapan = cmd;
+            dapan = cmd.Substring(2);
 
             
         }
@@ -781,7 +783,44 @@ namespace bluetoothmain
         private void donebt_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = kiemtra1;
-            dapan = cmd;
+            dapan = cmd.Substring(2);
+        }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+           
+
+                int index;
+                index= Array.IndexOf(pool, da1.Text+loi1.Text) ;
+                if (index != -1) { traloi[index] = '1'; };
+
+           
+            index = Array.IndexOf(pool, da2.Text + loi2.Text);
+            if (index != -1) traloi[index] = '1';
+
+           
+            index = Array.IndexOf(pool, da3.Text + loi3.Text);
+            if (index != -1) traloi[index] = '1';
+
+            index = Array.IndexOf(pool, da4.Text + loi4.Text);
+            if (index != -1) traloi[index] = '1';
+
+            string final = new string(traloi);
+            
+            int caudung = 0;
+            int socauhoi = 0;
+           for(int i=0;i<16;i++)
+            {
+                if (dapan[i] == '1') { socauhoi++; }
+                if(final[i]==dapan[i]&&final[i]=='1')
+                { caudung++; }
+            }
+            lbdapan.Text = caudung.ToString() +"/" + socauhoi.ToString();
+        }
+
+        private void lbdapan_Click(object sender, EventArgs e)
+        {
+            traloi = "0000000000000000".ToCharArray();
         }
 
         private void tk_TextChanged(object sender, EventArgs e)

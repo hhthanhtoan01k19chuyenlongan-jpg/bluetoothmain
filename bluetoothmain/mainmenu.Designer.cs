@@ -50,6 +50,8 @@ namespace bluetoothmain
             this.gd = new System.Windows.Forms.Button();
             this.qlsv = new System.Windows.Forms.Button();
             this.danhpanbtusb = new System.Windows.Forms.TabPage();
+            this.donebt = new System.Windows.Forms.Button();
+            this.gvcchonpanbt = new System.Windows.Forms.Label();
             this.menu = new System.Windows.Forms.Button();
             this.backpg4 = new System.Windows.Forms.Button();
             this.pan16cb = new System.Windows.Forms.CheckBox();
@@ -69,6 +71,8 @@ namespace bluetoothmain
             this.pan2cb = new System.Windows.Forms.CheckBox();
             this.pan1cb = new System.Windows.Forms.CheckBox();
             this.danhpanwf = new System.Windows.Forms.TabPage();
+            this.donewf = new System.Windows.Forms.Button();
+            this.gvchonpanwf = new System.Windows.Forms.Label();
             this.backpg7 = new System.Windows.Forms.Button();
             this.wfpan16cb = new System.Windows.Forms.CheckBox();
             this.wfpan15cb = new System.Windows.Forms.CheckBox();
@@ -106,6 +110,19 @@ namespace bluetoothmain
             this.cbpan3 = new System.Windows.Forms.CheckBox();
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
+            this.kiemtraqlsv = new System.Windows.Forms.TabPage();
+            this.kt = new System.Windows.Forms.Button();
+            this.kiemtra1 = new System.Windows.Forms.TabPage();
+            this.submit = new System.Windows.Forms.Button();
+            this.loi4 = new System.Windows.Forms.ComboBox();
+            this.loi2 = new System.Windows.Forms.ComboBox();
+            this.loi3 = new System.Windows.Forms.ComboBox();
+            this.loi1 = new System.Windows.Forms.ComboBox();
+            this.da4 = new System.Windows.Forms.ComboBox();
+            this.da3 = new System.Windows.Forms.ComboBox();
+            this.da2 = new System.Windows.Forms.ComboBox();
+            this.da1 = new System.Windows.Forms.ComboBox();
+            this.svchondapan = new System.Windows.Forms.Label();
             this.settings_panel = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.btmode = new System.Windows.Forms.TabPage();
@@ -133,14 +150,7 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
-            this.kiemtraqlsv = new System.Windows.Forms.TabPage();
-            this.kt = new System.Windows.Forms.Button();
-            this.kiemtra1 = new System.Windows.Forms.TabPage();
-            this.gvcchonpanbt = new System.Windows.Forms.Label();
-            this.gvchonpanwf = new System.Windows.Forms.Label();
-            this.donewf = new System.Windows.Forms.Button();
-            this.donebt = new System.Windows.Forms.Button();
-            this.svchondapan = new System.Windows.Forms.Label();
+            this.lbdapan = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.debug.SuspendLayout();
@@ -152,6 +162,8 @@ namespace bluetoothmain
             this.danhpanwf.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.danhpan.SuspendLayout();
+            this.kiemtraqlsv.SuspendLayout();
+            this.kiemtra1.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.btmode.SuspendLayout();
@@ -159,8 +171,6 @@ namespace bluetoothmain
             this.usbmode.SuspendLayout();
             this.btctd.SuspendLayout();
             this.wfctd.SuspendLayout();
-            this.kiemtraqlsv.SuspendLayout();
-            this.kiemtra1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -414,6 +424,28 @@ namespace bluetoothmain
             this.danhpanbtusb.Text = "danhpanbtusb";
             this.danhpanbtusb.Click += new System.EventHandler(this.tabPage4_Click);
             // 
+            // donebt
+            // 
+            this.donebt.Location = new System.Drawing.Point(800, 529);
+            this.donebt.Name = "donebt";
+            this.donebt.Size = new System.Drawing.Size(180, 58);
+            this.donebt.TabIndex = 72;
+            this.donebt.Text = "Xong";
+            this.donebt.UseVisualStyleBackColor = true;
+            this.donebt.Visible = false;
+            this.donebt.Click += new System.EventHandler(this.donebt_Click);
+            // 
+            // gvcchonpanbt
+            // 
+            this.gvcchonpanbt.AutoSize = true;
+            this.gvcchonpanbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvcchonpanbt.Location = new System.Drawing.Point(475, 543);
+            this.gvcchonpanbt.Name = "gvcchonpanbt";
+            this.gvcchonpanbt.Size = new System.Drawing.Size(318, 25);
+            this.gvcchonpanbt.TabIndex = 40;
+            this.gvcchonpanbt.Text = "Mời giáo viên chọn pan ra đề";
+            this.gvcchonpanbt.Visible = false;
+            // 
             // menu
             // 
             this.menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -657,6 +689,28 @@ namespace bluetoothmain
             this.danhpanwf.Text = "danhpanwf";
             this.danhpanwf.UseVisualStyleBackColor = true;
             this.danhpanwf.Click += new System.EventHandler(this.tabPage7_Click);
+            // 
+            // donewf
+            // 
+            this.donewf.Location = new System.Drawing.Point(815, 514);
+            this.donewf.Name = "donewf";
+            this.donewf.Size = new System.Drawing.Size(180, 58);
+            this.donewf.TabIndex = 71;
+            this.donewf.Text = "Xong";
+            this.donewf.UseVisualStyleBackColor = true;
+            this.donewf.Visible = false;
+            this.donewf.Click += new System.EventHandler(this.donewf_Click);
+            // 
+            // gvchonpanwf
+            // 
+            this.gvchonpanwf.AutoSize = true;
+            this.gvchonpanwf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvchonpanwf.Location = new System.Drawing.Point(475, 538);
+            this.gvchonpanwf.Name = "gvchonpanwf";
+            this.gvchonpanwf.Size = new System.Drawing.Size(318, 25);
+            this.gvchonpanwf.TabIndex = 70;
+            this.gvchonpanwf.Text = "Mời giáo viên chọn pan ra đề";
+            this.gvchonpanwf.Visible = false;
             // 
             // backpg7
             // 
@@ -1111,6 +1165,177 @@ namespace bluetoothmain
             this.cbpan1.UseVisualStyleBackColor = true;
             this.cbpan1.CheckedChanged += new System.EventHandler(this.cbpan_CheckedChanged);
             // 
+            // kiemtraqlsv
+            // 
+            this.kiemtraqlsv.Controls.Add(this.kt);
+            this.kiemtraqlsv.Location = new System.Drawing.Point(4, 22);
+            this.kiemtraqlsv.Name = "kiemtraqlsv";
+            this.kiemtraqlsv.Size = new System.Drawing.Size(1272, 694);
+            this.kiemtraqlsv.TabIndex = 10;
+            this.kiemtraqlsv.Text = "kiemtraqlsv";
+            this.kiemtraqlsv.UseVisualStyleBackColor = true;
+            this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
+            // 
+            // kt
+            // 
+            this.kt.Enabled = false;
+            this.kt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kt.Location = new System.Drawing.Point(441, 477);
+            this.kt.Name = "kt";
+            this.kt.Size = new System.Drawing.Size(196, 62);
+            this.kt.TabIndex = 0;
+            this.kt.Text = "Kiểm tra";
+            this.kt.UseVisualStyleBackColor = true;
+            this.kt.Click += new System.EventHandler(this.kt_Click);
+            // 
+            // kiemtra1
+            // 
+            this.kiemtra1.Controls.Add(this.lbdapan);
+            this.kiemtra1.Controls.Add(this.submit);
+            this.kiemtra1.Controls.Add(this.loi4);
+            this.kiemtra1.Controls.Add(this.loi2);
+            this.kiemtra1.Controls.Add(this.loi3);
+            this.kiemtra1.Controls.Add(this.loi1);
+            this.kiemtra1.Controls.Add(this.da4);
+            this.kiemtra1.Controls.Add(this.da3);
+            this.kiemtra1.Controls.Add(this.da2);
+            this.kiemtra1.Controls.Add(this.da1);
+            this.kiemtra1.Controls.Add(this.svchondapan);
+            this.kiemtra1.Location = new System.Drawing.Point(4, 22);
+            this.kiemtra1.Name = "kiemtra1";
+            this.kiemtra1.Size = new System.Drawing.Size(1272, 694);
+            this.kiemtra1.TabIndex = 11;
+            this.kiemtra1.Text = "kiemtra1";
+            this.kiemtra1.UseVisualStyleBackColor = true;
+            // 
+            // submit
+            // 
+            this.submit.Location = new System.Drawing.Point(910, 162);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(114, 59);
+            this.submit.TabIndex = 9;
+            this.submit.Text = "Nộp bài";
+            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
+            // 
+            // loi4
+            // 
+            this.loi4.FormattingEnabled = true;
+            this.loi4.ItemHeight = 13;
+            this.loi4.Items.AddRange(new object[] {
+            "Open",
+            "Short to GND",
+            "High resistant"});
+            this.loi4.Location = new System.Drawing.Point(671, 201);
+            this.loi4.Name = "loi4";
+            this.loi4.Size = new System.Drawing.Size(122, 21);
+            this.loi4.TabIndex = 8;
+            // 
+            // loi2
+            // 
+            this.loi2.FormattingEnabled = true;
+            this.loi2.ItemHeight = 13;
+            this.loi2.Items.AddRange(new object[] {
+            "Open",
+            "Short to GND",
+            "High resistant"});
+            this.loi2.Location = new System.Drawing.Point(671, 129);
+            this.loi2.Name = "loi2";
+            this.loi2.Size = new System.Drawing.Size(122, 21);
+            this.loi2.TabIndex = 7;
+            // 
+            // loi3
+            // 
+            this.loi3.FormattingEnabled = true;
+            this.loi3.ItemHeight = 13;
+            this.loi3.Items.AddRange(new object[] {
+            "Open",
+            "Short to GND",
+            "High resistant"});
+            this.loi3.Location = new System.Drawing.Point(671, 164);
+            this.loi3.Name = "loi3";
+            this.loi3.Size = new System.Drawing.Size(122, 21);
+            this.loi3.TabIndex = 6;
+            // 
+            // loi1
+            // 
+            this.loi1.FormattingEnabled = true;
+            this.loi1.ItemHeight = 13;
+            this.loi1.Items.AddRange(new object[] {
+            " Open",
+            " Short to GND",
+            " High resistant"});
+            this.loi1.Location = new System.Drawing.Point(671, 87);
+            this.loi1.Name = "loi1";
+            this.loi1.Size = new System.Drawing.Size(122, 21);
+            this.loi1.TabIndex = 5;
+            // 
+            // da4
+            // 
+            this.da4.FormattingEnabled = true;
+            this.da4.ItemHeight = 13;
+            this.da4.Items.AddRange(new object[] {
+            "ECT",
+            "IGT1",
+            "IGT2",
+            "MAF"});
+            this.da4.Location = new System.Drawing.Point(387, 201);
+            this.da4.Name = "da4";
+            this.da4.Size = new System.Drawing.Size(260, 21);
+            this.da4.TabIndex = 4;
+            // 
+            // da3
+            // 
+            this.da3.FormattingEnabled = true;
+            this.da3.ItemHeight = 13;
+            this.da3.Items.AddRange(new object[] {
+            "ECT",
+            "IGT1",
+            "IGT2",
+            "MAF"});
+            this.da3.Location = new System.Drawing.Point(387, 164);
+            this.da3.Name = "da3";
+            this.da3.Size = new System.Drawing.Size(260, 21);
+            this.da3.TabIndex = 3;
+            // 
+            // da2
+            // 
+            this.da2.FormattingEnabled = true;
+            this.da2.ItemHeight = 13;
+            this.da2.Items.AddRange(new object[] {
+            "ECT",
+            "IGT1",
+            "IGT2",
+            "MAF"});
+            this.da2.Location = new System.Drawing.Point(387, 129);
+            this.da2.Name = "da2";
+            this.da2.Size = new System.Drawing.Size(260, 21);
+            this.da2.TabIndex = 2;
+            // 
+            // da1
+            // 
+            this.da1.FormattingEnabled = true;
+            this.da1.ItemHeight = 13;
+            this.da1.Items.AddRange(new object[] {
+            "ECT",
+            "IGT1",
+            "IGT2",
+            "MAF"});
+            this.da1.Location = new System.Drawing.Point(387, 87);
+            this.da1.Name = "da1";
+            this.da1.Size = new System.Drawing.Size(260, 21);
+            this.da1.TabIndex = 1;
+            // 
+            // svchondapan
+            // 
+            this.svchondapan.AutoSize = true;
+            this.svchondapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.svchondapan.Location = new System.Drawing.Point(522, 361);
+            this.svchondapan.Name = "svchondapan";
+            this.svchondapan.Size = new System.Drawing.Size(247, 25);
+            this.svchondapan.TabIndex = 0;
+            this.svchondapan.Text = "Sinh viên chọn đáp án";
+            // 
             // settings_panel
             // 
             this.settings_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1389,92 +1614,16 @@ namespace bluetoothmain
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
-            // kiemtraqlsv
+            // lbdapan
             // 
-            this.kiemtraqlsv.Controls.Add(this.kt);
-            this.kiemtraqlsv.Location = new System.Drawing.Point(4, 22);
-            this.kiemtraqlsv.Name = "kiemtraqlsv";
-            this.kiemtraqlsv.Size = new System.Drawing.Size(1272, 694);
-            this.kiemtraqlsv.TabIndex = 10;
-            this.kiemtraqlsv.Text = "kiemtraqlsv";
-            this.kiemtraqlsv.UseVisualStyleBackColor = true;
-            this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
-            // 
-            // kt
-            // 
-            this.kt.Enabled = false;
-            this.kt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kt.Location = new System.Drawing.Point(441, 477);
-            this.kt.Name = "kt";
-            this.kt.Size = new System.Drawing.Size(196, 62);
-            this.kt.TabIndex = 0;
-            this.kt.Text = "Kiểm tra";
-            this.kt.UseVisualStyleBackColor = true;
-            this.kt.Click += new System.EventHandler(this.kt_Click);
-            // 
-            // kiemtra1
-            // 
-            this.kiemtra1.Controls.Add(this.svchondapan);
-            this.kiemtra1.Location = new System.Drawing.Point(4, 22);
-            this.kiemtra1.Name = "kiemtra1";
-            this.kiemtra1.Size = new System.Drawing.Size(1272, 694);
-            this.kiemtra1.TabIndex = 11;
-            this.kiemtra1.Text = "kiemtra1";
-            this.kiemtra1.UseVisualStyleBackColor = true;
-            // 
-            // gvcchonpanbt
-            // 
-            this.gvcchonpanbt.AutoSize = true;
-            this.gvcchonpanbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvcchonpanbt.Location = new System.Drawing.Point(475, 543);
-            this.gvcchonpanbt.Name = "gvcchonpanbt";
-            this.gvcchonpanbt.Size = new System.Drawing.Size(318, 25);
-            this.gvcchonpanbt.TabIndex = 40;
-            this.gvcchonpanbt.Text = "Mời giáo viên chọn pan ra đề";
-            this.gvcchonpanbt.Visible = false;
-            // 
-            // gvchonpanwf
-            // 
-            this.gvchonpanwf.AutoSize = true;
-            this.gvchonpanwf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvchonpanwf.Location = new System.Drawing.Point(475, 538);
-            this.gvchonpanwf.Name = "gvchonpanwf";
-            this.gvchonpanwf.Size = new System.Drawing.Size(318, 25);
-            this.gvchonpanwf.TabIndex = 70;
-            this.gvchonpanwf.Text = "Mời giáo viên chọn pan ra đề";
-            this.gvchonpanwf.Visible = false;
-            // 
-            // donewf
-            // 
-            this.donewf.Location = new System.Drawing.Point(815, 514);
-            this.donewf.Name = "donewf";
-            this.donewf.Size = new System.Drawing.Size(180, 58);
-            this.donewf.TabIndex = 71;
-            this.donewf.Text = "Xong";
-            this.donewf.UseVisualStyleBackColor = true;
-            this.donewf.Visible = false;
-            this.donewf.Click += new System.EventHandler(this.donewf_Click);
-            // 
-            // donebt
-            // 
-            this.donebt.Location = new System.Drawing.Point(800, 529);
-            this.donebt.Name = "donebt";
-            this.donebt.Size = new System.Drawing.Size(180, 58);
-            this.donebt.TabIndex = 72;
-            this.donebt.Text = "Xong";
-            this.donebt.UseVisualStyleBackColor = true;
-            this.donebt.Visible = false;
-            this.donebt.Click += new System.EventHandler(this.donebt_Click);
-            // 
-            // svchondapan
-            // 
-            this.svchondapan.AutoSize = true;
-            this.svchondapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.svchondapan.Location = new System.Drawing.Point(522, 361);
-            this.svchondapan.Name = "svchondapan";
-            this.svchondapan.Size = new System.Drawing.Size(247, 25);
-            this.svchondapan.TabIndex = 0;
-            this.svchondapan.Text = "Sinh viên chọn đáp án";
+            this.lbdapan.AutoSize = true;
+            this.lbdapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdapan.Location = new System.Drawing.Point(356, 278);
+            this.lbdapan.Name = "lbdapan";
+            this.lbdapan.Size = new System.Drawing.Size(76, 25);
+            this.lbdapan.TabIndex = 10;
+            this.lbdapan.Text = "label6";
+            this.lbdapan.Click += new System.EventHandler(this.lbdapan_Click);
             // 
             // mainmenu
             // 
@@ -1510,6 +1659,9 @@ namespace bluetoothmain
             this.tabPage8.ResumeLayout(false);
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
+            this.kiemtraqlsv.ResumeLayout(false);
+            this.kiemtra1.ResumeLayout(false);
+            this.kiemtra1.PerformLayout();
             this.settings_panel.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.btmode.ResumeLayout(false);
@@ -1521,9 +1673,6 @@ namespace bluetoothmain
             this.btctd.PerformLayout();
             this.wfctd.ResumeLayout(false);
             this.wfctd.PerformLayout();
-            this.kiemtraqlsv.ResumeLayout(false);
-            this.kiemtra1.ResumeLayout(false);
-            this.kiemtra1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1641,5 +1790,15 @@ namespace bluetoothmain
         private System.Windows.Forms.Button donebt;
         private System.Windows.Forms.Button donewf;
         private System.Windows.Forms.Label svchondapan;
+        private System.Windows.Forms.ComboBox loi4;
+        private System.Windows.Forms.ComboBox loi2;
+        private System.Windows.Forms.ComboBox loi3;
+        private System.Windows.Forms.ComboBox loi1;
+        private System.Windows.Forms.ComboBox da4;
+        private System.Windows.Forms.ComboBox da3;
+        private System.Windows.Forms.ComboBox da2;
+        private System.Windows.Forms.ComboBox da1;
+        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Label lbdapan;
     }
 }
