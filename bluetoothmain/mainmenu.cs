@@ -18,12 +18,17 @@ namespace bluetoothmain
 {
     public partial class mainmenu : Form
     {
-        
-        
+        ComboBox[] da;
+        ComboBox[] loi;
+
         public mainmenu()
         {
             InitializeComponent();
-           
+            
+
+            da = new ComboBox[] { da1, da2, da3, da4, da5, da6, da7, da8, da9, da10, da11, da12, da13, da14, da15, da16 };
+            loi = new ComboBox[] { loi1, loi2, loi3, loi4, loi5, loi6, loi7, loi8, loi9, loi10, loi11, loi12, loi13, loi14, loi15, loi16 };
+
         }
         private void mainmenu_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -44,17 +49,18 @@ namespace bluetoothmain
             statelbl.Hide();
             disconnect.Enabled = false;
             disconnect.Hide();
-            
+       
         }
-        
-      
-     
+
+
+
         string tkdung = "123";
         string mkdung = "1234";
         string comdung;
         string cmd;
         string dapan;
-        string[] pool = { "ECT Open","IGT1 Short to GND"};
+        int socauhoi = 0;
+        string[] pool = { "ECT Hở mạch", "IAT Điện trở cao", "MAF Hở mạch", "CKP Hở mạch", "IGT1 Hở mạch", "IGT2 Chạm mass", "IGT3 Chạm mass", "IGT4 Chạm mass", "CMPA Hở mạch", "CMPB Hở mạch", "APP1 Hở mạch", "APP2 Chạm mass", "FRPS Hở mạch", "AFS Chạm mass", "TPS1 Hở mạch", "TPS2 Chạm mass" };
         char[] traloi = "0000000000000000".ToCharArray();
         private void login_Load(object sender, EventArgs e)
         {
@@ -776,7 +782,8 @@ namespace bluetoothmain
         {
             tabControl1.SelectedTab = kiemtra1;
             dapan = cmd.Substring(2);
-
+            socauhoi = 0;
+            for(int i = 0; i < 16; i++) { if (dapan[i] == '1') { socauhoi++; } }
             
         }
 
@@ -784,34 +791,60 @@ namespace bluetoothmain
         {
             tabControl1.SelectedTab = kiemtra1;
             dapan = cmd.Substring(2);
+            socauhoi = 0;
+            for (int i = 0; i < 16; i++) { if (dapan[i] == '1') { socauhoi++; } }
+
+            for (int r = 0; r < tableLayoutPanel1.RowCount; r++)
+            {
+                foreach (Control c in tableLayoutPanel1.Controls)
+                {
+                    if (tableLayoutPanel1.GetRow(c) == r)
+                    {
+                        c.Visible = (r < socauhoi);
+                    }
+                }
+            }
+
         }
 
         private void submit_Click(object sender, EventArgs e)
         {
-           
+            
+            
+                for (int i = 0; i < socauhoi; i++)
+                {
+                
+                
+                    int vitri = 0;
+                    int index;
+                    string sensor = "";
+                if (da[i].Text !="")
+                {
+                    vitri = da[i].Text.IndexOf('-');
 
-                int index;
-                index= Array.IndexOf(pool, da1.Text+loi1.Text) ;
-                if (index != -1) { traloi[index] = '1'; };
 
-           
-            index = Array.IndexOf(pool, da2.Text + loi2.Text);
-            if (index != -1) traloi[index] = '1';
+                    sensor = da[i].SelectedItem?.ToString().Substring(0, vitri);
 
-           
-            index = Array.IndexOf(pool, da3.Text + loi3.Text);
-            if (index != -1) traloi[index] = '1';
+                    if (loi[i].Text == "") { MessageBox.Show("Điền đủ"); break; }
+                    else
+                    { index = Array.IndexOf(pool, sensor + loi[i].Text); }
+                    if (index != -1) { traloi[index] = '1'; }
+                }
+                else { MessageBox.Show("Điền đủ"); break; }
+                
+                }
+            
+            
 
-            index = Array.IndexOf(pool, da4.Text + loi4.Text);
-            if (index != -1) traloi[index] = '1';
+
 
             string final = new string(traloi);
             
             int caudung = 0;
-            int socauhoi = 0;
+            
            for(int i=0;i<16;i++)
             {
-                if (dapan[i] == '1') { socauhoi++; }
+                
                 if(final[i]==dapan[i]&&final[i]=='1')
                 { caudung++; }
             }
@@ -823,7 +856,10 @@ namespace bluetoothmain
             traloi = "0000000000000000".ToCharArray();
         }
 
-        
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void tk_TextChanged(object sender, EventArgs e)
         {
