@@ -111,8 +111,11 @@ namespace bluetoothmain
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
             this.kiemtraqlsv = new System.Windows.Forms.TabPage();
+            this.browse = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.kt = new System.Windows.Forms.Button();
             this.kiemtra1 = new System.Windows.Forms.TabPage();
+            this.tensvkiemtra = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.loi4 = new System.Windows.Forms.ComboBox();
             this.loi3 = new System.Windows.Forms.ComboBox();
@@ -159,6 +162,7 @@ namespace bluetoothmain
             this.connectwifi = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.usbmode = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.comusb = new System.Windows.Forms.Label();
             this.btctd = new System.Windows.Forms.TabPage();
             this.disconnect = new System.Windows.Forms.Button();
@@ -176,9 +180,6 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.browse = new System.Windows.Forms.Button();
-            this.tensvkiemtra = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.debug.SuspendLayout();
@@ -191,6 +192,7 @@ namespace bluetoothmain
             this.tabPage8.SuspendLayout();
             this.danhpan.SuspendLayout();
             this.kiemtraqlsv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.kiemtra1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.settings_panel.SuspendLayout();
@@ -200,7 +202,6 @@ namespace bluetoothmain
             this.usbmode.SuspendLayout();
             this.btctd.SuspendLayout();
             this.wfctd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -1208,6 +1209,29 @@ namespace bluetoothmain
             this.kiemtraqlsv.UseVisualStyleBackColor = true;
             this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
             // 
+            // browse
+            // 
+            this.browse.Location = new System.Drawing.Point(687, 477);
+            this.browse.Name = "browse";
+            this.browse.Size = new System.Drawing.Size(147, 56);
+            this.browse.TabIndex = 2;
+            this.browse.Text = "Browse";
+            this.browse.UseVisualStyleBackColor = true;
+            this.browse.Click += new System.EventHandler(this.browse_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(310, 59);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(845, 412);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
+            // 
             // kt
             // 
             this.kt.Enabled = false;
@@ -1235,6 +1259,15 @@ namespace bluetoothmain
             this.kiemtra1.UseVisualStyleBackColor = true;
             this.kiemtra1.Click += new System.EventHandler(this.kiemtra1_Click);
             this.kiemtra1.Enter += new System.EventHandler(this.kiemtra1_Enter);
+            // 
+            // tensvkiemtra
+            // 
+            this.tensvkiemtra.AutoSize = true;
+            this.tensvkiemtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tensvkiemtra.Location = new System.Drawing.Point(359, 16);
+            this.tensvkiemtra.Name = "tensvkiemtra";
+            this.tensvkiemtra.Size = new System.Drawing.Size(0, 24);
+            this.tensvkiemtra.TabIndex = 12;
             // 
             // tableLayoutPanel1
             // 
@@ -2176,6 +2209,7 @@ namespace bluetoothmain
             // 
             // usbmode
             // 
+            this.usbmode.Controls.Add(this.button3);
             this.usbmode.Controls.Add(this.comusb);
             this.usbmode.Location = new System.Drawing.Point(4, 22);
             this.usbmode.Name = "usbmode";
@@ -2184,6 +2218,16 @@ namespace bluetoothmain
             this.usbmode.TabIndex = 8;
             this.usbmode.Text = "usbmode";
             this.usbmode.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(175, 111);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(149, 40);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comusb
             // 
@@ -2343,38 +2387,6 @@ namespace bluetoothmain
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(310, 59);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(845, 412);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
-            // 
-            // browse
-            // 
-            this.browse.Location = new System.Drawing.Point(687, 477);
-            this.browse.Name = "browse";
-            this.browse.Size = new System.Drawing.Size(147, 56);
-            this.browse.TabIndex = 2;
-            this.browse.Text = "Browse";
-            this.browse.UseVisualStyleBackColor = true;
-            this.browse.Click += new System.EventHandler(this.browse_Click);
-            // 
-            // tensvkiemtra
-            // 
-            this.tensvkiemtra.AutoSize = true;
-            this.tensvkiemtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tensvkiemtra.Location = new System.Drawing.Point(359, 16);
-            this.tensvkiemtra.Name = "tensvkiemtra";
-            this.tensvkiemtra.Size = new System.Drawing.Size(0, 24);
-            this.tensvkiemtra.TabIndex = 12;
-            // 
             // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2410,6 +2422,7 @@ namespace bluetoothmain
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
             this.kiemtraqlsv.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.kiemtra1.ResumeLayout(false);
             this.kiemtra1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -2424,7 +2437,6 @@ namespace bluetoothmain
             this.btctd.PerformLayout();
             this.wfctd.ResumeLayout(false);
             this.wfctd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2499,7 +2511,6 @@ namespace bluetoothmain
         private System.Windows.Forms.Button usb;
         private System.Windows.Forms.TabPage usbmode;
         private System.Windows.Forms.Label comusb;
-        public System.Windows.Forms.Timer usb_ping_timer;
         private System.Windows.Forms.Panel settings_panel;
         private System.Windows.Forms.Button close_settings;
         private System.Windows.Forms.TabControl tabControl2;
@@ -2580,5 +2591,7 @@ namespace bluetoothmain
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button browse;
         private System.Windows.Forms.Label tensvkiemtra;
+        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Timer usb_ping_timer;
     }
 }

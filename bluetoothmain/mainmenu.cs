@@ -276,7 +276,7 @@ namespace bluetoothmain
 
       
 
-        private void ping_timer_Tick(object sender, EventArgs e)
+        public void ping_timer_Tick(object sender, EventArgs e)
         {
             ping();
             try
@@ -613,38 +613,54 @@ namespace bluetoothmain
             usb_ping_timer.Start();
             
         }
-
-        private void usb_ping_timer_Tick(object sender, EventArgs e)
+        bool IsAlive(string port)
         {
-            
-        foreach (var device in new ManagementObjectSearcher(
-    "SELECT * FROM Win32_PnPEntity WHERE Name LIKE '%(COM%'").Get())
+            try
+            {
+                using (SerialPort sp = new SerialPort(port))
                 {
-                    string id = device["PNPDeviceID"].ToString();
+                    sp.Open();
+                    sp.Close();
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public void usb_ping_timer_Tick(object sender, EventArgs e)
+        {
+            foreach (var device in new ManagementObjectSearcher(
+       "SELECT * FROM Win32_PnPEntity WHERE Name LIKE '%(COM%'").Get())
+            {
+                string id = device["PNPDeviceID"].ToString();
                 string name = device["Name"].ToString();
-                string com="";
-                if (id.Contains("VID_10C4"))
-                    {
+                string com = "";
+                if (name.Contains("CP21"))
+                {
                     var match = System.Text.RegularExpressions.Regex.Match(name, @"\(COM\d+\)");
-                     com = match.Value.Replace("(", "").Replace(")", "");
+                    com = match.Value.Replace("(", "").Replace(")", "");
                     comusb.Text = "Đã kết nối USB cổng " + com;
-                    if (com != comdung)
+                    comdung = com;
+                    if (!serCOM.IsOpen || com != comdung)
                     {
                         comdung = com;
                         SetConnectedUSB();
                     }
-                    
-                    
-                    }
-
-                else{ 
-                    comusb.Text = "Không tìm thấy kết nối USB";
-                    comdung = "";
-                    SetDisconnectedUSB();
-
-                    }
+                    break;
                 }
-        }
+                else
+                { comusb.Text = "Không tìm thấy USB";
+                    if(statelbl.Text=="USB CONNECTED")
+                    { SetDisconnectedUSB(); }
+                }
+
+                }
+            }
+
+        
+        
         void SetConnectedUSB()
         {
 
@@ -974,6 +990,11 @@ namespace bluetoothmain
 
                 }
             }
+        }
+      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
