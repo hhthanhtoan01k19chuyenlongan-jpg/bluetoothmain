@@ -113,10 +113,41 @@ namespace bluetoothmain
             this.kiemtraqlsv = new System.Windows.Forms.TabPage();
             this.kt = new System.Windows.Forms.Button();
             this.kiemtra1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.loi4 = new System.Windows.Forms.ComboBox();
+            this.loi3 = new System.Windows.Forms.ComboBox();
+            this.loi2 = new System.Windows.Forms.ComboBox();
+            this.da2 = new System.Windows.Forms.ComboBox();
+            this.da1 = new System.Windows.Forms.ComboBox();
+            this.da3 = new System.Windows.Forms.ComboBox();
+            this.da5 = new System.Windows.Forms.ComboBox();
+            this.da6 = new System.Windows.Forms.ComboBox();
+            this.da7 = new System.Windows.Forms.ComboBox();
+            this.da8 = new System.Windows.Forms.ComboBox();
+            this.da9 = new System.Windows.Forms.ComboBox();
+            this.da10 = new System.Windows.Forms.ComboBox();
+            this.da11 = new System.Windows.Forms.ComboBox();
+            this.da12 = new System.Windows.Forms.ComboBox();
+            this.da13 = new System.Windows.Forms.ComboBox();
+            this.da14 = new System.Windows.Forms.ComboBox();
+            this.da15 = new System.Windows.Forms.ComboBox();
+            this.da16 = new System.Windows.Forms.ComboBox();
+            this.loi5 = new System.Windows.Forms.ComboBox();
+            this.loi6 = new System.Windows.Forms.ComboBox();
+            this.loi7 = new System.Windows.Forms.ComboBox();
+            this.loi8 = new System.Windows.Forms.ComboBox();
+            this.loi9 = new System.Windows.Forms.ComboBox();
+            this.loi10 = new System.Windows.Forms.ComboBox();
+            this.loi11 = new System.Windows.Forms.ComboBox();
+            this.loi12 = new System.Windows.Forms.ComboBox();
+            this.loi13 = new System.Windows.Forms.ComboBox();
+            this.loi14 = new System.Windows.Forms.ComboBox();
+            this.loi15 = new System.Windows.Forms.ComboBox();
+            this.loi16 = new System.Windows.Forms.ComboBox();
+            this.da4 = new System.Windows.Forms.ComboBox();
+            this.loi1 = new System.Windows.Forms.ComboBox();
             this.lbdapan = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
-            this.loi1 = new System.Windows.Forms.ComboBox();
-            this.da1 = new System.Windows.Forms.ComboBox();
             this.svchondapan = new System.Windows.Forms.Label();
             this.settings_panel = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -145,37 +176,9 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.da2 = new System.Windows.Forms.ComboBox();
-            this.da3 = new System.Windows.Forms.ComboBox();
-            this.da5 = new System.Windows.Forms.ComboBox();
-            this.da6 = new System.Windows.Forms.ComboBox();
-            this.da7 = new System.Windows.Forms.ComboBox();
-            this.da8 = new System.Windows.Forms.ComboBox();
-            this.da9 = new System.Windows.Forms.ComboBox();
-            this.da10 = new System.Windows.Forms.ComboBox();
-            this.da11 = new System.Windows.Forms.ComboBox();
-            this.da12 = new System.Windows.Forms.ComboBox();
-            this.da13 = new System.Windows.Forms.ComboBox();
-            this.da14 = new System.Windows.Forms.ComboBox();
-            this.da15 = new System.Windows.Forms.ComboBox();
-            this.da16 = new System.Windows.Forms.ComboBox();
-            this.loi2 = new System.Windows.Forms.ComboBox();
-            this.loi3 = new System.Windows.Forms.ComboBox();
-            this.loi4 = new System.Windows.Forms.ComboBox();
-            this.loi5 = new System.Windows.Forms.ComboBox();
-            this.loi6 = new System.Windows.Forms.ComboBox();
-            this.loi7 = new System.Windows.Forms.ComboBox();
-            this.loi8 = new System.Windows.Forms.ComboBox();
-            this.loi9 = new System.Windows.Forms.ComboBox();
-            this.loi10 = new System.Windows.Forms.ComboBox();
-            this.loi11 = new System.Windows.Forms.ComboBox();
-            this.loi12 = new System.Windows.Forms.ComboBox();
-            this.loi13 = new System.Windows.Forms.ComboBox();
-            this.loi14 = new System.Windows.Forms.ComboBox();
-            this.loi15 = new System.Windows.Forms.ComboBox();
-            this.loi16 = new System.Windows.Forms.ComboBox();
-            this.da4 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.browse = new System.Windows.Forms.Button();
+            this.tensvkiemtra = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.debug.SuspendLayout();
@@ -189,6 +192,7 @@ namespace bluetoothmain
             this.danhpan.SuspendLayout();
             this.kiemtraqlsv.SuspendLayout();
             this.kiemtra1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.btmode.SuspendLayout();
@@ -196,7 +200,7 @@ namespace bluetoothmain
             this.usbmode.SuspendLayout();
             this.btctd.SuspendLayout();
             this.wfctd.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -1193,6 +1197,8 @@ namespace bluetoothmain
             // 
             // kiemtraqlsv
             // 
+            this.kiemtraqlsv.Controls.Add(this.browse);
+            this.kiemtraqlsv.Controls.Add(this.dataGridView1);
             this.kiemtraqlsv.Controls.Add(this.kt);
             this.kiemtraqlsv.Location = new System.Drawing.Point(4, 22);
             this.kiemtraqlsv.Name = "kiemtraqlsv";
@@ -1216,6 +1222,7 @@ namespace bluetoothmain
             // 
             // kiemtra1
             // 
+            this.kiemtra1.Controls.Add(this.tensvkiemtra);
             this.kiemtra1.Controls.Add(this.tableLayoutPanel1);
             this.kiemtra1.Controls.Add(this.lbdapan);
             this.kiemtra1.Controls.Add(this.submit);
@@ -1226,43 +1233,149 @@ namespace bluetoothmain
             this.kiemtra1.TabIndex = 11;
             this.kiemtra1.Text = "kiemtra1";
             this.kiemtra1.UseVisualStyleBackColor = true;
+            this.kiemtra1.Click += new System.EventHandler(this.kiemtra1_Click);
+            this.kiemtra1.Enter += new System.EventHandler(this.kiemtra1_Enter);
             // 
-            // lbdapan
+            // tableLayoutPanel1
             // 
-            this.lbdapan.AutoSize = true;
-            this.lbdapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdapan.Location = new System.Drawing.Point(963, 210);
-            this.lbdapan.Name = "lbdapan";
-            this.lbdapan.Size = new System.Drawing.Size(76, 25);
-            this.lbdapan.TabIndex = 10;
-            this.lbdapan.Text = "label6";
-            this.lbdapan.Click += new System.EventHandler(this.lbdapan_Click);
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.loi4, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.loi3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.loi2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.da2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.da1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.da3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.da5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.da6, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.da7, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.da8, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.da9, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.da10, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.da11, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.da12, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.da13, 0, 12);
+            this.tableLayoutPanel1.Controls.Add(this.da14, 0, 13);
+            this.tableLayoutPanel1.Controls.Add(this.da15, 0, 14);
+            this.tableLayoutPanel1.Controls.Add(this.da16, 0, 15);
+            this.tableLayoutPanel1.Controls.Add(this.loi5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.loi6, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.loi7, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.loi8, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.loi9, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.loi10, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.loi11, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.loi12, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.loi13, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.loi14, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.loi15, 1, 14);
+            this.tableLayoutPanel1.Controls.Add(this.loi16, 1, 15);
+            this.tableLayoutPanel1.Controls.Add(this.da4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.loi1, 1, 0);
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(300, 59);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 16;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(591, 485);
+            this.tableLayoutPanel1.TabIndex = 11;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // submit
+            // loi4
             // 
-            this.submit.Location = new System.Drawing.Point(968, 147);
-            this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(114, 59);
-            this.submit.TabIndex = 9;
-            this.submit.Text = "Nộp bài";
-            this.submit.UseVisualStyleBackColor = true;
-            this.submit.Click += new System.EventHandler(this.submit_Click);
-            // 
-            // loi1
-            // 
-            this.loi1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi1.FormattingEnabled = true;
-            this.loi1.ItemHeight = 20;
-            this.loi1.Items.AddRange(new object[] {
+            this.loi4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi4.FormattingEnabled = true;
+            this.loi4.ItemHeight = 20;
+            this.loi4.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi1.Location = new System.Drawing.Point(321, 3);
-            this.loi1.Name = "loi1";
-            this.loi1.Size = new System.Drawing.Size(132, 28);
-            this.loi1.TabIndex = 5;
+            this.loi4.Location = new System.Drawing.Point(446, 98);
+            this.loi4.Name = "loi4";
+            this.loi4.Size = new System.Drawing.Size(132, 28);
+            this.loi4.TabIndex = 26;
+            // 
+            // loi3
+            // 
+            this.loi3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi3.FormattingEnabled = true;
+            this.loi3.ItemHeight = 20;
+            this.loi3.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi3.Location = new System.Drawing.Point(446, 68);
+            this.loi3.Name = "loi3";
+            this.loi3.Size = new System.Drawing.Size(132, 28);
+            this.loi3.TabIndex = 25;
+            // 
+            // loi2
+            // 
+            this.loi2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi2.FormattingEnabled = true;
+            this.loi2.ItemHeight = 20;
+            this.loi2.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi2.Location = new System.Drawing.Point(446, 38);
+            this.loi2.Name = "loi2";
+            this.loi2.Size = new System.Drawing.Size(132, 28);
+            this.loi2.TabIndex = 24;
+            // 
+            // da2
+            // 
+            this.da2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da2.FormattingEnabled = true;
+            this.da2.ItemHeight = 20;
+            this.da2.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da2.Location = new System.Drawing.Point(3, 38);
+            this.da2.Name = "da2";
+            this.da2.Size = new System.Drawing.Size(437, 28);
+            this.da2.TabIndex = 9;
+            this.da2.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da2.Click += new System.EventHandler(this.kiemtra1_Click);
             // 
             // da1
             // 
@@ -1291,6 +1404,656 @@ namespace bluetoothmain
             this.da1.Name = "da1";
             this.da1.Size = new System.Drawing.Size(437, 28);
             this.da1.TabIndex = 1;
+            this.da1.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da3
+            // 
+            this.da3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da3.FormattingEnabled = true;
+            this.da3.ItemHeight = 20;
+            this.da3.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da3.Location = new System.Drawing.Point(3, 68);
+            this.da3.Name = "da3";
+            this.da3.Size = new System.Drawing.Size(437, 28);
+            this.da3.TabIndex = 10;
+            this.da3.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da3.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da5
+            // 
+            this.da5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da5.FormattingEnabled = true;
+            this.da5.ItemHeight = 20;
+            this.da5.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da5.Location = new System.Drawing.Point(3, 128);
+            this.da5.Name = "da5";
+            this.da5.Size = new System.Drawing.Size(437, 28);
+            this.da5.TabIndex = 12;
+            this.da5.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da5.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da6
+            // 
+            this.da6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da6.FormattingEnabled = true;
+            this.da6.ItemHeight = 20;
+            this.da6.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da6.Location = new System.Drawing.Point(3, 158);
+            this.da6.Name = "da6";
+            this.da6.Size = new System.Drawing.Size(437, 28);
+            this.da6.TabIndex = 13;
+            this.da6.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da6.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da7
+            // 
+            this.da7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da7.FormattingEnabled = true;
+            this.da7.ItemHeight = 20;
+            this.da7.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da7.Location = new System.Drawing.Point(3, 188);
+            this.da7.Name = "da7";
+            this.da7.Size = new System.Drawing.Size(437, 28);
+            this.da7.TabIndex = 14;
+            this.da7.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da7.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da8
+            // 
+            this.da8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da8.FormattingEnabled = true;
+            this.da8.ItemHeight = 20;
+            this.da8.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da8.Location = new System.Drawing.Point(3, 218);
+            this.da8.Name = "da8";
+            this.da8.Size = new System.Drawing.Size(437, 28);
+            this.da8.TabIndex = 15;
+            this.da8.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da8.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da9
+            // 
+            this.da9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da9.FormattingEnabled = true;
+            this.da9.ItemHeight = 20;
+            this.da9.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da9.Location = new System.Drawing.Point(3, 248);
+            this.da9.Name = "da9";
+            this.da9.Size = new System.Drawing.Size(437, 28);
+            this.da9.TabIndex = 16;
+            this.da9.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da9.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da10
+            // 
+            this.da10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da10.FormattingEnabled = true;
+            this.da10.ItemHeight = 20;
+            this.da10.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da10.Location = new System.Drawing.Point(3, 278);
+            this.da10.Name = "da10";
+            this.da10.Size = new System.Drawing.Size(437, 28);
+            this.da10.TabIndex = 17;
+            this.da10.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da10.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da11
+            // 
+            this.da11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da11.FormattingEnabled = true;
+            this.da11.ItemHeight = 20;
+            this.da11.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da11.Location = new System.Drawing.Point(3, 308);
+            this.da11.Name = "da11";
+            this.da11.Size = new System.Drawing.Size(437, 28);
+            this.da11.TabIndex = 18;
+            this.da11.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da11.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da12
+            // 
+            this.da12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da12.FormattingEnabled = true;
+            this.da12.ItemHeight = 20;
+            this.da12.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da12.Location = new System.Drawing.Point(3, 338);
+            this.da12.Name = "da12";
+            this.da12.Size = new System.Drawing.Size(437, 28);
+            this.da12.TabIndex = 19;
+            this.da12.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da12.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da13
+            // 
+            this.da13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da13.FormattingEnabled = true;
+            this.da13.ItemHeight = 20;
+            this.da13.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da13.Location = new System.Drawing.Point(3, 368);
+            this.da13.Name = "da13";
+            this.da13.Size = new System.Drawing.Size(437, 28);
+            this.da13.TabIndex = 20;
+            this.da13.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da13.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da14
+            // 
+            this.da14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da14.FormattingEnabled = true;
+            this.da14.ItemHeight = 20;
+            this.da14.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da14.Location = new System.Drawing.Point(3, 398);
+            this.da14.Name = "da14";
+            this.da14.Size = new System.Drawing.Size(437, 28);
+            this.da14.TabIndex = 21;
+            this.da14.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da14.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da15
+            // 
+            this.da15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da15.FormattingEnabled = true;
+            this.da15.ItemHeight = 20;
+            this.da15.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da15.Location = new System.Drawing.Point(3, 428);
+            this.da15.Name = "da15";
+            this.da15.Size = new System.Drawing.Size(437, 28);
+            this.da15.TabIndex = 22;
+            this.da15.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da15.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // da16
+            // 
+            this.da16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da16.FormattingEnabled = true;
+            this.da16.ItemHeight = 20;
+            this.da16.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da16.Location = new System.Drawing.Point(3, 458);
+            this.da16.Name = "da16";
+            this.da16.Size = new System.Drawing.Size(437, 28);
+            this.da16.TabIndex = 23;
+            this.da16.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da16.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // loi5
+            // 
+            this.loi5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi5.FormattingEnabled = true;
+            this.loi5.ItemHeight = 20;
+            this.loi5.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi5.Location = new System.Drawing.Point(446, 128);
+            this.loi5.Name = "loi5";
+            this.loi5.Size = new System.Drawing.Size(132, 28);
+            this.loi5.TabIndex = 27;
+            // 
+            // loi6
+            // 
+            this.loi6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi6.FormattingEnabled = true;
+            this.loi6.ItemHeight = 20;
+            this.loi6.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi6.Location = new System.Drawing.Point(446, 158);
+            this.loi6.Name = "loi6";
+            this.loi6.Size = new System.Drawing.Size(132, 28);
+            this.loi6.TabIndex = 28;
+            // 
+            // loi7
+            // 
+            this.loi7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi7.FormattingEnabled = true;
+            this.loi7.ItemHeight = 20;
+            this.loi7.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi7.Location = new System.Drawing.Point(446, 188);
+            this.loi7.Name = "loi7";
+            this.loi7.Size = new System.Drawing.Size(132, 28);
+            this.loi7.TabIndex = 29;
+            // 
+            // loi8
+            // 
+            this.loi8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi8.FormattingEnabled = true;
+            this.loi8.ItemHeight = 20;
+            this.loi8.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi8.Location = new System.Drawing.Point(446, 218);
+            this.loi8.Name = "loi8";
+            this.loi8.Size = new System.Drawing.Size(132, 28);
+            this.loi8.TabIndex = 30;
+            // 
+            // loi9
+            // 
+            this.loi9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi9.FormattingEnabled = true;
+            this.loi9.ItemHeight = 20;
+            this.loi9.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi9.Location = new System.Drawing.Point(446, 248);
+            this.loi9.Name = "loi9";
+            this.loi9.Size = new System.Drawing.Size(132, 28);
+            this.loi9.TabIndex = 31;
+            // 
+            // loi10
+            // 
+            this.loi10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi10.FormattingEnabled = true;
+            this.loi10.ItemHeight = 20;
+            this.loi10.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi10.Location = new System.Drawing.Point(446, 278);
+            this.loi10.Name = "loi10";
+            this.loi10.Size = new System.Drawing.Size(132, 28);
+            this.loi10.TabIndex = 32;
+            // 
+            // loi11
+            // 
+            this.loi11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi11.FormattingEnabled = true;
+            this.loi11.ItemHeight = 20;
+            this.loi11.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi11.Location = new System.Drawing.Point(446, 308);
+            this.loi11.Name = "loi11";
+            this.loi11.Size = new System.Drawing.Size(132, 28);
+            this.loi11.TabIndex = 33;
+            // 
+            // loi12
+            // 
+            this.loi12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi12.FormattingEnabled = true;
+            this.loi12.ItemHeight = 20;
+            this.loi12.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi12.Location = new System.Drawing.Point(446, 338);
+            this.loi12.Name = "loi12";
+            this.loi12.Size = new System.Drawing.Size(132, 28);
+            this.loi12.TabIndex = 34;
+            // 
+            // loi13
+            // 
+            this.loi13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi13.FormattingEnabled = true;
+            this.loi13.ItemHeight = 20;
+            this.loi13.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi13.Location = new System.Drawing.Point(446, 368);
+            this.loi13.Name = "loi13";
+            this.loi13.Size = new System.Drawing.Size(132, 28);
+            this.loi13.TabIndex = 35;
+            // 
+            // loi14
+            // 
+            this.loi14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi14.FormattingEnabled = true;
+            this.loi14.ItemHeight = 20;
+            this.loi14.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi14.Location = new System.Drawing.Point(446, 398);
+            this.loi14.Name = "loi14";
+            this.loi14.Size = new System.Drawing.Size(132, 28);
+            this.loi14.TabIndex = 36;
+            // 
+            // loi15
+            // 
+            this.loi15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi15.FormattingEnabled = true;
+            this.loi15.ItemHeight = 20;
+            this.loi15.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi15.Location = new System.Drawing.Point(446, 428);
+            this.loi15.Name = "loi15";
+            this.loi15.Size = new System.Drawing.Size(132, 28);
+            this.loi15.TabIndex = 37;
+            // 
+            // loi16
+            // 
+            this.loi16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi16.FormattingEnabled = true;
+            this.loi16.ItemHeight = 20;
+            this.loi16.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi16.Location = new System.Drawing.Point(446, 458);
+            this.loi16.Name = "loi16";
+            this.loi16.Size = new System.Drawing.Size(132, 28);
+            this.loi16.TabIndex = 38;
+            // 
+            // da4
+            // 
+            this.da4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.da4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.da4.FormattingEnabled = true;
+            this.da4.ItemHeight = 20;
+            this.da4.Items.AddRange(new object[] {
+            "ECT - Cảm biến nhiệt độ nước làm mát",
+            "IAT - Cảm biến nhiệt độ khí nạp",
+            "MAF - Cảm biến lưu lượng khí nạp",
+            "CKP - Cảm biến tốc độ động cơ",
+            "IGT1 - Bộ đánh lửa máy số 1",
+            "IGT2 - Bộ đánh lửa máy số 2",
+            "IGT3 - Bộ đánh lửa máy số 3",
+            "IGT4 - Bộ đánh lửa máy số 4",
+            "CMPA - Cảm biến vị trí  CAM Nạp",
+            "CMPB - Cảm biến vị trí CAM Xả",
+            "APP1 - Cảm biến vị trí bàn đạp ga 1",
+            "APP2 - Cảm biến vị trí bàn đạp ga 2",
+            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+            "AFS - Cảm biến A/F",
+            "TPS1 - Cảm biến vị trí bướm ga 1",
+            "TPS2 - Cảm biến vị trí bướm ga 2"});
+            this.da4.Location = new System.Drawing.Point(3, 98);
+            this.da4.Name = "da4";
+            this.da4.Size = new System.Drawing.Size(437, 28);
+            this.da4.TabIndex = 39;
+            this.da4.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
+            this.da4.Click += new System.EventHandler(this.kiemtra1_Click);
+            // 
+            // loi1
+            // 
+            this.loi1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loi1.FormattingEnabled = true;
+            this.loi1.ItemHeight = 20;
+            this.loi1.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Chạm dương ",
+            "Chạm mass",
+            "Điện trở cao"});
+            this.loi1.Location = new System.Drawing.Point(446, 3);
+            this.loi1.Name = "loi1";
+            this.loi1.Size = new System.Drawing.Size(132, 28);
+            this.loi1.TabIndex = 5;
+            // 
+            // lbdapan
+            // 
+            this.lbdapan.AutoSize = true;
+            this.lbdapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdapan.Location = new System.Drawing.Point(988, 216);
+            this.lbdapan.Name = "lbdapan";
+            this.lbdapan.Size = new System.Drawing.Size(76, 25);
+            this.lbdapan.TabIndex = 10;
+            this.lbdapan.Text = "label6";
+            this.lbdapan.Click += new System.EventHandler(this.lbdapan_Click);
+            // 
+            // submit
+            // 
+            this.submit.Location = new System.Drawing.Point(968, 147);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(114, 59);
+            this.submit.TabIndex = 9;
+            this.submit.Text = "Nộp bài";
+            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // svchondapan
             // 
@@ -1313,7 +2076,7 @@ namespace bluetoothmain
             this.settings_panel.Location = new System.Drawing.Point(82, 44);
             this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(172, 227);
+            this.settings_panel.Size = new System.Drawing.Size(917, 370);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -1580,728 +2343,37 @@ namespace bluetoothmain
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
-            // tableLayoutPanel1
+            // dataGridView1
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.loi4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.loi3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.loi2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.da2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.da1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.da3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.da5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.da6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.da7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.da8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.da9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.da10, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.da11, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.da12, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.da13, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.da14, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.da15, 0, 14);
-            this.tableLayoutPanel1.Controls.Add(this.da16, 0, 15);
-            this.tableLayoutPanel1.Controls.Add(this.loi5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.loi6, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.loi7, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.loi8, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.loi9, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.loi10, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.loi11, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.loi12, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.loi13, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.loi14, 1, 13);
-            this.tableLayoutPanel1.Controls.Add(this.loi15, 1, 14);
-            this.tableLayoutPanel1.Controls.Add(this.loi16, 1, 15);
-            this.tableLayoutPanel1.Controls.Add(this.da4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.loi1, 1, 0);
-            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(300, 59);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 16;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(591, 485);
-            this.tableLayoutPanel1.TabIndex = 11;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(310, 59);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(845, 412);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
             // 
-            // da2
+            // browse
             // 
-            this.da2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da2.FormattingEnabled = true;
-            this.da2.ItemHeight = 20;
-            this.da2.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da2.Location = new System.Drawing.Point(3, 33);
-            this.da2.Name = "da2";
-            this.da2.Size = new System.Drawing.Size(437, 28);
-            this.da2.TabIndex = 9;
+            this.browse.Location = new System.Drawing.Point(687, 477);
+            this.browse.Name = "browse";
+            this.browse.Size = new System.Drawing.Size(147, 56);
+            this.browse.TabIndex = 2;
+            this.browse.Text = "Browse";
+            this.browse.UseVisualStyleBackColor = true;
+            this.browse.Click += new System.EventHandler(this.browse_Click);
             // 
-            // da3
+            // tensvkiemtra
             // 
-            this.da3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da3.FormattingEnabled = true;
-            this.da3.ItemHeight = 20;
-            this.da3.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da3.Location = new System.Drawing.Point(3, 63);
-            this.da3.Name = "da3";
-            this.da3.Size = new System.Drawing.Size(437, 28);
-            this.da3.TabIndex = 10;
-            // 
-            // da5
-            // 
-            this.da5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da5.FormattingEnabled = true;
-            this.da5.ItemHeight = 20;
-            this.da5.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da5.Location = new System.Drawing.Point(3, 123);
-            this.da5.Name = "da5";
-            this.da5.Size = new System.Drawing.Size(437, 28);
-            this.da5.TabIndex = 12;
-            // 
-            // da6
-            // 
-            this.da6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da6.FormattingEnabled = true;
-            this.da6.ItemHeight = 20;
-            this.da6.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da6.Location = new System.Drawing.Point(3, 153);
-            this.da6.Name = "da6";
-            this.da6.Size = new System.Drawing.Size(437, 28);
-            this.da6.TabIndex = 13;
-            // 
-            // da7
-            // 
-            this.da7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da7.FormattingEnabled = true;
-            this.da7.ItemHeight = 20;
-            this.da7.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da7.Location = new System.Drawing.Point(3, 183);
-            this.da7.Name = "da7";
-            this.da7.Size = new System.Drawing.Size(437, 28);
-            this.da7.TabIndex = 14;
-            // 
-            // da8
-            // 
-            this.da8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da8.FormattingEnabled = true;
-            this.da8.ItemHeight = 20;
-            this.da8.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da8.Location = new System.Drawing.Point(3, 213);
-            this.da8.Name = "da8";
-            this.da8.Size = new System.Drawing.Size(437, 28);
-            this.da8.TabIndex = 15;
-            // 
-            // da9
-            // 
-            this.da9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da9.FormattingEnabled = true;
-            this.da9.ItemHeight = 20;
-            this.da9.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da9.Location = new System.Drawing.Point(3, 243);
-            this.da9.Name = "da9";
-            this.da9.Size = new System.Drawing.Size(437, 28);
-            this.da9.TabIndex = 16;
-            // 
-            // da10
-            // 
-            this.da10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da10.FormattingEnabled = true;
-            this.da10.ItemHeight = 20;
-            this.da10.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da10.Location = new System.Drawing.Point(3, 273);
-            this.da10.Name = "da10";
-            this.da10.Size = new System.Drawing.Size(437, 28);
-            this.da10.TabIndex = 17;
-            // 
-            // da11
-            // 
-            this.da11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da11.FormattingEnabled = true;
-            this.da11.ItemHeight = 20;
-            this.da11.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da11.Location = new System.Drawing.Point(3, 303);
-            this.da11.Name = "da11";
-            this.da11.Size = new System.Drawing.Size(437, 28);
-            this.da11.TabIndex = 18;
-            // 
-            // da12
-            // 
-            this.da12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da12.FormattingEnabled = true;
-            this.da12.ItemHeight = 20;
-            this.da12.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da12.Location = new System.Drawing.Point(3, 333);
-            this.da12.Name = "da12";
-            this.da12.Size = new System.Drawing.Size(437, 28);
-            this.da12.TabIndex = 19;
-            // 
-            // da13
-            // 
-            this.da13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da13.FormattingEnabled = true;
-            this.da13.ItemHeight = 20;
-            this.da13.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da13.Location = new System.Drawing.Point(3, 363);
-            this.da13.Name = "da13";
-            this.da13.Size = new System.Drawing.Size(437, 28);
-            this.da13.TabIndex = 20;
-            // 
-            // da14
-            // 
-            this.da14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da14.FormattingEnabled = true;
-            this.da14.ItemHeight = 20;
-            this.da14.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da14.Location = new System.Drawing.Point(3, 393);
-            this.da14.Name = "da14";
-            this.da14.Size = new System.Drawing.Size(437, 28);
-            this.da14.TabIndex = 21;
-            // 
-            // da15
-            // 
-            this.da15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da15.FormattingEnabled = true;
-            this.da15.ItemHeight = 20;
-            this.da15.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da15.Location = new System.Drawing.Point(3, 423);
-            this.da15.Name = "da15";
-            this.da15.Size = new System.Drawing.Size(437, 28);
-            this.da15.TabIndex = 22;
-            // 
-            // da16
-            // 
-            this.da16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da16.FormattingEnabled = true;
-            this.da16.ItemHeight = 20;
-            this.da16.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da16.Location = new System.Drawing.Point(3, 453);
-            this.da16.Name = "da16";
-            this.da16.Size = new System.Drawing.Size(437, 28);
-            this.da16.TabIndex = 23;
-            // 
-            // loi2
-            // 
-            this.loi2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi2.FormattingEnabled = true;
-            this.loi2.ItemHeight = 20;
-            this.loi2.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi2.Location = new System.Drawing.Point(321, 33);
-            this.loi2.Name = "loi2";
-            this.loi2.Size = new System.Drawing.Size(132, 28);
-            this.loi2.TabIndex = 24;
-            // 
-            // loi3
-            // 
-            this.loi3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi3.FormattingEnabled = true;
-            this.loi3.ItemHeight = 20;
-            this.loi3.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi3.Location = new System.Drawing.Point(321, 63);
-            this.loi3.Name = "loi3";
-            this.loi3.Size = new System.Drawing.Size(132, 28);
-            this.loi3.TabIndex = 25;
-            // 
-            // loi4
-            // 
-            this.loi4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi4.FormattingEnabled = true;
-            this.loi4.ItemHeight = 20;
-            this.loi4.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi4.Location = new System.Drawing.Point(321, 93);
-            this.loi4.Name = "loi4";
-            this.loi4.Size = new System.Drawing.Size(132, 28);
-            this.loi4.TabIndex = 26;
-            // 
-            // loi5
-            // 
-            this.loi5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi5.FormattingEnabled = true;
-            this.loi5.ItemHeight = 20;
-            this.loi5.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi5.Location = new System.Drawing.Point(321, 123);
-            this.loi5.Name = "loi5";
-            this.loi5.Size = new System.Drawing.Size(132, 28);
-            this.loi5.TabIndex = 27;
-            // 
-            // loi6
-            // 
-            this.loi6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi6.FormattingEnabled = true;
-            this.loi6.ItemHeight = 20;
-            this.loi6.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi6.Location = new System.Drawing.Point(321, 153);
-            this.loi6.Name = "loi6";
-            this.loi6.Size = new System.Drawing.Size(132, 28);
-            this.loi6.TabIndex = 28;
-            // 
-            // loi7
-            // 
-            this.loi7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi7.FormattingEnabled = true;
-            this.loi7.ItemHeight = 20;
-            this.loi7.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi7.Location = new System.Drawing.Point(321, 183);
-            this.loi7.Name = "loi7";
-            this.loi7.Size = new System.Drawing.Size(132, 28);
-            this.loi7.TabIndex = 29;
-            // 
-            // loi8
-            // 
-            this.loi8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi8.FormattingEnabled = true;
-            this.loi8.ItemHeight = 20;
-            this.loi8.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi8.Location = new System.Drawing.Point(321, 213);
-            this.loi8.Name = "loi8";
-            this.loi8.Size = new System.Drawing.Size(132, 28);
-            this.loi8.TabIndex = 30;
-            // 
-            // loi9
-            // 
-            this.loi9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi9.FormattingEnabled = true;
-            this.loi9.ItemHeight = 20;
-            this.loi9.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi9.Location = new System.Drawing.Point(321, 243);
-            this.loi9.Name = "loi9";
-            this.loi9.Size = new System.Drawing.Size(132, 28);
-            this.loi9.TabIndex = 31;
-            // 
-            // loi10
-            // 
-            this.loi10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi10.FormattingEnabled = true;
-            this.loi10.ItemHeight = 20;
-            this.loi10.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi10.Location = new System.Drawing.Point(321, 273);
-            this.loi10.Name = "loi10";
-            this.loi10.Size = new System.Drawing.Size(132, 28);
-            this.loi10.TabIndex = 32;
-            // 
-            // loi11
-            // 
-            this.loi11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi11.FormattingEnabled = true;
-            this.loi11.ItemHeight = 20;
-            this.loi11.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi11.Location = new System.Drawing.Point(321, 303);
-            this.loi11.Name = "loi11";
-            this.loi11.Size = new System.Drawing.Size(132, 28);
-            this.loi11.TabIndex = 33;
-            // 
-            // loi12
-            // 
-            this.loi12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi12.FormattingEnabled = true;
-            this.loi12.ItemHeight = 20;
-            this.loi12.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi12.Location = new System.Drawing.Point(321, 333);
-            this.loi12.Name = "loi12";
-            this.loi12.Size = new System.Drawing.Size(132, 28);
-            this.loi12.TabIndex = 34;
-            // 
-            // loi13
-            // 
-            this.loi13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi13.FormattingEnabled = true;
-            this.loi13.ItemHeight = 20;
-            this.loi13.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi13.Location = new System.Drawing.Point(321, 363);
-            this.loi13.Name = "loi13";
-            this.loi13.Size = new System.Drawing.Size(132, 28);
-            this.loi13.TabIndex = 35;
-            // 
-            // loi14
-            // 
-            this.loi14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi14.FormattingEnabled = true;
-            this.loi14.ItemHeight = 20;
-            this.loi14.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi14.Location = new System.Drawing.Point(321, 393);
-            this.loi14.Name = "loi14";
-            this.loi14.Size = new System.Drawing.Size(132, 28);
-            this.loi14.TabIndex = 36;
-            // 
-            // loi15
-            // 
-            this.loi15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi15.FormattingEnabled = true;
-            this.loi15.ItemHeight = 20;
-            this.loi15.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi15.Location = new System.Drawing.Point(321, 423);
-            this.loi15.Name = "loi15";
-            this.loi15.Size = new System.Drawing.Size(132, 28);
-            this.loi15.TabIndex = 37;
-            // 
-            // loi16
-            // 
-            this.loi16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.loi16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loi16.FormattingEnabled = true;
-            this.loi16.ItemHeight = 20;
-            this.loi16.Items.AddRange(new object[] {
-            "Hở mạch",
-            "Chạm dương ",
-            "Chạm mass",
-            "Điện trở cao"});
-            this.loi16.Location = new System.Drawing.Point(321, 453);
-            this.loi16.Name = "loi16";
-            this.loi16.Size = new System.Drawing.Size(132, 28);
-            this.loi16.TabIndex = 38;
-            // 
-            // da4
-            // 
-            this.da4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.da4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.da4.FormattingEnabled = true;
-            this.da4.ItemHeight = 20;
-            this.da4.Items.AddRange(new object[] {
-            "ECT - Cảm biến nhiệt độ nước làm mát",
-            "IAT - Cảm biến nhiệt độ khí nạp",
-            "MAF - Cảm biến lưu lượng khí nạp",
-            "CKP - Cảm biến tốc độ động cơ",
-            "IGT1 - Bộ đánh lửa máy số 1",
-            "IGT2 - Bộ đánh lửa máy số 2",
-            "IGT3 - Bộ đánh lửa máy số 3",
-            "IGT4 - Bộ đánh lửa máy số 4",
-            "CMPA - Cảm biến vị trí  CAM Nạp",
-            "CMPB - Cảm biến vị trí CAM Xả",
-            "APP1 - Cảm biến vị trí bàn đạp ga 1",
-            "APP2 - Cảm biến vị trí bàn đạp ga 2",
-            "FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
-            "AFS - Cảm biến A/F",
-            "TPS1 - Cảm biến vị trí bướm ga 1",
-            "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da4.Location = new System.Drawing.Point(3, 93);
-            this.da4.Name = "da4";
-            this.da4.Size = new System.Drawing.Size(437, 28);
-            this.da4.TabIndex = 39;
+            this.tensvkiemtra.AutoSize = true;
+            this.tensvkiemtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tensvkiemtra.Location = new System.Drawing.Point(359, 16);
+            this.tensvkiemtra.Name = "tensvkiemtra";
+            this.tensvkiemtra.Size = new System.Drawing.Size(0, 24);
+            this.tensvkiemtra.TabIndex = 12;
             // 
             // mainmenu
             // 
@@ -2340,6 +2412,7 @@ namespace bluetoothmain
             this.kiemtraqlsv.ResumeLayout(false);
             this.kiemtra1.ResumeLayout(false);
             this.kiemtra1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.settings_panel.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.btmode.ResumeLayout(false);
@@ -2351,7 +2424,7 @@ namespace bluetoothmain
             this.btctd.PerformLayout();
             this.wfctd.ResumeLayout(false);
             this.wfctd.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2504,5 +2577,8 @@ namespace bluetoothmain
         private System.Windows.Forms.ComboBox loi15;
         private System.Windows.Forms.ComboBox loi16;
         private System.Windows.Forms.ComboBox da4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button browse;
+        private System.Windows.Forms.Label tensvkiemtra;
     }
 }

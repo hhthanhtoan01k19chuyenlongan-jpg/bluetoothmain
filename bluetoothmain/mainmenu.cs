@@ -12,7 +12,8 @@ using System.Net;
 using System.IO;
 using System.Management;
 using System.Text.RegularExpressions;
-//okee
+using OfficeOpenXml;
+
 
 namespace bluetoothmain
 {
@@ -20,12 +21,60 @@ namespace bluetoothmain
     {
         ComboBox[] da;
         ComboBox[] loi;
+        string svkiemtra;
+        string[] poolda = {
+"ECT - Cảm biến nhiệt độ nước làm mát",
+"IAT - Cảm biến nhiệt độ khí nạp",
+"MAF - Cảm biến lưu lượng khí nạp",
+"CKP - Cảm biến tốc độ động cơ",
+"IGT1 - Bộ đánh lửa máy số 1",
+"IGT2 - Bộ đánh lửa máy số 2",
+"IGT3 - Bộ đánh lửa máy số 3",
+"IGT4 - Bộ đánh lửa máy số 4",
+"CMPA - Cảm biến vị trí CAM Nạp",
+"CMPB - Cảm biến vị trí CAM Xả",
+"APP1 - Cảm biến vị trí bàn đạp ga 1",
+"APP2 - Cảm biến vị trí bàn đạp ga 2",
+"FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+"AFS - Cảm biến A/F",
+"TPS1 - Cảm biến vị trí bướm ga 1",
+"TPS2 - Cảm biến vị trí bướm ga 2" };
 
+        private void LoadExcel(string path)
+        {
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            FileInfo file = new FileInfo(path);
+
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                var ws = package.Workbook.Worksheets[0];
+
+                DataTable dt = new DataTable();
+
+                // Header
+                for (int col = 1; col <= ws.Dimension.End.Column; col++)
+                {
+                    dt.Columns.Add(ws.Cells[1, col].Text);
+                }
+
+                // Data
+                for (int row = 2; row <= ws.Dimension.End.Row; row++)
+                {
+                    DataRow dr = dt.NewRow();
+                    for (int col = 1; col <= dt.Columns.Count; col++)
+                    {
+                        dr[col - 1] = ws.Cells[row, col].Text;
+                    }
+                    dt.Rows.Add(dr);
+                }
+
+                dataGridView1.DataSource = dt;
+            }
+        }
         public mainmenu()
         {
-            InitializeComponent();
-            
-
+            InitializeComponent(); ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
             da = new ComboBox[] { da1, da2, da3, da4, da5, da6, da7, da8, da9, da10, da11, da12, da13, da14, da15, da16 };
             loi = new ComboBox[] { loi1, loi2, loi3, loi4, loi5, loi6, loi7, loi8, loi9, loi10, loi11, loi12, loi13, loi14, loi15, loi16 };
 
@@ -117,7 +166,7 @@ namespace bluetoothmain
             disconnect.Enabled = true;
             disconnect.Show();
             gd.Enabled = true;
-            kt.Enabled = true;
+           
 
         }
         private void SetDisconnectedBT()
@@ -584,7 +633,7 @@ namespace bluetoothmain
                         comdung = com;
                         SetConnectedUSB();
                     }
-                    break;
+                    
                     
                     }
 
@@ -614,7 +663,8 @@ namespace bluetoothmain
                     disconnect.Show();
                     gd.Enabled = true;
                     serCOM.WriteLine("USBconnected");
-                    kt.Enabled = true;
+                    
+                   
 
 
                 }
@@ -825,12 +875,12 @@ namespace bluetoothmain
 
                     sensor = da[i].SelectedItem?.ToString().Substring(0, vitri);
 
-                    if (loi[i].Text == "") { MessageBox.Show("Điền đủ"); break; }
+                    if (loi[i].Text == "") { MessageBox.Show("Điền đủ"); return; }
                     else
                     { index = Array.IndexOf(pool, sensor + loi[i].Text); }
                     if (index != -1) { traloi[index] = '1'; }
                 }
-                else { MessageBox.Show("Điền đủ"); break; }
+                else { MessageBox.Show("Điền đủ"); return; }
                 
                 }
             
@@ -859,6 +909,71 @@ namespace bluetoothmain
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void browse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Excel Files (*.xlsx)|*.xlsx";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                LoadExcel(ofd.FileName);
+                dataGridView1.ClearSelection();
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (statelbl.Text.Contains("CONNECTED"))
+            {
+                kt.Enabled = true;
+                svkiemtra = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            }
+            else { kt.Enabled = false; }
+        }
+
+        private void kiemtra1_Enter(object sender, EventArgs e)
+        {
+            tensvkiemtra.Text = "Tên sinh viên: "+svkiemtra;
+        }
+
+        private void da_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kiemtra1_Click(object sender, EventArgs e)
+        {
+            
+            List<string> pooldatemp  = poolda.ToList();
+            for (int i=0;i<16;i++)
+            {
+                if(da[i].Text!="")
+                {
+                    pooldatemp.Remove(da[i].Text);
+                    
+                }
+            }
+            for (int i = 0; i < 16; i++)
+            {
+                if (da[i].Text == "")
+                {
+                    da[i].Items.Clear();
+                    da[i].Items.AddRange(pooldatemp.ToArray());
+
+                }
+            }
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
@@ -1016,7 +1131,7 @@ namespace bluetoothmain
             disconnect.Enabled = true;
             disconnect.Show();
             gd.Enabled=true;
-            kt.Enabled = true;
+            
 
             if (statelbl.Text == "WIFI CONNECTED")
             {
@@ -1090,17 +1205,7 @@ namespace bluetoothmain
 
 
 //USB MODE
-
-
-
-
-
-
-
-
-
-
-
+  
 
 }
 
