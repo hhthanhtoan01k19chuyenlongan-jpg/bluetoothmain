@@ -111,6 +111,8 @@ namespace bluetoothmain
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
             this.kiemtraqlsv = new System.Windows.Forms.TabPage();
+            this.listbox_recentfiles = new System.Windows.Forms.ListBox();
+            this.save = new System.Windows.Forms.Button();
             this.browse = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.kt = new System.Windows.Forms.Button();
@@ -162,7 +164,6 @@ namespace bluetoothmain
             this.connectwifi = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.usbmode = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
             this.comusb = new System.Windows.Forms.Label();
             this.btctd = new System.Windows.Forms.TabPage();
             this.disconnect = new System.Windows.Forms.Button();
@@ -1198,6 +1199,8 @@ namespace bluetoothmain
             // 
             // kiemtraqlsv
             // 
+            this.kiemtraqlsv.Controls.Add(this.listbox_recentfiles);
+            this.kiemtraqlsv.Controls.Add(this.save);
             this.kiemtraqlsv.Controls.Add(this.browse);
             this.kiemtraqlsv.Controls.Add(this.dataGridView1);
             this.kiemtraqlsv.Controls.Add(this.kt);
@@ -1208,6 +1211,24 @@ namespace bluetoothmain
             this.kiemtraqlsv.Text = "kiemtraqlsv";
             this.kiemtraqlsv.UseVisualStyleBackColor = true;
             this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
+            // 
+            // listbox_recentfiles
+            // 
+            this.listbox_recentfiles.FormattingEnabled = true;
+            this.listbox_recentfiles.Location = new System.Drawing.Point(98, 405);
+            this.listbox_recentfiles.Name = "listbox_recentfiles";
+            this.listbox_recentfiles.Size = new System.Drawing.Size(143, 134);
+            this.listbox_recentfiles.TabIndex = 4;
+            // 
+            // save
+            // 
+            this.save.Location = new System.Drawing.Point(864, 477);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(147, 56);
+            this.save.TabIndex = 3;
+            this.save.Text = "Save";
+            this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // browse
             // 
@@ -2109,7 +2130,7 @@ namespace bluetoothmain
             this.settings_panel.Location = new System.Drawing.Point(82, 44);
             this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(917, 370);
+            this.settings_panel.Size = new System.Drawing.Size(139, 370);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -2209,7 +2230,6 @@ namespace bluetoothmain
             // 
             // usbmode
             // 
-            this.usbmode.Controls.Add(this.button3);
             this.usbmode.Controls.Add(this.comusb);
             this.usbmode.Location = new System.Drawing.Point(4, 22);
             this.usbmode.Name = "usbmode";
@@ -2218,16 +2238,6 @@ namespace bluetoothmain
             this.usbmode.TabIndex = 8;
             this.usbmode.Text = "usbmode";
             this.usbmode.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(175, 111);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 40);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comusb
             // 
@@ -2591,7 +2601,8 @@ namespace bluetoothmain
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button browse;
         private System.Windows.Forms.Label tensvkiemtra;
-        private System.Windows.Forms.Button button3;
         public System.Windows.Forms.Timer usb_ping_timer;
+        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.ListBox listbox_recentfiles;
     }
 }

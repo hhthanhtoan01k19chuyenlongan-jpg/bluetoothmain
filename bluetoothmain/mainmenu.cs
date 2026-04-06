@@ -21,6 +21,8 @@ namespace bluetoothmain
     {
         ComboBox[] da;
         ComboBox[] loi;
+        CheckBox[] bt_usb_cb;
+        CheckBox[] wf_cb;
         string svkiemtra;
         string[] poolda = {
 "ECT - Cảm biến nhiệt độ nước làm mát",
@@ -39,6 +41,7 @@ namespace bluetoothmain
 "AFS - Cảm biến A/F",
 "TPS1 - Cảm biến vị trí bướm ga 1",
 "TPS2 - Cảm biến vị trí bướm ga 2" };
+      
 
         private void LoadExcel(string path)
         {
@@ -72,11 +75,14 @@ namespace bluetoothmain
                 dataGridView1.DataSource = dt;
             }
         }
+        string currentfile;
         public mainmenu()
         {
             InitializeComponent(); ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
             da = new ComboBox[] { da1, da2, da3, da4, da5, da6, da7, da8, da9, da10, da11, da12, da13, da14, da15, da16 };
             loi = new ComboBox[] { loi1, loi2, loi3, loi4, loi5, loi6, loi7, loi8, loi9, loi10, loi11, loi12, loi13, loi14, loi15, loi16 };
+            bt_usb_cb = new CheckBox[] { pan1cb, pan2cb, pan3cb, pan4cb, pan5cb, pan6cb, pan7cb, pan8cb, pan9cb, pan10cb, pan11cb, pan12cb, pan13cb, pan14cb, pan15cb, pan16cb };
+            wf_cb = new CheckBox[] { wfpan1cb, wfpan2cb, wfpan3cb, wfpan4cb, wfpan5cb, wfpan6cb, wfpan7cb, wfpan8cb, wfpan9cb, wfpan10cb, wfpan11cb, wfpan12cb, wfpan13cb, wfpan14cb, wfpan15cb, wfpan16cb };
 
         }
         private void mainmenu_FormClosing(object sender, FormClosingEventArgs e)
@@ -108,7 +114,8 @@ namespace bluetoothmain
         string comdung;
         string cmd;
         string dapan;
-        int socauhoi = 0;
+        double socauhoi = 0;
+        double diem;
         string[] pool = { "ECT Hở mạch", "IAT Điện trở cao", "MAF Hở mạch", "CKP Hở mạch", "IGT1 Hở mạch", "IGT2 Chạm mass", "IGT3 Chạm mass", "IGT4 Chạm mass", "CMPA Hở mạch", "CMPB Hở mạch", "APP1 Hở mạch", "APP2 Chạm mass", "FRPS Hở mạch", "AFS Chạm mass", "TPS1 Hở mạch", "TPS2 Chạm mass" };
         char[] traloi = "0000000000000000".ToCharArray();
         private void login_Load(object sender, EventArgs e)
@@ -906,7 +913,7 @@ namespace bluetoothmain
 
             string final = new string(traloi);
             
-            int caudung = 0;
+            double caudung = 0;
             
            for(int i=0;i<16;i++)
             {
@@ -914,9 +921,33 @@ namespace bluetoothmain
                 if(final[i]==dapan[i]&&final[i]=='1')
                 { caudung++; }
             }
-            lbdapan.Text = caudung.ToString() +"/" + socauhoi.ToString();
-        }
 
+           
+            lbdapan.Text = caudung.ToString() +"/" + socauhoi.ToString();
+            diem = caudung* 10 / socauhoi;
+            diem = Math.Round(diem, 1);
+            if (MessageBox.Show("SỐ CÂU ĐÚNG: " + caudung.ToString() + "/" + socauhoi.ToString()  +"\nĐIỂM: " + diem+"\n ẤN OK ĐỂ TRỞ VỀ TRANG QLSV" )==DialogResult.OK) { tabControl1.SelectedTab = kiemtraqlsv; luudiem(diem); 
+            
+            for(int i = 0; i < 16; i++) 
+                { 
+                    bt_usb_cb[i].Checked = false;
+                    wf_cb[i].Checked = false;
+                }
+            
+            }
+        }
+        void luudiem(double diem)
+        { int i ;
+            for (i=2; i < 6; i++)
+            {
+                if (dataGridView1.SelectedRows[0].Cells[i].Value =="")
+                {
+
+                    dataGridView1.SelectedRows[0].Cells[i].Value = diem;
+                    return;
+                }
+            }
+        }
         private void lbdapan_Click(object sender, EventArgs e)
         {
             traloi = "0000000000000000".ToCharArray();
@@ -935,10 +966,39 @@ namespace bluetoothmain
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 LoadExcel(ofd.FileName);
+                currentfile = ofd.FileName;
+                
                 dataGridView1.ClearSelection();
             }
         }
+        private void luuexcel(string filePath)
+        {
+            FileInfo file = new FileInfo(filePath);
 
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                var ws = package.Workbook.Worksheets[0]; // sheet đầu tiên
+
+                // Ghi header (dòng 1)
+                for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                {
+                    ws.Cells[1, col + 1].Value = dataGridView1.Columns[col].HeaderText;
+                }
+
+                // Ghi dữ liệu (từ dòng 2)
+                for (int row = 0; row < dataGridView1.Rows.Count; row++)
+                {
+                    for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                    {
+                        ws.Cells[row + 2, col + 1].Value = dataGridView1.Rows[row].Cells[col].Value;
+                    }
+                }
+
+                package.Save();
+            }
+
+            MessageBox.Show("Đã lưu");
+        }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -962,6 +1022,11 @@ namespace bluetoothmain
         private void kiemtra1_Enter(object sender, EventArgs e)
         {
             tensvkiemtra.Text = "Tên sinh viên: "+svkiemtra;
+            for(int i=0;i<16;i++)
+            {
+                da[i].SelectedIndex = -1;
+                loi[i].SelectedIndex = -1;
+            }    
         }
 
         private void da_SelectedIndexChanged(object sender, EventArgs e)
@@ -995,6 +1060,11 @@ namespace bluetoothmain
         private void button3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            luuexcel(currentfile);
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
