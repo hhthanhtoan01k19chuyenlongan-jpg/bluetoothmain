@@ -985,16 +985,20 @@ namespace bluetoothmain
             
             }
         }
+       
         void luudiem(double diem)
         { int i ;
-            for (i=2; i < 6; i++)
+            for (i=2; i < dataGridView1.Columns.Count; i++)
             {
-                if (dataGridView1.SelectedRows[0].Cells[i].Value =="")
+                
+                if (string.IsNullOrWhiteSpace(dataGridView1.SelectedRows[0].Cells[i].Value?.ToString()))
                 {
-
+                    
                     dataGridView1.SelectedRows[0].Cells[i].Value = diem;
+                    dataGridView1.Refresh();
                     return;
                 }
+                else { MessageBox.Show("no"); }
             }
         }
         private void lbdapan_Click(object sender, EventArgs e)
@@ -1060,6 +1064,7 @@ namespace bluetoothmain
             {
                 kt.Enabled = true;
                 svkiemtra = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                
             }
             else { kt.Enabled = false; }
         }
