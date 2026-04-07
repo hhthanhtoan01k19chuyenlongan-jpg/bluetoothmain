@@ -111,9 +111,11 @@ namespace bluetoothmain
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
             this.kiemtraqlsv = new System.Windows.Forms.TabPage();
+            this.themsv = new System.Windows.Forms.Button();
+            this.themcotdiem = new System.Windows.Forms.Button();
+            this.themlop = new System.Windows.Forms.Button();
             this.listbox_recentfiles = new System.Windows.Forms.ListBox();
             this.save = new System.Windows.Forms.Button();
-            this.browse = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.kt = new System.Windows.Forms.Button();
             this.kiemtra1 = new System.Windows.Forms.TabPage();
@@ -1278,9 +1280,11 @@ namespace bluetoothmain
             // 
             // kiemtraqlsv
             // 
+            this.kiemtraqlsv.Controls.Add(this.themsv);
+            this.kiemtraqlsv.Controls.Add(this.themcotdiem);
+            this.kiemtraqlsv.Controls.Add(this.themlop);
             this.kiemtraqlsv.Controls.Add(this.listbox_recentfiles);
             this.kiemtraqlsv.Controls.Add(this.save);
-            this.kiemtraqlsv.Controls.Add(this.browse);
             this.kiemtraqlsv.Controls.Add(this.dataGridView1);
             this.kiemtraqlsv.Controls.Add(this.kt);
             this.kiemtraqlsv.Location = new System.Drawing.Point(4, 25);
@@ -1292,6 +1296,36 @@ namespace bluetoothmain
             this.kiemtraqlsv.UseVisualStyleBackColor = true;
             this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
             // 
+            // themsv
+            // 
+            this.themsv.Location = new System.Drawing.Point(222, 201);
+            this.themsv.Name = "themsv";
+            this.themsv.Size = new System.Drawing.Size(82, 49);
+            this.themsv.TabIndex = 7;
+            this.themsv.Text = "Thêm SV";
+            this.themsv.UseVisualStyleBackColor = true;
+            this.themsv.Click += new System.EventHandler(this.themsv_Click);
+            // 
+            // themcotdiem
+            // 
+            this.themcotdiem.Location = new System.Drawing.Point(222, 142);
+            this.themcotdiem.Name = "themcotdiem";
+            this.themcotdiem.Size = new System.Drawing.Size(82, 49);
+            this.themcotdiem.TabIndex = 6;
+            this.themcotdiem.Text = "Thêm cột điểm";
+            this.themcotdiem.UseVisualStyleBackColor = true;
+            this.themcotdiem.Click += new System.EventHandler(this.themcotdiem_Click);
+            // 
+            // themlop
+            // 
+            this.themlop.Location = new System.Drawing.Point(222, 87);
+            this.themlop.Name = "themlop";
+            this.themlop.Size = new System.Drawing.Size(82, 49);
+            this.themlop.TabIndex = 5;
+            this.themlop.Text = "Thêm lớp";
+            this.themlop.UseVisualStyleBackColor = true;
+            this.themlop.Click += new System.EventHandler(this.themlop_Click);
+            // 
             // listbox_recentfiles
             // 
             this.listbox_recentfiles.FormattingEnabled = true;
@@ -1299,8 +1333,9 @@ namespace bluetoothmain
             this.listbox_recentfiles.Location = new System.Drawing.Point(131, 498);
             this.listbox_recentfiles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listbox_recentfiles.Name = "listbox_recentfiles";
-            this.listbox_recentfiles.Size = new System.Drawing.Size(189, 164);
+            this.listbox_recentfiles.Size = new System.Drawing.Size(169, 173);
             this.listbox_recentfiles.TabIndex = 4;
+            this.listbox_recentfiles.SelectedIndexChanged += new System.EventHandler(this.listbox_recentfiles_SelectedIndexChanged);
             // 
             // save
             // 
@@ -1313,19 +1348,9 @@ namespace bluetoothmain
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
-            // browse
-            // 
-            this.browse.Location = new System.Drawing.Point(916, 587);
-            this.browse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.browse.Name = "browse";
-            this.browse.Size = new System.Drawing.Size(196, 69);
-            this.browse.TabIndex = 2;
-            this.browse.Text = "Browse";
-            this.browse.UseVisualStyleBackColor = true;
-            this.browse.Click += new System.EventHandler(this.browse_Click);
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(413, 73);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -2741,10 +2766,12 @@ namespace bluetoothmain
         private System.Windows.Forms.ComboBox loi16;
         private System.Windows.Forms.ComboBox da4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button browse;
         private System.Windows.Forms.Label tensvkiemtra;
         public System.Windows.Forms.Timer usb_ping_timer;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.ListBox listbox_recentfiles;
+        private System.Windows.Forms.Button themsv;
+        private System.Windows.Forms.Button themcotdiem;
+        private System.Windows.Forms.Button themlop;
     }
 }
