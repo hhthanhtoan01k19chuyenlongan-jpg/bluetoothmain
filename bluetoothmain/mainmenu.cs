@@ -41,41 +41,90 @@ namespace bluetoothmain
 "AFS - Cảm biến A/F",
 "TPS1 - Cảm biến vị trí bướm ga 1",
 "TPS2 - Cảm biến vị trí bướm ga 2" };
-      
 
+        DataTable dt = new DataTable();
         private void LoadExcel(string path)
         {
             ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 
             FileInfo file = new FileInfo(path);
+            
 
             using (ExcelPackage package = new ExcelPackage(file))
+                
             {
                 var ws = package.Workbook.Worksheets[0];
 
-                DataTable dt = new DataTable();
 
-                // Header
+
+                dt.Columns.Add("MSSV");
+                dt.Columns.Add("HỌ VÀ TÊN");
+                
+
+
                 for (int col = 1; col <= ws.Dimension.End.Column; col++)
                 {
-                    dt.Columns.Add(ws.Cells[1, col].Text);
+                    for (int row = 1; row <= ws.Dimension.End.Row; row++)
+                    {
+                        if (ws.Cells[row, col].Text.Trim().ToUpper().Contains("MSSV") || ws.Cells[row, col].Text.Trim().ToUpper().Contains("SV") || ws.Cells[row, col].Text.Trim().ToUpper().Contains("MÃ SỐ") || ws.Cells[row, col].Text.Trim().ToUpper().Contains("SINH VIÊN"))
+                        {
+                            for (int i = 0; i <= ws.Dimension.End.Row; i++)
+                            {
+                                dt.Rows.Add();
+
+                                dt.Rows[i][0] = ws.Cells[row + 1, col].Text;
+                                row++;
+
+                            }
+
+                        }
+
+                    }
                 }
 
-                // Data
-                for (int row = 2; row <= ws.Dimension.End.Row; row++)
+                for (int col = 1; col <= ws.Dimension.End.Column; col++)
                 {
-                    DataRow dr = dt.NewRow();
-                    for (int col = 1; col <= dt.Columns.Count; col++)
+                    for (int row = 1; row <= ws.Dimension.End.Row; row++)
                     {
-                        dr[col - 1] = ws.Cells[row, col].Text;
+                        if (ws.Cells[row, col].Text.Trim().ToUpper().Contains("TÊN"))
+                        {
+                            for (int i = 0; i <= ws.Dimension.End.Row; i++) 
+                            {
+                                
+                                
+                                dt.Rows[i][1]=ws.Cells[row+1,col].Text;
+                                row++;
+
+                            }
+
+                        }
+
                     }
-                    dt.Rows.Add(dr);
                 }
+                for(int i=dt.Rows.Count-1;i>0;i--)
+                {
+                    if (dt.Rows[i][0] == "")
+                    {
+                        dt.Rows[i].Delete();
+                       
+                    }
+                    else {  break; }
+                 }    
+                
+
+
+
 
                 dataGridView1.DataSource = dt;
+
+                luuexcel(filemoi);
+                cotdiem = 1;
             }
         }
+        
         string currentfile;
+        string filemoi;
+        int cotdiem;
         public mainmenu()
         {
             InitializeComponent(); ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
@@ -104,7 +153,7 @@ namespace bluetoothmain
             statelbl.Hide();
             disconnect.Enabled = false;
             disconnect.Hide();
-       
+            
         }
 
 
@@ -960,45 +1009,41 @@ namespace bluetoothmain
 
         private void browse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Excel Files (*.xlsx)|*.xlsx";
-
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                LoadExcel(ofd.FileName);
-                currentfile = ofd.FileName;
-                
-                dataGridView1.ClearSelection();
-            }
+            
         }
-        private void luuexcel(string filePath)
+        private void luuexcel(string path)
         {
-            FileInfo file = new FileInfo(filePath);
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+            FileInfo file = new FileInfo(path);
 
             using (ExcelPackage package = new ExcelPackage(file))
             {
-                var ws = package.Workbook.Worksheets[0]; // sheet đầu tiên
+                var ws = package.Workbook.Worksheets[0]; // sheet đầu
 
-                // Ghi header (dòng 1)
-                for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                int rowCount = dataGridView1.Rows.Count;
+                int colCount = dataGridView1.Columns.Count;
+                ws.Cells[1, 1].Value = "MSSV";
+                ws.Cells[1, 2].Value = "Họ và tên";
+                // Ghi dữ liệu
+                for (int i = 0; i < rowCount; i++)
                 {
-                    ws.Cells[1, col + 1].Value = dataGridView1.Columns[col].HeaderText;
-                }
+                    // bỏ dòng cuối trống nếu có
+                    if (dataGridView1.Rows[i].IsNewRow) continue;
 
-                // Ghi dữ liệu (từ dòng 2)
-                for (int row = 0; row < dataGridView1.Rows.Count; row++)
-                {
-                    for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                    for (int j = 0; j < colCount; j++)
                     {
-                        ws.Cells[row + 2, col + 1].Value = dataGridView1.Rows[row].Cells[col].Value;
+                        ws.Cells[i + 2, j + 1].Value =
+                            dataGridView1.Rows[i].Cells[j].Value?.ToString();
+                        if (colCount >= 3&&j>=2) { ws.Cells[1, j +1].Value = "Cột điểm " + (j - 1).ToString(); ; }
                     }
                 }
 
-                package.Save();
+                package.Save(); // lưu lại file cũ
             }
 
-            MessageBox.Show("Đã lưu");
-        }
+            MessageBox.Show("Lưu thành công");
+        
+    }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -1064,7 +1109,62 @@ namespace bluetoothmain
 
         private void save_Click(object sender, EventArgs e)
         {
-            luuexcel(currentfile);
+            luuexcel(filemoi);
+        }
+
+        private void themcotdiem_Click(object sender, EventArgs e)
+        {
+            dt.Columns.Add("Cột điểm " + cotdiem);
+            dataGridView1.Columns[1+cotdiem].ReadOnly = true;
+            cotdiem++;
+            
+
+        }
+
+        private void themsv_Click(object sender, EventArgs e)
+        {
+            dt.Rows.Add();
+            
+        }
+
+        private void themlop_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Chọn danh sách sinh viên cần tạo lớp";
+            ofd.Filter = "Excel Files (*.xlsx)|*.xlsx";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Title = "Chọn thư mục lưu trữ lớp mới";
+                sfd.Filter = "Excel Files|*.xlsx";
+                sfd.FileName = "lop moi.xlsx";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+
+                    filemoi = sfd.FileName;
+                  
+
+                    using (ExcelPackage package = new ExcelPackage())
+                    {
+                        package.Workbook.Worksheets.Add("Sheet1"); // tạo sheet trống
+
+                        package.SaveAs(new FileInfo(filemoi)); // tạo file
+                    }
+                    LoadExcel(ofd.FileName);
+
+                }
+
+
+                currentfile = ofd.FileName;
+
+                dataGridView1.ClearSelection();
+            }
+        }
+
+        private void listbox_recentfiles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
