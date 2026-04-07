@@ -44,6 +44,7 @@ namespace bluetoothmain
         {
             sensor.Hide();
             tabControl1.SelectedTab = nhietdo;
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -360,7 +361,7 @@ namespace bluetoothmain
 
         private void button48_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = sensor;
+            tabControl1.SelectedTab = sensor; 
         }
 
         private void button46_Click(object sender, EventArgs e)
@@ -374,10 +375,42 @@ namespace bluetoothmain
             tocdo.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) 
         {
+
             sensor.Hide();
-            apsuat.Show();
+            tabControl7.Visible = true;
+            tabControl7.BringToFront();
+            tabControl7.SelectedIndex = 0;
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            ap.Hide();
+            ap1.Show();
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            ap1.Hide();
+            ap2.Show();
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = sensor;
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            ap1.Hide();
+            ap.Show();
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+        
+            tabControl1.SelectedTab = sensor;
         }
     }
 }
