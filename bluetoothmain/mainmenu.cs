@@ -12,18 +12,78 @@ using System.Net;
 using System.IO;
 using System.Management;
 using System.Text.RegularExpressions;
-//okee
+using OfficeOpenXml;
+
 
 namespace bluetoothmain
 {
     public partial class mainmenu : Form
     {
-        
-        
+        ComboBox[] da;
+        ComboBox[] loi;
+        CheckBox[] bt_usb_cb;
+        CheckBox[] wf_cb;
+        string svkiemtra;
+        string[] poolda = {
+"ECT - Cảm biến nhiệt độ nước làm mát",
+"IAT - Cảm biến nhiệt độ khí nạp",
+"MAF - Cảm biến lưu lượng khí nạp",
+"CKP - Cảm biến tốc độ động cơ",
+"IGT1 - Bộ đánh lửa máy số 1",
+"IGT2 - Bộ đánh lửa máy số 2",
+"IGT3 - Bộ đánh lửa máy số 3",
+"IGT4 - Bộ đánh lửa máy số 4",
+"CMPA - Cảm biến vị trí CAM Nạp",
+"CMPB - Cảm biến vị trí CAM Xả",
+"APP1 - Cảm biến vị trí bàn đạp ga 1",
+"APP2 - Cảm biến vị trí bàn đạp ga 2",
+"FRPS - Cảm biến áp suất nhiên liệu ống phân phối",
+"AFS - Cảm biến A/F",
+"TPS1 - Cảm biến vị trí bướm ga 1",
+"TPS2 - Cảm biến vị trí bướm ga 2" };
+      
+
+        private void LoadExcel(string path)
+        {
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            FileInfo file = new FileInfo(path);
+
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                var ws = package.Workbook.Worksheets[0];
+
+                DataTable dt = new DataTable();
+
+                // Header
+                for (int col = 1; col <= ws.Dimension.End.Column; col++)
+                {
+                    dt.Columns.Add(ws.Cells[1, col].Text);
+                }
+
+                // Data
+                for (int row = 2; row <= ws.Dimension.End.Row; row++)
+                {
+                    DataRow dr = dt.NewRow();
+                    for (int col = 1; col <= dt.Columns.Count; col++)
+                    {
+                        dr[col - 1] = ws.Cells[row, col].Text;
+                    }
+                    dt.Rows.Add(dr);
+                }
+
+                dataGridView1.DataSource = dt;
+            }
+        }
+        string currentfile;
         public mainmenu()
         {
-            InitializeComponent();
-           
+            InitializeComponent(); ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+            da = new ComboBox[] { da1, da2, da3, da4, da5, da6, da7, da8, da9, da10, da11, da12, da13, da14, da15, da16 };
+            loi = new ComboBox[] { loi1, loi2, loi3, loi4, loi5, loi6, loi7, loi8, loi9, loi10, loi11, loi12, loi13, loi14, loi15, loi16 };
+            bt_usb_cb = new CheckBox[] { pan1cb, pan2cb, pan3cb, pan4cb, pan5cb, pan6cb, pan7cb, pan8cb, pan9cb, pan10cb, pan11cb, pan12cb, pan13cb, pan14cb, pan15cb, pan16cb };
+            wf_cb = new CheckBox[] { wfpan1cb, wfpan2cb, wfpan3cb, wfpan4cb, wfpan5cb, wfpan6cb, wfpan7cb, wfpan8cb, wfpan9cb, wfpan10cb, wfpan11cb, wfpan12cb, wfpan13cb, wfpan14cb, wfpan15cb, wfpan16cb };
+
         }
         private void mainmenu_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -44,15 +104,20 @@ namespace bluetoothmain
             statelbl.Hide();
             disconnect.Enabled = false;
             disconnect.Hide();
-            
+       
         }
-        
-      
-     
+
+
+
         string tkdung = "123";
         string mkdung = "1234";
         string comdung;
         string cmd;
+        string dapan;
+        double socauhoi = 0;
+        double diem;
+        string[] pool = { "ECT Hở mạch", "IAT Điện trở cao", "MAF Hở mạch", "CKP Hở mạch", "IGT1 Hở mạch", "IGT2 Chạm mass", "IGT3 Chạm mass", "IGT4 Chạm mass", "CMPA Hở mạch", "CMPB Hở mạch", "APP1 Hở mạch", "APP2 Chạm mass", "FRPS Hở mạch", "AFS Chạm mass", "TPS1 Hở mạch", "TPS2 Chạm mass" };
+        char[] traloi = "0000000000000000".ToCharArray();
         private void login_Load(object sender, EventArgs e)
         {
 
@@ -108,6 +173,8 @@ namespace bluetoothmain
             disconnect.Enabled = true;
             disconnect.Show();
             gd.Enabled = true;
+           
+
         }
         private void SetDisconnectedBT()
         {
@@ -138,6 +205,8 @@ namespace bluetoothmain
             danhpanbtusb.Hide();
             btmode.Show();
             gd.Enabled = false;
+            kt.Enabled = false;
+
             if (tabControl1.SelectedTab == gv1) { }
 
 
@@ -214,7 +283,7 @@ namespace bluetoothmain
 
       
 
-        private void ping_timer_Tick(object sender, EventArgs e)
+        public void ping_timer_Tick(object sender, EventArgs e)
         {
             ping();
             try
@@ -551,38 +620,54 @@ namespace bluetoothmain
             usb_ping_timer.Start();
             
         }
-
-        private void usb_ping_timer_Tick(object sender, EventArgs e)
+        bool IsAlive(string port)
         {
-            
-        foreach (var device in new ManagementObjectSearcher(
-    "SELECT * FROM Win32_PnPEntity WHERE Name LIKE '%(COM%'").Get())
+            try
+            {
+                using (SerialPort sp = new SerialPort(port))
                 {
-                    string id = device["PNPDeviceID"].ToString();
+                    sp.Open();
+                    sp.Close();
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public void usb_ping_timer_Tick(object sender, EventArgs e)
+        {
+            foreach (var device in new ManagementObjectSearcher(
+       "SELECT * FROM Win32_PnPEntity WHERE Name LIKE '%(COM%'").Get())
+            {
+                string id = device["PNPDeviceID"].ToString();
                 string name = device["Name"].ToString();
-                string com="";
-                if (id.Contains("VID_10C4"))
-                    {
+                string com = "";
+                if (name.Contains("CP21"))
+                {
                     var match = System.Text.RegularExpressions.Regex.Match(name, @"\(COM\d+\)");
-                     com = match.Value.Replace("(", "").Replace(")", "");
+                    com = match.Value.Replace("(", "").Replace(")", "");
                     comusb.Text = "Đã kết nối USB cổng " + com;
-                    if (com != comdung)
+                    comdung = com;
+                    if (!serCOM.IsOpen || com != comdung)
                     {
                         comdung = com;
                         SetConnectedUSB();
                     }
                     break;
-                    
-                    }
-
-                else{ 
-                    comusb.Text = "Không tìm thấy kết nối USB";
-                    comdung = "";
-                    SetDisconnectedUSB();
-
-                    }
                 }
-        }
+                else
+                { comusb.Text = "Không tìm thấy USB";
+                    if(statelbl.Text=="USB CONNECTED")
+                    { SetDisconnectedUSB(); }
+                }
+
+                }
+            }
+
+        
+        
         void SetConnectedUSB()
         {
 
@@ -601,8 +686,10 @@ namespace bluetoothmain
                     disconnect.Show();
                     gd.Enabled = true;
                     serCOM.WriteLine("USBconnected");
-                    gd.Enabled = true;
                     
+                   
+
+
                 }
                 catch (Exception) { MessageBox.Show("Không thể kết nối USB"); }
             }
@@ -636,7 +723,9 @@ namespace bluetoothmain
             statelbl.Text = "DISCONNECTED";
             statelbl.ForeColor = Color.Red;
             gd.Enabled = false;
-            
+            kt.Enabled = false;
+
+
 
 
 
@@ -705,11 +794,19 @@ namespace bluetoothmain
 
         private void gd_Click(object sender, EventArgs e)
         {
-            if(statelbl.Text=="BLUETOOTH CONNECTED" || statelbl.Text=="USB CONNECTED")
-            { tabControl1.SelectedTab = danhpanbtusb;}
-            if(statelbl.Text=="WIFI CONNECTED")
-            { tabControl1.SelectedTab = danhpanwf; }
-            
+            if (statelbl.Text == "BLUETOOTH CONNECTED" || statelbl.Text == "USB CONNECTED")
+            {
+                tabControl1.SelectedTab = danhpanbtusb;
+                gvcchonpanbt.Visible = false;
+                donebt.Visible = false;
+            }
+            if (statelbl.Text == "WIFI CONNECTED")
+            {
+                tabControl1.SelectedTab = danhpanwf;
+                gvchonpanwf.Visible = false;
+                donewf.Visible = false;
+
+            }
 
         }
 
@@ -726,6 +823,248 @@ namespace bluetoothmain
         private void tip_gd_Popup(object sender, PopupEventArgs e)
         {
             
+        }
+
+        private void kiemtraqlsv_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kt_Click(object sender, EventArgs e)
+        {
+            if (statelbl.Text == "BLUETOOTH CONNECTED" || statelbl.Text == "USB CONNECTED")
+            { tabControl1.SelectedTab = danhpanbtusb;
+                gvcchonpanbt.Visible = true;
+                donebt.Visible = true;
+            }
+            if (statelbl.Text == "WIFI CONNECTED")
+            { tabControl1.SelectedTab = danhpanwf;
+                gvchonpanwf.Visible = true;
+                donewf.Visible = true;
+
+            }
+            traloi = "0000000000000000".ToCharArray();
+        }
+
+        private void qlsv_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = kiemtraqlsv;
+        }
+
+        private void donewf_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = kiemtra1;
+            dapan = cmd.Substring(2);
+            socauhoi = 0;
+            for(int i = 0; i < 16; i++) { if (dapan[i] == '1') { socauhoi++; } }
+            
+        }
+
+        private void donebt_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = kiemtra1;
+            dapan = cmd.Substring(2);
+            socauhoi = 0;
+            for (int i = 0; i < 16; i++) { if (dapan[i] == '1') { socauhoi++; } }
+
+            for (int r = 0; r < tableLayoutPanel1.RowCount; r++)
+            {
+                foreach (Control c in tableLayoutPanel1.Controls)
+                {
+                    if (tableLayoutPanel1.GetRow(c) == r)
+                    {
+                        c.Visible = (r < socauhoi);
+                    }
+                }
+            }
+
+        }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            
+            
+                for (int i = 0; i < socauhoi; i++)
+                {
+                
+                
+                    int vitri = 0;
+                    int index;
+                    string sensor = "";
+                if (da[i].Text !="")
+                {
+                    vitri = da[i].Text.IndexOf('-');
+
+
+                    sensor = da[i].SelectedItem?.ToString().Substring(0, vitri);
+
+                    if (loi[i].Text == "") { MessageBox.Show("Điền đủ"); return; }
+                    else
+                    { index = Array.IndexOf(pool, sensor + loi[i].Text); }
+                    if (index != -1) { traloi[index] = '1'; }
+                }
+                else { MessageBox.Show("Điền đủ"); return; }
+                
+                }
+            
+            
+
+
+
+            string final = new string(traloi);
+            
+            double caudung = 0;
+            
+           for(int i=0;i<16;i++)
+            {
+                
+                if(final[i]==dapan[i]&&final[i]=='1')
+                { caudung++; }
+            }
+
+           
+            lbdapan.Text = caudung.ToString() +"/" + socauhoi.ToString();
+            diem = caudung* 10 / socauhoi;
+            diem = Math.Round(diem, 1);
+            if (MessageBox.Show("SỐ CÂU ĐÚNG: " + caudung.ToString() + "/" + socauhoi.ToString()  +"\nĐIỂM: " + diem+"\n ẤN OK ĐỂ TRỞ VỀ TRANG QLSV" )==DialogResult.OK) { tabControl1.SelectedTab = kiemtraqlsv; luudiem(diem); 
+            
+            for(int i = 0; i < 16; i++) 
+                { 
+                    bt_usb_cb[i].Checked = false;
+                    wf_cb[i].Checked = false;
+                }
+            
+            }
+        }
+        void luudiem(double diem)
+        { int i ;
+            for (i=2; i < 6; i++)
+            {
+                if (dataGridView1.SelectedRows[0].Cells[i].Value =="")
+                {
+
+                    dataGridView1.SelectedRows[0].Cells[i].Value = diem;
+                    return;
+                }
+            }
+        }
+        private void lbdapan_Click(object sender, EventArgs e)
+        {
+            traloi = "0000000000000000".ToCharArray();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void browse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Excel Files (*.xlsx)|*.xlsx";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                LoadExcel(ofd.FileName);
+                currentfile = ofd.FileName;
+                
+                dataGridView1.ClearSelection();
+            }
+        }
+        private void luuexcel(string filePath)
+        {
+            FileInfo file = new FileInfo(filePath);
+
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                var ws = package.Workbook.Worksheets[0]; // sheet đầu tiên
+
+                // Ghi header (dòng 1)
+                for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                {
+                    ws.Cells[1, col + 1].Value = dataGridView1.Columns[col].HeaderText;
+                }
+
+                // Ghi dữ liệu (từ dòng 2)
+                for (int row = 0; row < dataGridView1.Rows.Count; row++)
+                {
+                    for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                    {
+                        ws.Cells[row + 2, col + 1].Value = dataGridView1.Rows[row].Cells[col].Value;
+                    }
+                }
+
+                package.Save();
+            }
+
+            MessageBox.Show("Đã lưu");
+        }
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (statelbl.Text.Contains("CONNECTED"))
+            {
+                kt.Enabled = true;
+                svkiemtra = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            }
+            else { kt.Enabled = false; }
+        }
+
+        private void kiemtra1_Enter(object sender, EventArgs e)
+        {
+            tensvkiemtra.Text = "Tên sinh viên: "+svkiemtra;
+            for(int i=0;i<16;i++)
+            {
+                da[i].SelectedIndex = -1;
+                loi[i].SelectedIndex = -1;
+            }    
+        }
+
+        private void da_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kiemtra1_Click(object sender, EventArgs e)
+        {
+            
+            List<string> pooldatemp  = poolda.ToList();
+            for (int i=0;i<16;i++)
+            {
+                if(da[i].Text!="")
+                {
+                    pooldatemp.Remove(da[i].Text);
+                    
+                }
+            }
+            for (int i = 0; i < 16; i++)
+            {
+                if (da[i].Text == "")
+                {
+                    da[i].Items.Clear();
+                    da[i].Items.AddRange(pooldatemp.ToArray());
+
+                }
+            }
+        }
+      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            luuexcel(currentfile);
         }
 
         private void tk_TextChanged(object sender, EventArgs e)
@@ -867,7 +1206,11 @@ namespace bluetoothmain
             danhpanwf.Hide();
             wfmode.Show();
             disconnect.Hide();
-            
+            kt.Enabled = false;
+            gd.Enabled = false;
+
+
+
         }
         private void setConnectedWF()
         {
@@ -879,6 +1222,7 @@ namespace bluetoothmain
             disconnect.Enabled = true;
             disconnect.Show();
             gd.Enabled=true;
+            
 
             if (statelbl.Text == "WIFI CONNECTED")
             {
@@ -952,17 +1296,7 @@ namespace bluetoothmain
 
 
 //USB MODE
-
-
-
-
-
-
-
-
-
-
-
+  
 
 }
 
