@@ -1041,7 +1041,7 @@ namespace bluetoothmain
                     dataGridView1.Refresh();
                     return;
                 }
-                else { MessageBox.Show("no"); }
+                
             }
         }
         private void lbdapan_Click(object sender, EventArgs e)
