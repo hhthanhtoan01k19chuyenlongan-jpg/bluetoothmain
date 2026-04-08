@@ -40,12 +40,14 @@ namespace bluetoothmain
             this.hs = new System.Windows.Forms.Button();
             this.gv = new System.Windows.Forms.Button();
             this.dangnhapgv = new System.Windows.Forms.TabPage();
+            this.backlogin = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.mk = new System.Windows.Forms.TextBox();
             this.tk = new System.Windows.Forms.TextBox();
             this.gv1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.tipgd = new System.Windows.Forms.Label();
             this.gd = new System.Windows.Forms.Button();
             this.qlsv = new System.Windows.Forms.Button();
@@ -111,6 +113,11 @@ namespace bluetoothmain
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
             this.kiemtraqlsv = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.xoacotdiem = new System.Windows.Forms.Button();
+            this.xoasv = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.recentfiles = new System.Windows.Forms.ListView();
             this.themsv = new System.Windows.Forms.Button();
             this.themcotdiem = new System.Windows.Forms.Button();
@@ -183,13 +190,6 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.xoasv = new System.Windows.Forms.Button();
-            this.xoacotdiem = new System.Windows.Forms.Button();
-            this.backlogin = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.debug.SuspendLayout();
@@ -339,6 +339,17 @@ namespace bluetoothmain
             this.dangnhapgv.Text = "dangnhapgv";
             this.dangnhapgv.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // backlogin
+            // 
+            this.backlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backlogin.Location = new System.Drawing.Point(29, 495);
+            this.backlogin.Name = "backlogin";
+            this.backlogin.Size = new System.Drawing.Size(148, 73);
+            this.backlogin.TabIndex = 10;
+            this.backlogin.Text = "Back";
+            this.backlogin.UseVisualStyleBackColor = true;
+            this.backlogin.Click += new System.EventHandler(this.backlogin_Click);
+            // 
             // log
             // 
             this.log.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -405,6 +416,17 @@ namespace bluetoothmain
             this.gv1.Text = "gv1";
             this.gv1.UseVisualStyleBackColor = true;
             this.gv1.Click += new System.EventHandler(this.gv1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(29, 523);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 73);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_3);
             // 
             // tipgd
             // 
@@ -1233,6 +1255,60 @@ namespace bluetoothmain
             this.kiemtraqlsv.UseVisualStyleBackColor = true;
             this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
             this.kiemtraqlsv.Enter += new System.EventHandler(this.kiemtraqlsv_Enter);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(727, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "label7";
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(8, 523);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 73);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // xoacotdiem
+            // 
+            this.xoacotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoacotdiem.Location = new System.Drawing.Point(229, 208);
+            this.xoacotdiem.Margin = new System.Windows.Forms.Padding(2);
+            this.xoacotdiem.Name = "xoacotdiem";
+            this.xoacotdiem.Size = new System.Drawing.Size(108, 50);
+            this.xoacotdiem.TabIndex = 12;
+            this.xoacotdiem.Text = "Xóa cột điểm";
+            this.xoacotdiem.UseVisualStyleBackColor = true;
+            this.xoacotdiem.Click += new System.EventHandler(this.xoacotdiem_Click);
+            // 
+            // xoasv
+            // 
+            this.xoasv.Enabled = false;
+            this.xoasv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoasv.Location = new System.Drawing.Point(229, 316);
+            this.xoasv.Margin = new System.Windows.Forms.Padding(2);
+            this.xoasv.Name = "xoasv";
+            this.xoasv.Size = new System.Drawing.Size(108, 50);
+            this.xoasv.TabIndex = 11;
+            this.xoasv.Text = "Xóa SV";
+            this.xoasv.UseVisualStyleBackColor = true;
+            this.xoasv.Click += new System.EventHandler(this.button3_Click_2);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(336, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 31);
+            this.label6.TabIndex = 10;
             // 
             // recentfiles
             // 
@@ -2194,10 +2270,10 @@ namespace bluetoothmain
             this.settings_panel.Controls.Add(this.wifi);
             this.settings_panel.Controls.Add(this.usb);
             this.settings_panel.Controls.Add(this.bluetooth);
-            this.settings_panel.Location = new System.Drawing.Point(82, 44);
+            this.settings_panel.Location = new System.Drawing.Point(85, 44);
             this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(160, 522);
+            this.settings_panel.Size = new System.Drawing.Size(1039, 522);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -2463,82 +2539,6 @@ namespace bluetoothmain
             // 
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(336, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 31);
-            this.label6.TabIndex = 10;
-            // 
-            // xoasv
-            // 
-            this.xoasv.Enabled = false;
-            this.xoasv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xoasv.Location = new System.Drawing.Point(229, 316);
-            this.xoasv.Margin = new System.Windows.Forms.Padding(2);
-            this.xoasv.Name = "xoasv";
-            this.xoasv.Size = new System.Drawing.Size(108, 50);
-            this.xoasv.TabIndex = 11;
-            this.xoasv.Text = "Xóa SV";
-            this.xoasv.UseVisualStyleBackColor = true;
-            this.xoasv.Click += new System.EventHandler(this.button3_Click_2);
-            // 
-            // xoacotdiem
-            // 
-            this.xoacotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xoacotdiem.Location = new System.Drawing.Point(229, 208);
-            this.xoacotdiem.Margin = new System.Windows.Forms.Padding(2);
-            this.xoacotdiem.Name = "xoacotdiem";
-            this.xoacotdiem.Size = new System.Drawing.Size(108, 50);
-            this.xoacotdiem.TabIndex = 12;
-            this.xoacotdiem.Text = "Xóa cột điểm";
-            this.xoacotdiem.UseVisualStyleBackColor = true;
-            this.xoacotdiem.Click += new System.EventHandler(this.xoacotdiem_Click);
-            // 
-            // backlogin
-            // 
-            this.backlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backlogin.Location = new System.Drawing.Point(29, 495);
-            this.backlogin.Name = "backlogin";
-            this.backlogin.Size = new System.Drawing.Size(148, 73);
-            this.backlogin.TabIndex = 10;
-            this.backlogin.Text = "Back";
-            this.backlogin.UseVisualStyleBackColor = true;
-            this.backlogin.Click += new System.EventHandler(this.backlogin_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(29, 523);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 73);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_3);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(8, 523);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(148, 73);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Back";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(727, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "label7";
             // 
             // mainmenu
             // 
