@@ -232,7 +232,22 @@ namespace bluetoothmain
         }
         private void SetDisconnectedBT()
         {
+            if(tabControl1.SelectedTab==danhpanbtusb&&donebt.Visible==true)
+            { 
+                tabControl1.SelectedTab = kiemtraqlsv;
+                settings_panel.Show();
+                tabControl2.SelectedTab = btmode;
+                
             
+            }
+            if (tabControl1.SelectedTab == danhpanbtusb && donebt.Visible == false)
+            {
+                tabControl1.SelectedTab = gv1;
+                settings_panel.Show();
+                tabControl2.SelectedTab = btmode;
+
+
+            }
 
             pan1cb.Checked = false;
             pan2cb.Checked = false;
@@ -261,7 +276,7 @@ namespace bluetoothmain
             gd.Enabled = false;
             kt.Enabled = false;
 
-            if (tabControl1.SelectedTab == gv1) { }
+           
 
 
         }
@@ -760,7 +775,20 @@ namespace bluetoothmain
         }
         private void SetDisconnectedUSB()
         {
+            if (tabControl1.SelectedTab == danhpanbtusb && donebt.Visible == true)
+            {
+                tabControl1.SelectedTab = kiemtraqlsv;
+                settings_panel.Show();
+                tabControl2.SelectedTab = usbmode;
 
+            }
+            if (tabControl1.SelectedTab == danhpanbtusb && donebt.Visible == false)
+            {
+                tabControl1.SelectedTab = gv1;
+                settings_panel.Show();
+                tabControl2.SelectedTab = usbmode;
+
+            }
 
             pan1cb.Checked = false;
             pan2cb.Checked = false;
@@ -1535,7 +1563,21 @@ namespace bluetoothmain
 
         private void setDisconnectedWF()
         {
-            
+            if (tabControl1.SelectedTab == danhpanwf && donewf.Visible == true)
+            {
+                tabControl1.SelectedTab = kiemtraqlsv;
+                settings_panel.Show();
+                tabControl2.SelectedTab = wfmode;
+
+            }
+            if (tabControl1.SelectedTab == danhpanwf && donewf.Visible == false)
+            {
+                tabControl1.SelectedTab = gv1;
+                settings_panel.Show();
+                tabControl2.SelectedTab = wfmode;
+
+            }
+
             statelbl.Show();
             statelbl.Text = "DISCONNECTED";
             statelbl.ForeColor = Color.Red;
@@ -1590,7 +1632,7 @@ namespace bluetoothmain
                 }
                 catch (TimeoutException)
                 {
-                    MessageBox.Show("Mất kết nối.");
+                    MessageBox.Show("Mất kết nối Wifi");
                 }
                 catch (WebException) { }
             
