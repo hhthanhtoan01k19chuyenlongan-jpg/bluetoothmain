@@ -111,10 +111,10 @@ namespace bluetoothmain
             this.cbpan2 = new System.Windows.Forms.CheckBox();
             this.cbpan1 = new System.Windows.Forms.CheckBox();
             this.kiemtraqlsv = new System.Windows.Forms.TabPage();
+            this.recentfiles = new System.Windows.Forms.ListView();
             this.themsv = new System.Windows.Forms.Button();
             this.themcotdiem = new System.Windows.Forms.Button();
             this.themlop = new System.Windows.Forms.Button();
-            this.listbox_recentfiles = new System.Windows.Forms.ListBox();
             this.save = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.kt = new System.Windows.Forms.Button();
@@ -183,6 +183,13 @@ namespace bluetoothmain
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
+            this.label6 = new System.Windows.Forms.Label();
+            this.xoasv = new System.Windows.Forms.Button();
+            this.xoacotdiem = new System.Windows.Forms.Button();
+            this.backlogin = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.debug.SuspendLayout();
@@ -242,7 +249,7 @@ namespace bluetoothmain
             this.debug.Controls.Add(this.button2);
             this.debug.Controls.Add(this.button1);
             this.debug.Location = new System.Drawing.Point(4, 22);
-            this.debug.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.debug.Margin = new System.Windows.Forms.Padding(2);
             this.debug.Name = "debug";
             this.debug.Size = new System.Drawing.Size(1272, 694);
             this.debug.TabIndex = 4;
@@ -275,7 +282,7 @@ namespace bluetoothmain
             this.gvsv.Controls.Add(this.panel2);
             this.gvsv.Location = new System.Drawing.Point(4, 22);
             this.gvsv.Name = "gvsv";
-            this.gvsv.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.gvsv.Padding = new System.Windows.Forms.Padding(3);
             this.gvsv.Size = new System.Drawing.Size(1272, 694);
             this.gvsv.TabIndex = 0;
             this.gvsv.Text = "gvsv";
@@ -318,6 +325,7 @@ namespace bluetoothmain
             // 
             // dangnhapgv
             // 
+            this.dangnhapgv.Controls.Add(this.backlogin);
             this.dangnhapgv.Controls.Add(this.log);
             this.dangnhapgv.Controls.Add(this.label2);
             this.dangnhapgv.Controls.Add(this.label1);
@@ -325,7 +333,7 @@ namespace bluetoothmain
             this.dangnhapgv.Controls.Add(this.tk);
             this.dangnhapgv.Location = new System.Drawing.Point(4, 22);
             this.dangnhapgv.Name = "dangnhapgv";
-            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(3);
             this.dangnhapgv.Size = new System.Drawing.Size(1272, 694);
             this.dangnhapgv.TabIndex = 1;
             this.dangnhapgv.Text = "dangnhapgv";
@@ -385,12 +393,13 @@ namespace bluetoothmain
             // 
             // gv1
             // 
+            this.gv1.Controls.Add(this.button3);
             this.gv1.Controls.Add(this.tipgd);
             this.gv1.Controls.Add(this.gd);
             this.gv1.Controls.Add(this.qlsv);
             this.gv1.Location = new System.Drawing.Point(4, 22);
             this.gv1.Name = "gv1";
-            this.gv1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.gv1.Padding = new System.Windows.Forms.Padding(3);
             this.gv1.Size = new System.Drawing.Size(1272, 694);
             this.gv1.TabIndex = 9;
             this.gv1.Text = "gv1";
@@ -457,6 +466,7 @@ namespace bluetoothmain
             this.danhpanbtusb.TabIndex = 3;
             this.danhpanbtusb.Text = "danhpanbtusb";
             this.danhpanbtusb.Click += new System.EventHandler(this.tabPage4_Click);
+            this.danhpanbtusb.Enter += new System.EventHandler(this.danhpanbtusb_Enter);
             // 
             // donebt
             // 
@@ -717,12 +727,13 @@ namespace bluetoothmain
             this.danhpanwf.Controls.Add(this.wfpan1cb);
             this.danhpanwf.Location = new System.Drawing.Point(4, 22);
             this.danhpanwf.Name = "danhpanwf";
-            this.danhpanwf.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.danhpanwf.Padding = new System.Windows.Forms.Padding(3);
             this.danhpanwf.Size = new System.Drawing.Size(1272, 694);
             this.danhpanwf.TabIndex = 6;
             this.danhpanwf.Text = "danhpanwf";
             this.danhpanwf.UseVisualStyleBackColor = true;
             this.danhpanwf.Click += new System.EventHandler(this.tabPage7_Click);
+            this.danhpanwf.Enter += new System.EventHandler(this.danhpanwf_Enter);
             // 
             // donewf
             // 
@@ -955,7 +966,7 @@ namespace bluetoothmain
             this.tabPage8.Controls.Add(this.svTH);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(1272, 694);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "tabPage8";
@@ -1001,11 +1012,12 @@ namespace bluetoothmain
             this.danhpan.Controls.Add(this.cbpan1);
             this.danhpan.Location = new System.Drawing.Point(4, 22);
             this.danhpan.Name = "danhpan";
-            this.danhpan.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.danhpan.Padding = new System.Windows.Forms.Padding(3);
             this.danhpan.Size = new System.Drawing.Size(1272, 694);
             this.danhpan.TabIndex = 8;
             this.danhpan.Text = "danhpan";
             this.danhpan.UseVisualStyleBackColor = true;
+            this.danhpan.Enter += new System.EventHandler(this.danhpan_Enter);
             // 
             // cbpan16
             // 
@@ -1201,10 +1213,15 @@ namespace bluetoothmain
             // 
             // kiemtraqlsv
             // 
+            this.kiemtraqlsv.Controls.Add(this.label7);
+            this.kiemtraqlsv.Controls.Add(this.button4);
+            this.kiemtraqlsv.Controls.Add(this.xoacotdiem);
+            this.kiemtraqlsv.Controls.Add(this.xoasv);
+            this.kiemtraqlsv.Controls.Add(this.label6);
+            this.kiemtraqlsv.Controls.Add(this.recentfiles);
             this.kiemtraqlsv.Controls.Add(this.themsv);
             this.kiemtraqlsv.Controls.Add(this.themcotdiem);
             this.kiemtraqlsv.Controls.Add(this.themlop);
-            this.kiemtraqlsv.Controls.Add(this.listbox_recentfiles);
             this.kiemtraqlsv.Controls.Add(this.save);
             this.kiemtraqlsv.Controls.Add(this.dataGridView1);
             this.kiemtraqlsv.Controls.Add(this.kt);
@@ -1215,13 +1232,36 @@ namespace bluetoothmain
             this.kiemtraqlsv.Text = "kiemtraqlsv";
             this.kiemtraqlsv.UseVisualStyleBackColor = true;
             this.kiemtraqlsv.Click += new System.EventHandler(this.kiemtraqlsv_Click);
+            this.kiemtraqlsv.Enter += new System.EventHandler(this.kiemtraqlsv_Enter);
+            // 
+            // recentfiles
+            // 
+            this.recentfiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recentfiles.HideSelection = false;
+            this.recentfiles.LabelEdit = true;
+            this.recentfiles.Location = new System.Drawing.Point(-4, 81);
+            this.recentfiles.MultiSelect = false;
+            this.recentfiles.Name = "recentfiles";
+            this.recentfiles.Size = new System.Drawing.Size(228, 316);
+            this.recentfiles.TabIndex = 9;
+            this.recentfiles.UseCompatibleStateImageBehavior = false;
+            this.recentfiles.View = System.Windows.Forms.View.List;
+            this.recentfiles.AfterLabelEdit += new System.Windows.Forms.LabelEditEventHandler(this.recentfiles_AfterLabelEdit);
+            this.recentfiles.BeforeLabelEdit += new System.Windows.Forms.LabelEditEventHandler(this.recentfiles_BeforeLabelEdit);
+            this.recentfiles.ItemActivate += new System.EventHandler(this.recentfiles_ItemActivate);
+            this.recentfiles.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.recentfiles_ItemCheck);
+            this.recentfiles.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.recentfiles_ItemChecked);
+            this.recentfiles.SelectedIndexChanged += new System.EventHandler(this.recentfiles_SelectedIndexChanged);
+            this.recentfiles.MouseClick += new System.Windows.Forms.MouseEventHandler(this.recentfiles_MouseClick);
+            this.recentfiles.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.recentfiles_MouseDoubleClick);
             // 
             // themsv
             // 
-            this.themsv.Location = new System.Drawing.Point(221, 162);
-            this.themsv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.themsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themsv.Location = new System.Drawing.Point(229, 262);
+            this.themsv.Margin = new System.Windows.Forms.Padding(2);
             this.themsv.Name = "themsv";
-            this.themsv.Size = new System.Drawing.Size(84, 40);
+            this.themsv.Size = new System.Drawing.Size(108, 50);
             this.themsv.TabIndex = 7;
             this.themsv.Text = "Thêm SV";
             this.themsv.UseVisualStyleBackColor = true;
@@ -1229,10 +1269,11 @@ namespace bluetoothmain
             // 
             // themcotdiem
             // 
-            this.themcotdiem.Location = new System.Drawing.Point(221, 118);
-            this.themcotdiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.themcotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themcotdiem.Location = new System.Drawing.Point(229, 154);
+            this.themcotdiem.Margin = new System.Windows.Forms.Padding(2);
             this.themcotdiem.Name = "themcotdiem";
-            this.themcotdiem.Size = new System.Drawing.Size(84, 40);
+            this.themcotdiem.Size = new System.Drawing.Size(108, 50);
             this.themcotdiem.TabIndex = 6;
             this.themcotdiem.Text = "Thêm cột điểm";
             this.themcotdiem.UseVisualStyleBackColor = true;
@@ -1240,31 +1281,24 @@ namespace bluetoothmain
             // 
             // themlop
             // 
-            this.themlop.Location = new System.Drawing.Point(221, 74);
-            this.themlop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.themlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themlop.Location = new System.Drawing.Point(229, 100);
+            this.themlop.Margin = new System.Windows.Forms.Padding(2);
             this.themlop.Name = "themlop";
-            this.themlop.Size = new System.Drawing.Size(84, 40);
+            this.themlop.Size = new System.Drawing.Size(108, 50);
             this.themlop.TabIndex = 5;
             this.themlop.Text = "Thêm lớp";
             this.themlop.UseVisualStyleBackColor = true;
             this.themlop.Click += new System.EventHandler(this.themlop_Click);
             // 
-            // listbox_recentfiles
-            // 
-            this.listbox_recentfiles.FormattingEnabled = true;
-            this.listbox_recentfiles.Location = new System.Drawing.Point(98, 405);
-            this.listbox_recentfiles.Name = "listbox_recentfiles";
-            this.listbox_recentfiles.Size = new System.Drawing.Size(128, 134);
-            this.listbox_recentfiles.TabIndex = 4;
-            this.listbox_recentfiles.SelectedIndexChanged += new System.EventHandler(this.listbox_recentfiles_SelectedIndexChanged);
-            // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(864, 477);
+            this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Location = new System.Drawing.Point(229, 370);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(147, 56);
+            this.save.Size = new System.Drawing.Size(108, 50);
             this.save.TabIndex = 3;
-            this.save.Text = "Save";
+            this.save.Text = "Lưu";
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
@@ -1272,7 +1306,7 @@ namespace bluetoothmain
             // 
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(310, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(342, 59);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -1281,7 +1315,9 @@ namespace bluetoothmain
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
             this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // kt
             // 
@@ -1310,6 +1346,7 @@ namespace bluetoothmain
             this.kiemtra1.UseVisualStyleBackColor = true;
             this.kiemtra1.Click += new System.EventHandler(this.kiemtra1_Click);
             this.kiemtra1.Enter += new System.EventHandler(this.kiemtra1_Enter);
+            this.kiemtra1.Leave += new System.EventHandler(this.kiemtra1_Leave);
             // 
             // tensvkiemtra
             // 
@@ -2158,9 +2195,9 @@ namespace bluetoothmain
             this.settings_panel.Controls.Add(this.usb);
             this.settings_panel.Controls.Add(this.bluetooth);
             this.settings_panel.Location = new System.Drawing.Point(82, 44);
-            this.settings_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(139, 370);
+            this.settings_panel.Size = new System.Drawing.Size(160, 522);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -2172,7 +2209,7 @@ namespace bluetoothmain
             this.tabControl2.Controls.Add(this.btctd);
             this.tabControl2.Controls.Add(this.wfctd);
             this.tabControl2.Location = new System.Drawing.Point(190, 33);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(817, 468);
@@ -2185,7 +2222,7 @@ namespace bluetoothmain
             this.btmode.Controls.Add(this.refresh);
             this.btmode.Location = new System.Drawing.Point(4, 22);
             this.btmode.Name = "btmode";
-            this.btmode.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.btmode.Padding = new System.Windows.Forms.Padding(3);
             this.btmode.Size = new System.Drawing.Size(809, 442);
             this.btmode.TabIndex = 2;
             this.btmode.Text = "btmode";
@@ -2229,7 +2266,7 @@ namespace bluetoothmain
             this.wfmode.Controls.Add(this.label3);
             this.wfmode.Location = new System.Drawing.Point(4, 22);
             this.wfmode.Name = "wfmode";
-            this.wfmode.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.wfmode.Padding = new System.Windows.Forms.Padding(3);
             this.wfmode.Size = new System.Drawing.Size(809, 442);
             this.wfmode.TabIndex = 5;
             this.wfmode.Text = "wfmode";
@@ -2263,7 +2300,7 @@ namespace bluetoothmain
             this.usbmode.Controls.Add(this.comusb);
             this.usbmode.Location = new System.Drawing.Point(4, 22);
             this.usbmode.Name = "usbmode";
-            this.usbmode.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.usbmode.Padding = new System.Windows.Forms.Padding(3);
             this.usbmode.Size = new System.Drawing.Size(809, 442);
             this.usbmode.TabIndex = 8;
             this.usbmode.Text = "usbmode";
@@ -2344,8 +2381,8 @@ namespace bluetoothmain
             // 
             // close_settings
             // 
-            this.close_settings.Location = new System.Drawing.Point(508, 2);
-            this.close_settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.close_settings.Location = new System.Drawing.Point(1011, 2);
+            this.close_settings.Margin = new System.Windows.Forms.Padding(2);
             this.close_settings.Name = "close_settings";
             this.close_settings.Size = new System.Drawing.Size(24, 27);
             this.close_settings.TabIndex = 3;
@@ -2357,7 +2394,7 @@ namespace bluetoothmain
             // 
             this.wifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wifi.Location = new System.Drawing.Point(2, 235);
-            this.wifi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wifi.Margin = new System.Windows.Forms.Padding(2);
             this.wifi.Name = "wifi";
             this.wifi.Size = new System.Drawing.Size(181, 67);
             this.wifi.TabIndex = 0;
@@ -2369,7 +2406,7 @@ namespace bluetoothmain
             // 
             this.usb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usb.Location = new System.Drawing.Point(2, 163);
-            this.usb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usb.Margin = new System.Windows.Forms.Padding(2);
             this.usb.Name = "usb";
             this.usb.Size = new System.Drawing.Size(181, 67);
             this.usb.TabIndex = 2;
@@ -2381,7 +2418,7 @@ namespace bluetoothmain
             // 
             this.bluetooth.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bluetooth.Location = new System.Drawing.Point(2, 92);
-            this.bluetooth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bluetooth.Margin = new System.Windows.Forms.Padding(2);
             this.bluetooth.Name = "bluetooth";
             this.bluetooth.Size = new System.Drawing.Size(181, 67);
             this.bluetooth.TabIndex = 1;
@@ -2392,7 +2429,7 @@ namespace bluetoothmain
             // settings
             // 
             this.settings.Location = new System.Drawing.Point(2, 620);
-            this.settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settings.Margin = new System.Windows.Forms.Padding(2);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(113, 31);
             this.settings.TabIndex = 0;
@@ -2426,6 +2463,82 @@ namespace bluetoothmain
             // 
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(336, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 31);
+            this.label6.TabIndex = 10;
+            // 
+            // xoasv
+            // 
+            this.xoasv.Enabled = false;
+            this.xoasv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoasv.Location = new System.Drawing.Point(229, 316);
+            this.xoasv.Margin = new System.Windows.Forms.Padding(2);
+            this.xoasv.Name = "xoasv";
+            this.xoasv.Size = new System.Drawing.Size(108, 50);
+            this.xoasv.TabIndex = 11;
+            this.xoasv.Text = "Xóa SV";
+            this.xoasv.UseVisualStyleBackColor = true;
+            this.xoasv.Click += new System.EventHandler(this.button3_Click_2);
+            // 
+            // xoacotdiem
+            // 
+            this.xoacotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoacotdiem.Location = new System.Drawing.Point(229, 208);
+            this.xoacotdiem.Margin = new System.Windows.Forms.Padding(2);
+            this.xoacotdiem.Name = "xoacotdiem";
+            this.xoacotdiem.Size = new System.Drawing.Size(108, 50);
+            this.xoacotdiem.TabIndex = 12;
+            this.xoacotdiem.Text = "Xóa cột điểm";
+            this.xoacotdiem.UseVisualStyleBackColor = true;
+            this.xoacotdiem.Click += new System.EventHandler(this.xoacotdiem_Click);
+            // 
+            // backlogin
+            // 
+            this.backlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backlogin.Location = new System.Drawing.Point(29, 495);
+            this.backlogin.Name = "backlogin";
+            this.backlogin.Size = new System.Drawing.Size(148, 73);
+            this.backlogin.TabIndex = 10;
+            this.backlogin.Text = "Back";
+            this.backlogin.UseVisualStyleBackColor = true;
+            this.backlogin.Click += new System.EventHandler(this.backlogin_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(29, 523);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 73);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_3);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(8, 523);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 73);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(727, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "label7";
             // 
             // mainmenu
             // 
@@ -2462,6 +2575,7 @@ namespace bluetoothmain
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
             this.kiemtraqlsv.ResumeLayout(false);
+            this.kiemtraqlsv.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.kiemtra1.ResumeLayout(false);
             this.kiemtra1.PerformLayout();
@@ -2632,9 +2746,16 @@ namespace bluetoothmain
         private System.Windows.Forms.Label tensvkiemtra;
         public System.Windows.Forms.Timer usb_ping_timer;
         private System.Windows.Forms.Button save;
-        private System.Windows.Forms.ListBox listbox_recentfiles;
         private System.Windows.Forms.Button themsv;
         private System.Windows.Forms.Button themcotdiem;
         private System.Windows.Forms.Button themlop;
+        private System.Windows.Forms.ListView recentfiles;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button xoacotdiem;
+        private System.Windows.Forms.Button xoasv;
+        private System.Windows.Forms.Button backlogin;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label7;
     }
 }
