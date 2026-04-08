@@ -842,7 +842,7 @@ namespace bluetoothmain
         {
             debug.Controls.Clear();
 
-            LT uc = new LT();          // đúng tên class
+            LT uc = new LT();         
             uc.Dock = DockStyle.Fill;
 
             debug.Controls.Add(uc);
@@ -852,7 +852,7 @@ namespace bluetoothmain
         {
             debug.Controls.Clear();
 
-            LT uc = new LT();          // đúng tên class
+            LT uc = new LT();         
             uc.Dock = DockStyle.Fill;
 
             debug.Controls.Add(uc);
