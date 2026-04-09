@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.IO.Ports;
+using System.IO;
+
 
 namespace bluetoothmain
 {
@@ -208,7 +212,7 @@ namespace bluetoothmain
         private void button21_Click(object sender, EventArgs e)
         {
             ltnd.Hide();
-            thda.Show();
+            sdmd.Show();
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -225,7 +229,7 @@ namespace bluetoothmain
         private void button23_Click(object sender, EventArgs e)
         {
             thda.Hide();
-            vsub.Show();
+            cdnd.Show();
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -243,7 +247,7 @@ namespace bluetoothmain
         private void button33_Click(object sender, EventArgs e)
         {
             vsub.Hide();
-            cdnd.Show();
+            chot.Show();
         }
 
         private void button25_Click(object sender, EventArgs e)
@@ -411,6 +415,139 @@ namespace bluetoothmain
         {
         
             tabControl1.SelectedTab = sensor;
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://drive.google.com/drive/folders/1sAb5N4NN3jlh4bc9efZMn5rdEdbsDqlg?usp=sharing");
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://drive.google.com/drive/folders/1sAb5N4NN3jlh4bc9efZMn5rdEdbsDqlg?usp=sharing");
+        }
+
+        private void tabPage7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "5")
+            {
+                textBox1.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox1.BackColor = Color.Red;
+            }
+
+            if (textBox2.Text == "2")
+            {
+                textBox2.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox2.BackColor = Color.Red;
+            }
+            if (textBox3.Text == "xanh lam")
+            {
+                textBox3.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox3.BackColor = Color.Red;
+            }
+            if (textBox4.Text == "xanh da trời")
+            {
+                textBox4.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox4.BackColor = Color.Red;
+            }
+            if (textBox5.Text == "3,57")
+            {
+                textBox5.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox5.BackColor = Color.Red;
+            }
+            if (textBox6.Text == "0.316")
+            {
+                textBox6.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox6.BackColor = Color.Red;
+            }
+            if (textBox7.Text == "1CE")
+            {
+                textBox7.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox7.BackColor = Color.Red;
+            }
+            if (comboBox2.Text == "Hở mạch")
+            {
+                comboBox2.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                comboBox2.BackColor = Color.Red;
+            }
+            if (comboBox1.Text == "2.49-2.79")
+            {
+                comboBox1.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                comboBox1.BackColor = Color.Red;
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            cdnd3.Hide();
+            vsub.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            sdmd.Hide();
+            thda.Show();
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            sdmd.Hide();
+            ltnd.Show();
+        }
+
+        string cmd;
+        string url = "http://esp32.local/send?data=";
+        private void button60_Click(object sender, EventArgs e)
+        {
+            SerialPort serCOM = new SerialPort();
+            cmd = "CB1100000000000000";
+            if (serCOM.IsOpen)
+            {
+                serCOM.WriteLine(cmd);
+            }
+            
         }
     }
 }

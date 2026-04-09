@@ -127,6 +127,8 @@ namespace bluetoothmain
             this.label116 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.label181 = new System.Windows.Forms.Label();
             this.nhietdo = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.ltnd = new System.Windows.Forms.TabPage();
@@ -202,9 +204,46 @@ namespace bluetoothmain
             this.chot = new System.Windows.Forms.TabPage();
             this.tabControl8 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label185 = new System.Windows.Forms.Label();
+            this.label184 = new System.Windows.Forms.Label();
+            this.button60 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label183 = new System.Windows.Forms.Label();
+            this.label182 = new System.Windows.Forms.Label();
+            this.label168 = new System.Windows.Forms.Label();
+            this.label180 = new System.Windows.Forms.Label();
+            this.label179 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label178 = new System.Windows.Forms.Label();
+            this.label177 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label175 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label176 = new System.Windows.Forms.Label();
+            this.pictureBox57 = new System.Windows.Forms.PictureBox();
+            this.button59 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label171 = new System.Windows.Forms.Label();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label170 = new System.Windows.Forms.Label();
+            this.label169 = new System.Windows.Forms.Label();
+            this.label167 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
+            this.button57 = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label160 = new System.Windows.Forms.Label();
             this.sensor = new System.Windows.Forms.TabPage();
+            this.button58 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -349,6 +388,11 @@ namespace bluetoothmain
             this.button56 = new System.Windows.Forms.Button();
             this.label164 = new System.Windows.Forms.Label();
             this.label165 = new System.Windows.Forms.Label();
+            this.sdmd = new System.Windows.Forms.TabPage();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
+            this.label173 = new System.Windows.Forms.Label();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
             this.chduong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.rcao.SuspendLayout();
@@ -376,6 +420,7 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             this.td2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            this.tabPage9.SuspendLayout();
             this.nhietdo.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.ltnd.SuspendLayout();
@@ -403,6 +448,8 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.chot.SuspendLayout();
             this.tabControl8.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             this.sensor.SuspendLayout();
             this.lythuyet.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -444,6 +491,8 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             this.ap2.SuspendLayout();
+            this.sdmd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             this.SuspendLayout();
             // 
             // chduong
@@ -456,7 +505,7 @@ namespace bluetoothmain
             this.chduong.Controls.Add(this.label47);
             this.chduong.Location = new System.Drawing.Point(4, 22);
             this.chduong.Name = "chduong";
-            this.chduong.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.chduong.Padding = new System.Windows.Forms.Padding(3);
             this.chduong.Size = new System.Drawing.Size(1070, 592);
             this.chduong.TabIndex = 9;
             this.chduong.Text = "chduong";
@@ -538,7 +587,7 @@ namespace bluetoothmain
             this.rcao.Controls.Add(this.pictureBox23);
             this.rcao.Location = new System.Drawing.Point(4, 22);
             this.rcao.Name = "rcao";
-            this.rcao.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.rcao.Padding = new System.Windows.Forms.Padding(3);
             this.rcao.Size = new System.Drawing.Size(1070, 592);
             this.rcao.TabIndex = 8;
             this.rcao.Text = "rcao";
@@ -660,7 +709,7 @@ namespace bluetoothmain
             this.chmass.Controls.Add(this.pictureBox21);
             this.chmass.Location = new System.Drawing.Point(4, 22);
             this.chmass.Name = "chmass";
-            this.chmass.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.chmass.Padding = new System.Windows.Forms.Padding(3);
             this.chmass.Size = new System.Drawing.Size(1070, 592);
             this.chmass.TabIndex = 7;
             this.chmass.Text = "chmass";
@@ -774,7 +823,7 @@ namespace bluetoothmain
             this.open.Controls.Add(this.pictureBox17);
             this.open.Location = new System.Drawing.Point(4, 22);
             this.open.Name = "open";
-            this.open.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.open.Padding = new System.Windows.Forms.Padding(3);
             this.open.Size = new System.Drawing.Size(1070, 592);
             this.open.TabIndex = 6;
             this.open.Text = "open";
@@ -848,7 +897,7 @@ namespace bluetoothmain
             // 
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.Location = new System.Drawing.Point(450, 142);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(365, 255);
             this.pictureBox20.TabIndex = 12;
@@ -920,7 +969,7 @@ namespace bluetoothmain
             this.loi.Controls.Add(this.button9);
             this.loi.Location = new System.Drawing.Point(4, 22);
             this.loi.Name = "loi";
-            this.loi.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.loi.Padding = new System.Windows.Forms.Padding(3);
             this.loi.Size = new System.Drawing.Size(1070, 592);
             this.loi.TabIndex = 4;
             this.loi.Text = "loi";
@@ -985,9 +1034,9 @@ namespace bluetoothmain
             // 
             this.tocdo.Controls.Add(this.tabControl5);
             this.tocdo.Location = new System.Drawing.Point(4, 22);
-            this.tocdo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tocdo.Margin = new System.Windows.Forms.Padding(2);
             this.tocdo.Name = "tocdo";
-            this.tocdo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tocdo.Padding = new System.Windows.Forms.Padding(2);
             this.tocdo.Size = new System.Drawing.Size(1070, 592);
             this.tocdo.TabIndex = 3;
             this.tocdo.Text = "tocdo";
@@ -998,6 +1047,7 @@ namespace bluetoothmain
             this.tabControl5.Controls.Add(this.td);
             this.tabControl5.Controls.Add(this.td1);
             this.tabControl5.Controls.Add(this.td2);
+            this.tabControl5.Controls.Add(this.tabPage9);
             this.tabControl5.Location = new System.Drawing.Point(0, 5);
             this.tabControl5.Name = "tabControl5";
             this.tabControl5.SelectedIndex = 0;
@@ -1030,7 +1080,7 @@ namespace bluetoothmain
             this.td.Controls.Add(this.label103);
             this.td.Location = new System.Drawing.Point(4, 22);
             this.td.Name = "td";
-            this.td.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.td.Padding = new System.Windows.Forms.Padding(3);
             this.td.Size = new System.Drawing.Size(1061, 545);
             this.td.TabIndex = 0;
             this.td.Text = "td";
@@ -1263,7 +1313,7 @@ namespace bluetoothmain
             this.td1.Controls.Add(this.pictureBox42);
             this.td1.Location = new System.Drawing.Point(4, 22);
             this.td1.Name = "td1";
-            this.td1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.td1.Padding = new System.Windows.Forms.Padding(3);
             this.td1.Size = new System.Drawing.Size(1061, 545);
             this.td1.TabIndex = 1;
             this.td1.Text = "td1";
@@ -1402,7 +1452,7 @@ namespace bluetoothmain
             this.td2.Controls.Add(this.label114);
             this.td2.Location = new System.Drawing.Point(4, 22);
             this.td2.Name = "td2";
-            this.td2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.td2.Padding = new System.Windows.Forms.Padding(3);
             this.td2.Size = new System.Drawing.Size(1061, 545);
             this.td2.TabIndex = 2;
             this.td2.Text = "td2";
@@ -1464,7 +1514,7 @@ namespace bluetoothmain
             // 
             this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
             this.pictureBox44.Location = new System.Drawing.Point(148, 224);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(209, 251);
             this.pictureBox44.TabIndex = 153;
@@ -1509,13 +1559,34 @@ namespace bluetoothmain
             this.label114.TabIndex = 149;
             this.label114.Text = "CHẨN ĐOÁN CẢM BIẾN";
             // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.label181);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1061, 545);
+            this.tabPage9.TabIndex = 3;
+            this.tabPage9.Text = "tabPage9";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // label181
+            // 
+            this.label181.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label181.Location = new System.Drawing.Point(16, 19);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(428, 64);
+            this.label181.TabIndex = 151;
+            this.label181.Text = "Khi mất tín hiệu từ cảm biến tốc độ động cơ và cảm biến vị trí trục cam động cơ s" +
+    "ẽ:";
+            // 
             // nhietdo
             // 
             this.nhietdo.Controls.Add(this.tabControl2);
             this.nhietdo.Location = new System.Drawing.Point(4, 22);
-            this.nhietdo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nhietdo.Margin = new System.Windows.Forms.Padding(2);
             this.nhietdo.Name = "nhietdo";
-            this.nhietdo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nhietdo.Padding = new System.Windows.Forms.Padding(2);
             this.nhietdo.Size = new System.Drawing.Size(1070, 592);
             this.nhietdo.TabIndex = 2;
             this.nhietdo.Text = "nhietdo";
@@ -1531,8 +1602,9 @@ namespace bluetoothmain
             this.tabControl2.Controls.Add(this.cdnd3);
             this.tabControl2.Controls.Add(this.vsub);
             this.tabControl2.Controls.Add(this.chot);
+            this.tabControl2.Controls.Add(this.sdmd);
             this.tabControl2.Location = new System.Drawing.Point(-3, 5);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(1071, 584);
@@ -1565,9 +1637,9 @@ namespace bluetoothmain
             this.ltnd.Controls.Add(this.label7);
             this.ltnd.Controls.Add(this.label3);
             this.ltnd.Location = new System.Drawing.Point(4, 22);
-            this.ltnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ltnd.Margin = new System.Windows.Forms.Padding(2);
             this.ltnd.Name = "ltnd";
-            this.ltnd.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ltnd.Padding = new System.Windows.Forms.Padding(2);
             this.ltnd.Size = new System.Drawing.Size(1063, 558);
             this.ltnd.TabIndex = 0;
             this.ltnd.Text = "ltnd";
@@ -1796,9 +1868,9 @@ namespace bluetoothmain
             this.thda.Controls.Add(this.pictureBox1);
             this.thda.Controls.Add(this.label4);
             this.thda.Location = new System.Drawing.Point(4, 22);
-            this.thda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.thda.Margin = new System.Windows.Forms.Padding(2);
             this.thda.Name = "thda";
-            this.thda.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.thda.Padding = new System.Windows.Forms.Padding(2);
             this.thda.Size = new System.Drawing.Size(1063, 558);
             this.thda.TabIndex = 2;
             this.thda.Text = "thda";
@@ -1830,7 +1902,7 @@ namespace bluetoothmain
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(616, 189);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(370, 284);
             this.pictureBox2.TabIndex = 2;
@@ -1840,7 +1912,7 @@ namespace bluetoothmain
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(203, 216);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(394, 236);
             this.pictureBox1.TabIndex = 1;
@@ -1867,9 +1939,9 @@ namespace bluetoothmain
             this.cdnd.Controls.Add(this.label2);
             this.cdnd.Controls.Add(this.label1);
             this.cdnd.Location = new System.Drawing.Point(4, 22);
-            this.cdnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd.Margin = new System.Windows.Forms.Padding(2);
             this.cdnd.Name = "cdnd";
-            this.cdnd.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd.Padding = new System.Windows.Forms.Padding(2);
             this.cdnd.Size = new System.Drawing.Size(1063, 558);
             this.cdnd.TabIndex = 3;
             this.cdnd.Text = "cdnd";
@@ -1923,7 +1995,7 @@ namespace bluetoothmain
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(18, 95);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(598, 294);
             this.pictureBox3.TabIndex = 3;
@@ -1972,9 +2044,9 @@ namespace bluetoothmain
             this.cdnd1.Controls.Add(this.label10);
             this.cdnd1.Controls.Add(this.pictureBox4);
             this.cdnd1.Location = new System.Drawing.Point(4, 22);
-            this.cdnd1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd1.Margin = new System.Windows.Forms.Padding(2);
             this.cdnd1.Name = "cdnd1";
-            this.cdnd1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd1.Padding = new System.Windows.Forms.Padding(2);
             this.cdnd1.Size = new System.Drawing.Size(1063, 558);
             this.cdnd1.TabIndex = 4;
             this.cdnd1.Text = "cdnd1";
@@ -2007,7 +2079,7 @@ namespace bluetoothmain
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(550, 97);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(397, 196);
             this.pictureBox5.TabIndex = 11;
@@ -2039,7 +2111,7 @@ namespace bluetoothmain
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(110, 97);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(436, 206);
             this.pictureBox4.TabIndex = 8;
@@ -2056,9 +2128,9 @@ namespace bluetoothmain
             this.cdnd2.Controls.Add(this.label14);
             this.cdnd2.Controls.Add(this.label15);
             this.cdnd2.Location = new System.Drawing.Point(4, 22);
-            this.cdnd2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd2.Margin = new System.Windows.Forms.Padding(2);
             this.cdnd2.Name = "cdnd2";
-            this.cdnd2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd2.Padding = new System.Windows.Forms.Padding(2);
             this.cdnd2.Size = new System.Drawing.Size(1063, 558);
             this.cdnd2.TabIndex = 5;
             this.cdnd2.Text = "cdnd2";
@@ -2090,7 +2162,7 @@ namespace bluetoothmain
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(576, 136);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(387, 210);
             this.pictureBox7.TabIndex = 13;
@@ -2111,7 +2183,7 @@ namespace bluetoothmain
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(130, 136);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(442, 210);
             this.pictureBox6.TabIndex = 10;
@@ -2158,9 +2230,9 @@ namespace bluetoothmain
             this.cdnd3.Controls.Add(this.label18);
             this.cdnd3.Controls.Add(this.label19);
             this.cdnd3.Location = new System.Drawing.Point(4, 22);
-            this.cdnd3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd3.Margin = new System.Windows.Forms.Padding(2);
             this.cdnd3.Name = "cdnd3";
-            this.cdnd3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cdnd3.Padding = new System.Windows.Forms.Padding(2);
             this.cdnd3.Size = new System.Drawing.Size(1063, 558);
             this.cdnd3.TabIndex = 6;
             this.cdnd3.Text = "cdnd3";
@@ -2175,6 +2247,7 @@ namespace bluetoothmain
             this.button31.TabIndex = 22;
             this.button31.Text = "NEXT";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
@@ -2191,7 +2264,7 @@ namespace bluetoothmain
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(339, 143);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(362, 348);
             this.pictureBox8.TabIndex = 10;
@@ -2230,7 +2303,7 @@ namespace bluetoothmain
             this.vsub.Controls.Add(this.label17);
             this.vsub.Location = new System.Drawing.Point(4, 22);
             this.vsub.Name = "vsub";
-            this.vsub.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.vsub.Padding = new System.Windows.Forms.Padding(3);
             this.vsub.Size = new System.Drawing.Size(1063, 558);
             this.vsub.TabIndex = 7;
             this.vsub.Text = "vsub";
@@ -2321,9 +2394,9 @@ namespace bluetoothmain
             this.chot.Controls.Add(this.tabControl8);
             this.chot.Controls.Add(this.label160);
             this.chot.Location = new System.Drawing.Point(4, 22);
-            this.chot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chot.Margin = new System.Windows.Forms.Padding(2);
             this.chot.Name = "chot";
-            this.chot.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chot.Padding = new System.Windows.Forms.Padding(2);
             this.chot.Size = new System.Drawing.Size(1063, 558);
             this.chot.TabIndex = 8;
             this.chot.Text = "chot";
@@ -2334,7 +2407,7 @@ namespace bluetoothmain
             this.tabControl8.Controls.Add(this.tabPage7);
             this.tabControl8.Controls.Add(this.tabPage8);
             this.tabControl8.Location = new System.Drawing.Point(2, 30);
-            this.tabControl8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl8.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl8.Name = "tabControl8";
             this.tabControl8.SelectedIndex = 0;
             this.tabControl8.Size = new System.Drawing.Size(1057, 526);
@@ -2342,22 +2415,413 @@ namespace bluetoothmain
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.label185);
+            this.tabPage7.Controls.Add(this.label184);
+            this.tabPage7.Controls.Add(this.button60);
+            this.tabPage7.Controls.Add(this.comboBox2);
+            this.tabPage7.Controls.Add(this.comboBox1);
+            this.tabPage7.Controls.Add(this.label183);
+            this.tabPage7.Controls.Add(this.label182);
+            this.tabPage7.Controls.Add(this.label168);
+            this.tabPage7.Controls.Add(this.label180);
+            this.tabPage7.Controls.Add(this.label179);
+            this.tabPage7.Controls.Add(this.label162);
+            this.tabPage7.Controls.Add(this.label161);
+            this.tabPage7.Controls.Add(this.label178);
+            this.tabPage7.Controls.Add(this.label177);
+            this.tabPage7.Controls.Add(this.textBox13);
+            this.tabPage7.Controls.Add(this.label175);
+            this.tabPage7.Controls.Add(this.textBox14);
+            this.tabPage7.Controls.Add(this.label176);
+            this.tabPage7.Controls.Add(this.pictureBox57);
+            this.tabPage7.Controls.Add(this.button59);
+            this.tabPage7.Controls.Add(this.textBox7);
+            this.tabPage7.Controls.Add(this.textBox6);
+            this.tabPage7.Controls.Add(this.textBox5);
+            this.tabPage7.Controls.Add(this.textBox4);
+            this.tabPage7.Controls.Add(this.textBox3);
+            this.tabPage7.Controls.Add(this.textBox2);
+            this.tabPage7.Controls.Add(this.textBox1);
+            this.tabPage7.Controls.Add(this.label171);
+            this.tabPage7.Controls.Add(this.label172);
+            this.tabPage7.Controls.Add(this.label170);
+            this.tabPage7.Controls.Add(this.label169);
+            this.tabPage7.Controls.Add(this.label167);
+            this.tabPage7.Controls.Add(this.label163);
+            this.tabPage7.Controls.Add(this.label166);
+            this.tabPage7.Controls.Add(this.label158);
+            this.tabPage7.Controls.Add(this.button57);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage7.Size = new System.Drawing.Size(1049, 500);
             this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.Text = " ";
             this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click_1);
+            // 
+            // label185
+            // 
+            this.label185.AutoSize = true;
+            this.label185.Location = new System.Drawing.Point(624, 367);
+            this.label185.Name = "label185";
+            this.label185.Size = new System.Drawing.Size(137, 13);
+            this.label185.TabIndex = 169;
+            this.label185.Text = "(IG Switch ON - Engine Off)";
+            // 
+            // label184
+            // 
+            this.label184.AutoSize = true;
+            this.label184.Location = new System.Drawing.Point(624, 325);
+            this.label184.Name = "label184";
+            this.label184.Size = new System.Drawing.Size(137, 13);
+            this.label184.TabIndex = 168;
+            this.label184.Text = "(IG Switch ON - Engine Off)";
+            // 
+            // button60
+            // 
+            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button60.Location = new System.Drawing.Point(811, 410);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(230, 65);
+            this.button60.TabIndex = 167;
+            this.button60.Text = "MỞ PAN";
+            this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Hở mạch",
+            "Điện trở cao",
+            "Chạm mass"});
+            this.comboBox2.Location = new System.Drawing.Point(379, 343);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(150, 32);
+            this.comboBox2.TabIndex = 166;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "13.7-16.6",
+            "2.49-2.79",
+            "0.622-0.703"});
+            this.comboBox1.Location = new System.Drawing.Point(235, 394);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 32);
+            this.comboBox1.TabIndex = 165;
+            // 
+            // label183
+            // 
+            this.label183.AutoSize = true;
+            this.label183.Location = new System.Drawing.Point(46, 412);
+            this.label183.Name = "label183";
+            this.label183.Size = new System.Drawing.Size(109, 13);
+            this.label183.TabIndex = 164;
+            this.label183.Text = "(Tích hợp trong MAF)";
+            // 
+            // label182
+            // 
+            this.label182.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label182.Location = new System.Drawing.Point(30, 391);
+            this.label182.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label182.Name = "label182";
+            this.label182.Size = new System.Drawing.Size(208, 34);
+            this.label182.TabIndex = 163;
+            this.label182.Text = "Điện trở THA ở 20°C :";
+            // 
+            // label168
+            // 
+            this.label168.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label168.Location = new System.Drawing.Point(19, 160);
+            this.label168.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(306, 34);
+            this.label168.TabIndex = 162;
+            this.label168.Text = "Màu dây chân tín hiệu THW  N0.1:";
+            // 
+            // label180
+            // 
+            this.label180.AutoSize = true;
+            this.label180.Location = new System.Drawing.Point(77, 308);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(110, 13);
+            this.label180.TabIndex = 161;
+            this.label180.Text = "(Tích hợp trong MAP)";
+            // 
+            // label179
+            // 
+            this.label179.AutoSize = true;
+            this.label179.Location = new System.Drawing.Point(78, 221);
+            this.label179.Name = "label179";
+            this.label179.Size = new System.Drawing.Size(110, 13);
+            this.label179.TabIndex = 160;
+            this.label179.Text = "(Tích hợp trong MAP)";
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Location = new System.Drawing.Point(78, 139);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(109, 13);
+            this.label162.TabIndex = 159;
+            this.label162.Text = "(Tích hợp trong MAF)";
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Location = new System.Drawing.Point(104, 57);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(109, 13);
+            this.label161.TabIndex = 158;
+            this.label161.Text = "(Tích hợp trong MAF)";
+            // 
+            // label178
+            // 
+            this.label178.AutoSize = true;
+            this.label178.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label178.Location = new System.Drawing.Point(1010, 344);
+            this.label178.Name = "label178";
+            this.label178.Size = new System.Drawing.Size(23, 24);
+            this.label178.TabIndex = 157;
+            this.label178.Text = "V";
+            // 
+            // label177
+            // 
+            this.label177.AutoSize = true;
+            this.label177.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label177.Location = new System.Drawing.Point(967, 302);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(23, 24);
+            this.label177.TabIndex = 156;
+            this.label177.Text = "V";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(896, 341);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(108, 29);
+            this.textBox13.TabIndex = 155;
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label175
+            // 
+            this.label175.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label175.Location = new System.Drawing.Point(562, 342);
+            this.label175.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(341, 28);
+            this.label175.TabIndex = 154;
+            this.label175.Text = "Điện áp chân tín hiệu tại giắc cảm biến:";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(837, 297);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(124, 29);
+            this.textBox14.TabIndex = 153;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label176
+            // 
+            this.label176.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label176.Location = new System.Drawing.Point(562, 301);
+            this.label176.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(318, 28);
+            this.label176.TabIndex = 152;
+            this.label176.Text = "Điện áp chân tín hiệu tại PCM:";
+            // 
+            // pictureBox57
+            // 
+            this.pictureBox57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox57.Image")));
+            this.pictureBox57.Location = new System.Drawing.Point(557, 108);
+            this.pictureBox57.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox57.Name = "pictureBox57";
+            this.pictureBox57.Size = new System.Drawing.Size(301, 184);
+            this.pictureBox57.TabIndex = 151;
+            this.pictureBox57.TabStop = false;
+            // 
+            // button59
+            // 
+            this.button59.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button59.Location = new System.Drawing.Point(575, 410);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(230, 65);
+            this.button59.TabIndex = 150;
+            this.button59.Text = "NỘP BÀI";
+            this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(294, 283);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(124, 29);
+            this.textBox7.TabIndex = 146;
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(379, 252);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(124, 29);
+            this.textBox6.TabIndex = 145;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(327, 200);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(124, 29);
+            this.textBox5.TabIndex = 144;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(327, 156);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(124, 29);
+            this.textBox4.TabIndex = 143;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(267, 114);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(124, 29);
+            this.textBox3.TabIndex = 142;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(372, 80);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(124, 29);
+            this.textBox2.TabIndex = 141;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(327, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(124, 29);
+            this.textBox1.TabIndex = 140;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label171
+            // 
+            this.label171.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label171.Location = new System.Drawing.Point(19, 325);
+            this.label171.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label171.Name = "label171";
+            this.label171.Size = new System.Drawing.Size(484, 50);
+            this.label171.TabIndex = 139;
+            this.label171.Text = "Đọc máy chẩn đoán thấy nhiệt độ THW N0.2\r\n là -40°F thì mạch điện có thể bị:";
+            // 
+            // label172
+            // 
+            this.label172.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label172.Location = new System.Drawing.Point(19, 287);
+            this.label172.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(306, 34);
+            this.label172.TabIndex = 138;
+            this.label172.Text = "Tên chân tín hiệu THA ở PCM:";
+            // 
+            // label170
+            // 
+            this.label170.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label170.Location = new System.Drawing.Point(19, 253);
+            this.label170.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label170.Name = "label170";
+            this.label170.Size = new System.Drawing.Size(361, 34);
+            this.label170.TabIndex = 137;
+            this.label170.Text = "Điện áp chân tín hiệu THW N0.2 ở 80°C :";
+            // 
+            // label169
+            // 
+            this.label169.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label169.Location = new System.Drawing.Point(19, 200);
+            this.label169.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(337, 34);
+            this.label169.TabIndex = 136;
+            this.label169.Text = "Điện áp chân tín hiệu THA ở 40°C :";
+            // 
+            // label167
+            // 
+            this.label167.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label167.Location = new System.Drawing.Point(19, 84);
+            this.label167.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(384, 34);
+            this.label167.TabIndex = 134;
+            this.label167.Text = "Vị trí chân tín hiệu THW  N0.1 (1,2,3,...):";
+            // 
+            // label163
+            // 
+            this.label163.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label163.Location = new System.Drawing.Point(19, 118);
+            this.label163.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(306, 34);
+            this.label163.TabIndex = 133;
+            this.label163.Text = "Màu dây chân tín hiệu THA:";
+            // 
+            // label166
+            // 
+            this.label166.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label166.Location = new System.Drawing.Point(19, 36);
+            this.label166.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(306, 48);
+            this.label166.TabIndex = 132;
+            this.label166.Text = "Vị trí chân tín hiệu THA (1,2,3,...):\r\n";
+            // 
+            // label158
+            // 
+            this.label158.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label158.Location = new System.Drawing.Point(5, 2);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(648, 27);
+            this.label158.TabIndex = 125;
+            this.label158.Text = "Sử dụng sơ đồ mạch điện động cơ Mazda 3 2018 2.0L tìm các thông tin:";
+            // 
+            // button57
+            // 
+            this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button57.Location = new System.Drawing.Point(659, 5);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(221, 60);
+            this.button57.TabIndex = 0;
+            this.button57.Text = "Sơ đồ mạch điện\r\nMazda 3 2018 2.0L";
+            this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.button57_Click);
             // 
             // tabPage8
             // 
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage8.Size = new System.Drawing.Size(1032, 500);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage8.Size = new System.Drawing.Size(1049, 500);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -2374,6 +2838,7 @@ namespace bluetoothmain
             // 
             // sensor
             // 
+            this.sensor.Controls.Add(this.button58);
             this.sensor.Controls.Add(this.button4);
             this.sensor.Controls.Add(this.button8);
             this.sensor.Controls.Add(this.button7);
@@ -2382,19 +2847,29 @@ namespace bluetoothmain
             this.sensor.Controls.Add(this.button3);
             this.sensor.Controls.Add(this.button2);
             this.sensor.Location = new System.Drawing.Point(4, 22);
-            this.sensor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sensor.Margin = new System.Windows.Forms.Padding(2);
             this.sensor.Name = "sensor";
-            this.sensor.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sensor.Padding = new System.Windows.Forms.Padding(2);
             this.sensor.Size = new System.Drawing.Size(1070, 592);
             this.sensor.TabIndex = 1;
             this.sensor.Text = "sensor";
             this.sensor.UseVisualStyleBackColor = true;
             // 
+            // button58
+            // 
+            this.button58.Location = new System.Drawing.Point(547, 76);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(237, 60);
+            this.button58.TabIndex = 23;
+            this.button58.Text = "button58";
+            this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
+            // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(216, 255);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(257, 67);
             this.button4.TabIndex = 22;
@@ -2406,7 +2881,7 @@ namespace bluetoothmain
             // 
             this.button8.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(216, 76);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(257, 67);
             this.button8.TabIndex = 21;
@@ -2418,7 +2893,7 @@ namespace bluetoothmain
             // 
             this.button7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(527, 340);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(271, 67);
             this.button7.TabIndex = 20;
@@ -2430,7 +2905,7 @@ namespace bluetoothmain
             // 
             this.button6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(527, 245);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(271, 67);
             this.button6.TabIndex = 19;
@@ -2441,7 +2916,7 @@ namespace bluetoothmain
             // 
             this.button5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(527, 158);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(271, 67);
             this.button5.TabIndex = 18;
@@ -2453,7 +2928,7 @@ namespace bluetoothmain
             // 
             this.button3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(216, 340);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(257, 67);
             this.button3.TabIndex = 16;
@@ -2464,7 +2939,7 @@ namespace bluetoothmain
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(216, 158);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(257, 67);
             this.button2.TabIndex = 15;
@@ -2477,9 +2952,9 @@ namespace bluetoothmain
             this.lythuyet.Controls.Add(this.button1);
             this.lythuyet.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lythuyet.Location = new System.Drawing.Point(4, 22);
-            this.lythuyet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lythuyet.Margin = new System.Windows.Forms.Padding(2);
             this.lythuyet.Name = "lythuyet";
-            this.lythuyet.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lythuyet.Padding = new System.Windows.Forms.Padding(2);
             this.lythuyet.Size = new System.Drawing.Size(1070, 592);
             this.lythuyet.TabIndex = 0;
             this.lythuyet.Text = "Lythuyet";
@@ -2490,7 +2965,7 @@ namespace bluetoothmain
             this.button1.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(63, 70);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(406, 80);
             this.button1.TabIndex = 8;
@@ -2514,7 +2989,7 @@ namespace bluetoothmain
             this.tabControl1.Controls.Add(this.vitri);
             this.tabControl1.Controls.Add(this.apsuat);
             this.tabControl1.Location = new System.Drawing.Point(2, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1078, 618);
@@ -2525,7 +3000,7 @@ namespace bluetoothmain
             this.luuluong.Controls.Add(this.tabControl3);
             this.luuluong.Location = new System.Drawing.Point(4, 22);
             this.luuluong.Name = "luuluong";
-            this.luuluong.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.luuluong.Padding = new System.Windows.Forms.Padding(3);
             this.luuluong.Size = new System.Drawing.Size(1070, 592);
             this.luuluong.TabIndex = 10;
             this.luuluong.Text = "luuluong";
@@ -2565,7 +3040,7 @@ namespace bluetoothmain
             this.ltll.Controls.Add(this.label93);
             this.ltll.Location = new System.Drawing.Point(4, 22);
             this.ltll.Name = "ltll";
-            this.ltll.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ltll.Padding = new System.Windows.Forms.Padding(3);
             this.ltll.Size = new System.Drawing.Size(1059, 550);
             this.ltll.TabIndex = 0;
             this.ltll.Text = "ltll";
@@ -2767,7 +3242,7 @@ namespace bluetoothmain
             this.cdll.Controls.Add(this.label80);
             this.cdll.Location = new System.Drawing.Point(4, 22);
             this.cdll.Name = "cdll";
-            this.cdll.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.cdll.Padding = new System.Windows.Forms.Padding(3);
             this.cdll.Size = new System.Drawing.Size(1059, 550);
             this.cdll.TabIndex = 1;
             this.cdll.Text = "cdll";
@@ -2915,7 +3390,7 @@ namespace bluetoothmain
             this.cdll1.Controls.Add(this.label101);
             this.cdll1.Location = new System.Drawing.Point(4, 22);
             this.cdll1.Name = "cdll1";
-            this.cdll1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.cdll1.Padding = new System.Windows.Forms.Padding(3);
             this.cdll1.Size = new System.Drawing.Size(1059, 550);
             this.cdll1.TabIndex = 2;
             this.cdll1.Text = "cdll1";
@@ -3028,7 +3503,7 @@ namespace bluetoothmain
             this.nongdo.Controls.Add(this.tabControl4);
             this.nongdo.Location = new System.Drawing.Point(4, 22);
             this.nongdo.Name = "nongdo";
-            this.nongdo.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.nongdo.Padding = new System.Windows.Forms.Padding(3);
             this.nongdo.Size = new System.Drawing.Size(1070, 592);
             this.nongdo.TabIndex = 11;
             this.nongdo.Text = "nongdo";
@@ -3062,7 +3537,7 @@ namespace bluetoothmain
             this.nd.Controls.Add(this.label94);
             this.nd.Location = new System.Drawing.Point(4, 22);
             this.nd.Name = "nd";
-            this.nd.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.nd.Padding = new System.Windows.Forms.Padding(3);
             this.nd.Size = new System.Drawing.Size(1064, 564);
             this.nd.TabIndex = 0;
             this.nd.Text = "nd";
@@ -3178,7 +3653,7 @@ namespace bluetoothmain
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1064, 564);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
@@ -3188,7 +3663,7 @@ namespace bluetoothmain
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1064, 564);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
@@ -3198,7 +3673,7 @@ namespace bluetoothmain
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(1064, 564);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
@@ -3208,7 +3683,7 @@ namespace bluetoothmain
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(1064, 564);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
@@ -3219,7 +3694,7 @@ namespace bluetoothmain
             this.vitri.Controls.Add(this.tabControl6);
             this.vitri.Location = new System.Drawing.Point(4, 22);
             this.vitri.Name = "vitri";
-            this.vitri.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.vitri.Padding = new System.Windows.Forms.Padding(3);
             this.vitri.Size = new System.Drawing.Size(1070, 592);
             this.vitri.TabIndex = 12;
             this.vitri.Text = "vitri";
@@ -3258,7 +3733,7 @@ namespace bluetoothmain
             this.tabPage1.Controls.Add(this.label133);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1059, 563);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
@@ -3444,7 +3919,7 @@ namespace bluetoothmain
             // 
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1059, 563);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "tabPage6";
@@ -3455,7 +3930,7 @@ namespace bluetoothmain
             this.apsuat.Controls.Add(this.tabControl7);
             this.apsuat.Location = new System.Drawing.Point(4, 22);
             this.apsuat.Name = "apsuat";
-            this.apsuat.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.apsuat.Padding = new System.Windows.Forms.Padding(3);
             this.apsuat.Size = new System.Drawing.Size(1070, 592);
             this.apsuat.TabIndex = 13;
             this.apsuat.Text = "apsuat";
@@ -3494,7 +3969,7 @@ namespace bluetoothmain
             this.ap.Controls.Add(this.label146);
             this.ap.Location = new System.Drawing.Point(4, 22);
             this.ap.Name = "ap";
-            this.ap.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ap.Padding = new System.Windows.Forms.Padding(3);
             this.ap.Size = new System.Drawing.Size(1060, 565);
             this.ap.TabIndex = 0;
             this.ap.Text = "ap";
@@ -3687,7 +4162,7 @@ namespace bluetoothmain
             this.ap1.Controls.Add(this.label157);
             this.ap1.Location = new System.Drawing.Point(4, 22);
             this.ap1.Name = "ap1";
-            this.ap1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ap1.Padding = new System.Windows.Forms.Padding(3);
             this.ap1.Size = new System.Drawing.Size(1060, 565);
             this.ap1.TabIndex = 1;
             this.ap1.Text = "ap1";
@@ -3845,7 +4320,7 @@ namespace bluetoothmain
             this.ap2.Controls.Add(this.label165);
             this.ap2.Location = new System.Drawing.Point(4, 22);
             this.ap2.Name = "ap2";
-            this.ap2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ap2.Padding = new System.Windows.Forms.Padding(3);
             this.ap2.Size = new System.Drawing.Size(1060, 565);
             this.ap2.TabIndex = 2;
             this.ap2.Text = "ap2";
@@ -3919,6 +4394,61 @@ namespace bluetoothmain
             this.label165.Size = new System.Drawing.Size(0, 13);
             this.label165.TabIndex = 165;
             // 
+            // sdmd
+            // 
+            this.sdmd.Controls.Add(this.button61);
+            this.sdmd.Controls.Add(this.button62);
+            this.sdmd.Controls.Add(this.label173);
+            this.sdmd.Controls.Add(this.pictureBox53);
+            this.sdmd.Location = new System.Drawing.Point(4, 22);
+            this.sdmd.Name = "sdmd";
+            this.sdmd.Padding = new System.Windows.Forms.Padding(3);
+            this.sdmd.Size = new System.Drawing.Size(1063, 558);
+            this.sdmd.TabIndex = 9;
+            this.sdmd.Text = "sdmd";
+            this.sdmd.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
+            this.pictureBox53.Location = new System.Drawing.Point(41, 72);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(866, 402);
+            this.pictureBox53.TabIndex = 0;
+            this.pictureBox53.TabStop = false;
+            // 
+            // label173
+            // 
+            this.label173.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label173.Location = new System.Drawing.Point(37, 25);
+            this.label173.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(589, 34);
+            this.label173.TabIndex = 2;
+            this.label173.Text = "BẢNG KÝ HIỆU MÀU MAZDA";
+            // 
+            // button61
+            // 
+            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button61.Location = new System.Drawing.Point(860, 496);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(169, 46);
+            this.button61.TabIndex = 24;
+            this.button61.Text = "NEXT";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
+            // 
+            // button62
+            // 
+            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button62.Location = new System.Drawing.Point(685, 496);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(169, 46);
+            this.button62.TabIndex = 23;
+            this.button62.Text = "BACK";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
+            // 
             // LT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3957,6 +4487,7 @@ namespace bluetoothmain
             this.td2.ResumeLayout(false);
             this.td2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            this.tabPage9.ResumeLayout(false);
             this.nhietdo.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.ltnd.ResumeLayout(false);
@@ -3989,6 +4520,9 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.chot.ResumeLayout(false);
             this.tabControl8.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             this.sensor.ResumeLayout(false);
             this.lythuyet.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -4038,6 +4572,8 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             this.ap2.ResumeLayout(false);
             this.ap2.PerformLayout();
+            this.sdmd.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4362,5 +4898,49 @@ namespace bluetoothmain
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Label label160;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Label label167;
+        private System.Windows.Forms.Label label163;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.Label label158;
+        private System.Windows.Forms.Label label171;
+        private System.Windows.Forms.Label label172;
+        private System.Windows.Forms.Label label170;
+        private System.Windows.Forms.Label label169;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label180;
+        private System.Windows.Forms.Label label179;
+        private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.Label label161;
+        private System.Windows.Forms.Label label178;
+        private System.Windows.Forms.Label label177;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label175;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label176;
+        private System.Windows.Forms.PictureBox pictureBox57;
+        private System.Windows.Forms.Label label168;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.Label label181;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label183;
+        private System.Windows.Forms.Label label182;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Label label185;
+        private System.Windows.Forms.Label label184;
+        private System.Windows.Forms.TabPage sdmd;
+        private System.Windows.Forms.Label label173;
+        private System.Windows.Forms.PictureBox pictureBox53;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button62;
     }
 }
