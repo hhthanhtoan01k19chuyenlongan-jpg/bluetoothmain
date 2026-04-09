@@ -217,9 +217,10 @@ namespace bluetoothmain
             // panel1
             // 
             this.panel1.Controls.Add(this.tabControl1);
-            this.panel1.Location = new System.Drawing.Point(0, -3);
+            this.panel1.Location = new System.Drawing.Point(0, -4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1600, 900);
+            this.panel1.Size = new System.Drawing.Size(2133, 1108);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -237,10 +238,11 @@ namespace bluetoothmain
             this.tabControl1.Controls.Add(this.kiemtra1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.MaximumSize = new System.Drawing.Size(1707, 886);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1280, 720);
+            this.tabControl1.Size = new System.Drawing.Size(1707, 886);
             this.tabControl1.TabIndex = 20;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -248,10 +250,10 @@ namespace bluetoothmain
             // 
             this.debug.Controls.Add(this.button2);
             this.debug.Controls.Add(this.button1);
-            this.debug.Location = new System.Drawing.Point(4, 22);
-            this.debug.Margin = new System.Windows.Forms.Padding(2);
+            this.debug.Location = new System.Drawing.Point(4, 25);
+            this.debug.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(1272, 694);
+            this.debug.Size = new System.Drawing.Size(1699, 857);
             this.debug.TabIndex = 4;
             this.debug.Text = "debug";
             this.debug.Click += new System.EventHandler(this.tabPage5_Click);
@@ -259,9 +261,10 @@ namespace bluetoothmain
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(367, 115);
+            this.button2.Location = new System.Drawing.Point(489, 142);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 103);
+            this.button2.Size = new System.Drawing.Size(363, 127);
             this.button2.TabIndex = 2;
             this.button2.Text = "Main flow";
             this.button2.UseVisualStyleBackColor = true;
@@ -269,9 +272,10 @@ namespace bluetoothmain
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(367, 257);
+            this.button1.Location = new System.Drawing.Point(489, 316);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 93);
+            this.button1.Size = new System.Drawing.Size(363, 114);
             this.button1.TabIndex = 1;
             this.button1.Text = "Debug";
             this.button1.UseVisualStyleBackColor = true;
@@ -280,10 +284,11 @@ namespace bluetoothmain
             // gvsv
             // 
             this.gvsv.Controls.Add(this.panel2);
-            this.gvsv.Location = new System.Drawing.Point(4, 22);
+            this.gvsv.Location = new System.Drawing.Point(4, 25);
+            this.gvsv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gvsv.Name = "gvsv";
-            this.gvsv.Padding = new System.Windows.Forms.Padding(3);
-            this.gvsv.Size = new System.Drawing.Size(1272, 694);
+            this.gvsv.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gvsv.Size = new System.Drawing.Size(1699, 857);
             this.gvsv.TabIndex = 0;
             this.gvsv.Text = "gvsv";
             this.gvsv.Click += new System.EventHandler(this.tabPage1_Click);
@@ -292,9 +297,10 @@ namespace bluetoothmain
             // 
             this.panel2.Controls.Add(this.hs);
             this.panel2.Controls.Add(this.gv);
-            this.panel2.Location = new System.Drawing.Point(-4, 6);
+            this.panel2.Location = new System.Drawing.Point(-5, 7);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 720);
+            this.panel2.Size = new System.Drawing.Size(1707, 886);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -302,9 +308,10 @@ namespace bluetoothmain
             // 
             this.hs.AutoSize = true;
             this.hs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hs.Location = new System.Drawing.Point(532, 275);
+            this.hs.Location = new System.Drawing.Point(709, 338);
+            this.hs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hs.Name = "hs";
-            this.hs.Size = new System.Drawing.Size(217, 93);
+            this.hs.Size = new System.Drawing.Size(289, 114);
             this.hs.TabIndex = 4;
             this.hs.Text = "Sinh Viên";
             this.hs.UseVisualStyleBackColor = true;
@@ -315,9 +322,10 @@ namespace bluetoothmain
             this.gv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gv.AutoSize = true;
             this.gv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gv.Location = new System.Drawing.Point(532, 163);
+            this.gv.Location = new System.Drawing.Point(709, 201);
+            this.gv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gv.Name = "gv";
-            this.gv.Size = new System.Drawing.Size(217, 93);
+            this.gv.Size = new System.Drawing.Size(289, 114);
             this.gv.TabIndex = 3;
             this.gv.Text = "Giáo Viên";
             this.gv.UseVisualStyleBackColor = true;
@@ -331,10 +339,11 @@ namespace bluetoothmain
             this.dangnhapgv.Controls.Add(this.label1);
             this.dangnhapgv.Controls.Add(this.mk);
             this.dangnhapgv.Controls.Add(this.tk);
-            this.dangnhapgv.Location = new System.Drawing.Point(4, 22);
+            this.dangnhapgv.Location = new System.Drawing.Point(4, 25);
+            this.dangnhapgv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dangnhapgv.Name = "dangnhapgv";
-            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(3);
-            this.dangnhapgv.Size = new System.Drawing.Size(1272, 694);
+            this.dangnhapgv.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dangnhapgv.Size = new System.Drawing.Size(1699, 857);
             this.dangnhapgv.TabIndex = 1;
             this.dangnhapgv.Text = "dangnhapgv";
             this.dangnhapgv.Click += new System.EventHandler(this.tabPage2_Click);
@@ -342,9 +351,10 @@ namespace bluetoothmain
             // backlogin
             // 
             this.backlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backlogin.Location = new System.Drawing.Point(29, 495);
+            this.backlogin.Location = new System.Drawing.Point(39, 609);
+            this.backlogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backlogin.Name = "backlogin";
-            this.backlogin.Size = new System.Drawing.Size(148, 73);
+            this.backlogin.Size = new System.Drawing.Size(197, 90);
             this.backlogin.TabIndex = 10;
             this.backlogin.Text = "Back";
             this.backlogin.UseVisualStyleBackColor = true;
@@ -353,9 +363,10 @@ namespace bluetoothmain
             // log
             // 
             this.log.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.log.Location = new System.Drawing.Point(553, 361);
+            this.log.Location = new System.Drawing.Point(737, 444);
+            this.log.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.log.Name = "log";
-            this.log.Size = new System.Drawing.Size(189, 94);
+            this.log.Size = new System.Drawing.Size(252, 116);
             this.log.TabIndex = 9;
             this.log.Text = "Đăng Nhập";
             this.log.UseVisualStyleBackColor = true;
@@ -365,9 +376,10 @@ namespace bluetoothmain
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(411, 301);
+            this.label2.Location = new System.Drawing.Point(548, 370);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 24);
+            this.label2.Size = new System.Drawing.Size(128, 29);
             this.label2.TabIndex = 8;
             this.label2.Text = "Mật Khẩu:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -376,9 +388,10 @@ namespace bluetoothmain
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(411, 239);
+            this.label1.Location = new System.Drawing.Point(548, 294);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 24);
+            this.label1.Size = new System.Drawing.Size(181, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Tài Khoản GV:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -386,19 +399,21 @@ namespace bluetoothmain
             // mk
             // 
             this.mk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mk.Location = new System.Drawing.Point(563, 296);
+            this.mk.Location = new System.Drawing.Point(751, 364);
+            this.mk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mk.Name = "mk";
             this.mk.PasswordChar = '*';
-            this.mk.Size = new System.Drawing.Size(299, 29);
+            this.mk.Size = new System.Drawing.Size(397, 34);
             this.mk.TabIndex = 6;
             this.mk.TextChanged += new System.EventHandler(this.mk_TextChanged);
             // 
             // tk
             // 
             this.tk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tk.Location = new System.Drawing.Point(563, 239);
+            this.tk.Location = new System.Drawing.Point(751, 294);
+            this.tk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tk.Name = "tk";
-            this.tk.Size = new System.Drawing.Size(299, 29);
+            this.tk.Size = new System.Drawing.Size(397, 34);
             this.tk.TabIndex = 5;
             this.tk.TextChanged += new System.EventHandler(this.tk_TextChanged);
             // 
@@ -408,10 +423,11 @@ namespace bluetoothmain
             this.gv1.Controls.Add(this.tipgd);
             this.gv1.Controls.Add(this.gd);
             this.gv1.Controls.Add(this.qlsv);
-            this.gv1.Location = new System.Drawing.Point(4, 22);
+            this.gv1.Location = new System.Drawing.Point(4, 25);
+            this.gv1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gv1.Name = "gv1";
-            this.gv1.Padding = new System.Windows.Forms.Padding(3);
-            this.gv1.Size = new System.Drawing.Size(1272, 694);
+            this.gv1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gv1.Size = new System.Drawing.Size(1699, 857);
             this.gv1.TabIndex = 9;
             this.gv1.Text = "gv1";
             this.gv1.UseVisualStyleBackColor = true;
@@ -420,9 +436,10 @@ namespace bluetoothmain
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(29, 523);
+            this.button3.Location = new System.Drawing.Point(39, 644);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 73);
+            this.button3.Size = new System.Drawing.Size(197, 90);
             this.button3.TabIndex = 11;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = true;
@@ -431,18 +448,20 @@ namespace bluetoothmain
             // tipgd
             // 
             this.tipgd.AutoSize = true;
-            this.tipgd.Location = new System.Drawing.Point(500, 393);
+            this.tipgd.Location = new System.Drawing.Point(667, 484);
+            this.tipgd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tipgd.Name = "tipgd";
-            this.tipgd.Size = new System.Drawing.Size(0, 13);
+            this.tipgd.Size = new System.Drawing.Size(0, 17);
             this.tipgd.TabIndex = 2;
             // 
             // gd
             // 
             this.gd.Enabled = false;
             this.gd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gd.Location = new System.Drawing.Point(372, 265);
+            this.gd.Location = new System.Drawing.Point(496, 326);
+            this.gd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gd.Name = "gd";
-            this.gd.Size = new System.Drawing.Size(239, 90);
+            this.gd.Size = new System.Drawing.Size(319, 111);
             this.gd.TabIndex = 1;
             this.gd.Text = "Giảng dạy";
             this.gd.UseVisualStyleBackColor = true;
@@ -452,9 +471,10 @@ namespace bluetoothmain
             // qlsv
             // 
             this.qlsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qlsv.Location = new System.Drawing.Point(371, 162);
+            this.qlsv.Location = new System.Drawing.Point(495, 199);
+            this.qlsv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.qlsv.Name = "qlsv";
-            this.qlsv.Size = new System.Drawing.Size(239, 90);
+            this.qlsv.Size = new System.Drawing.Size(319, 111);
             this.qlsv.TabIndex = 0;
             this.qlsv.Text = "QLSV và Kiểm tra";
             this.qlsv.UseVisualStyleBackColor = true;
@@ -482,9 +502,10 @@ namespace bluetoothmain
             this.danhpanbtusb.Controls.Add(this.pan3cb);
             this.danhpanbtusb.Controls.Add(this.pan2cb);
             this.danhpanbtusb.Controls.Add(this.pan1cb);
-            this.danhpanbtusb.Location = new System.Drawing.Point(4, 22);
+            this.danhpanbtusb.Location = new System.Drawing.Point(4, 25);
+            this.danhpanbtusb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.danhpanbtusb.Name = "danhpanbtusb";
-            this.danhpanbtusb.Size = new System.Drawing.Size(1272, 694);
+            this.danhpanbtusb.Size = new System.Drawing.Size(1699, 857);
             this.danhpanbtusb.TabIndex = 3;
             this.danhpanbtusb.Text = "danhpanbtusb";
             this.danhpanbtusb.Click += new System.EventHandler(this.tabPage4_Click);
@@ -492,9 +513,10 @@ namespace bluetoothmain
             // 
             // donebt
             // 
-            this.donebt.Location = new System.Drawing.Point(800, 529);
+            this.donebt.Location = new System.Drawing.Point(1067, 651);
+            this.donebt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.donebt.Name = "donebt";
-            this.donebt.Size = new System.Drawing.Size(180, 58);
+            this.donebt.Size = new System.Drawing.Size(240, 71);
             this.donebt.TabIndex = 72;
             this.donebt.Text = "Xong";
             this.donebt.UseVisualStyleBackColor = true;
@@ -505,9 +527,10 @@ namespace bluetoothmain
             // 
             this.gvcchonpanbt.AutoSize = true;
             this.gvcchonpanbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvcchonpanbt.Location = new System.Drawing.Point(475, 543);
+            this.gvcchonpanbt.Location = new System.Drawing.Point(633, 668);
+            this.gvcchonpanbt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gvcchonpanbt.Name = "gvcchonpanbt";
-            this.gvcchonpanbt.Size = new System.Drawing.Size(318, 25);
+            this.gvcchonpanbt.Size = new System.Drawing.Size(386, 31);
             this.gvcchonpanbt.TabIndex = 40;
             this.gvcchonpanbt.Text = "Mời giáo viên chọn pan ra đề";
             this.gvcchonpanbt.Visible = false;
@@ -515,9 +538,10 @@ namespace bluetoothmain
             // menu
             // 
             this.menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu.Location = new System.Drawing.Point(8, 768);
+            this.menu.Location = new System.Drawing.Point(11, 945);
+            this.menu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(150, 50);
+            this.menu.Size = new System.Drawing.Size(200, 62);
             this.menu.TabIndex = 39;
             this.menu.Text = "Main Menu";
             this.menu.UseVisualStyleBackColor = true;
@@ -526,9 +550,10 @@ namespace bluetoothmain
             // backpg4
             // 
             this.backpg4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backpg4.Location = new System.Drawing.Point(177, 768);
+            this.backpg4.Location = new System.Drawing.Point(236, 945);
+            this.backpg4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backpg4.Name = "backpg4";
-            this.backpg4.Size = new System.Drawing.Size(100, 50);
+            this.backpg4.Size = new System.Drawing.Size(133, 62);
             this.backpg4.TabIndex = 37;
             this.backpg4.Text = "Back";
             this.backpg4.UseVisualStyleBackColor = true;
@@ -538,9 +563,10 @@ namespace bluetoothmain
             // 
             this.pan16cb.AutoSize = true;
             this.pan16cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan16cb.Location = new System.Drawing.Point(645, 452);
+            this.pan16cb.Location = new System.Drawing.Point(860, 556);
+            this.pan16cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan16cb.Name = "pan16cb";
-            this.pan16cb.Size = new System.Drawing.Size(132, 35);
+            this.pan16cb.Size = new System.Drawing.Size(163, 43);
             this.pan16cb.TabIndex = 35;
             this.pan16cb.Text = "PAN 16";
             this.pan16cb.UseVisualStyleBackColor = true;
@@ -550,9 +576,10 @@ namespace bluetoothmain
             // 
             this.pan15cb.AutoSize = true;
             this.pan15cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan15cb.Location = new System.Drawing.Point(645, 417);
+            this.pan15cb.Location = new System.Drawing.Point(860, 513);
+            this.pan15cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan15cb.Name = "pan15cb";
-            this.pan15cb.Size = new System.Drawing.Size(132, 35);
+            this.pan15cb.Size = new System.Drawing.Size(163, 43);
             this.pan15cb.TabIndex = 34;
             this.pan15cb.Text = "PAN 15";
             this.pan15cb.UseVisualStyleBackColor = true;
@@ -562,9 +589,10 @@ namespace bluetoothmain
             // 
             this.pan14cb.AutoSize = true;
             this.pan14cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan14cb.Location = new System.Drawing.Point(645, 382);
+            this.pan14cb.Location = new System.Drawing.Point(860, 470);
+            this.pan14cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan14cb.Name = "pan14cb";
-            this.pan14cb.Size = new System.Drawing.Size(132, 35);
+            this.pan14cb.Size = new System.Drawing.Size(163, 43);
             this.pan14cb.TabIndex = 33;
             this.pan14cb.Text = "PAN 14";
             this.pan14cb.UseVisualStyleBackColor = true;
@@ -574,9 +602,10 @@ namespace bluetoothmain
             // 
             this.pan13cb.AutoSize = true;
             this.pan13cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan13cb.Location = new System.Drawing.Point(645, 347);
+            this.pan13cb.Location = new System.Drawing.Point(860, 427);
+            this.pan13cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan13cb.Name = "pan13cb";
-            this.pan13cb.Size = new System.Drawing.Size(132, 35);
+            this.pan13cb.Size = new System.Drawing.Size(163, 43);
             this.pan13cb.TabIndex = 32;
             this.pan13cb.Text = "PAN 13";
             this.pan13cb.UseVisualStyleBackColor = true;
@@ -586,9 +615,10 @@ namespace bluetoothmain
             // 
             this.pan12cb.AutoSize = true;
             this.pan12cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan12cb.Location = new System.Drawing.Point(645, 312);
+            this.pan12cb.Location = new System.Drawing.Point(860, 384);
+            this.pan12cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan12cb.Name = "pan12cb";
-            this.pan12cb.Size = new System.Drawing.Size(132, 35);
+            this.pan12cb.Size = new System.Drawing.Size(163, 43);
             this.pan12cb.TabIndex = 31;
             this.pan12cb.Text = "PAN 12";
             this.pan12cb.UseVisualStyleBackColor = true;
@@ -598,9 +628,10 @@ namespace bluetoothmain
             // 
             this.pan11cb.AutoSize = true;
             this.pan11cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan11cb.Location = new System.Drawing.Point(645, 277);
+            this.pan11cb.Location = new System.Drawing.Point(860, 341);
+            this.pan11cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan11cb.Name = "pan11cb";
-            this.pan11cb.Size = new System.Drawing.Size(132, 35);
+            this.pan11cb.Size = new System.Drawing.Size(163, 43);
             this.pan11cb.TabIndex = 30;
             this.pan11cb.Text = "PAN 11";
             this.pan11cb.UseVisualStyleBackColor = true;
@@ -610,9 +641,10 @@ namespace bluetoothmain
             // 
             this.pan10cb.AutoSize = true;
             this.pan10cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan10cb.Location = new System.Drawing.Point(645, 242);
+            this.pan10cb.Location = new System.Drawing.Point(860, 298);
+            this.pan10cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan10cb.Name = "pan10cb";
-            this.pan10cb.Size = new System.Drawing.Size(132, 35);
+            this.pan10cb.Size = new System.Drawing.Size(163, 43);
             this.pan10cb.TabIndex = 29;
             this.pan10cb.Text = "PAN 10";
             this.pan10cb.UseVisualStyleBackColor = true;
@@ -622,9 +654,10 @@ namespace bluetoothmain
             // 
             this.pan9cb.AutoSize = true;
             this.pan9cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan9cb.Location = new System.Drawing.Point(645, 207);
+            this.pan9cb.Location = new System.Drawing.Point(860, 255);
+            this.pan9cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan9cb.Name = "pan9cb";
-            this.pan9cb.Size = new System.Drawing.Size(116, 35);
+            this.pan9cb.Size = new System.Drawing.Size(143, 43);
             this.pan9cb.TabIndex = 28;
             this.pan9cb.Text = "PAN 9";
             this.pan9cb.UseVisualStyleBackColor = true;
@@ -634,9 +667,10 @@ namespace bluetoothmain
             // 
             this.pan8cb.AutoSize = true;
             this.pan8cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan8cb.Location = new System.Drawing.Point(496, 452);
+            this.pan8cb.Location = new System.Drawing.Point(661, 556);
+            this.pan8cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan8cb.Name = "pan8cb";
-            this.pan8cb.Size = new System.Drawing.Size(116, 35);
+            this.pan8cb.Size = new System.Drawing.Size(143, 43);
             this.pan8cb.TabIndex = 27;
             this.pan8cb.Text = "PAN 8";
             this.pan8cb.UseVisualStyleBackColor = true;
@@ -646,9 +680,10 @@ namespace bluetoothmain
             // 
             this.pan7cb.AutoSize = true;
             this.pan7cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan7cb.Location = new System.Drawing.Point(496, 417);
+            this.pan7cb.Location = new System.Drawing.Point(661, 513);
+            this.pan7cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan7cb.Name = "pan7cb";
-            this.pan7cb.Size = new System.Drawing.Size(116, 35);
+            this.pan7cb.Size = new System.Drawing.Size(143, 43);
             this.pan7cb.TabIndex = 26;
             this.pan7cb.Text = "PAN 7";
             this.pan7cb.UseVisualStyleBackColor = true;
@@ -658,9 +693,10 @@ namespace bluetoothmain
             // 
             this.pan6cb.AutoSize = true;
             this.pan6cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan6cb.Location = new System.Drawing.Point(496, 382);
+            this.pan6cb.Location = new System.Drawing.Point(661, 470);
+            this.pan6cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan6cb.Name = "pan6cb";
-            this.pan6cb.Size = new System.Drawing.Size(116, 35);
+            this.pan6cb.Size = new System.Drawing.Size(143, 43);
             this.pan6cb.TabIndex = 25;
             this.pan6cb.Text = "PAN 6";
             this.pan6cb.UseVisualStyleBackColor = true;
@@ -670,9 +706,10 @@ namespace bluetoothmain
             // 
             this.pan5cb.AutoSize = true;
             this.pan5cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan5cb.Location = new System.Drawing.Point(496, 347);
+            this.pan5cb.Location = new System.Drawing.Point(661, 427);
+            this.pan5cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan5cb.Name = "pan5cb";
-            this.pan5cb.Size = new System.Drawing.Size(116, 35);
+            this.pan5cb.Size = new System.Drawing.Size(143, 43);
             this.pan5cb.TabIndex = 24;
             this.pan5cb.Text = "PAN 5";
             this.pan5cb.UseVisualStyleBackColor = true;
@@ -682,9 +719,10 @@ namespace bluetoothmain
             // 
             this.pan4cb.AutoSize = true;
             this.pan4cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan4cb.Location = new System.Drawing.Point(496, 312);
+            this.pan4cb.Location = new System.Drawing.Point(661, 384);
+            this.pan4cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan4cb.Name = "pan4cb";
-            this.pan4cb.Size = new System.Drawing.Size(116, 35);
+            this.pan4cb.Size = new System.Drawing.Size(143, 43);
             this.pan4cb.TabIndex = 23;
             this.pan4cb.Text = "PAN 4";
             this.pan4cb.UseVisualStyleBackColor = true;
@@ -694,9 +732,10 @@ namespace bluetoothmain
             // 
             this.pan3cb.AutoSize = true;
             this.pan3cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan3cb.Location = new System.Drawing.Point(496, 277);
+            this.pan3cb.Location = new System.Drawing.Point(661, 341);
+            this.pan3cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan3cb.Name = "pan3cb";
-            this.pan3cb.Size = new System.Drawing.Size(116, 35);
+            this.pan3cb.Size = new System.Drawing.Size(143, 43);
             this.pan3cb.TabIndex = 22;
             this.pan3cb.Text = "PAN 3";
             this.pan3cb.UseVisualStyleBackColor = true;
@@ -706,9 +745,10 @@ namespace bluetoothmain
             // 
             this.pan2cb.AutoSize = true;
             this.pan2cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan2cb.Location = new System.Drawing.Point(496, 242);
+            this.pan2cb.Location = new System.Drawing.Point(661, 298);
+            this.pan2cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan2cb.Name = "pan2cb";
-            this.pan2cb.Size = new System.Drawing.Size(116, 35);
+            this.pan2cb.Size = new System.Drawing.Size(143, 43);
             this.pan2cb.TabIndex = 21;
             this.pan2cb.Text = "PAN 2";
             this.pan2cb.UseVisualStyleBackColor = true;
@@ -718,9 +758,10 @@ namespace bluetoothmain
             // 
             this.pan1cb.AutoSize = true;
             this.pan1cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pan1cb.Location = new System.Drawing.Point(496, 207);
+            this.pan1cb.Location = new System.Drawing.Point(661, 255);
+            this.pan1cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pan1cb.Name = "pan1cb";
-            this.pan1cb.Size = new System.Drawing.Size(116, 35);
+            this.pan1cb.Size = new System.Drawing.Size(143, 43);
             this.pan1cb.TabIndex = 20;
             this.pan1cb.Text = "PAN 1";
             this.pan1cb.UseVisualStyleBackColor = true;
@@ -747,10 +788,11 @@ namespace bluetoothmain
             this.danhpanwf.Controls.Add(this.wfpan3cb);
             this.danhpanwf.Controls.Add(this.wfpan2cb);
             this.danhpanwf.Controls.Add(this.wfpan1cb);
-            this.danhpanwf.Location = new System.Drawing.Point(4, 22);
+            this.danhpanwf.Location = new System.Drawing.Point(4, 25);
+            this.danhpanwf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.danhpanwf.Name = "danhpanwf";
-            this.danhpanwf.Padding = new System.Windows.Forms.Padding(3);
-            this.danhpanwf.Size = new System.Drawing.Size(1272, 694);
+            this.danhpanwf.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.danhpanwf.Size = new System.Drawing.Size(1699, 857);
             this.danhpanwf.TabIndex = 6;
             this.danhpanwf.Text = "danhpanwf";
             this.danhpanwf.UseVisualStyleBackColor = true;
@@ -759,9 +801,10 @@ namespace bluetoothmain
             // 
             // donewf
             // 
-            this.donewf.Location = new System.Drawing.Point(815, 514);
+            this.donewf.Location = new System.Drawing.Point(1087, 633);
+            this.donewf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.donewf.Name = "donewf";
-            this.donewf.Size = new System.Drawing.Size(180, 58);
+            this.donewf.Size = new System.Drawing.Size(240, 71);
             this.donewf.TabIndex = 71;
             this.donewf.Text = "Xong";
             this.donewf.UseVisualStyleBackColor = true;
@@ -772,9 +815,10 @@ namespace bluetoothmain
             // 
             this.gvchonpanwf.AutoSize = true;
             this.gvchonpanwf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvchonpanwf.Location = new System.Drawing.Point(475, 538);
+            this.gvchonpanwf.Location = new System.Drawing.Point(633, 662);
+            this.gvchonpanwf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gvchonpanwf.Name = "gvchonpanwf";
-            this.gvchonpanwf.Size = new System.Drawing.Size(318, 25);
+            this.gvchonpanwf.Size = new System.Drawing.Size(386, 31);
             this.gvchonpanwf.TabIndex = 70;
             this.gvchonpanwf.Text = "Mời giáo viên chọn pan ra đề";
             this.gvchonpanwf.Visible = false;
@@ -782,9 +826,10 @@ namespace bluetoothmain
             // backpg7
             // 
             this.backpg7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backpg7.Location = new System.Drawing.Point(21, 780);
+            this.backpg7.Location = new System.Drawing.Point(28, 960);
+            this.backpg7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backpg7.Name = "backpg7";
-            this.backpg7.Size = new System.Drawing.Size(100, 50);
+            this.backpg7.Size = new System.Drawing.Size(133, 62);
             this.backpg7.TabIndex = 69;
             this.backpg7.Text = "Back";
             this.backpg7.UseVisualStyleBackColor = true;
@@ -794,9 +839,10 @@ namespace bluetoothmain
             // 
             this.wfpan16cb.AutoSize = true;
             this.wfpan16cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan16cb.Location = new System.Drawing.Point(645, 452);
+            this.wfpan16cb.Location = new System.Drawing.Point(860, 556);
+            this.wfpan16cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan16cb.Name = "wfpan16cb";
-            this.wfpan16cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan16cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan16cb.TabIndex = 67;
             this.wfpan16cb.Text = "PAN 16";
             this.wfpan16cb.UseVisualStyleBackColor = true;
@@ -806,9 +852,10 @@ namespace bluetoothmain
             // 
             this.wfpan15cb.AutoSize = true;
             this.wfpan15cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan15cb.Location = new System.Drawing.Point(645, 417);
+            this.wfpan15cb.Location = new System.Drawing.Point(860, 513);
+            this.wfpan15cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan15cb.Name = "wfpan15cb";
-            this.wfpan15cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan15cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan15cb.TabIndex = 66;
             this.wfpan15cb.Text = "PAN 15";
             this.wfpan15cb.UseVisualStyleBackColor = true;
@@ -818,9 +865,10 @@ namespace bluetoothmain
             // 
             this.wfpan14cb.AutoSize = true;
             this.wfpan14cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan14cb.Location = new System.Drawing.Point(645, 382);
+            this.wfpan14cb.Location = new System.Drawing.Point(860, 470);
+            this.wfpan14cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan14cb.Name = "wfpan14cb";
-            this.wfpan14cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan14cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan14cb.TabIndex = 65;
             this.wfpan14cb.Text = "PAN 14";
             this.wfpan14cb.UseVisualStyleBackColor = true;
@@ -830,9 +878,10 @@ namespace bluetoothmain
             // 
             this.wfpan13cb.AutoSize = true;
             this.wfpan13cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan13cb.Location = new System.Drawing.Point(645, 347);
+            this.wfpan13cb.Location = new System.Drawing.Point(860, 427);
+            this.wfpan13cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan13cb.Name = "wfpan13cb";
-            this.wfpan13cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan13cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan13cb.TabIndex = 64;
             this.wfpan13cb.Text = "PAN 13";
             this.wfpan13cb.UseVisualStyleBackColor = true;
@@ -842,9 +891,10 @@ namespace bluetoothmain
             // 
             this.wfpan12cb.AutoSize = true;
             this.wfpan12cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan12cb.Location = new System.Drawing.Point(645, 312);
+            this.wfpan12cb.Location = new System.Drawing.Point(860, 384);
+            this.wfpan12cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan12cb.Name = "wfpan12cb";
-            this.wfpan12cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan12cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan12cb.TabIndex = 63;
             this.wfpan12cb.Text = "PAN 12";
             this.wfpan12cb.UseVisualStyleBackColor = true;
@@ -854,9 +904,10 @@ namespace bluetoothmain
             // 
             this.wfpan11cb.AutoSize = true;
             this.wfpan11cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan11cb.Location = new System.Drawing.Point(645, 277);
+            this.wfpan11cb.Location = new System.Drawing.Point(860, 341);
+            this.wfpan11cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan11cb.Name = "wfpan11cb";
-            this.wfpan11cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan11cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan11cb.TabIndex = 62;
             this.wfpan11cb.Text = "PAN 11";
             this.wfpan11cb.UseVisualStyleBackColor = true;
@@ -866,9 +917,10 @@ namespace bluetoothmain
             // 
             this.wfpan10cb.AutoSize = true;
             this.wfpan10cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan10cb.Location = new System.Drawing.Point(645, 242);
+            this.wfpan10cb.Location = new System.Drawing.Point(860, 298);
+            this.wfpan10cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan10cb.Name = "wfpan10cb";
-            this.wfpan10cb.Size = new System.Drawing.Size(132, 35);
+            this.wfpan10cb.Size = new System.Drawing.Size(163, 43);
             this.wfpan10cb.TabIndex = 61;
             this.wfpan10cb.Text = "PAN 10";
             this.wfpan10cb.UseVisualStyleBackColor = true;
@@ -878,9 +930,10 @@ namespace bluetoothmain
             // 
             this.wfpan9cb.AutoSize = true;
             this.wfpan9cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan9cb.Location = new System.Drawing.Point(645, 207);
+            this.wfpan9cb.Location = new System.Drawing.Point(860, 255);
+            this.wfpan9cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan9cb.Name = "wfpan9cb";
-            this.wfpan9cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan9cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan9cb.TabIndex = 60;
             this.wfpan9cb.Text = "PAN 9";
             this.wfpan9cb.UseVisualStyleBackColor = true;
@@ -890,9 +943,10 @@ namespace bluetoothmain
             // 
             this.wfpan8cb.AutoSize = true;
             this.wfpan8cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan8cb.Location = new System.Drawing.Point(496, 452);
+            this.wfpan8cb.Location = new System.Drawing.Point(661, 556);
+            this.wfpan8cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan8cb.Name = "wfpan8cb";
-            this.wfpan8cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan8cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan8cb.TabIndex = 59;
             this.wfpan8cb.Text = "PAN 8";
             this.wfpan8cb.UseVisualStyleBackColor = true;
@@ -902,9 +956,10 @@ namespace bluetoothmain
             // 
             this.wfpan7cb.AutoSize = true;
             this.wfpan7cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan7cb.Location = new System.Drawing.Point(496, 417);
+            this.wfpan7cb.Location = new System.Drawing.Point(661, 513);
+            this.wfpan7cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan7cb.Name = "wfpan7cb";
-            this.wfpan7cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan7cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan7cb.TabIndex = 58;
             this.wfpan7cb.Text = "PAN 7";
             this.wfpan7cb.UseVisualStyleBackColor = true;
@@ -914,9 +969,10 @@ namespace bluetoothmain
             // 
             this.wfpan6cb.AutoSize = true;
             this.wfpan6cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan6cb.Location = new System.Drawing.Point(496, 382);
+            this.wfpan6cb.Location = new System.Drawing.Point(661, 470);
+            this.wfpan6cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan6cb.Name = "wfpan6cb";
-            this.wfpan6cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan6cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan6cb.TabIndex = 57;
             this.wfpan6cb.Text = "PAN 6";
             this.wfpan6cb.UseVisualStyleBackColor = true;
@@ -926,9 +982,10 @@ namespace bluetoothmain
             // 
             this.wfpan5cb.AutoSize = true;
             this.wfpan5cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan5cb.Location = new System.Drawing.Point(496, 347);
+            this.wfpan5cb.Location = new System.Drawing.Point(661, 427);
+            this.wfpan5cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan5cb.Name = "wfpan5cb";
-            this.wfpan5cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan5cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan5cb.TabIndex = 56;
             this.wfpan5cb.Text = "PAN 5";
             this.wfpan5cb.UseVisualStyleBackColor = true;
@@ -938,9 +995,10 @@ namespace bluetoothmain
             // 
             this.wfpan4cb.AutoSize = true;
             this.wfpan4cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan4cb.Location = new System.Drawing.Point(496, 312);
+            this.wfpan4cb.Location = new System.Drawing.Point(661, 384);
+            this.wfpan4cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan4cb.Name = "wfpan4cb";
-            this.wfpan4cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan4cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan4cb.TabIndex = 55;
             this.wfpan4cb.Text = "PAN 4";
             this.wfpan4cb.UseVisualStyleBackColor = true;
@@ -950,9 +1008,10 @@ namespace bluetoothmain
             // 
             this.wfpan3cb.AutoSize = true;
             this.wfpan3cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan3cb.Location = new System.Drawing.Point(496, 277);
+            this.wfpan3cb.Location = new System.Drawing.Point(661, 341);
+            this.wfpan3cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan3cb.Name = "wfpan3cb";
-            this.wfpan3cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan3cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan3cb.TabIndex = 54;
             this.wfpan3cb.Text = "PAN 3";
             this.wfpan3cb.UseVisualStyleBackColor = true;
@@ -962,9 +1021,10 @@ namespace bluetoothmain
             // 
             this.wfpan2cb.AutoSize = true;
             this.wfpan2cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan2cb.Location = new System.Drawing.Point(496, 242);
+            this.wfpan2cb.Location = new System.Drawing.Point(661, 298);
+            this.wfpan2cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan2cb.Name = "wfpan2cb";
-            this.wfpan2cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan2cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan2cb.TabIndex = 53;
             this.wfpan2cb.Text = "PAN 2";
             this.wfpan2cb.UseVisualStyleBackColor = true;
@@ -974,9 +1034,10 @@ namespace bluetoothmain
             // 
             this.wfpan1cb.AutoSize = true;
             this.wfpan1cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wfpan1cb.Location = new System.Drawing.Point(496, 207);
+            this.wfpan1cb.Location = new System.Drawing.Point(661, 255);
+            this.wfpan1cb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfpan1cb.Name = "wfpan1cb";
-            this.wfpan1cb.Size = new System.Drawing.Size(116, 35);
+            this.wfpan1cb.Size = new System.Drawing.Size(143, 43);
             this.wfpan1cb.TabIndex = 52;
             this.wfpan1cb.Text = "PAN 1";
             this.wfpan1cb.UseVisualStyleBackColor = true;
@@ -986,10 +1047,11 @@ namespace bluetoothmain
             // 
             this.tabPage8.Controls.Add(this.svLT);
             this.tabPage8.Controls.Add(this.svTH);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1272, 694);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Size = new System.Drawing.Size(1699, 857);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -997,9 +1059,10 @@ namespace bluetoothmain
             // svLT
             // 
             this.svLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.svLT.Location = new System.Drawing.Point(618, 228);
+            this.svLT.Location = new System.Drawing.Point(824, 281);
+            this.svLT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.svLT.Name = "svLT";
-            this.svLT.Size = new System.Drawing.Size(197, 71);
+            this.svLT.Size = new System.Drawing.Size(263, 87);
             this.svLT.TabIndex = 1;
             this.svLT.Text = "Lý Thuyết";
             this.svLT.UseVisualStyleBackColor = true;
@@ -1007,9 +1070,10 @@ namespace bluetoothmain
             // svTH
             // 
             this.svTH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.svTH.Location = new System.Drawing.Point(357, 228);
+            this.svTH.Location = new System.Drawing.Point(476, 281);
+            this.svTH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.svTH.Name = "svTH";
-            this.svTH.Size = new System.Drawing.Size(197, 71);
+            this.svTH.Size = new System.Drawing.Size(263, 87);
             this.svTH.TabIndex = 0;
             this.svTH.Text = "Thực Hành";
             this.svTH.UseVisualStyleBackColor = true;
@@ -1032,10 +1096,11 @@ namespace bluetoothmain
             this.danhpan.Controls.Add(this.cbpan3);
             this.danhpan.Controls.Add(this.cbpan2);
             this.danhpan.Controls.Add(this.cbpan1);
-            this.danhpan.Location = new System.Drawing.Point(4, 22);
+            this.danhpan.Location = new System.Drawing.Point(4, 25);
+            this.danhpan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.danhpan.Name = "danhpan";
-            this.danhpan.Padding = new System.Windows.Forms.Padding(3);
-            this.danhpan.Size = new System.Drawing.Size(1272, 694);
+            this.danhpan.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.danhpan.Size = new System.Drawing.Size(1699, 857);
             this.danhpan.TabIndex = 8;
             this.danhpan.Text = "danhpan";
             this.danhpan.UseVisualStyleBackColor = true;
@@ -1045,9 +1110,10 @@ namespace bluetoothmain
             // 
             this.cbpan16.AutoSize = true;
             this.cbpan16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan16.Location = new System.Drawing.Point(645, 452);
+            this.cbpan16.Location = new System.Drawing.Point(860, 556);
+            this.cbpan16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan16.Name = "cbpan16";
-            this.cbpan16.Size = new System.Drawing.Size(132, 35);
+            this.cbpan16.Size = new System.Drawing.Size(163, 43);
             this.cbpan16.TabIndex = 83;
             this.cbpan16.Text = "PAN 16";
             this.cbpan16.UseVisualStyleBackColor = true;
@@ -1057,9 +1123,10 @@ namespace bluetoothmain
             // 
             this.cbpan15.AutoSize = true;
             this.cbpan15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan15.Location = new System.Drawing.Point(645, 417);
+            this.cbpan15.Location = new System.Drawing.Point(860, 513);
+            this.cbpan15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan15.Name = "cbpan15";
-            this.cbpan15.Size = new System.Drawing.Size(132, 35);
+            this.cbpan15.Size = new System.Drawing.Size(163, 43);
             this.cbpan15.TabIndex = 82;
             this.cbpan15.Text = "PAN 15";
             this.cbpan15.UseVisualStyleBackColor = true;
@@ -1069,9 +1136,10 @@ namespace bluetoothmain
             // 
             this.cbpan14.AutoSize = true;
             this.cbpan14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan14.Location = new System.Drawing.Point(645, 382);
+            this.cbpan14.Location = new System.Drawing.Point(860, 470);
+            this.cbpan14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan14.Name = "cbpan14";
-            this.cbpan14.Size = new System.Drawing.Size(132, 35);
+            this.cbpan14.Size = new System.Drawing.Size(163, 43);
             this.cbpan14.TabIndex = 81;
             this.cbpan14.Text = "PAN 14";
             this.cbpan14.UseVisualStyleBackColor = true;
@@ -1081,9 +1149,10 @@ namespace bluetoothmain
             // 
             this.cbpan13.AutoSize = true;
             this.cbpan13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan13.Location = new System.Drawing.Point(645, 347);
+            this.cbpan13.Location = new System.Drawing.Point(860, 427);
+            this.cbpan13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan13.Name = "cbpan13";
-            this.cbpan13.Size = new System.Drawing.Size(132, 35);
+            this.cbpan13.Size = new System.Drawing.Size(163, 43);
             this.cbpan13.TabIndex = 80;
             this.cbpan13.Text = "PAN 13";
             this.cbpan13.UseVisualStyleBackColor = true;
@@ -1093,9 +1162,10 @@ namespace bluetoothmain
             // 
             this.cbpan12.AutoSize = true;
             this.cbpan12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan12.Location = new System.Drawing.Point(645, 312);
+            this.cbpan12.Location = new System.Drawing.Point(860, 384);
+            this.cbpan12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan12.Name = "cbpan12";
-            this.cbpan12.Size = new System.Drawing.Size(132, 35);
+            this.cbpan12.Size = new System.Drawing.Size(163, 43);
             this.cbpan12.TabIndex = 79;
             this.cbpan12.Text = "PAN 12";
             this.cbpan12.UseVisualStyleBackColor = true;
@@ -1105,9 +1175,10 @@ namespace bluetoothmain
             // 
             this.cbpan11.AutoSize = true;
             this.cbpan11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan11.Location = new System.Drawing.Point(645, 277);
+            this.cbpan11.Location = new System.Drawing.Point(860, 341);
+            this.cbpan11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan11.Name = "cbpan11";
-            this.cbpan11.Size = new System.Drawing.Size(132, 35);
+            this.cbpan11.Size = new System.Drawing.Size(163, 43);
             this.cbpan11.TabIndex = 78;
             this.cbpan11.Text = "PAN 11";
             this.cbpan11.UseVisualStyleBackColor = true;
@@ -1117,9 +1188,10 @@ namespace bluetoothmain
             // 
             this.cbpan10.AutoSize = true;
             this.cbpan10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan10.Location = new System.Drawing.Point(645, 242);
+            this.cbpan10.Location = new System.Drawing.Point(860, 298);
+            this.cbpan10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan10.Name = "cbpan10";
-            this.cbpan10.Size = new System.Drawing.Size(132, 35);
+            this.cbpan10.Size = new System.Drawing.Size(163, 43);
             this.cbpan10.TabIndex = 77;
             this.cbpan10.Text = "PAN 10";
             this.cbpan10.UseVisualStyleBackColor = true;
@@ -1129,9 +1201,10 @@ namespace bluetoothmain
             // 
             this.cbpan9.AutoSize = true;
             this.cbpan9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan9.Location = new System.Drawing.Point(645, 207);
+            this.cbpan9.Location = new System.Drawing.Point(860, 255);
+            this.cbpan9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan9.Name = "cbpan9";
-            this.cbpan9.Size = new System.Drawing.Size(116, 35);
+            this.cbpan9.Size = new System.Drawing.Size(143, 43);
             this.cbpan9.TabIndex = 76;
             this.cbpan9.Text = "PAN 9";
             this.cbpan9.UseVisualStyleBackColor = true;
@@ -1141,9 +1214,10 @@ namespace bluetoothmain
             // 
             this.cbpan8.AutoSize = true;
             this.cbpan8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan8.Location = new System.Drawing.Point(496, 452);
+            this.cbpan8.Location = new System.Drawing.Point(661, 556);
+            this.cbpan8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan8.Name = "cbpan8";
-            this.cbpan8.Size = new System.Drawing.Size(116, 35);
+            this.cbpan8.Size = new System.Drawing.Size(143, 43);
             this.cbpan8.TabIndex = 75;
             this.cbpan8.Text = "PAN 8";
             this.cbpan8.UseVisualStyleBackColor = true;
@@ -1153,9 +1227,10 @@ namespace bluetoothmain
             // 
             this.cbpan7.AutoSize = true;
             this.cbpan7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan7.Location = new System.Drawing.Point(496, 417);
+            this.cbpan7.Location = new System.Drawing.Point(661, 513);
+            this.cbpan7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan7.Name = "cbpan7";
-            this.cbpan7.Size = new System.Drawing.Size(116, 35);
+            this.cbpan7.Size = new System.Drawing.Size(143, 43);
             this.cbpan7.TabIndex = 74;
             this.cbpan7.Text = "PAN 7";
             this.cbpan7.UseVisualStyleBackColor = true;
@@ -1165,9 +1240,10 @@ namespace bluetoothmain
             // 
             this.cbpan6.AutoSize = true;
             this.cbpan6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan6.Location = new System.Drawing.Point(496, 382);
+            this.cbpan6.Location = new System.Drawing.Point(661, 470);
+            this.cbpan6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan6.Name = "cbpan6";
-            this.cbpan6.Size = new System.Drawing.Size(116, 35);
+            this.cbpan6.Size = new System.Drawing.Size(143, 43);
             this.cbpan6.TabIndex = 73;
             this.cbpan6.Text = "PAN 6";
             this.cbpan6.UseVisualStyleBackColor = true;
@@ -1177,9 +1253,10 @@ namespace bluetoothmain
             // 
             this.cbpan5.AutoSize = true;
             this.cbpan5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan5.Location = new System.Drawing.Point(496, 347);
+            this.cbpan5.Location = new System.Drawing.Point(661, 427);
+            this.cbpan5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan5.Name = "cbpan5";
-            this.cbpan5.Size = new System.Drawing.Size(116, 35);
+            this.cbpan5.Size = new System.Drawing.Size(143, 43);
             this.cbpan5.TabIndex = 72;
             this.cbpan5.Text = "PAN 5";
             this.cbpan5.UseVisualStyleBackColor = true;
@@ -1189,9 +1266,10 @@ namespace bluetoothmain
             // 
             this.cbpan4.AutoSize = true;
             this.cbpan4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan4.Location = new System.Drawing.Point(496, 312);
+            this.cbpan4.Location = new System.Drawing.Point(661, 384);
+            this.cbpan4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan4.Name = "cbpan4";
-            this.cbpan4.Size = new System.Drawing.Size(116, 35);
+            this.cbpan4.Size = new System.Drawing.Size(143, 43);
             this.cbpan4.TabIndex = 71;
             this.cbpan4.Text = "PAN 4";
             this.cbpan4.UseVisualStyleBackColor = true;
@@ -1201,9 +1279,10 @@ namespace bluetoothmain
             // 
             this.cbpan3.AutoSize = true;
             this.cbpan3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan3.Location = new System.Drawing.Point(496, 277);
+            this.cbpan3.Location = new System.Drawing.Point(661, 341);
+            this.cbpan3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan3.Name = "cbpan3";
-            this.cbpan3.Size = new System.Drawing.Size(116, 35);
+            this.cbpan3.Size = new System.Drawing.Size(143, 43);
             this.cbpan3.TabIndex = 70;
             this.cbpan3.Text = "PAN 3";
             this.cbpan3.UseVisualStyleBackColor = true;
@@ -1213,9 +1292,10 @@ namespace bluetoothmain
             // 
             this.cbpan2.AutoSize = true;
             this.cbpan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan2.Location = new System.Drawing.Point(496, 242);
+            this.cbpan2.Location = new System.Drawing.Point(661, 298);
+            this.cbpan2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan2.Name = "cbpan2";
-            this.cbpan2.Size = new System.Drawing.Size(116, 35);
+            this.cbpan2.Size = new System.Drawing.Size(143, 43);
             this.cbpan2.TabIndex = 69;
             this.cbpan2.Text = "PAN 2";
             this.cbpan2.UseVisualStyleBackColor = true;
@@ -1225,9 +1305,10 @@ namespace bluetoothmain
             // 
             this.cbpan1.AutoSize = true;
             this.cbpan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpan1.Location = new System.Drawing.Point(496, 207);
+            this.cbpan1.Location = new System.Drawing.Point(661, 255);
+            this.cbpan1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbpan1.Name = "cbpan1";
-            this.cbpan1.Size = new System.Drawing.Size(116, 35);
+            this.cbpan1.Size = new System.Drawing.Size(143, 43);
             this.cbpan1.TabIndex = 68;
             this.cbpan1.Text = "PAN 1";
             this.cbpan1.UseVisualStyleBackColor = true;
@@ -1247,9 +1328,10 @@ namespace bluetoothmain
             this.kiemtraqlsv.Controls.Add(this.save);
             this.kiemtraqlsv.Controls.Add(this.dataGridView1);
             this.kiemtraqlsv.Controls.Add(this.kt);
-            this.kiemtraqlsv.Location = new System.Drawing.Point(4, 22);
+            this.kiemtraqlsv.Location = new System.Drawing.Point(4, 25);
+            this.kiemtraqlsv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kiemtraqlsv.Name = "kiemtraqlsv";
-            this.kiemtraqlsv.Size = new System.Drawing.Size(1272, 694);
+            this.kiemtraqlsv.Size = new System.Drawing.Size(1699, 857);
             this.kiemtraqlsv.TabIndex = 10;
             this.kiemtraqlsv.Text = "kiemtraqlsv";
             this.kiemtraqlsv.UseVisualStyleBackColor = true;
@@ -1259,18 +1341,20 @@ namespace bluetoothmain
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(727, 28);
+            this.label7.Location = new System.Drawing.Point(969, 34);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(46, 17);
             this.label7.TabIndex = 14;
             this.label7.Text = "label7";
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(8, 523);
+            this.button4.Location = new System.Drawing.Point(11, 644);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(148, 73);
+            this.button4.Size = new System.Drawing.Size(197, 90);
             this.button4.TabIndex = 13;
             this.button4.Text = "Back";
             this.button4.UseVisualStyleBackColor = true;
@@ -1279,10 +1363,10 @@ namespace bluetoothmain
             // xoacotdiem
             // 
             this.xoacotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xoacotdiem.Location = new System.Drawing.Point(229, 208);
-            this.xoacotdiem.Margin = new System.Windows.Forms.Padding(2);
+            this.xoacotdiem.Location = new System.Drawing.Point(305, 256);
+            this.xoacotdiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xoacotdiem.Name = "xoacotdiem";
-            this.xoacotdiem.Size = new System.Drawing.Size(108, 50);
+            this.xoacotdiem.Size = new System.Drawing.Size(144, 62);
             this.xoacotdiem.TabIndex = 12;
             this.xoacotdiem.Text = "Xóa cột điểm";
             this.xoacotdiem.UseVisualStyleBackColor = true;
@@ -1292,10 +1376,10 @@ namespace bluetoothmain
             // 
             this.xoasv.Enabled = false;
             this.xoasv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xoasv.Location = new System.Drawing.Point(229, 316);
-            this.xoasv.Margin = new System.Windows.Forms.Padding(2);
+            this.xoasv.Location = new System.Drawing.Point(305, 389);
+            this.xoasv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xoasv.Name = "xoasv";
-            this.xoasv.Size = new System.Drawing.Size(108, 50);
+            this.xoasv.Size = new System.Drawing.Size(144, 62);
             this.xoasv.TabIndex = 11;
             this.xoasv.Text = "Xóa SV";
             this.xoasv.UseVisualStyleBackColor = true;
@@ -1305,9 +1389,10 @@ namespace bluetoothmain
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(336, 20);
+            this.label6.Location = new System.Drawing.Point(448, 25);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 31);
+            this.label6.Size = new System.Drawing.Size(0, 39);
             this.label6.TabIndex = 10;
             // 
             // recentfiles
@@ -1315,10 +1400,11 @@ namespace bluetoothmain
             this.recentfiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recentfiles.HideSelection = false;
             this.recentfiles.LabelEdit = true;
-            this.recentfiles.Location = new System.Drawing.Point(-4, 81);
+            this.recentfiles.Location = new System.Drawing.Point(-5, 100);
+            this.recentfiles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.recentfiles.MultiSelect = false;
             this.recentfiles.Name = "recentfiles";
-            this.recentfiles.Size = new System.Drawing.Size(228, 316);
+            this.recentfiles.Size = new System.Drawing.Size(303, 388);
             this.recentfiles.TabIndex = 9;
             this.recentfiles.UseCompatibleStateImageBehavior = false;
             this.recentfiles.View = System.Windows.Forms.View.List;
@@ -1334,10 +1420,10 @@ namespace bluetoothmain
             // themsv
             // 
             this.themsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.themsv.Location = new System.Drawing.Point(229, 262);
-            this.themsv.Margin = new System.Windows.Forms.Padding(2);
+            this.themsv.Location = new System.Drawing.Point(305, 322);
+            this.themsv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.themsv.Name = "themsv";
-            this.themsv.Size = new System.Drawing.Size(108, 50);
+            this.themsv.Size = new System.Drawing.Size(144, 62);
             this.themsv.TabIndex = 7;
             this.themsv.Text = "Thêm SV";
             this.themsv.UseVisualStyleBackColor = true;
@@ -1346,10 +1432,10 @@ namespace bluetoothmain
             // themcotdiem
             // 
             this.themcotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.themcotdiem.Location = new System.Drawing.Point(229, 154);
-            this.themcotdiem.Margin = new System.Windows.Forms.Padding(2);
+            this.themcotdiem.Location = new System.Drawing.Point(305, 190);
+            this.themcotdiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.themcotdiem.Name = "themcotdiem";
-            this.themcotdiem.Size = new System.Drawing.Size(108, 50);
+            this.themcotdiem.Size = new System.Drawing.Size(144, 62);
             this.themcotdiem.TabIndex = 6;
             this.themcotdiem.Text = "Thêm cột điểm";
             this.themcotdiem.UseVisualStyleBackColor = true;
@@ -1358,10 +1444,10 @@ namespace bluetoothmain
             // themlop
             // 
             this.themlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.themlop.Location = new System.Drawing.Point(229, 100);
-            this.themlop.Margin = new System.Windows.Forms.Padding(2);
+            this.themlop.Location = new System.Drawing.Point(305, 123);
+            this.themlop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.themlop.Name = "themlop";
-            this.themlop.Size = new System.Drawing.Size(108, 50);
+            this.themlop.Size = new System.Drawing.Size(144, 62);
             this.themlop.TabIndex = 5;
             this.themlop.Text = "Thêm lớp";
             this.themlop.UseVisualStyleBackColor = true;
@@ -1370,9 +1456,10 @@ namespace bluetoothmain
             // save
             // 
             this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save.Location = new System.Drawing.Point(229, 370);
+            this.save.Location = new System.Drawing.Point(305, 455);
+            this.save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(108, 50);
+            this.save.Size = new System.Drawing.Size(144, 62);
             this.save.TabIndex = 3;
             this.save.Text = "Lưu";
             this.save.UseVisualStyleBackColor = true;
@@ -1382,12 +1469,13 @@ namespace bluetoothmain
             // 
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(342, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(456, 73);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(845, 412);
+            this.dataGridView1.Size = new System.Drawing.Size(1127, 507);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
@@ -1399,9 +1487,10 @@ namespace bluetoothmain
             // 
             this.kt.Enabled = false;
             this.kt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kt.Location = new System.Drawing.Point(441, 477);
+            this.kt.Location = new System.Drawing.Point(588, 587);
+            this.kt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kt.Name = "kt";
-            this.kt.Size = new System.Drawing.Size(196, 62);
+            this.kt.Size = new System.Drawing.Size(261, 76);
             this.kt.TabIndex = 0;
             this.kt.Text = "Kiểm tra";
             this.kt.UseVisualStyleBackColor = true;
@@ -1414,9 +1503,10 @@ namespace bluetoothmain
             this.kiemtra1.Controls.Add(this.lbdapan);
             this.kiemtra1.Controls.Add(this.submit);
             this.kiemtra1.Controls.Add(this.svchondapan);
-            this.kiemtra1.Location = new System.Drawing.Point(4, 22);
+            this.kiemtra1.Location = new System.Drawing.Point(4, 25);
+            this.kiemtra1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kiemtra1.Name = "kiemtra1";
-            this.kiemtra1.Size = new System.Drawing.Size(1272, 694);
+            this.kiemtra1.Size = new System.Drawing.Size(1699, 857);
             this.kiemtra1.TabIndex = 11;
             this.kiemtra1.Text = "kiemtra1";
             this.kiemtra1.UseVisualStyleBackColor = true;
@@ -1428,9 +1518,10 @@ namespace bluetoothmain
             // 
             this.tensvkiemtra.AutoSize = true;
             this.tensvkiemtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tensvkiemtra.Location = new System.Drawing.Point(359, 16);
+            this.tensvkiemtra.Location = new System.Drawing.Point(479, 20);
+            this.tensvkiemtra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tensvkiemtra.Name = "tensvkiemtra";
-            this.tensvkiemtra.Size = new System.Drawing.Size(0, 24);
+            this.tensvkiemtra.Size = new System.Drawing.Size(0, 29);
             this.tensvkiemtra.TabIndex = 12;
             // 
             // tableLayoutPanel1
@@ -1473,26 +1564,27 @@ namespace bluetoothmain
             this.tableLayoutPanel1.Controls.Add(this.da4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.loi1, 1, 0);
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(300, 59);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(400, 73);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(591, 486);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 598);
             this.tableLayoutPanel1.TabIndex = 11;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -1501,15 +1593,16 @@ namespace bluetoothmain
             this.loi4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi4.FormattingEnabled = true;
-            this.loi4.ItemHeight = 20;
+            this.loi4.ItemHeight = 25;
             this.loi4.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi4.Location = new System.Drawing.Point(446, 98);
+            this.loi4.Location = new System.Drawing.Point(595, 121);
+            this.loi4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi4.Name = "loi4";
-            this.loi4.Size = new System.Drawing.Size(132, 28);
+            this.loi4.Size = new System.Drawing.Size(175, 33);
             this.loi4.TabIndex = 26;
             // 
             // loi3
@@ -1517,15 +1610,16 @@ namespace bluetoothmain
             this.loi3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi3.FormattingEnabled = true;
-            this.loi3.ItemHeight = 20;
+            this.loi3.ItemHeight = 25;
             this.loi3.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi3.Location = new System.Drawing.Point(446, 68);
+            this.loi3.Location = new System.Drawing.Point(595, 84);
+            this.loi3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi3.Name = "loi3";
-            this.loi3.Size = new System.Drawing.Size(132, 28);
+            this.loi3.Size = new System.Drawing.Size(175, 33);
             this.loi3.TabIndex = 25;
             // 
             // loi2
@@ -1533,15 +1627,16 @@ namespace bluetoothmain
             this.loi2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi2.FormattingEnabled = true;
-            this.loi2.ItemHeight = 20;
+            this.loi2.ItemHeight = 25;
             this.loi2.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi2.Location = new System.Drawing.Point(446, 38);
+            this.loi2.Location = new System.Drawing.Point(595, 47);
+            this.loi2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi2.Name = "loi2";
-            this.loi2.Size = new System.Drawing.Size(132, 28);
+            this.loi2.Size = new System.Drawing.Size(175, 33);
             this.loi2.TabIndex = 24;
             // 
             // da2
@@ -1549,7 +1644,7 @@ namespace bluetoothmain
             this.da2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da2.FormattingEnabled = true;
-            this.da2.ItemHeight = 20;
+            this.da2.ItemHeight = 25;
             this.da2.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1567,9 +1662,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da2.Location = new System.Drawing.Point(3, 38);
+            this.da2.Location = new System.Drawing.Point(4, 47);
+            this.da2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da2.Name = "da2";
-            this.da2.Size = new System.Drawing.Size(437, 28);
+            this.da2.Size = new System.Drawing.Size(581, 33);
             this.da2.TabIndex = 9;
             this.da2.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da2.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1579,7 +1675,7 @@ namespace bluetoothmain
             this.da1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da1.FormattingEnabled = true;
-            this.da1.ItemHeight = 20;
+            this.da1.ItemHeight = 25;
             this.da1.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1597,9 +1693,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da1.Location = new System.Drawing.Point(3, 3);
+            this.da1.Location = new System.Drawing.Point(4, 4);
+            this.da1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da1.Name = "da1";
-            this.da1.Size = new System.Drawing.Size(437, 28);
+            this.da1.Size = new System.Drawing.Size(581, 33);
             this.da1.TabIndex = 1;
             this.da1.Click += new System.EventHandler(this.kiemtra1_Click);
             // 
@@ -1608,7 +1705,7 @@ namespace bluetoothmain
             this.da3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da3.FormattingEnabled = true;
-            this.da3.ItemHeight = 20;
+            this.da3.ItemHeight = 25;
             this.da3.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1626,9 +1723,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da3.Location = new System.Drawing.Point(3, 68);
+            this.da3.Location = new System.Drawing.Point(4, 84);
+            this.da3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da3.Name = "da3";
-            this.da3.Size = new System.Drawing.Size(437, 28);
+            this.da3.Size = new System.Drawing.Size(581, 33);
             this.da3.TabIndex = 10;
             this.da3.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da3.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1638,7 +1736,7 @@ namespace bluetoothmain
             this.da5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da5.FormattingEnabled = true;
-            this.da5.ItemHeight = 20;
+            this.da5.ItemHeight = 25;
             this.da5.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1656,9 +1754,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da5.Location = new System.Drawing.Point(3, 128);
+            this.da5.Location = new System.Drawing.Point(4, 158);
+            this.da5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da5.Name = "da5";
-            this.da5.Size = new System.Drawing.Size(437, 28);
+            this.da5.Size = new System.Drawing.Size(581, 33);
             this.da5.TabIndex = 12;
             this.da5.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da5.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1668,7 +1767,7 @@ namespace bluetoothmain
             this.da6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da6.FormattingEnabled = true;
-            this.da6.ItemHeight = 20;
+            this.da6.ItemHeight = 25;
             this.da6.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1686,9 +1785,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da6.Location = new System.Drawing.Point(3, 158);
+            this.da6.Location = new System.Drawing.Point(4, 195);
+            this.da6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da6.Name = "da6";
-            this.da6.Size = new System.Drawing.Size(437, 28);
+            this.da6.Size = new System.Drawing.Size(581, 33);
             this.da6.TabIndex = 13;
             this.da6.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da6.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1698,7 +1798,7 @@ namespace bluetoothmain
             this.da7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da7.FormattingEnabled = true;
-            this.da7.ItemHeight = 20;
+            this.da7.ItemHeight = 25;
             this.da7.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1716,9 +1816,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da7.Location = new System.Drawing.Point(3, 188);
+            this.da7.Location = new System.Drawing.Point(4, 232);
+            this.da7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da7.Name = "da7";
-            this.da7.Size = new System.Drawing.Size(437, 28);
+            this.da7.Size = new System.Drawing.Size(581, 33);
             this.da7.TabIndex = 14;
             this.da7.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da7.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1728,7 +1829,7 @@ namespace bluetoothmain
             this.da8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da8.FormattingEnabled = true;
-            this.da8.ItemHeight = 20;
+            this.da8.ItemHeight = 25;
             this.da8.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1746,9 +1847,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da8.Location = new System.Drawing.Point(3, 218);
+            this.da8.Location = new System.Drawing.Point(4, 269);
+            this.da8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da8.Name = "da8";
-            this.da8.Size = new System.Drawing.Size(437, 28);
+            this.da8.Size = new System.Drawing.Size(581, 33);
             this.da8.TabIndex = 15;
             this.da8.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da8.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1758,7 +1860,7 @@ namespace bluetoothmain
             this.da9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da9.FormattingEnabled = true;
-            this.da9.ItemHeight = 20;
+            this.da9.ItemHeight = 25;
             this.da9.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1776,9 +1878,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da9.Location = new System.Drawing.Point(3, 248);
+            this.da9.Location = new System.Drawing.Point(4, 306);
+            this.da9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da9.Name = "da9";
-            this.da9.Size = new System.Drawing.Size(437, 28);
+            this.da9.Size = new System.Drawing.Size(581, 33);
             this.da9.TabIndex = 16;
             this.da9.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da9.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1788,7 +1891,7 @@ namespace bluetoothmain
             this.da10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da10.FormattingEnabled = true;
-            this.da10.ItemHeight = 20;
+            this.da10.ItemHeight = 25;
             this.da10.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1806,9 +1909,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da10.Location = new System.Drawing.Point(3, 278);
+            this.da10.Location = new System.Drawing.Point(4, 343);
+            this.da10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da10.Name = "da10";
-            this.da10.Size = new System.Drawing.Size(437, 28);
+            this.da10.Size = new System.Drawing.Size(581, 33);
             this.da10.TabIndex = 17;
             this.da10.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da10.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1818,7 +1922,7 @@ namespace bluetoothmain
             this.da11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da11.FormattingEnabled = true;
-            this.da11.ItemHeight = 20;
+            this.da11.ItemHeight = 25;
             this.da11.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1836,9 +1940,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da11.Location = new System.Drawing.Point(3, 308);
+            this.da11.Location = new System.Drawing.Point(4, 380);
+            this.da11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da11.Name = "da11";
-            this.da11.Size = new System.Drawing.Size(437, 28);
+            this.da11.Size = new System.Drawing.Size(581, 33);
             this.da11.TabIndex = 18;
             this.da11.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da11.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1848,7 +1953,7 @@ namespace bluetoothmain
             this.da12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da12.FormattingEnabled = true;
-            this.da12.ItemHeight = 20;
+            this.da12.ItemHeight = 25;
             this.da12.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1866,9 +1971,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da12.Location = new System.Drawing.Point(3, 338);
+            this.da12.Location = new System.Drawing.Point(4, 417);
+            this.da12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da12.Name = "da12";
-            this.da12.Size = new System.Drawing.Size(437, 28);
+            this.da12.Size = new System.Drawing.Size(581, 33);
             this.da12.TabIndex = 19;
             this.da12.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da12.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1878,7 +1984,7 @@ namespace bluetoothmain
             this.da13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da13.FormattingEnabled = true;
-            this.da13.ItemHeight = 20;
+            this.da13.ItemHeight = 25;
             this.da13.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1896,9 +2002,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da13.Location = new System.Drawing.Point(3, 368);
+            this.da13.Location = new System.Drawing.Point(4, 454);
+            this.da13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da13.Name = "da13";
-            this.da13.Size = new System.Drawing.Size(437, 28);
+            this.da13.Size = new System.Drawing.Size(581, 33);
             this.da13.TabIndex = 20;
             this.da13.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da13.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1908,7 +2015,7 @@ namespace bluetoothmain
             this.da14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da14.FormattingEnabled = true;
-            this.da14.ItemHeight = 20;
+            this.da14.ItemHeight = 25;
             this.da14.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1926,9 +2033,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da14.Location = new System.Drawing.Point(3, 398);
+            this.da14.Location = new System.Drawing.Point(4, 491);
+            this.da14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da14.Name = "da14";
-            this.da14.Size = new System.Drawing.Size(437, 28);
+            this.da14.Size = new System.Drawing.Size(581, 33);
             this.da14.TabIndex = 21;
             this.da14.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da14.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1938,7 +2046,7 @@ namespace bluetoothmain
             this.da15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da15.FormattingEnabled = true;
-            this.da15.ItemHeight = 20;
+            this.da15.ItemHeight = 25;
             this.da15.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1956,9 +2064,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da15.Location = new System.Drawing.Point(3, 428);
+            this.da15.Location = new System.Drawing.Point(4, 528);
+            this.da15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da15.Name = "da15";
-            this.da15.Size = new System.Drawing.Size(437, 28);
+            this.da15.Size = new System.Drawing.Size(581, 33);
             this.da15.TabIndex = 22;
             this.da15.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da15.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1968,7 +2077,7 @@ namespace bluetoothmain
             this.da16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da16.FormattingEnabled = true;
-            this.da16.ItemHeight = 20;
+            this.da16.ItemHeight = 25;
             this.da16.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -1986,9 +2095,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da16.Location = new System.Drawing.Point(3, 458);
+            this.da16.Location = new System.Drawing.Point(4, 565);
+            this.da16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da16.Name = "da16";
-            this.da16.Size = new System.Drawing.Size(437, 28);
+            this.da16.Size = new System.Drawing.Size(581, 33);
             this.da16.TabIndex = 23;
             this.da16.SelectedValueChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da16.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -1998,15 +2108,16 @@ namespace bluetoothmain
             this.loi5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi5.FormattingEnabled = true;
-            this.loi5.ItemHeight = 20;
+            this.loi5.ItemHeight = 25;
             this.loi5.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi5.Location = new System.Drawing.Point(446, 128);
+            this.loi5.Location = new System.Drawing.Point(595, 158);
+            this.loi5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi5.Name = "loi5";
-            this.loi5.Size = new System.Drawing.Size(132, 28);
+            this.loi5.Size = new System.Drawing.Size(175, 33);
             this.loi5.TabIndex = 27;
             // 
             // loi6
@@ -2014,15 +2125,16 @@ namespace bluetoothmain
             this.loi6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi6.FormattingEnabled = true;
-            this.loi6.ItemHeight = 20;
+            this.loi6.ItemHeight = 25;
             this.loi6.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi6.Location = new System.Drawing.Point(446, 158);
+            this.loi6.Location = new System.Drawing.Point(595, 195);
+            this.loi6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi6.Name = "loi6";
-            this.loi6.Size = new System.Drawing.Size(132, 28);
+            this.loi6.Size = new System.Drawing.Size(175, 33);
             this.loi6.TabIndex = 28;
             // 
             // loi7
@@ -2030,15 +2142,16 @@ namespace bluetoothmain
             this.loi7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi7.FormattingEnabled = true;
-            this.loi7.ItemHeight = 20;
+            this.loi7.ItemHeight = 25;
             this.loi7.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi7.Location = new System.Drawing.Point(446, 188);
+            this.loi7.Location = new System.Drawing.Point(595, 232);
+            this.loi7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi7.Name = "loi7";
-            this.loi7.Size = new System.Drawing.Size(132, 28);
+            this.loi7.Size = new System.Drawing.Size(175, 33);
             this.loi7.TabIndex = 29;
             // 
             // loi8
@@ -2046,15 +2159,16 @@ namespace bluetoothmain
             this.loi8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi8.FormattingEnabled = true;
-            this.loi8.ItemHeight = 20;
+            this.loi8.ItemHeight = 25;
             this.loi8.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi8.Location = new System.Drawing.Point(446, 218);
+            this.loi8.Location = new System.Drawing.Point(595, 269);
+            this.loi8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi8.Name = "loi8";
-            this.loi8.Size = new System.Drawing.Size(132, 28);
+            this.loi8.Size = new System.Drawing.Size(175, 33);
             this.loi8.TabIndex = 30;
             // 
             // loi9
@@ -2062,15 +2176,16 @@ namespace bluetoothmain
             this.loi9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi9.FormattingEnabled = true;
-            this.loi9.ItemHeight = 20;
+            this.loi9.ItemHeight = 25;
             this.loi9.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi9.Location = new System.Drawing.Point(446, 248);
+            this.loi9.Location = new System.Drawing.Point(595, 306);
+            this.loi9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi9.Name = "loi9";
-            this.loi9.Size = new System.Drawing.Size(132, 28);
+            this.loi9.Size = new System.Drawing.Size(175, 33);
             this.loi9.TabIndex = 31;
             // 
             // loi10
@@ -2078,15 +2193,16 @@ namespace bluetoothmain
             this.loi10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi10.FormattingEnabled = true;
-            this.loi10.ItemHeight = 20;
+            this.loi10.ItemHeight = 25;
             this.loi10.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi10.Location = new System.Drawing.Point(446, 278);
+            this.loi10.Location = new System.Drawing.Point(595, 343);
+            this.loi10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi10.Name = "loi10";
-            this.loi10.Size = new System.Drawing.Size(132, 28);
+            this.loi10.Size = new System.Drawing.Size(175, 33);
             this.loi10.TabIndex = 32;
             // 
             // loi11
@@ -2094,15 +2210,16 @@ namespace bluetoothmain
             this.loi11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi11.FormattingEnabled = true;
-            this.loi11.ItemHeight = 20;
+            this.loi11.ItemHeight = 25;
             this.loi11.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi11.Location = new System.Drawing.Point(446, 308);
+            this.loi11.Location = new System.Drawing.Point(595, 380);
+            this.loi11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi11.Name = "loi11";
-            this.loi11.Size = new System.Drawing.Size(132, 28);
+            this.loi11.Size = new System.Drawing.Size(175, 33);
             this.loi11.TabIndex = 33;
             // 
             // loi12
@@ -2110,15 +2227,16 @@ namespace bluetoothmain
             this.loi12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi12.FormattingEnabled = true;
-            this.loi12.ItemHeight = 20;
+            this.loi12.ItemHeight = 25;
             this.loi12.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi12.Location = new System.Drawing.Point(446, 338);
+            this.loi12.Location = new System.Drawing.Point(595, 417);
+            this.loi12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi12.Name = "loi12";
-            this.loi12.Size = new System.Drawing.Size(132, 28);
+            this.loi12.Size = new System.Drawing.Size(175, 33);
             this.loi12.TabIndex = 34;
             // 
             // loi13
@@ -2126,15 +2244,16 @@ namespace bluetoothmain
             this.loi13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi13.FormattingEnabled = true;
-            this.loi13.ItemHeight = 20;
+            this.loi13.ItemHeight = 25;
             this.loi13.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi13.Location = new System.Drawing.Point(446, 368);
+            this.loi13.Location = new System.Drawing.Point(595, 454);
+            this.loi13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi13.Name = "loi13";
-            this.loi13.Size = new System.Drawing.Size(132, 28);
+            this.loi13.Size = new System.Drawing.Size(175, 33);
             this.loi13.TabIndex = 35;
             // 
             // loi14
@@ -2142,15 +2261,16 @@ namespace bluetoothmain
             this.loi14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi14.FormattingEnabled = true;
-            this.loi14.ItemHeight = 20;
+            this.loi14.ItemHeight = 25;
             this.loi14.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi14.Location = new System.Drawing.Point(446, 398);
+            this.loi14.Location = new System.Drawing.Point(595, 491);
+            this.loi14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi14.Name = "loi14";
-            this.loi14.Size = new System.Drawing.Size(132, 28);
+            this.loi14.Size = new System.Drawing.Size(175, 33);
             this.loi14.TabIndex = 36;
             // 
             // loi15
@@ -2158,15 +2278,16 @@ namespace bluetoothmain
             this.loi15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi15.FormattingEnabled = true;
-            this.loi15.ItemHeight = 20;
+            this.loi15.ItemHeight = 25;
             this.loi15.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi15.Location = new System.Drawing.Point(446, 428);
+            this.loi15.Location = new System.Drawing.Point(595, 528);
+            this.loi15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi15.Name = "loi15";
-            this.loi15.Size = new System.Drawing.Size(132, 28);
+            this.loi15.Size = new System.Drawing.Size(175, 33);
             this.loi15.TabIndex = 37;
             // 
             // loi16
@@ -2174,15 +2295,16 @@ namespace bluetoothmain
             this.loi16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi16.FormattingEnabled = true;
-            this.loi16.ItemHeight = 20;
+            this.loi16.ItemHeight = 25;
             this.loi16.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi16.Location = new System.Drawing.Point(446, 458);
+            this.loi16.Location = new System.Drawing.Point(595, 565);
+            this.loi16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi16.Name = "loi16";
-            this.loi16.Size = new System.Drawing.Size(132, 28);
+            this.loi16.Size = new System.Drawing.Size(175, 33);
             this.loi16.TabIndex = 38;
             // 
             // da4
@@ -2190,7 +2312,7 @@ namespace bluetoothmain
             this.da4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.da4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.da4.FormattingEnabled = true;
-            this.da4.ItemHeight = 20;
+            this.da4.ItemHeight = 25;
             this.da4.Items.AddRange(new object[] {
             "ECT - Cảm biến nhiệt độ nước làm mát",
             "IAT - Cảm biến nhiệt độ khí nạp",
@@ -2208,9 +2330,10 @@ namespace bluetoothmain
             "AFS - Cảm biến A/F",
             "TPS1 - Cảm biến vị trí bướm ga 1",
             "TPS2 - Cảm biến vị trí bướm ga 2"});
-            this.da4.Location = new System.Drawing.Point(3, 98);
+            this.da4.Location = new System.Drawing.Point(4, 121);
+            this.da4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.da4.Name = "da4";
-            this.da4.Size = new System.Drawing.Size(437, 28);
+            this.da4.Size = new System.Drawing.Size(581, 33);
             this.da4.TabIndex = 39;
             this.da4.SelectedIndexChanged += new System.EventHandler(this.da_SelectedIndexChanged);
             this.da4.Click += new System.EventHandler(this.kiemtra1_Click);
@@ -2220,33 +2343,36 @@ namespace bluetoothmain
             this.loi1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loi1.FormattingEnabled = true;
-            this.loi1.ItemHeight = 20;
+            this.loi1.ItemHeight = 25;
             this.loi1.Items.AddRange(new object[] {
             "Hở mạch",
             "Chạm dương ",
             "Chạm mass",
             "Điện trở cao"});
-            this.loi1.Location = new System.Drawing.Point(446, 3);
+            this.loi1.Location = new System.Drawing.Point(595, 4);
+            this.loi1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loi1.Name = "loi1";
-            this.loi1.Size = new System.Drawing.Size(132, 28);
+            this.loi1.Size = new System.Drawing.Size(175, 33);
             this.loi1.TabIndex = 5;
             // 
             // lbdapan
             // 
             this.lbdapan.AutoSize = true;
             this.lbdapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdapan.Location = new System.Drawing.Point(988, 216);
+            this.lbdapan.Location = new System.Drawing.Point(1317, 266);
+            this.lbdapan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbdapan.Name = "lbdapan";
-            this.lbdapan.Size = new System.Drawing.Size(76, 25);
+            this.lbdapan.Size = new System.Drawing.Size(92, 31);
             this.lbdapan.TabIndex = 10;
             this.lbdapan.Text = "label6";
             this.lbdapan.Click += new System.EventHandler(this.lbdapan_Click);
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(968, 147);
+            this.submit.Location = new System.Drawing.Point(1291, 181);
+            this.submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(114, 59);
+            this.submit.Size = new System.Drawing.Size(152, 73);
             this.submit.TabIndex = 9;
             this.submit.Text = "Nộp bài";
             this.submit.UseVisualStyleBackColor = true;
@@ -2256,9 +2382,10 @@ namespace bluetoothmain
             // 
             this.svchondapan.AutoSize = true;
             this.svchondapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.svchondapan.Location = new System.Drawing.Point(903, 301);
+            this.svchondapan.Location = new System.Drawing.Point(1204, 370);
+            this.svchondapan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.svchondapan.Name = "svchondapan";
-            this.svchondapan.Size = new System.Drawing.Size(247, 25);
+            this.svchondapan.Size = new System.Drawing.Size(301, 31);
             this.svchondapan.TabIndex = 0;
             this.svchondapan.Text = "Sinh viên chọn đáp án";
             // 
@@ -2270,10 +2397,10 @@ namespace bluetoothmain
             this.settings_panel.Controls.Add(this.wifi);
             this.settings_panel.Controls.Add(this.usb);
             this.settings_panel.Controls.Add(this.bluetooth);
-            this.settings_panel.Location = new System.Drawing.Point(85, 44);
-            this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.settings_panel.Location = new System.Drawing.Point(113, 54);
+            this.settings_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(1039, 522);
+            this.settings_panel.Size = new System.Drawing.Size(1385, 642);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -2284,11 +2411,11 @@ namespace bluetoothmain
             this.tabControl2.Controls.Add(this.usbmode);
             this.tabControl2.Controls.Add(this.btctd);
             this.tabControl2.Controls.Add(this.wfctd);
-            this.tabControl2.Location = new System.Drawing.Point(190, 33);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl2.Location = new System.Drawing.Point(253, 41);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(817, 468);
+            this.tabControl2.Size = new System.Drawing.Size(1089, 576);
             this.tabControl2.TabIndex = 1;
             // 
             // btmode
@@ -2296,10 +2423,11 @@ namespace bluetoothmain
             this.btmode.Controls.Add(this.buttona);
             this.btmode.Controls.Add(this.COMcbo);
             this.btmode.Controls.Add(this.refresh);
-            this.btmode.Location = new System.Drawing.Point(4, 22);
+            this.btmode.Location = new System.Drawing.Point(4, 25);
+            this.btmode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btmode.Name = "btmode";
-            this.btmode.Padding = new System.Windows.Forms.Padding(3);
-            this.btmode.Size = new System.Drawing.Size(809, 442);
+            this.btmode.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmode.Size = new System.Drawing.Size(1081, 547);
             this.btmode.TabIndex = 2;
             this.btmode.Text = "btmode";
             this.btmode.Click += new System.EventHandler(this.tabPage3_Click);
@@ -2307,9 +2435,10 @@ namespace bluetoothmain
             // buttona
             // 
             this.buttona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttona.Location = new System.Drawing.Point(550, 208);
+            this.buttona.Location = new System.Drawing.Point(733, 256);
+            this.buttona.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttona.Name = "buttona";
-            this.buttona.Size = new System.Drawing.Size(157, 53);
+            this.buttona.Size = new System.Drawing.Size(209, 65);
             this.buttona.TabIndex = 10;
             this.buttona.Text = "CONNECT";
             this.buttona.UseVisualStyleBackColor = true;
@@ -2318,9 +2447,10 @@ namespace bluetoothmain
             // COMcbo
             // 
             this.COMcbo.FormattingEnabled = true;
-            this.COMcbo.Location = new System.Drawing.Point(190, 226);
+            this.COMcbo.Location = new System.Drawing.Point(253, 278);
+            this.COMcbo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.COMcbo.Name = "COMcbo";
-            this.COMcbo.Size = new System.Drawing.Size(148, 21);
+            this.COMcbo.Size = new System.Drawing.Size(196, 24);
             this.COMcbo.TabIndex = 9;
             this.COMcbo.SelectedIndexChanged += new System.EventHandler(this.COMcbo_SelectedIndexChanged);
             this.COMcbo.Click += new System.EventHandler(this.COMcbo_Click_1);
@@ -2328,9 +2458,10 @@ namespace bluetoothmain
             // refresh
             // 
             this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refresh.Location = new System.Drawing.Point(363, 208);
+            this.refresh.Location = new System.Drawing.Point(484, 256);
+            this.refresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(157, 53);
+            this.refresh.Size = new System.Drawing.Size(209, 65);
             this.refresh.TabIndex = 17;
             this.refresh.Text = "REFRESH COMs";
             this.refresh.UseVisualStyleBackColor = true;
@@ -2340,10 +2471,11 @@ namespace bluetoothmain
             // 
             this.wfmode.Controls.Add(this.connectwifi);
             this.wfmode.Controls.Add(this.label3);
-            this.wfmode.Location = new System.Drawing.Point(4, 22);
+            this.wfmode.Location = new System.Drawing.Point(4, 25);
+            this.wfmode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfmode.Name = "wfmode";
-            this.wfmode.Padding = new System.Windows.Forms.Padding(3);
-            this.wfmode.Size = new System.Drawing.Size(809, 442);
+            this.wfmode.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wfmode.Size = new System.Drawing.Size(1081, 547);
             this.wfmode.TabIndex = 5;
             this.wfmode.Text = "wfmode";
             this.wfmode.UseVisualStyleBackColor = true;
@@ -2352,9 +2484,10 @@ namespace bluetoothmain
             // connectwifi
             // 
             this.connectwifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connectwifi.Location = new System.Drawing.Point(368, 174);
+            this.connectwifi.Location = new System.Drawing.Point(491, 214);
+            this.connectwifi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.connectwifi.Name = "connectwifi";
-            this.connectwifi.Size = new System.Drawing.Size(178, 76);
+            this.connectwifi.Size = new System.Drawing.Size(237, 94);
             this.connectwifi.TabIndex = 1;
             this.connectwifi.Text = "CONNECT";
             this.connectwifi.UseVisualStyleBackColor = true;
@@ -2364,9 +2497,10 @@ namespace bluetoothmain
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(163, 138);
+            this.label3.Location = new System.Drawing.Point(217, 170);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(588, 24);
+            this.label3.Size = new System.Drawing.Size(725, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Đảm bảo Laptop đang sử dụng cùng Wifi với thiết bị đánh Pan";
             this.label3.Click += new System.EventHandler(this.label3_Click_1);
@@ -2374,10 +2508,11 @@ namespace bluetoothmain
             // usbmode
             // 
             this.usbmode.Controls.Add(this.comusb);
-            this.usbmode.Location = new System.Drawing.Point(4, 22);
+            this.usbmode.Location = new System.Drawing.Point(4, 25);
+            this.usbmode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usbmode.Name = "usbmode";
-            this.usbmode.Padding = new System.Windows.Forms.Padding(3);
-            this.usbmode.Size = new System.Drawing.Size(809, 442);
+            this.usbmode.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usbmode.Size = new System.Drawing.Size(1081, 547);
             this.usbmode.TabIndex = 8;
             this.usbmode.Text = "usbmode";
             this.usbmode.UseVisualStyleBackColor = true;
@@ -2386,18 +2521,20 @@ namespace bluetoothmain
             // 
             this.comusb.AutoSize = true;
             this.comusb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comusb.Location = new System.Drawing.Point(162, 71);
+            this.comusb.Location = new System.Drawing.Point(216, 87);
+            this.comusb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.comusb.Name = "comusb";
-            this.comusb.Size = new System.Drawing.Size(0, 24);
+            this.comusb.Size = new System.Drawing.Size(0, 29);
             this.comusb.TabIndex = 6;
             // 
             // btctd
             // 
             this.btctd.Controls.Add(this.disconnect);
             this.btctd.Controls.Add(this.label4);
-            this.btctd.Location = new System.Drawing.Point(4, 22);
+            this.btctd.Location = new System.Drawing.Point(4, 25);
+            this.btctd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btctd.Name = "btctd";
-            this.btctd.Size = new System.Drawing.Size(809, 442);
+            this.btctd.Size = new System.Drawing.Size(1081, 547);
             this.btctd.TabIndex = 9;
             this.btctd.Text = "btctd";
             this.btctd.UseVisualStyleBackColor = true;
@@ -2405,9 +2542,10 @@ namespace bluetoothmain
             // disconnect
             // 
             this.disconnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disconnect.Location = new System.Drawing.Point(99, 117);
+            this.disconnect.Location = new System.Drawing.Point(132, 144);
+            this.disconnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.disconnect.Name = "disconnect";
-            this.disconnect.Size = new System.Drawing.Size(150, 50);
+            this.disconnect.Size = new System.Drawing.Size(200, 62);
             this.disconnect.TabIndex = 2;
             this.disconnect.Text = "Ngắt kết nối";
             this.disconnect.UseVisualStyleBackColor = true;
@@ -2417,9 +2555,10 @@ namespace bluetoothmain
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(77, 76);
+            this.label4.Location = new System.Drawing.Point(103, 94);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 25);
+            this.label4.Size = new System.Drawing.Size(278, 31);
             this.label4.TabIndex = 0;
             this.label4.Text = "Đã kết nối Bluetooth";
             // 
@@ -2427,9 +2566,10 @@ namespace bluetoothmain
             // 
             this.wfctd.Controls.Add(this.disconnectWF);
             this.wfctd.Controls.Add(this.label5);
-            this.wfctd.Location = new System.Drawing.Point(4, 22);
+            this.wfctd.Location = new System.Drawing.Point(4, 25);
+            this.wfctd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wfctd.Name = "wfctd";
-            this.wfctd.Size = new System.Drawing.Size(809, 442);
+            this.wfctd.Size = new System.Drawing.Size(1081, 547);
             this.wfctd.TabIndex = 10;
             this.wfctd.Text = "wfctd";
             this.wfctd.UseVisualStyleBackColor = true;
@@ -2437,9 +2577,10 @@ namespace bluetoothmain
             // disconnectWF
             // 
             this.disconnectWF.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disconnectWF.Location = new System.Drawing.Point(82, 86);
+            this.disconnectWF.Location = new System.Drawing.Point(109, 106);
+            this.disconnectWF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.disconnectWF.Name = "disconnectWF";
-            this.disconnectWF.Size = new System.Drawing.Size(150, 50);
+            this.disconnectWF.Size = new System.Drawing.Size(200, 62);
             this.disconnectWF.TabIndex = 68;
             this.disconnectWF.Text = "Ngắt kết nối";
             this.disconnectWF.UseVisualStyleBackColor = true;
@@ -2449,18 +2590,19 @@ namespace bluetoothmain
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 58);
+            this.label5.Location = new System.Drawing.Point(103, 71);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 25);
+            this.label5.Size = new System.Drawing.Size(203, 31);
             this.label5.TabIndex = 1;
             this.label5.Text = "Đã kết nối Wifi";
             // 
             // close_settings
             // 
-            this.close_settings.Location = new System.Drawing.Point(1011, 2);
-            this.close_settings.Margin = new System.Windows.Forms.Padding(2);
+            this.close_settings.Location = new System.Drawing.Point(1348, 2);
+            this.close_settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.close_settings.Name = "close_settings";
-            this.close_settings.Size = new System.Drawing.Size(24, 27);
+            this.close_settings.Size = new System.Drawing.Size(32, 33);
             this.close_settings.TabIndex = 3;
             this.close_settings.Text = "X";
             this.close_settings.UseVisualStyleBackColor = true;
@@ -2469,10 +2611,10 @@ namespace bluetoothmain
             // wifi
             // 
             this.wifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wifi.Location = new System.Drawing.Point(2, 235);
-            this.wifi.Margin = new System.Windows.Forms.Padding(2);
+            this.wifi.Location = new System.Drawing.Point(3, 289);
+            this.wifi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.wifi.Name = "wifi";
-            this.wifi.Size = new System.Drawing.Size(181, 67);
+            this.wifi.Size = new System.Drawing.Size(241, 82);
             this.wifi.TabIndex = 0;
             this.wifi.Text = "Wifi";
             this.wifi.UseVisualStyleBackColor = true;
@@ -2481,10 +2623,10 @@ namespace bluetoothmain
             // usb
             // 
             this.usb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usb.Location = new System.Drawing.Point(2, 163);
-            this.usb.Margin = new System.Windows.Forms.Padding(2);
+            this.usb.Location = new System.Drawing.Point(3, 201);
+            this.usb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usb.Name = "usb";
-            this.usb.Size = new System.Drawing.Size(181, 67);
+            this.usb.Size = new System.Drawing.Size(241, 82);
             this.usb.TabIndex = 2;
             this.usb.Text = "USB";
             this.usb.UseVisualStyleBackColor = true;
@@ -2493,10 +2635,10 @@ namespace bluetoothmain
             // bluetooth
             // 
             this.bluetooth.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bluetooth.Location = new System.Drawing.Point(2, 92);
-            this.bluetooth.Margin = new System.Windows.Forms.Padding(2);
+            this.bluetooth.Location = new System.Drawing.Point(3, 113);
+            this.bluetooth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bluetooth.Name = "bluetooth";
-            this.bluetooth.Size = new System.Drawing.Size(181, 67);
+            this.bluetooth.Size = new System.Drawing.Size(241, 82);
             this.bluetooth.TabIndex = 1;
             this.bluetooth.Text = "Bluetooth";
             this.bluetooth.UseVisualStyleBackColor = true;
@@ -2504,10 +2646,10 @@ namespace bluetoothmain
             // 
             // settings
             // 
-            this.settings.Location = new System.Drawing.Point(2, 620);
-            this.settings.Margin = new System.Windows.Forms.Padding(2);
+            this.settings.Location = new System.Drawing.Point(3, 763);
+            this.settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(113, 31);
+            this.settings.Size = new System.Drawing.Size(151, 38);
             this.settings.TabIndex = 0;
             this.settings.Text = "settings";
             this.settings.UseVisualStyleBackColor = true;
@@ -2517,9 +2659,10 @@ namespace bluetoothmain
             // 
             this.statelbl.AutoSize = true;
             this.statelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statelbl.Location = new System.Drawing.Point(968, 613);
+            this.statelbl.Location = new System.Drawing.Point(1291, 754);
+            this.statelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.statelbl.Name = "statelbl";
-            this.statelbl.Size = new System.Drawing.Size(72, 24);
+            this.statelbl.Size = new System.Drawing.Size(92, 29);
             this.statelbl.TabIndex = 11;
             this.statelbl.Text = "STATE";
             this.statelbl.TextChanged += new System.EventHandler(this.DISCONNECTED);
@@ -2542,15 +2685,16 @@ namespace bluetoothmain
             // 
             // mainmenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1203, 681);
+            this.ClientSize = new System.Drawing.Size(1604, 838);
             this.Controls.Add(this.statelbl);
             this.Controls.Add(this.settings);
             this.Controls.Add(this.settings_panel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "mainmenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
