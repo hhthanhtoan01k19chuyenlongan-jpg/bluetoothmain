@@ -242,6 +242,11 @@ namespace bluetoothmain
             this.button57 = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label160 = new System.Windows.Forms.Label();
+            this.sdmd = new System.Windows.Forms.TabPage();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
+            this.label173 = new System.Windows.Forms.Label();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.sensor = new System.Windows.Forms.TabPage();
             this.button58 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -388,11 +393,6 @@ namespace bluetoothmain
             this.button56 = new System.Windows.Forms.Button();
             this.label164 = new System.Windows.Forms.Label();
             this.label165 = new System.Windows.Forms.Label();
-            this.sdmd = new System.Windows.Forms.TabPage();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.label173 = new System.Windows.Forms.Label();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
             this.chduong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.rcao.SuspendLayout();
@@ -450,6 +450,8 @@ namespace bluetoothmain
             this.tabControl8.SuspendLayout();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
+            this.sdmd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             this.sensor.SuspendLayout();
             this.lythuyet.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -491,8 +493,6 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             this.ap2.SuspendLayout();
-            this.sdmd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             this.SuspendLayout();
             // 
             // chduong
@@ -2308,6 +2308,7 @@ namespace bluetoothmain
             this.vsub.TabIndex = 7;
             this.vsub.Text = "vsub";
             this.vsub.UseVisualStyleBackColor = true;
+            this.vsub.Enter += new System.EventHandler(this.vsub_Enter);
             // 
             // button33
             // 
@@ -2835,6 +2836,61 @@ namespace bluetoothmain
             this.label160.Size = new System.Drawing.Size(462, 35);
             this.label160.TabIndex = 107;
             this.label160.Text = "CÂU HỎI ÔN TẬP";
+            // 
+            // sdmd
+            // 
+            this.sdmd.Controls.Add(this.button61);
+            this.sdmd.Controls.Add(this.button62);
+            this.sdmd.Controls.Add(this.label173);
+            this.sdmd.Controls.Add(this.pictureBox53);
+            this.sdmd.Location = new System.Drawing.Point(4, 22);
+            this.sdmd.Name = "sdmd";
+            this.sdmd.Padding = new System.Windows.Forms.Padding(3);
+            this.sdmd.Size = new System.Drawing.Size(1063, 558);
+            this.sdmd.TabIndex = 9;
+            this.sdmd.Text = "sdmd";
+            this.sdmd.UseVisualStyleBackColor = true;
+            // 
+            // button61
+            // 
+            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button61.Location = new System.Drawing.Point(860, 496);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(169, 46);
+            this.button61.TabIndex = 24;
+            this.button61.Text = "NEXT";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
+            // 
+            // button62
+            // 
+            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button62.Location = new System.Drawing.Point(685, 496);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(169, 46);
+            this.button62.TabIndex = 23;
+            this.button62.Text = "BACK";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
+            // 
+            // label173
+            // 
+            this.label173.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label173.Location = new System.Drawing.Point(37, 25);
+            this.label173.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(589, 34);
+            this.label173.TabIndex = 2;
+            this.label173.Text = "BẢNG KÝ HIỆU MÀU MAZDA";
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
+            this.pictureBox53.Location = new System.Drawing.Point(41, 72);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(866, 402);
+            this.pictureBox53.TabIndex = 0;
+            this.pictureBox53.TabStop = false;
             // 
             // sensor
             // 
@@ -4394,61 +4450,6 @@ namespace bluetoothmain
             this.label165.Size = new System.Drawing.Size(0, 13);
             this.label165.TabIndex = 165;
             // 
-            // sdmd
-            // 
-            this.sdmd.Controls.Add(this.button61);
-            this.sdmd.Controls.Add(this.button62);
-            this.sdmd.Controls.Add(this.label173);
-            this.sdmd.Controls.Add(this.pictureBox53);
-            this.sdmd.Location = new System.Drawing.Point(4, 22);
-            this.sdmd.Name = "sdmd";
-            this.sdmd.Padding = new System.Windows.Forms.Padding(3);
-            this.sdmd.Size = new System.Drawing.Size(1063, 558);
-            this.sdmd.TabIndex = 9;
-            this.sdmd.Text = "sdmd";
-            this.sdmd.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox53
-            // 
-            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
-            this.pictureBox53.Location = new System.Drawing.Point(41, 72);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(866, 402);
-            this.pictureBox53.TabIndex = 0;
-            this.pictureBox53.TabStop = false;
-            // 
-            // label173
-            // 
-            this.label173.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label173.Location = new System.Drawing.Point(37, 25);
-            this.label173.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(589, 34);
-            this.label173.TabIndex = 2;
-            this.label173.Text = "BẢNG KÝ HIỆU MÀU MAZDA";
-            // 
-            // button61
-            // 
-            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button61.Location = new System.Drawing.Point(860, 496);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(169, 46);
-            this.button61.TabIndex = 24;
-            this.button61.Text = "NEXT";
-            this.button61.UseVisualStyleBackColor = true;
-            this.button61.Click += new System.EventHandler(this.button61_Click);
-            // 
-            // button62
-            // 
-            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button62.Location = new System.Drawing.Point(685, 496);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(169, 46);
-            this.button62.TabIndex = 23;
-            this.button62.Text = "BACK";
-            this.button62.UseVisualStyleBackColor = true;
-            this.button62.Click += new System.EventHandler(this.button62_Click);
-            // 
             // LT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4523,6 +4524,8 @@ namespace bluetoothmain
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
+            this.sdmd.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             this.sensor.ResumeLayout(false);
             this.lythuyet.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -4572,8 +4575,6 @@ namespace bluetoothmain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             this.ap2.ResumeLayout(false);
             this.ap2.PerformLayout();
-            this.sdmd.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             this.ResumeLayout(false);
 
         }

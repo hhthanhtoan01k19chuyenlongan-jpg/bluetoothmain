@@ -46,8 +46,9 @@ namespace bluetoothmain
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sensor.Hide();
             tabControl1.SelectedTab = nhietdo;
+            
+            ltnd.Show();
 
         }
 
@@ -240,8 +241,8 @@ namespace bluetoothmain
 
         private void button34_Click(object sender, EventArgs e)
         {
-            vsub.Hide();
-            thda.Show();
+            
+            tabControl1.SelectedTab = sensor;
         }
 
         private void button33_Click(object sender, EventArgs e)
@@ -548,6 +549,11 @@ namespace bluetoothmain
                 serCOM.WriteLine(cmd);
             }
             
+        }
+
+        private void vsub_Enter(object sender, EventArgs e)
+        {
+            tabControl2.SelectedTab = ltnd;
         }
     }
 }
