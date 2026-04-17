@@ -30,15 +30,16 @@ namespace bluetoothmain
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainmenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.debug = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.gvsv = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.hs = new System.Windows.Forms.Button();
             this.gv = new System.Windows.Forms.Button();
+            this.debug = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dangnhapgv = new System.Windows.Forms.TabPage();
             this.backlogin = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.Button();
@@ -92,7 +93,7 @@ namespace bluetoothmain
             this.wfpan3cb = new System.Windows.Forms.CheckBox();
             this.wfpan2cb = new System.Windows.Forms.CheckBox();
             this.wfpan1cb = new System.Windows.Forms.CheckBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.sinhvien = new System.Windows.Forms.TabPage();
             this.svLT = new System.Windows.Forms.Button();
             this.svTH = new System.Windows.Forms.Button();
             this.danhpan = new System.Windows.Forms.TabPage();
@@ -163,6 +164,53 @@ namespace bluetoothmain
             this.lbdapan = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
             this.svchondapan = new System.Windows.Forms.Label();
+            this.chonchuonglt = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btn_chuongcambien = new System.Windows.Forms.Button();
+            this.chonbai = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.pn_baihoccambien = new System.Windows.Forms.Panel();
+            this.bai12cambien = new System.Windows.Forms.Button();
+            this.bai6cambien = new System.Windows.Forms.Button();
+            this.bai11cambien = new System.Windows.Forms.Button();
+            this.bai5cambien = new System.Windows.Forms.Button();
+            this.bai10cambien = new System.Windows.Forms.Button();
+            this.bai4cambien = new System.Windows.Forms.Button();
+            this.bai9cambien = new System.Windows.Forms.Button();
+            this.bai3cambien = new System.Windows.Forms.Button();
+            this.bai8cambien = new System.Windows.Forms.Button();
+            this.bai2cambien = new System.Windows.Forms.Button();
+            this.bai7cambien = new System.Windows.Forms.Button();
+            this.bai1cambien = new System.Windows.Forms.Button();
+            this.slidesbaihoc = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
+            this.prevslide = new System.Windows.Forms.Button();
+            this.nextslide = new System.Windows.Forms.Button();
+            this.pn_slides = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.noidungslide = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.chonchuongth = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.chonbaith = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.th12 = new System.Windows.Forms.Button();
+            this.th6 = new System.Windows.Forms.Button();
+            this.th11 = new System.Windows.Forms.Button();
+            this.th5 = new System.Windows.Forms.Button();
+            this.th10 = new System.Windows.Forms.Button();
+            this.th4 = new System.Windows.Forms.Button();
+            this.th9 = new System.Windows.Forms.Button();
+            this.th3 = new System.Windows.Forms.Button();
+            this.th8 = new System.Windows.Forms.Button();
+            this.th2 = new System.Windows.Forms.Button();
+            this.th7 = new System.Windows.Forms.Button();
+            this.th1 = new System.Windows.Forms.Button();
+            this.slidethuchanh = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
             this.settings_panel = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.btmode = new System.Windows.Forms.TabPage();
@@ -184,27 +232,43 @@ namespace bluetoothmain
             this.wifi = new System.Windows.Forms.Button();
             this.usb = new System.Windows.Forms.Button();
             this.bluetooth = new System.Windows.Forms.Button();
-            this.settings = new System.Windows.Forms.Button();
             this.statelbl = new System.Windows.Forms.Label();
             this.serCOM = new System.IO.Ports.SerialPort(this.components);
             this.ping_timer = new System.Windows.Forms.Timer(this.components);
             this.wifi_ping_timer = new System.Windows.Forms.Timer(this.components);
             this.usb_ping_timer = new System.Windows.Forms.Timer(this.components);
+            this.settingbox = new System.Windows.Forms.PictureBox();
+            this.pn_slideth = new System.Windows.Forms.Panel();
+            this.ptb_slideth = new System.Windows.Forms.PictureBox();
+            this.noidungth = new System.Windows.Forms.Label();
+            this.pn_choices = new System.Windows.Forms.Panel();
+            this.xemdapan = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.debug.SuspendLayout();
             this.gvsv.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.debug.SuspendLayout();
             this.dangnhapgv.SuspendLayout();
             this.gv1.SuspendLayout();
             this.danhpanbtusb.SuspendLayout();
             this.danhpanwf.SuspendLayout();
-            this.tabPage8.SuspendLayout();
+            this.sinhvien.SuspendLayout();
             this.danhpan.SuspendLayout();
             this.kiemtraqlsv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.kiemtra1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.chonchuonglt.SuspendLayout();
+            this.chonbai.SuspendLayout();
+            this.pn_baihoccambien.SuspendLayout();
+            this.slidesbaihoc.SuspendLayout();
+            this.pn_slides.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.chonchuongth.SuspendLayout();
+            this.chonbaith.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.slidethuchanh.SuspendLayout();
             this.settings_panel.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.btmode.SuspendLayout();
@@ -212,6 +276,9 @@ namespace bluetoothmain
             this.usbmode.SuspendLayout();
             this.btctd.SuspendLayout();
             this.wfctd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.settingbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_slideth)).BeginInit();
+            this.pn_choices.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -225,16 +292,22 @@ namespace bluetoothmain
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.debug);
             this.tabControl1.Controls.Add(this.gvsv);
+            this.tabControl1.Controls.Add(this.debug);
             this.tabControl1.Controls.Add(this.dangnhapgv);
             this.tabControl1.Controls.Add(this.gv1);
             this.tabControl1.Controls.Add(this.danhpanbtusb);
             this.tabControl1.Controls.Add(this.danhpanwf);
-            this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.sinhvien);
             this.tabControl1.Controls.Add(this.danhpan);
             this.tabControl1.Controls.Add(this.kiemtraqlsv);
             this.tabControl1.Controls.Add(this.kiemtra1);
+            this.tabControl1.Controls.Add(this.chonchuonglt);
+            this.tabControl1.Controls.Add(this.chonbai);
+            this.tabControl1.Controls.Add(this.slidesbaihoc);
+            this.tabControl1.Controls.Add(this.chonchuongth);
+            this.tabControl1.Controls.Add(this.chonbaith);
+            this.tabControl1.Controls.Add(this.slidethuchanh);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.MaximumSize = new System.Drawing.Size(1280, 720);
@@ -243,39 +316,8 @@ namespace bluetoothmain
             this.tabControl1.Size = new System.Drawing.Size(1280, 720);
             this.tabControl1.TabIndex = 20;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            // 
-            // debug
-            // 
-            this.debug.Controls.Add(this.button2);
-            this.debug.Controls.Add(this.button1);
-            this.debug.Location = new System.Drawing.Point(4, 22);
-            this.debug.Margin = new System.Windows.Forms.Padding(2);
-            this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(1272, 694);
-            this.debug.TabIndex = 4;
-            this.debug.Text = "debug";
-            this.debug.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(367, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 103);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Main flow";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(367, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 93);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Debug";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.tabControl1.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
+            this.tabControl1.Enter += new System.EventHandler(this.tabControl1_Enter);
             // 
             // gvsv
             // 
@@ -322,6 +364,39 @@ namespace bluetoothmain
             this.gv.Text = "Giáo Viên";
             this.gv.UseVisualStyleBackColor = true;
             this.gv.Click += new System.EventHandler(this.gv_Click_1);
+            // 
+            // debug
+            // 
+            this.debug.Controls.Add(this.button2);
+            this.debug.Controls.Add(this.button1);
+            this.debug.Location = new System.Drawing.Point(4, 22);
+            this.debug.Margin = new System.Windows.Forms.Padding(2);
+            this.debug.Name = "debug";
+            this.debug.Size = new System.Drawing.Size(1272, 694);
+            this.debug.TabIndex = 4;
+            this.debug.Text = "debug";
+            this.debug.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(367, 115);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(272, 103);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Main flow";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(367, 257);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(272, 93);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "444";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dangnhapgv
             // 
@@ -982,17 +1057,17 @@ namespace bluetoothmain
             this.wfpan1cb.UseVisualStyleBackColor = true;
             this.wfpan1cb.CheckedChanged += new System.EventHandler(this.wf_CheckedChanged);
             // 
-            // tabPage8
+            // sinhvien
             // 
-            this.tabPage8.Controls.Add(this.svLT);
-            this.tabPage8.Controls.Add(this.svTH);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1272, 694);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            this.sinhvien.Controls.Add(this.svLT);
+            this.sinhvien.Controls.Add(this.svTH);
+            this.sinhvien.Location = new System.Drawing.Point(4, 22);
+            this.sinhvien.Name = "sinhvien";
+            this.sinhvien.Padding = new System.Windows.Forms.Padding(3);
+            this.sinhvien.Size = new System.Drawing.Size(1272, 694);
+            this.sinhvien.TabIndex = 7;
+            this.sinhvien.Text = "sinhvien";
+            this.sinhvien.UseVisualStyleBackColor = true;
             // 
             // svLT
             // 
@@ -1003,16 +1078,18 @@ namespace bluetoothmain
             this.svLT.TabIndex = 1;
             this.svLT.Text = "Lý Thuyết";
             this.svLT.UseVisualStyleBackColor = true;
+            this.svLT.Click += new System.EventHandler(this.svLT_Click);
             // 
             // svTH
             // 
             this.svTH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.svTH.Location = new System.Drawing.Point(357, 228);
+            this.svTH.Location = new System.Drawing.Point(361, 228);
             this.svTH.Name = "svTH";
             this.svTH.Size = new System.Drawing.Size(197, 71);
             this.svTH.TabIndex = 0;
             this.svTH.Text = "Thực Hành";
             this.svTH.UseVisualStyleBackColor = true;
+            this.svTH.Click += new System.EventHandler(this.svTH_Click);
             // 
             // danhpan
             // 
@@ -1278,6 +1355,7 @@ namespace bluetoothmain
             // 
             // xoacotdiem
             // 
+            this.xoacotdiem.Enabled = false;
             this.xoacotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xoacotdiem.Location = new System.Drawing.Point(229, 208);
             this.xoacotdiem.Margin = new System.Windows.Forms.Padding(2);
@@ -1333,6 +1411,7 @@ namespace bluetoothmain
             // 
             // themsv
             // 
+            this.themsv.Enabled = false;
             this.themsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.themsv.Location = new System.Drawing.Point(229, 262);
             this.themsv.Margin = new System.Windows.Forms.Padding(2);
@@ -1345,6 +1424,7 @@ namespace bluetoothmain
             // 
             // themcotdiem
             // 
+            this.themcotdiem.Enabled = false;
             this.themcotdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.themcotdiem.Location = new System.Drawing.Point(229, 154);
             this.themcotdiem.Margin = new System.Windows.Forms.Padding(2);
@@ -1369,6 +1449,7 @@ namespace bluetoothmain
             // 
             // save
             // 
+            this.save.Enabled = false;
             this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.Location = new System.Drawing.Point(229, 370);
             this.save.Name = "save";
@@ -2262,6 +2343,555 @@ namespace bluetoothmain
             this.svchondapan.TabIndex = 0;
             this.svchondapan.Text = "Sinh viên chọn đáp án";
             // 
+            // chonchuonglt
+            // 
+            this.chonchuonglt.Controls.Add(this.button8);
+            this.chonchuonglt.Controls.Add(this.button5);
+            this.chonchuonglt.Controls.Add(this.btn_chuongcambien);
+            this.chonchuonglt.Location = new System.Drawing.Point(4, 22);
+            this.chonchuonglt.Name = "chonchuonglt";
+            this.chonchuonglt.Padding = new System.Windows.Forms.Padding(3);
+            this.chonchuonglt.Size = new System.Drawing.Size(1272, 694);
+            this.chonchuonglt.TabIndex = 12;
+            this.chonchuonglt.Text = "chonchuonglt";
+            this.chonchuonglt.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(72, 570);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(148, 73);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "Back";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(470, 289);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(475, 114);
+            this.button5.TabIndex = 1;
+            this.button5.Tag = "bai hoc co cau chap hanh.xlsx";
+            this.button5.Text = "Chương 2: Cơ cấu chấp hành";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.chonchuong_Click);
+            // 
+            // btn_chuongcambien
+            // 
+            this.btn_chuongcambien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chuongcambien.Location = new System.Drawing.Point(470, 119);
+            this.btn_chuongcambien.Name = "btn_chuongcambien";
+            this.btn_chuongcambien.Size = new System.Drawing.Size(475, 114);
+            this.btn_chuongcambien.TabIndex = 0;
+            this.btn_chuongcambien.Tag = "bai hoc cam bien.xlsx";
+            this.btn_chuongcambien.Text = "Chương 1: Cảm biến";
+            this.btn_chuongcambien.UseVisualStyleBackColor = true;
+            this.btn_chuongcambien.Click += new System.EventHandler(this.chonchuong_Click);
+            // 
+            // chonbai
+            // 
+            this.chonbai.Controls.Add(this.button7);
+            this.chonbai.Controls.Add(this.pn_baihoccambien);
+            this.chonbai.Location = new System.Drawing.Point(4, 22);
+            this.chonbai.Name = "chonbai";
+            this.chonbai.Padding = new System.Windows.Forms.Padding(3);
+            this.chonbai.Size = new System.Drawing.Size(1272, 694);
+            this.chonbai.TabIndex = 13;
+            this.chonbai.Text = "chonbai";
+            this.chonbai.UseVisualStyleBackColor = true;
+            this.chonbai.Enter += new System.EventHandler(this.chonbai_Enter_1);
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(116, 578);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(148, 73);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Back";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // pn_baihoccambien
+            // 
+            this.pn_baihoccambien.Controls.Add(this.bai12cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai6cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai11cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai5cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai10cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai4cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai9cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai3cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai8cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai2cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai7cambien);
+            this.pn_baihoccambien.Controls.Add(this.bai1cambien);
+            this.pn_baihoccambien.Location = new System.Drawing.Point(85, 3);
+            this.pn_baihoccambien.Name = "pn_baihoccambien";
+            this.pn_baihoccambien.Size = new System.Drawing.Size(1087, 588);
+            this.pn_baihoccambien.TabIndex = 0;
+            this.pn_baihoccambien.Enter += new System.EventHandler(this.chonbai_Enter);
+            // 
+            // bai12cambien
+            // 
+            this.bai12cambien.Location = new System.Drawing.Point(587, 505);
+            this.bai12cambien.Name = "bai12cambien";
+            this.bai12cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai12cambien.TabIndex = 11;
+            this.bai12cambien.Text = "button14";
+            this.bai12cambien.UseVisualStyleBackColor = true;
+            this.bai12cambien.Visible = false;
+            this.bai12cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai6cambien
+            // 
+            this.bai6cambien.Location = new System.Drawing.Point(86, 506);
+            this.bai6cambien.Name = "bai6cambien";
+            this.bai6cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai6cambien.TabIndex = 10;
+            this.bai6cambien.Text = "button15";
+            this.bai6cambien.UseVisualStyleBackColor = true;
+            this.bai6cambien.Visible = false;
+            this.bai6cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai11cambien
+            // 
+            this.bai11cambien.Location = new System.Drawing.Point(587, 412);
+            this.bai11cambien.Name = "bai11cambien";
+            this.bai11cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai11cambien.TabIndex = 9;
+            this.bai11cambien.Text = "button14";
+            this.bai11cambien.UseVisualStyleBackColor = true;
+            this.bai11cambien.Visible = false;
+            this.bai11cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai5cambien
+            // 
+            this.bai5cambien.Location = new System.Drawing.Point(86, 413);
+            this.bai5cambien.Name = "bai5cambien";
+            this.bai5cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai5cambien.TabIndex = 8;
+            this.bai5cambien.Text = "button15";
+            this.bai5cambien.UseVisualStyleBackColor = true;
+            this.bai5cambien.Visible = false;
+            this.bai5cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai10cambien
+            // 
+            this.bai10cambien.Location = new System.Drawing.Point(590, 319);
+            this.bai10cambien.Name = "bai10cambien";
+            this.bai10cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai10cambien.TabIndex = 7;
+            this.bai10cambien.Text = "button12";
+            this.bai10cambien.UseVisualStyleBackColor = true;
+            this.bai10cambien.Visible = false;
+            this.bai10cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai4cambien
+            // 
+            this.bai4cambien.Location = new System.Drawing.Point(86, 320);
+            this.bai4cambien.Name = "bai4cambien";
+            this.bai4cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai4cambien.TabIndex = 6;
+            this.bai4cambien.Text = "button13";
+            this.bai4cambien.UseVisualStyleBackColor = true;
+            this.bai4cambien.Visible = false;
+            this.bai4cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai9cambien
+            // 
+            this.bai9cambien.Location = new System.Drawing.Point(597, 226);
+            this.bai9cambien.Name = "bai9cambien";
+            this.bai9cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai9cambien.TabIndex = 5;
+            this.bai9cambien.Text = "button10";
+            this.bai9cambien.UseVisualStyleBackColor = true;
+            this.bai9cambien.Visible = false;
+            this.bai9cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai3cambien
+            // 
+            this.bai3cambien.Location = new System.Drawing.Point(86, 227);
+            this.bai3cambien.Name = "bai3cambien";
+            this.bai3cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai3cambien.TabIndex = 4;
+            this.bai3cambien.Text = "button11";
+            this.bai3cambien.UseVisualStyleBackColor = true;
+            this.bai3cambien.Visible = false;
+            this.bai3cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai8cambien
+            // 
+            this.bai8cambien.Location = new System.Drawing.Point(597, 133);
+            this.bai8cambien.Name = "bai8cambien";
+            this.bai8cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai8cambien.TabIndex = 3;
+            this.bai8cambien.Text = "button8";
+            this.bai8cambien.UseVisualStyleBackColor = true;
+            this.bai8cambien.Visible = false;
+            this.bai8cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai2cambien
+            // 
+            this.bai2cambien.Location = new System.Drawing.Point(86, 134);
+            this.bai2cambien.Name = "bai2cambien";
+            this.bai2cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai2cambien.TabIndex = 2;
+            this.bai2cambien.Text = "button9";
+            this.bai2cambien.UseVisualStyleBackColor = true;
+            this.bai2cambien.Visible = false;
+            this.bai2cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai7cambien
+            // 
+            this.bai7cambien.Location = new System.Drawing.Point(597, 40);
+            this.bai7cambien.Name = "bai7cambien";
+            this.bai7cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai7cambien.TabIndex = 1;
+            this.bai7cambien.Text = "button7";
+            this.bai7cambien.UseVisualStyleBackColor = true;
+            this.bai7cambien.Visible = false;
+            this.bai7cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // bai1cambien
+            // 
+            this.bai1cambien.Location = new System.Drawing.Point(86, 40);
+            this.bai1cambien.Name = "bai1cambien";
+            this.bai1cambien.Size = new System.Drawing.Size(472, 70);
+            this.bai1cambien.TabIndex = 0;
+            this.bai1cambien.Text = "button6";
+            this.bai1cambien.UseVisualStyleBackColor = true;
+            this.bai1cambien.Visible = false;
+            this.bai1cambien.Click += new System.EventHandler(this.baihoc_Click);
+            // 
+            // slidesbaihoc
+            // 
+            this.slidesbaihoc.Controls.Add(this.button6);
+            this.slidesbaihoc.Controls.Add(this.prevslide);
+            this.slidesbaihoc.Controls.Add(this.nextslide);
+            this.slidesbaihoc.Controls.Add(this.pn_slides);
+            this.slidesbaihoc.Controls.Add(this.noidungslide);
+            this.slidesbaihoc.Controls.Add(this.pictureBox1);
+            this.slidesbaihoc.Controls.Add(this.label9);
+            this.slidesbaihoc.Location = new System.Drawing.Point(4, 22);
+            this.slidesbaihoc.Name = "slidesbaihoc";
+            this.slidesbaihoc.Padding = new System.Windows.Forms.Padding(3);
+            this.slidesbaihoc.Size = new System.Drawing.Size(1272, 694);
+            this.slidesbaihoc.TabIndex = 15;
+            this.slidesbaihoc.Text = "slidesbaihoc";
+            this.slidesbaihoc.UseVisualStyleBackColor = true;
+            this.slidesbaihoc.Enter += new System.EventHandler(this.slidesbaihoc_Enter);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(116, 577);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(148, 73);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "Back";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // prevslide
+            // 
+            this.prevslide.Location = new System.Drawing.Point(300, 511);
+            this.prevslide.Name = "prevslide";
+            this.prevslide.Size = new System.Drawing.Size(129, 52);
+            this.prevslide.TabIndex = 6;
+            this.prevslide.Text = "Quay lại";
+            this.prevslide.UseVisualStyleBackColor = true;
+            this.prevslide.Click += new System.EventHandler(this.prevslide_Click);
+            // 
+            // nextslide
+            // 
+            this.nextslide.Location = new System.Drawing.Point(436, 511);
+            this.nextslide.Name = "nextslide";
+            this.nextslide.Size = new System.Drawing.Size(129, 52);
+            this.nextslide.TabIndex = 5;
+            this.nextslide.Text = "Tiếp theo";
+            this.nextslide.UseVisualStyleBackColor = true;
+            this.nextslide.Click += new System.EventHandler(this.nextslide_Click);
+            // 
+            // pn_slides
+            // 
+            this.pn_slides.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_slides.Controls.Add(this.label8);
+            this.pn_slides.Location = new System.Drawing.Point(32, 59);
+            this.pn_slides.Name = "pn_slides";
+            this.pn_slides.Size = new System.Drawing.Size(1057, 67);
+            this.pn_slides.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(-1, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 33);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Slide:";
+            // 
+            // noidungslide
+            // 
+            this.noidungslide.BackColor = System.Drawing.Color.PowderBlue;
+            this.noidungslide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.noidungslide.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noidungslide.Location = new System.Drawing.Point(8, 140);
+            this.noidungslide.Name = "noidungslide";
+            this.noidungslide.Size = new System.Drawing.Size(557, 368);
+            this.noidungslide.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(591, 140);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(596, 423);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(1266, 688);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "ten bai hoc";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // chonchuongth
+            // 
+            this.chonchuongth.Controls.Add(this.button9);
+            this.chonchuongth.Controls.Add(this.button10);
+            this.chonchuongth.Location = new System.Drawing.Point(4, 22);
+            this.chonchuongth.Name = "chonchuongth";
+            this.chonchuongth.Size = new System.Drawing.Size(1272, 694);
+            this.chonchuongth.TabIndex = 17;
+            this.chonchuongth.Text = "chonchuongth";
+            this.chonchuongth.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(399, 375);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(475, 114);
+            this.button9.TabIndex = 3;
+            this.button9.Tag = "thuc hanh co cau chap hanh.xlsx";
+            this.button9.Text = "Chương 2: Cơ cấu chấp hành (thực hành)";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(399, 205);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(475, 114);
+            this.button10.TabIndex = 2;
+            this.button10.Tag = "thuc hanh cam bien.xlsx";
+            this.button10.Text = "Chương 1: Cảm biến (thực hành)";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // chonbaith
+            // 
+            this.chonbaith.Controls.Add(this.panel3);
+            this.chonbaith.Location = new System.Drawing.Point(4, 22);
+            this.chonbaith.Name = "chonbaith";
+            this.chonbaith.Size = new System.Drawing.Size(1272, 694);
+            this.chonbaith.TabIndex = 18;
+            this.chonbaith.Text = "chonbaith";
+            this.chonbaith.UseVisualStyleBackColor = true;
+            this.chonbaith.Enter += new System.EventHandler(this.chonbaith_Enter);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.th12);
+            this.panel3.Controls.Add(this.th6);
+            this.panel3.Controls.Add(this.th11);
+            this.panel3.Controls.Add(this.th5);
+            this.panel3.Controls.Add(this.th10);
+            this.panel3.Controls.Add(this.th4);
+            this.panel3.Controls.Add(this.th9);
+            this.panel3.Controls.Add(this.th3);
+            this.panel3.Controls.Add(this.th8);
+            this.panel3.Controls.Add(this.th2);
+            this.panel3.Controls.Add(this.th7);
+            this.panel3.Controls.Add(this.th1);
+            this.panel3.Location = new System.Drawing.Point(56, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1087, 588);
+            this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // th12
+            // 
+            this.th12.Location = new System.Drawing.Point(587, 505);
+            this.th12.Name = "th12";
+            this.th12.Size = new System.Drawing.Size(472, 70);
+            this.th12.TabIndex = 11;
+            this.th12.Text = "button14";
+            this.th12.UseVisualStyleBackColor = true;
+            this.th12.Visible = false;
+            this.th12.Click += new System.EventHandler(this.th_click);
+            // 
+            // th6
+            // 
+            this.th6.Location = new System.Drawing.Point(86, 506);
+            this.th6.Name = "th6";
+            this.th6.Size = new System.Drawing.Size(472, 70);
+            this.th6.TabIndex = 10;
+            this.th6.Text = "button15";
+            this.th6.UseVisualStyleBackColor = true;
+            this.th6.Visible = false;
+            this.th6.Click += new System.EventHandler(this.th_click);
+            // 
+            // th11
+            // 
+            this.th11.Location = new System.Drawing.Point(587, 412);
+            this.th11.Name = "th11";
+            this.th11.Size = new System.Drawing.Size(472, 70);
+            this.th11.TabIndex = 9;
+            this.th11.Text = "button14";
+            this.th11.UseVisualStyleBackColor = true;
+            this.th11.Visible = false;
+            this.th11.Click += new System.EventHandler(this.th_click);
+            // 
+            // th5
+            // 
+            this.th5.Location = new System.Drawing.Point(86, 413);
+            this.th5.Name = "th5";
+            this.th5.Size = new System.Drawing.Size(472, 70);
+            this.th5.TabIndex = 8;
+            this.th5.Text = "button15";
+            this.th5.UseVisualStyleBackColor = true;
+            this.th5.Visible = false;
+            this.th5.Click += new System.EventHandler(this.th_click);
+            // 
+            // th10
+            // 
+            this.th10.Location = new System.Drawing.Point(590, 319);
+            this.th10.Name = "th10";
+            this.th10.Size = new System.Drawing.Size(472, 70);
+            this.th10.TabIndex = 7;
+            this.th10.Text = "button12";
+            this.th10.UseVisualStyleBackColor = true;
+            this.th10.Visible = false;
+            this.th10.Click += new System.EventHandler(this.th_click);
+            // 
+            // th4
+            // 
+            this.th4.Location = new System.Drawing.Point(86, 320);
+            this.th4.Name = "th4";
+            this.th4.Size = new System.Drawing.Size(472, 70);
+            this.th4.TabIndex = 6;
+            this.th4.Text = "button13";
+            this.th4.UseVisualStyleBackColor = true;
+            this.th4.Visible = false;
+            this.th4.Click += new System.EventHandler(this.th_click);
+            // 
+            // th9
+            // 
+            this.th9.Location = new System.Drawing.Point(597, 226);
+            this.th9.Name = "th9";
+            this.th9.Size = new System.Drawing.Size(472, 70);
+            this.th9.TabIndex = 5;
+            this.th9.Text = "button10";
+            this.th9.UseVisualStyleBackColor = true;
+            this.th9.Visible = false;
+            this.th9.Click += new System.EventHandler(this.th_click);
+            // 
+            // th3
+            // 
+            this.th3.Location = new System.Drawing.Point(86, 227);
+            this.th3.Name = "th3";
+            this.th3.Size = new System.Drawing.Size(472, 70);
+            this.th3.TabIndex = 4;
+            this.th3.Text = "button11";
+            this.th3.UseVisualStyleBackColor = true;
+            this.th3.Visible = false;
+            this.th3.Click += new System.EventHandler(this.th_click);
+            // 
+            // th8
+            // 
+            this.th8.Location = new System.Drawing.Point(597, 133);
+            this.th8.Name = "th8";
+            this.th8.Size = new System.Drawing.Size(472, 70);
+            this.th8.TabIndex = 3;
+            this.th8.Text = "button8";
+            this.th8.UseVisualStyleBackColor = true;
+            this.th8.Visible = false;
+            this.th8.Click += new System.EventHandler(this.th_click);
+            // 
+            // th2
+            // 
+            this.th2.Location = new System.Drawing.Point(86, 134);
+            this.th2.Name = "th2";
+            this.th2.Size = new System.Drawing.Size(472, 70);
+            this.th2.TabIndex = 2;
+            this.th2.Text = "button9";
+            this.th2.UseVisualStyleBackColor = true;
+            this.th2.Visible = false;
+            this.th2.Click += new System.EventHandler(this.th_click);
+            // 
+            // th7
+            // 
+            this.th7.Location = new System.Drawing.Point(597, 40);
+            this.th7.Name = "th7";
+            this.th7.Size = new System.Drawing.Size(472, 70);
+            this.th7.TabIndex = 1;
+            this.th7.Text = "button7";
+            this.th7.UseVisualStyleBackColor = true;
+            this.th7.Visible = false;
+            this.th7.Click += new System.EventHandler(this.th_click);
+            // 
+            // th1
+            // 
+            this.th1.Location = new System.Drawing.Point(86, 40);
+            this.th1.Name = "th1";
+            this.th1.Size = new System.Drawing.Size(472, 70);
+            this.th1.TabIndex = 0;
+            this.th1.Text = "button6";
+            this.th1.UseVisualStyleBackColor = true;
+            this.th1.Visible = false;
+            this.th1.Click += new System.EventHandler(this.th_click);
+            // 
+            // slidethuchanh
+            // 
+            this.slidethuchanh.Controls.Add(this.label11);
+            this.slidethuchanh.Controls.Add(this.pn_slideth);
+            this.slidethuchanh.Controls.Add(this.pn_choices);
+            this.slidethuchanh.Controls.Add(this.noidungth);
+            this.slidethuchanh.Controls.Add(this.ptb_slideth);
+            this.slidethuchanh.Controls.Add(this.label10);
+            this.slidethuchanh.Location = new System.Drawing.Point(4, 22);
+            this.slidethuchanh.Name = "slidethuchanh";
+            this.slidethuchanh.Padding = new System.Windows.Forms.Padding(3);
+            this.slidethuchanh.Size = new System.Drawing.Size(1272, 694);
+            this.slidethuchanh.TabIndex = 16;
+            this.slidethuchanh.Text = "slidethuchanh";
+            this.slidethuchanh.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(3, 3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(1266, 688);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "ten bai hoc";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // settings_panel
             // 
             this.settings_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2270,10 +2900,10 @@ namespace bluetoothmain
             this.settings_panel.Controls.Add(this.wifi);
             this.settings_panel.Controls.Add(this.usb);
             this.settings_panel.Controls.Add(this.bluetooth);
-            this.settings_panel.Location = new System.Drawing.Point(85, 44);
+            this.settings_panel.Location = new System.Drawing.Point(0, 0);
             this.settings_panel.Margin = new System.Windows.Forms.Padding(2);
             this.settings_panel.Name = "settings_panel";
-            this.settings_panel.Size = new System.Drawing.Size(1039, 522);
+            this.settings_panel.Size = new System.Drawing.Size(17, 197);
             this.settings_panel.TabIndex = 3;
             this.settings_panel.Visible = false;
             // 
@@ -2311,7 +2941,7 @@ namespace bluetoothmain
             this.buttona.Name = "buttona";
             this.buttona.Size = new System.Drawing.Size(157, 53);
             this.buttona.TabIndex = 10;
-            this.buttona.Text = "CONNECT";
+            this.buttona.Text = "Kết nối Bluetooth";
             this.buttona.UseVisualStyleBackColor = true;
             this.buttona.Click += new System.EventHandler(this.buttona_Click);
             // 
@@ -2332,7 +2962,7 @@ namespace bluetoothmain
             this.refresh.Name = "refresh";
             this.refresh.Size = new System.Drawing.Size(157, 53);
             this.refresh.TabIndex = 17;
-            this.refresh.Text = "REFRESH COMs";
+            this.refresh.Text = "Làm mới cổng COMs";
             this.refresh.UseVisualStyleBackColor = true;
             this.refresh.Click += new System.EventHandler(this.refresh_Click_1);
             // 
@@ -2352,7 +2982,7 @@ namespace bluetoothmain
             // connectwifi
             // 
             this.connectwifi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connectwifi.Location = new System.Drawing.Point(368, 174);
+            this.connectwifi.Location = new System.Drawing.Point(315, 201);
             this.connectwifi.Name = "connectwifi";
             this.connectwifi.Size = new System.Drawing.Size(178, 76);
             this.connectwifi.TabIndex = 1;
@@ -2364,7 +2994,7 @@ namespace bluetoothmain
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(163, 138);
+            this.label3.Location = new System.Drawing.Point(110, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(588, 24);
             this.label3.TabIndex = 0;
@@ -2386,7 +3016,7 @@ namespace bluetoothmain
             // 
             this.comusb.AutoSize = true;
             this.comusb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comusb.Location = new System.Drawing.Point(162, 71);
+            this.comusb.Location = new System.Drawing.Point(68, 48);
             this.comusb.Name = "comusb";
             this.comusb.Size = new System.Drawing.Size(0, 24);
             this.comusb.TabIndex = 6;
@@ -2502,17 +3132,6 @@ namespace bluetoothmain
             this.bluetooth.UseVisualStyleBackColor = true;
             this.bluetooth.Click += new System.EventHandler(this.bluetooth_usb_Click);
             // 
-            // settings
-            // 
-            this.settings.Location = new System.Drawing.Point(2, 620);
-            this.settings.Margin = new System.Windows.Forms.Padding(2);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(113, 31);
-            this.settings.TabIndex = 0;
-            this.settings.Text = "settings";
-            this.settings.UseVisualStyleBackColor = true;
-            this.settings.Click += new System.EventHandler(this.settings_Click);
-            // 
             // statelbl
             // 
             this.statelbl.AutoSize = true;
@@ -2540,15 +3159,83 @@ namespace bluetoothmain
             this.usb_ping_timer.Interval = 1000;
             this.usb_ping_timer.Tick += new System.EventHandler(this.usb_ping_timer_Tick);
             // 
+            // settingbox
+            // 
+            this.settingbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("settingbox.BackgroundImage")));
+            this.settingbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.settingbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingbox.Location = new System.Drawing.Point(10, 630);
+            this.settingbox.Name = "settingbox";
+            this.settingbox.Size = new System.Drawing.Size(45, 45);
+            this.settingbox.TabIndex = 15;
+            this.settingbox.TabStop = false;
+            this.settingbox.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pn_slideth
+            // 
+            this.pn_slideth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_slideth.Location = new System.Drawing.Point(18, 58);
+            this.pn_slideth.Name = "pn_slideth";
+            this.pn_slideth.Size = new System.Drawing.Size(737, 83);
+            this.pn_slideth.TabIndex = 4;
+            // 
+            // ptb_slideth
+            // 
+            this.ptb_slideth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_slideth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptb_slideth.Location = new System.Drawing.Point(755, 57);
+            this.ptb_slideth.Name = "ptb_slideth";
+            this.ptb_slideth.Size = new System.Drawing.Size(432, 393);
+            this.ptb_slideth.TabIndex = 5;
+            this.ptb_slideth.TabStop = false;
+            // 
+            // noidungth
+            // 
+            this.noidungth.BackColor = System.Drawing.Color.PowderBlue;
+            this.noidungth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.noidungth.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noidungth.Location = new System.Drawing.Point(18, 145);
+            this.noidungth.Name = "noidungth";
+            this.noidungth.Size = new System.Drawing.Size(737, 108);
+            this.noidungth.TabIndex = 5;
+            // 
+            // pn_choices
+            // 
+            this.pn_choices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_choices.Controls.Add(this.xemdapan);
+            this.pn_choices.Location = new System.Drawing.Point(18, 256);
+            this.pn_choices.Name = "pn_choices";
+            this.pn_choices.Size = new System.Drawing.Size(737, 331);
+            this.pn_choices.TabIndex = 6;
+            // 
+            // xemdapan
+            // 
+            this.xemdapan.Location = new System.Drawing.Point(470, 209);
+            this.xemdapan.Name = "xemdapan";
+            this.xemdapan.Size = new System.Drawing.Size(221, 69);
+            this.xemdapan.TabIndex = 0;
+            this.xemdapan.Text = "Đáp án";
+            this.xemdapan.UseVisualStyleBackColor = true;
+            this.xemdapan.Click += new System.EventHandler(this.xemdapan_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(112, 35);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "label11";
+            // 
             // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1203, 681);
-            this.Controls.Add(this.statelbl);
-            this.Controls.Add(this.settings);
             this.Controls.Add(this.settings_panel);
+            this.Controls.Add(this.statelbl);
+            this.Controls.Add(this.settingbox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -2559,10 +3246,10 @@ namespace bluetoothmain
             this.Load += new System.EventHandler(this.mainmenu_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.debug.ResumeLayout(false);
             this.gvsv.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.debug.ResumeLayout(false);
             this.dangnhapgv.ResumeLayout(false);
             this.dangnhapgv.PerformLayout();
             this.gv1.ResumeLayout(false);
@@ -2571,7 +3258,7 @@ namespace bluetoothmain
             this.danhpanbtusb.PerformLayout();
             this.danhpanwf.ResumeLayout(false);
             this.danhpanwf.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
+            this.sinhvien.ResumeLayout(false);
             this.danhpan.ResumeLayout(false);
             this.danhpan.PerformLayout();
             this.kiemtraqlsv.ResumeLayout(false);
@@ -2580,6 +3267,18 @@ namespace bluetoothmain
             this.kiemtra1.ResumeLayout(false);
             this.kiemtra1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.chonchuonglt.ResumeLayout(false);
+            this.chonbai.ResumeLayout(false);
+            this.pn_baihoccambien.ResumeLayout(false);
+            this.slidesbaihoc.ResumeLayout(false);
+            this.pn_slides.ResumeLayout(false);
+            this.pn_slides.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.chonchuongth.ResumeLayout(false);
+            this.chonbaith.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.slidethuchanh.ResumeLayout(false);
+            this.slidethuchanh.PerformLayout();
             this.settings_panel.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.btmode.ResumeLayout(false);
@@ -2591,6 +3290,9 @@ namespace bluetoothmain
             this.btctd.PerformLayout();
             this.wfctd.ResumeLayout(false);
             this.wfctd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.settingbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_slideth)).EndInit();
+            this.pn_choices.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2659,7 +3361,7 @@ namespace bluetoothmain
         private System.Windows.Forms.Button gv;
         private System.Windows.Forms.Button disconnectWF;
         private System.Windows.Forms.Button backpg7;
-        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage sinhvien;
         private System.Windows.Forms.Button svLT;
         private System.Windows.Forms.Button svTH;
         private System.Windows.Forms.Button usb;
@@ -2688,7 +3390,6 @@ namespace bluetoothmain
         private System.Windows.Forms.TabPage debug;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button settings;
         private System.Windows.Forms.TabPage gv1;
         private System.Windows.Forms.Button qlsv;
         private System.Windows.Forms.Button gd;
@@ -2757,5 +3458,59 @@ namespace bluetoothmain
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabPage chonchuonglt;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_chuongcambien;
+        private System.Windows.Forms.TabPage chonbai;
+        private System.Windows.Forms.Panel pn_baihoccambien;
+        private System.Windows.Forms.TabPage slidesbaihoc;
+        private System.Windows.Forms.Panel pn_slides;
+        public System.Windows.Forms.Button bai12cambien;
+        public System.Windows.Forms.Button bai6cambien;
+        public System.Windows.Forms.Button bai11cambien;
+        public System.Windows.Forms.Button bai5cambien;
+        public System.Windows.Forms.Button bai10cambien;
+        public System.Windows.Forms.Button bai4cambien;
+        public System.Windows.Forms.Button bai9cambien;
+        public System.Windows.Forms.Button bai3cambien;
+        public System.Windows.Forms.Button bai8cambien;
+        public System.Windows.Forms.Button bai2cambien;
+        public System.Windows.Forms.Button bai7cambien;
+        public System.Windows.Forms.Button bai1cambien;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label noidungslide;
+        private System.Windows.Forms.Button nextslide;
+        private System.Windows.Forms.Button prevslide;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox settingbox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage slidethuchanh;
+        private System.Windows.Forms.TabPage chonchuongth;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TabPage chonbaith;
+        private System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Button th12;
+        public System.Windows.Forms.Button th6;
+        public System.Windows.Forms.Button th11;
+        public System.Windows.Forms.Button th5;
+        public System.Windows.Forms.Button th10;
+        public System.Windows.Forms.Button th4;
+        public System.Windows.Forms.Button th9;
+        public System.Windows.Forms.Button th3;
+        public System.Windows.Forms.Button th8;
+        public System.Windows.Forms.Button th2;
+        public System.Windows.Forms.Button th7;
+        public System.Windows.Forms.Button th1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox ptb_slideth;
+        private System.Windows.Forms.Panel pn_slideth;
+        private System.Windows.Forms.Label noidungth;
+        private System.Windows.Forms.Panel pn_choices;
+        private System.Windows.Forms.Button xemdapan;
+        private System.Windows.Forms.Label label11;
     }
 }
