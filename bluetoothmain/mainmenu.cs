@@ -608,13 +608,11 @@ namespace bluetoothmain
         private void backpg3_Click(object sender, EventArgs e)
         {
             btmode.Hide();
-            debug.Show();
         }
 
         private void backpg6_Click(object sender, EventArgs e)
         {
             wfmode.Hide();
-            debug.Show();
 
         }
 
@@ -683,7 +681,6 @@ namespace bluetoothmain
         private void backpg9_Click(object sender, EventArgs e)
         {
             usbmode.Hide();
-            debug.Show();
 
         }
 
@@ -846,22 +843,21 @@ namespace bluetoothmain
 
         private void debug_Click(object sender, EventArgs e)
         {
-            debug.Controls.Clear();
 
             LT uc = new LT();
             uc.Dock = DockStyle.Fill;
 
-            debug.Controls.Add(uc);
+        
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            debug.Controls.Clear();
+         
 
             LT uc = new LT();
             uc.Dock = DockStyle.Fill;
 
-            debug.Controls.Add(uc);
+           
         }
 
         private void cbpan_CheckedChanged(object sender, EventArgs e)
@@ -1787,6 +1783,7 @@ namespace bluetoothmain
 
             if (clickedButton.BackColor == Color.Red || clickedButton.BackColor == Color.Green)
             {
+                pn_choices.Controls.Clear();
                 using (var package = new ExcelPackage(new FileInfo(fullpath)))
                 {
                     ExcelWorksheet worksheet = package.Workbook.Worksheets[tensheet_th];
@@ -1800,7 +1797,7 @@ namespace bluetoothmain
                     string[] DapAn = ((string)worksheet.Cells["C" + clickedButton.Text].Value).Split('%');
                     for (int i = 0; i < DapAn.Length; i++)
                     {
-                        if (DapAn[i][0] == ((Button)sender).Tag.ToString()[0])
+                        if (DapAn[i][0] == ((Button)sender).Tag.ToString()[0]&& ((Button)sender).Tag.ToString()[0]== ((Button)sender).Tag.ToString()[1])
                         {
                             System.Windows.Forms.RadioButton radioButton = new System.Windows.Forms.RadioButton
                             {
@@ -1811,12 +1808,48 @@ namespace bluetoothmain
                                 ForeColor = Color.Green,
                                 Location = new Point(10, 5 + i * 25),
                             };
-                            radioButton.Enabled = false;
+                            radioButton.AutoCheck = false;
+                            radioButton.Checked = true;
                             pn_choices.Controls.Add(radioButton);
                            
 
                         }
-                        else if(DapAn[i][0] == ((Button)sender).Tag.ToString()[1])
+                       else if (DapAn[i][0] == ((Button)sender).Tag.ToString()[0] && ((Button)sender).Tag.ToString()[0] != ((Button)sender).Tag.ToString()[1])
+                        {
+                            System.Windows.Forms.RadioButton radioButton = new System.Windows.Forms.RadioButton
+                            {
+
+                                AutoSize = true,
+                                Text = DapAn[i],
+                                Font = new Font("Arial", 14, FontStyle.Regular),
+                                ForeColor = Color.Green,
+                                Location = new Point(10, 5 + i * 25),
+                            };
+                            radioButton.AutoCheck = false;
+                            
+                            pn_choices.Controls.Add(radioButton);
+
+
+                        }
+                        else if(DapAn[i][0] == ((Button)sender).Tag.ToString()[1]&& ((Button)sender).Tag.ToString()[0]!= ((Button)sender).Tag.ToString()[1])
+                        {
+                            System.Windows.Forms.RadioButton radioButton = new System.Windows.Forms.RadioButton
+                            {
+
+                                AutoSize = true,
+                                Text = DapAn[i],
+                                Font = new Font("Arial", 14, FontStyle.Regular),
+                                ForeColor = Color.Red,
+
+                                Location = new Point(10, 5 + i * 25),
+                            };
+                            radioButton.Checked = true;
+                            radioButton.AutoCheck = false;
+
+                            pn_choices.Controls.Add(radioButton);
+                           
+                        }
+                        else 
                         {
                             System.Windows.Forms.RadioButton radioButton = new System.Windows.Forms.RadioButton
                             {
@@ -1826,11 +1859,11 @@ namespace bluetoothmain
                                 Font = new Font("Arial", 14, FontStyle.Regular),
                                 Location = new Point(10, 5 + i * 25),
                             };
-                            radioButton.Checked = true;
-                            radioButton.Enabled = false;
+                            
+                            radioButton.AutoCheck = false;
 
                             pn_choices.Controls.Add(radioButton);
-                           
+
                         }
 
 
@@ -1843,6 +1876,7 @@ namespace bluetoothmain
             }
             else
             {
+                pn_choices.Controls.Clear();
 
 
 
@@ -1893,6 +1927,8 @@ namespace bluetoothmain
         {
             ((Button)sender).Tag = rightchoice+choice;
             label11.Text= rightchoice + choice;
+            currentquest.PerformClick();
+            
         }
         private void xemdapan_Click(object sender, EventArgs e)
         {

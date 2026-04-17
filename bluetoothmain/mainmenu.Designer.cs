@@ -37,9 +37,6 @@ namespace bluetoothmain
             this.panel2 = new System.Windows.Forms.Panel();
             this.hs = new System.Windows.Forms.Button();
             this.gv = new System.Windows.Forms.Button();
-            this.debug = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.dangnhapgv = new System.Windows.Forms.TabPage();
             this.backlogin = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.Button();
@@ -248,7 +245,6 @@ namespace bluetoothmain
             this.tabControl1.SuspendLayout();
             this.gvsv.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.debug.SuspendLayout();
             this.dangnhapgv.SuspendLayout();
             this.gv1.SuspendLayout();
             this.danhpanbtusb.SuspendLayout();
@@ -278,7 +274,6 @@ namespace bluetoothmain
             this.wfctd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_slideth)).BeginInit();
-            this.pn_choices.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -293,7 +288,6 @@ namespace bluetoothmain
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.gvsv);
-            this.tabControl1.Controls.Add(this.debug);
             this.tabControl1.Controls.Add(this.dangnhapgv);
             this.tabControl1.Controls.Add(this.gv1);
             this.tabControl1.Controls.Add(this.danhpanbtusb);
@@ -364,39 +358,6 @@ namespace bluetoothmain
             this.gv.Text = "Giáo Viên";
             this.gv.UseVisualStyleBackColor = true;
             this.gv.Click += new System.EventHandler(this.gv_Click_1);
-            // 
-            // debug
-            // 
-            this.debug.Controls.Add(this.button2);
-            this.debug.Controls.Add(this.button1);
-            this.debug.Location = new System.Drawing.Point(4, 22);
-            this.debug.Margin = new System.Windows.Forms.Padding(2);
-            this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(1272, 694);
-            this.debug.TabIndex = 4;
-            this.debug.Text = "debug";
-            this.debug.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(367, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 103);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Main flow";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(367, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 93);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "444";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dangnhapgv
             // 
@@ -2867,6 +2828,7 @@ namespace bluetoothmain
             // 
             // slidethuchanh
             // 
+            this.slidethuchanh.Controls.Add(this.xemdapan);
             this.slidethuchanh.Controls.Add(this.label11);
             this.slidethuchanh.Controls.Add(this.pn_slideth);
             this.slidethuchanh.Controls.Add(this.pn_choices);
@@ -3202,7 +3164,6 @@ namespace bluetoothmain
             // pn_choices
             // 
             this.pn_choices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_choices.Controls.Add(this.xemdapan);
             this.pn_choices.Location = new System.Drawing.Point(18, 256);
             this.pn_choices.Name = "pn_choices";
             this.pn_choices.Size = new System.Drawing.Size(737, 331);
@@ -3210,7 +3171,7 @@ namespace bluetoothmain
             // 
             // xemdapan
             // 
-            this.xemdapan.Location = new System.Drawing.Point(470, 209);
+            this.xemdapan.Location = new System.Drawing.Point(783, 472);
             this.xemdapan.Name = "xemdapan";
             this.xemdapan.Size = new System.Drawing.Size(221, 69);
             this.xemdapan.TabIndex = 0;
@@ -3249,7 +3210,6 @@ namespace bluetoothmain
             this.gvsv.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.debug.ResumeLayout(false);
             this.dangnhapgv.ResumeLayout(false);
             this.dangnhapgv.PerformLayout();
             this.gv1.ResumeLayout(false);
@@ -3292,7 +3252,6 @@ namespace bluetoothmain
             this.wfctd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_slideth)).EndInit();
-            this.pn_choices.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3387,9 +3346,6 @@ namespace bluetoothmain
         private System.Windows.Forms.CheckBox cbpan3;
         private System.Windows.Forms.CheckBox cbpan2;
         private System.Windows.Forms.CheckBox cbpan1;
-        private System.Windows.Forms.TabPage debug;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage gv1;
         private System.Windows.Forms.Button qlsv;
         private System.Windows.Forms.Button gd;
