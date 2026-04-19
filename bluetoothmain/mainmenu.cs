@@ -26,6 +26,8 @@ namespace bluetoothmain
         CheckBox[] wf_cb;
         Button[] baihoccambien;
         Button[] baihocthuchanh;
+        List<Button> cauhoithuchanh= new List<Button>();
+
         string svkiemtra;
         string[] poolda = {
 "ECT - Cảm biến nhiệt độ nước làm mát",
@@ -48,6 +50,7 @@ namespace bluetoothmain
         DataTable dt = new DataTable();
         private void LoadExcel(string path)
         {
+            dataGridView1.AllowUserToAddRows = true;
             ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 
             FileInfo file = new FileInfo(path);
@@ -58,13 +61,15 @@ namespace bluetoothmain
             {
                 var ws = package.Workbook.Worksheets[0];
 
-
-                if (!dt.Columns.Contains("MSSV"))
+                try
                 {
+                    dt.Columns.Add("STT");
                     dt.Columns.Add("MSSV");
                     dt.Columns.Add("HỌ VÀ TÊN");
                 }
+                catch (Exception) { }
 
+dt.Clear();
 
 
                 for (int col = 1; col <= ws.Dimension.End.Column; col++)
@@ -75,11 +80,15 @@ namespace bluetoothmain
                         {
                             for (int i = 0; i <= ws.Dimension.End.Row; i++)
                             {
+                                dataGridView1.RowsAdded -= dataGridView1_RowsAdded;
+                                dataGridView1.AllowUserToAddRows = true;
                                 dt.Rows.Add();
-
-                                dt.Rows[i][0] = ws.Cells[row + 1, col].Text;
+                                
+                                dt.Rows[i][1] = ws.Cells[row + 1, col].Text;
+                                
                                 row++;
-
+                                dataGridView1.RowsAdded += dataGridView1_RowsAdded;
+                              
                             }
 
                         }
@@ -97,7 +106,7 @@ namespace bluetoothmain
                             {
 
 
-                                dt.Rows[i][1] = ws.Cells[row + 1, col].Text;
+                                dt.Rows[i][2] = ws.Cells[row + 1, col].Text;
                                 row++;
 
                             }
@@ -106,9 +115,10 @@ namespace bluetoothmain
 
                     }
                 }
+                
                 for (int i = dt.Rows.Count - 1; i > 0; i--)
                 {
-                    if (dt.Rows[i][0] == "")
+                    if (string.IsNullOrWhiteSpace(dt.Rows[i][1].ToString()))
                     {
                         dt.Rows[i].Delete();
 
@@ -124,7 +134,9 @@ namespace bluetoothmain
 
                 luuexcel(filemoi);
                 cotdiem = 1;
+                
             }
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         string currentfile;
@@ -167,10 +179,6 @@ namespace bluetoothmain
 
         }
 
-
-
-        string tkdung = "123";
-        string mkdung = "1234";
         string comdung;
         string cmd;
         string dapan;
@@ -185,19 +193,74 @@ namespace bluetoothmain
 
         private void log_Click(object sender, EventArgs e)
         {
-            if (tk.Text == tkdung)
-            {
-                if (mk.Text == mkdung)
+
+
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+            if (tk.Text.StartsWith("g"))
+            { fullpath = debugpath + @"\giangvien.xlsx";
+
+                FileInfo file = new FileInfo(fullpath);
+                using (ExcelPackage package = new ExcelPackage(file))
                 {
-                    tabControl1.SelectedTab = gv1;
+
+                    int sotk = package.Workbook.Worksheets["taikhoangv"].Dimension.End.Row;
+                    for (int i = 2; i <= sotk; i++)
+                    {
+                        if (tk.Text == package.Workbook.Worksheets["taikhoangv"].Cells["A" + i].Text)
+                        {
+                            if (mk.Text == package.Workbook.Worksheets["taikhoangv"].Cells["B" + i].Text)
+                            {
+                                tabControl1.SelectedTab = gv1;
+                                return;
+                            }
+                        }
+
+
+
+                        if (i == sotk) { MessageBox.Show("Sai tài khoản hoặc mật khẩu"); }
+
+                    }
+                }
+
+            }
+            else
+            {
+                if (cb_chonlop.SelectedItem != "")
+                {
+                    fullpath = thumucluu + cb_chonlop.SelectedItem + ".xlsx";
+
+                    FileInfo file = new FileInfo(fullpath);
+                    using (ExcelPackage package = new ExcelPackage(file))
+                    {
+
+                        int sotk = package.Workbook.Worksheets[1].Dimension.End.Row;
+                        for (int i = 2; i <= sotk; i++)
+                        {
+                            if (tk.Text == package.Workbook.Worksheets[1].Cells["A" + i].Text)
+                            {
+                                if (mk.Text == package.Workbook.Worksheets[1].Cells["B" + i].Text)
+                                {
+                                    tabControl1.SelectedTab = gv1;
+                                    return;
+                                }
+                            }
+
+
+
+                            if (i == sotk) { MessageBox.Show("Sai tài khoản hoặc mật khẩu"); }
+
+                        }
+                    }
+
+
 
 
                 }
-                else { MessageBox.Show("Sai tài khoản hoặc mật khẩu"); }
-
-
+                else { MessageBox.Show("Bạn chưa chọn lớp"); }
             }
-            else { MessageBox.Show("Sai tài khoản hoặc mật khẩu"); }
+
+            
+          
         }
 
 
@@ -635,7 +698,7 @@ namespace bluetoothmain
         private void gv_Click_1(object sender, EventArgs e)
         {
 
-            tabControl1.SelectedTab = dangnhapgv;
+            tabControl1.SelectedTab = dangnhap;
         }
 
         private void hs_Click_1(object sender, EventArgs e)
@@ -1174,7 +1237,7 @@ namespace bluetoothmain
         private void save_Click(object sender, EventArgs e)
         {
 
-            luuexcel(Path.Combine(thumucluu, recentfiles.Items[lastIndex].Text + ".xlsx"));
+            luuexcel(Path.Combine(thumucluu, dgvLop.SelectedCells[0].Value + ".xlsx"));
         }
 
         private void themcotdiem_Click(object sender, EventArgs e)
@@ -1194,79 +1257,162 @@ namespace bluetoothmain
 
         private void themsv_Click(object sender, EventArgs e)
         {
+            dataGridView1.AllowUserToAddRows = true;
             dt.Rows.Add();
+            
+            
+            dataGridView1.AllowUserToAddRows = false;
+
 
         }
 
         private void themlop_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Chọn danh sách sinh viên cần tạo lớp";
-            ofd.Filter = "Excel Files (*.xlsx)|*.xlsx";
 
-            if (ofd.ShowDialog() == DialogResult.OK)
+
+            foreach (DataGridViewRow row in dgvLop.Rows)
             {
-
-
-                thumucluu = Properties.Settings.Default.luufile;
-
-                if (string.IsNullOrEmpty(thumucluu))
+                foreach (DataGridViewCell item in row.Cells)
                 {
+                    if (string.IsNullOrWhiteSpace(item.Value.ToString())) { return; }
 
-                    FolderBrowserDialog sfd = new FolderBrowserDialog();
-                    sfd.Description = "Chọn thư mục lưu trữ các lớp mới";
-
-
-                    if (sfd.ShowDialog() == DialogResult.OK)
+                    if (tenlopmoi.Text.ToUpper() == item.Value.ToString())
                     {
-
-                        thumucluu = sfd.SelectedPath.ToString();
-                        Properties.Settings.Default.luufile = thumucluu;
-                        Properties.Settings.Default.Save();
-
-
+                        MessageBox.Show("Tên lớp mới không được trùng với lớp cũ");
+                        return;
                     }
                 }
-                using (ExcelPackage package = new ExcelPackage())
+            }
+                if (string.IsNullOrWhiteSpace(tenlopmoi.Text) || tenlopmoi.Text.Length < 8) { MessageBox.Show("Tên lớp mới gồm ít nhất 8 ký tự"); return; }
+                
+            
+            dgvLop.Rows.Add(tenlopmoi.Text.ToUpper());
+            DialogResult result = MessageBox.Show(
+    "Bạn có muốn dùng danh sách sinh viên có sẵn để tạo lớp mới không? \n Nếu chọn No, bạn sẽ tạo được một lớp trống và có thể thêm SV thủ công!",
+    "Thông báo",
+    MessageBoxButtons.YesNo
+);
+            if (result == DialogResult.Yes)
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Title = "Chọn danh sách sinh viên cần tạo lớp";
+                ofd.Filter = "Excel Files (*.xlsx)|*.xlsx";
+
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    package.Workbook.Worksheets.Add("Sheet1");
 
-                    for (int i = 1; ; i++)
+
+                    thumucluu = Properties.Settings.Default.luufile;
+
+                    if (string.IsNullOrEmpty(thumucluu))
                     {
-                        bool exists = false;
 
-                        foreach (var item in recentfiles.Items)
+                        FolderBrowserDialog sfd = new FolderBrowserDialog();
+                        sfd.Description = "Chọn thư mục lưu trữ các lớp mới";
+
+
+                        if (sfd.ShowDialog() == DialogResult.OK)
                         {
-                            if (item.ToString().Contains("Lop " + i))
-                            {
-                                exists = true;
-                                break;
-                            }
-                        }
 
-                        if (!exists)
-                        {
-                            string path = Path.Combine(thumucluu, "Lop " + i + ".xlsx");
-                            package.SaveAs(new FileInfo(path));
-                            filemoi = path;
-                            recentfiles.Items.Add("Lop " + i.ToString());
-                            dt.Clear();
+                            thumucluu = sfd.SelectedPath.ToString();
+                            Properties.Settings.Default.luufile = thumucluu;
+                            Properties.Settings.Default.Save();
 
 
-                            break;
                         }
                     }
+                    using (ExcelPackage package = new ExcelPackage())
+                    {
+
+                        package.Workbook.Worksheets.Add("Sheet1");
+                        package.Workbook.Worksheets.Add("Tài khoản SV");
+                        var wstaikhoan = package.Workbook.Worksheets[1];
+
+
+
+                        string path = Path.Combine(thumucluu, tenlopmoi.Text.ToUpper() + ".xlsx");
+                                package.SaveAs(new FileInfo(path));
+                                filemoi = path;
+                              
+                                dt.Clear();
+
+
+                                
+                            
+                        
+                    }
+                    LoadExcel(ofd.FileName);
+
+
                 }
-                LoadExcel(ofd.FileName);
 
 
+                currentfile = ofd.FileName;
+
+                dataGridView1.ClearSelection();
+               
             }
 
 
-            currentfile = ofd.FileName;
 
-            dataGridView1.ClearSelection();
+            else
+            {
+                using (ExcelPackage package = new ExcelPackage())
+                {
+                    package.Workbook.Worksheets.Add("Sheet1");
+                   
+                   
+                    package.Workbook.Worksheets.Add("Tài khoản SV");
+                    var wstaikhoan = package.Workbook.Worksheets[1];
+                    wstaikhoan.Cells[1, 1].Value = "Tài khoản SV";
+                    wstaikhoan.Cells[1, 2].Value = "Mật khẩu";
 
+                    try
+                    {
+                        dt.Columns.Add("STT");
+                        dt.Columns.Add("MSSV");
+                        dt.Columns.Add("HỌ VÀ TÊN");
+                    }
+                    catch (Exception) { }
+
+                    string path = Path.Combine(thumucluu, tenlopmoi.Text.ToUpper() + ".xlsx");
+                   
+                        
+                    
+                    package.SaveAs(new FileInfo(path));
+                    filemoi = path;
+
+                    dt.Clear();
+
+                    luuexcel(filemoi);
+
+
+
+                }
+                
+
+            }
+            dgvLop.Rows[find_row_index(dgvLop, tenlopmoi.Text.ToUpper())].Selected = true;
+            tenlopmoi.Clear();
+            tenlopmoi.Text = "";
+            
+           
+
+
+        }
+        private int find_row_index(DataGridView dataGridView, string searchValue)
+        {
+            foreach (DataGridViewRow row in dataGridView.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString() == searchValue)
+                    {
+                        return row.Index;
+                    }
+                }
+            }
+            return -1;
         }
 
         private void listbox_recentfiles_SelectedIndexChanged(object sender, EventArgs e)
@@ -1343,7 +1489,9 @@ namespace bluetoothmain
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            filemoi = Path.Combine(thumucluu, recentfiles.Items[lastIndex].Text + ".xlsx");
+            if (e.ColumnIndex == 0) return;
+            filemoi = Path.Combine(thumucluu, dgvLop.CurrentCell.Value + ".xlsx");
+           
             luuexcel(filemoi);
         }
 
@@ -1352,20 +1500,22 @@ namespace bluetoothmain
             try
             {
                 thumucluu = Properties.Settings.Default.luufile;
+                dgvLop.Rows.Clear();
                 foreach (string file in Directory.GetFiles(thumucluu, "*.xlsx"))
                 {
-                    if (recentfiles.Items.Count > 0 && recentfiles.Items[0].Text == Path.GetFileNameWithoutExtension(file))
-                        break;
-                    {
+                    
+                    
                         if (!Path.GetFileNameWithoutExtension(file).Contains("~$"))
-                            recentfiles.Items.Add(Path.GetFileNameWithoutExtension(file));
-                    }
+                            dgvLop.Rows.Add(Path.GetFileNameWithoutExtension(file));
+                    
 
                 }
-
+                
 
             }
             catch (Exception) { }
+            
+               
         }
         int lastActivatedIndex = -1;
         private void recentfiles_ItemActivate(object sender, EventArgs e)
@@ -1385,103 +1535,14 @@ namespace bluetoothmain
         }
         int lastIndex = 0;
 
-        private void recentfiles_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (recentfiles.SelectedItems.Count == 1)
-            {
-                oldname = recentfiles.SelectedItems[0].Text + ".xlsx";
-                string path = Path.Combine(thumucluu, recentfiles.SelectedItems[0].Text + ".xlsx");
-                label6.Text = recentfiles.SelectedItems[0].Text;
-                currentindex = recentfiles.SelectedItems[0].Index;
-                themcotdiem.Enabled = true;
-                themsv.Enabled = true;
-                xoacotdiem.Enabled = true;
-                xoasv.Enabled = true;
-                save.Enabled = true;
-            }
+      
+        int currentIndex;
+        
 
-
-
-        }
-        int currentindex;
-        private void recentfiles_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-
-
-        }
-
-        private void recentfiles_MouseClick(object sender, MouseEventArgs e)
-        {
-            var item = recentfiles.GetItemAt(e.X, e.Y);
-
-            if (item == null)
-            {
-                recentfiles.Items[lastIndex].Selected = true; return;
-            }
-            currentindex = item.Index;
-
-            if (item.Index != lastIndex)
-            {
-                recentfiles.Items[lastIndex].Selected = false;
-
-                recentfiles.Items[item.Index].Selected = true;
-                lastIndex = item.Index;
-
-            }
-            if (recentfiles.SelectedItems.Count == 0) { recentfiles.Items[lastIndex].Selected = true; }
-
-
-            if (recentfiles.SelectedItems.Count == 0) return;
-            int currentIndex = recentfiles.SelectedItems[0].Index;
-
-            if (currentIndex == lastActivatedIndex)
-            {
-                return;
-            }
-            lastActivatedIndex = currentIndex;
-            string path = Path.Combine(thumucluu, recentfiles.Items[currentIndex].Text + ".xlsx");
-            dt.Clear();
-            using (var package = new ExcelPackage(new FileInfo(path)))
-            {
-                var ws = package.Workbook.Worksheets[0];
-
-
-                dt.Columns.Clear();
-                for (int col = ws.Dimension.Start.Column; col <= ws.Dimension.End.Column; col++)
-                {
-
-                    dt.Columns.Add(ws.Cells[1, col].Text);
-                }
-
-
-
-                for (int row = 2; row <= ws.Dimension.End.Row; row++)
-                {
-                    DataRow dr = dt.NewRow();
-                    for (int col = ws.Dimension.Start.Column; col <= ws.Dimension.End.Column; col++)
-                    {
-                        dr[col - 1] = ws.Cells[row, col].Text;
-                    }
-                    dt.Rows.Add(dr);
-                }
-
-                dataGridView1.DataSource = dt;
-                for (int i = 0; i < dataGridView1.Columns.Count; i++)
-                {
-                    if (dataGridView1.Columns[i].HeaderText.Contains("Cột điểm"))
-                    {
-                        dataGridView1.Columns[i].ReadOnly = true;
-
-                    }
-                }
-            }
-
-
-        }
+       
 
         private void xoacotdiem_Click(object sender, EventArgs e)
         {
-            label7.Text = dt.Columns[dt.Columns.Count - 1].ColumnName;
             if (dt.Columns[dt.Columns.Count - 1].ColumnName.Contains("Cột điểm"))
             {
                 dt.Columns.RemoveAt(dt.Columns.Count - 1);
@@ -1493,8 +1554,14 @@ namespace bluetoothmain
 
         private void button3_Click_2(object sender, EventArgs e)
         {
-            for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
-                dt.Rows.RemoveAt(dataGridView1.SelectedRows[i].Index - 1);
+            dataGridView1.AllowUserToAddRows = true;
+            try
+            {
+                for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+                    dt.Rows.RemoveAt(dataGridView1.SelectedRows[i].Index );
+            }
+            catch (Exception) { MessageBox.Show("Bạn chưa chọn sinh viên để xóa"); }
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -1535,13 +1602,12 @@ namespace bluetoothmain
             sinhvien.Hide();
 
         }
-        int sobaihoc = 0;
         string tenbaihoc = "";
 
 
         private void btn_chuongcambien_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = chonbai;
+            tabControl1.SelectedTab = chonbailt;
 
           
         }
@@ -1563,7 +1629,7 @@ namespace bluetoothmain
         private void chonchuong_Click(object sender, EventArgs e)
         {
            tenchuong  = (string)((Button)sender).Tag;
-            tabControl1.SelectedTab = chonbai;
+            tabControl1.SelectedTab = chonbailt;
 
         }
 
@@ -1671,7 +1737,7 @@ namespace bluetoothmain
 
         private void button6_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = chonbai;
+            tabControl1.SelectedTab = chonbailt;
         }
 
         private void slidesbaihoc_Enter(object sender, EventArgs e)
@@ -1731,6 +1797,7 @@ namespace bluetoothmain
                 }
             }
         }
+        int questscount = 0;
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -1751,9 +1818,11 @@ namespace bluetoothmain
                 pn_slideth.Controls.Clear();
                 var ws = package.Workbook.Worksheets[tensheet_th];
                 Slides_th = ws.Dimension.End.Row;
+                questscount = Slides_th;
                 
+              
 
-
+                cauhoithuchanh.Clear();
                 for (int i = 1; i <= Slides_th; i++)
                 {
                     Button buttonth = new Button();
@@ -1769,6 +1838,8 @@ namespace bluetoothmain
                     buttonth.BackColorChanged += Button_th_backcolorchanged;
 
                     pn_slideth.Controls.Add(buttonth);
+                    cauhoithuchanh.Add(buttonth);
+                    
                 }
             }
         }
@@ -1930,6 +2001,24 @@ namespace bluetoothmain
             currentquest.PerformClick();
             
         }
+
+        private void but_xong_Click(object sender, EventArgs e)
+        {
+           int socauthdung = 0;
+            int caudatraloi = 0;
+           
+            foreach (Button button in cauhoithuchanh )
+            {
+                if (button.BackColor == Color.Green) { socauthdung++;caudatraloi++; }
+                else if(button.BackColor == Color.Red) { caudatraloi++; }
+            }
+            if (caudatraloi != questscount) { MessageBox.Show("Bạn chưa trả lời hết câu hỏi"); }
+            label11.Text = socauthdung.ToString() + "/" + caudatraloi++;
+        }
+
+
+
+
         private void xemdapan_Click(object sender, EventArgs e)
         {
             if (choice == rightchoice)
@@ -1945,6 +2034,121 @@ namespace bluetoothmain
             else if (choice == "") { MessageBox.Show("Bạn chưa chọn đáp án"); }
             
             
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_chonlop_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void dangnhap_Enter(object sender, EventArgs e)
+        {
+            try
+            {
+                thumucluu = Properties.Settings.Default.luufile;
+                foreach (string file in Directory.GetFiles(thumucluu, "*.xlsx"))
+                {
+                    
+                    
+                        if (!Path.GetFileNameWithoutExtension(file).Contains("~$"))
+                            cb_chonlop.Items.Add(Path.GetFileNameWithoutExtension(file));
+                    
+
+                }
+
+
+            }
+            catch (Exception) { }
+        }
+
+        private void taolop_Click(object sender, EventArgs e)
+        {
+
+          
+
+           
+
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = kiemtraqlsv;
+        }
+
+        private void dgvLop_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+
+        }
+
+        private void dgvLop_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.AllowUserToAddRows = true;
+
+                oldname = dgvLop.SelectedCells[0].Value + ".xlsx";
+                string path = Path.Combine(thumucluu, dgvLop.SelectedCells[0].Value + ".xlsx");
+
+                themcotdiem.Enabled = true;
+                themsv.Enabled = true;
+                xoacotdiem.Enabled = true;
+                xoasv.Enabled = true;
+                save.Enabled = true;
+
+                dt.Clear();
+                using (var package = new ExcelPackage(new FileInfo(path)))
+                {
+                    var ws = package.Workbook.Worksheets[0];
+
+                    try {
+                        dt.Columns.Add("STT");dt.Columns["STT"].ReadOnly = true;
+                        dt.Columns.Add("MSSV");
+                        dt.Columns.Add("HỌ VÀ TÊN");
+                    }
+                    catch (Exception) { }
+
+                 
+
+
+
+                    for (int row = 2; row <= ws.Dimension.End.Row; row++)
+                    {
+                        DataRow dr = dt.NewRow();
+                        for (int col = ws.Dimension.Start.Column; col <= ws.Dimension.End.Column; col++)
+                        {
+                            dr[col - 1] = ws.Cells[row, col].Text;
+                        }
+                        dt.Rows.Add(dr);
+                    }
+
+                    dataGridView1.DataSource = dt;
+                    for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                    {
+                        if (dataGridView1.Columns[i].HeaderText.Contains("Cột điểm"))
+                        {
+                            dataGridView1.Columns[i].ReadOnly = true;
+
+                        }
+                    }
+                }
+                dataGridView1.AllowUserToAddRows = false;
+
+            }
+            catch (Exception) { }
+        }
+
+        private void dataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            
+   
+
         }
 
         private void baihoc_Click(object sender, EventArgs e)
@@ -2023,12 +2227,13 @@ namespace bluetoothmain
 
         private void tk_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void mk_TextChanged(object sender, EventArgs e)
         {
-
+            if (tk.Text.StartsWith("g")) { cb_chonlop.Visible = false;  lb_chonlop.Visible = false; }
+            else { cb_chonlop.Visible = true; lb_chonlop.Visible = true; }
         }
 
         private void label1_Click(object sender, EventArgs e)
