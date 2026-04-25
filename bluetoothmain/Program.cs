@@ -16,7 +16,7 @@ namespace bluetoothmain
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainmenu());
+            Application.Run(new ECT());
             
         }
     }
