@@ -336,10 +336,10 @@ namespace bluetoothmain
             this.batt_conn.TabStop = false;
             this.batt_conn.Click += new System.EventHandler(this.batt_conn_Click);
             // 
-            // PMHT
+            // ECT
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::bluetoothmain.Properties.Resources.ECT;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.batt_conn);
@@ -359,7 +359,7 @@ namespace bluetoothmain
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1600, 900);
-            this.Name = "PMHT";
+            this.Name = "ECT";
             this.Padding = new System.Windows.Forms.Padding(1, 1, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PMHT";
